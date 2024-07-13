@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -14,31 +13,31 @@ namespace QuickNV.Onvif.Discovery.Common.Soap;
 [XmlType(Namespace = "http://www.w3.org/2003/05/soap-envelope")]
 public class faultcode
 {
-	private XmlQualifiedName valueField;
+    private XmlQualifiedName valueField;
 
-	private subcode subcodeField;
+    private subcode subcodeField;
 
-	public XmlQualifiedName Value
-	{
-		get
-		{
-			return valueField;
-		}
-		set
-		{
-			valueField = value;
-		}
-	}
+    public XmlQualifiedName Value
+    {
+        get
+        {
+            return valueField;
+        }
+        set
+        {
+            valueField = value;
+        }
+    }
 
-	public subcode Subcode
-	{
-		get
-		{
-			return subcodeField;
-		}
-		set
-		{
-			subcodeField = value;
-		}
-	}
+    public subcode Subcode
+    {
+        get
+        {
+            return subcodeField;
+        }
+        set
+        {
+            subcodeField = value;
+        }
+    }
 }

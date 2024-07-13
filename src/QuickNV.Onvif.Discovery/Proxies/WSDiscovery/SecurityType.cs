@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,32 +14,32 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlRoot("Security", Namespace = "http://schemas.xmlsoap.org/ws/2005/04/discovery", IsNullable = false)]
 public class SecurityType
 {
-	private SigType sigField;
+    private SigType sigField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	public SigType Sig
-	{
-		get
-		{
-			return sigField;
-		}
-		set
-		{
-			sigField = value;
-		}
-	}
+    public SigType Sig
+    {
+        get
+        {
+            return sigField;
+        }
+        set
+        {
+            sigField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

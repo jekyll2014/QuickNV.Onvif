@@ -9,55 +9,55 @@
 
 namespace QuickNV.Onvif.ReplayControl
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/replay/wsdl", ConfigurationName="Quick.Onvif.ReplayControl.ReplayPort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/replay/wsdl", ConfigurationName = "Quick.Onvif.ReplayControl.ReplayPort")]
     public interface ReplayPort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/replay/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/replay/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.ReplayControl.Capabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/replay/wsdl/GetReplayUri", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/replay/wsdl/GetReplayUri", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ReplayControl.GetReplayUriResponse> GetReplayUriAsync(QuickNV.Onvif.ReplayControl.GetReplayUriRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/replay/wsdl/GetReplayConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Configuration")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/replay/wsdl/GetReplayConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Configuration")]
         System.Threading.Tasks.Task<QuickNV.Onvif.ReplayControl.ReplayConfiguration> GetReplayConfigurationAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/replay/wsdl/SetReplayConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/replay/wsdl/SetReplayConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetReplayConfigurationAsync(QuickNV.Onvif.ReplayControl.ReplayConfiguration Configuration);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/replay/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/replay/wsdl")]
     public partial class Capabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool reversePlaybackField;
-        
+
         private bool reversePlaybackFieldSpecified;
-        
+
         private float[] sessionTimeoutRangeField;
-        
+
         private bool rTP_RTSP_TCPField;
-        
+
         private bool rTP_RTSP_TCPFieldSpecified;
-        
+
         private string rTSPWebSocketUriField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -69,7 +69,7 @@ namespace QuickNV.Onvif.ReplayControl
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ReversePlayback
@@ -83,7 +83,7 @@ namespace QuickNV.Onvif.ReplayControl
                 this.reversePlaybackField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ReversePlaybackSpecified
@@ -97,7 +97,7 @@ namespace QuickNV.Onvif.ReplayControl
                 this.reversePlaybackFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float[] SessionTimeoutRange
@@ -111,7 +111,7 @@ namespace QuickNV.Onvif.ReplayControl
                 this.sessionTimeoutRangeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool RTP_RTSP_TCP
@@ -125,7 +125,7 @@ namespace QuickNV.Onvif.ReplayControl
                 this.rTP_RTSP_TCPField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RTP_RTSP_TCPSpecified
@@ -139,9 +139,9 @@ namespace QuickNV.Onvif.ReplayControl
                 this.rTP_RTSP_TCPFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string RTSPWebSocketUri
         {
             get
@@ -154,20 +154,20 @@ namespace QuickNV.Onvif.ReplayControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ReplayConfiguration
     {
-        
+
         private string sessionTimeoutField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 0)]
         public string SessionTimeout
         {
             get
@@ -179,9 +179,9 @@ namespace QuickNV.Onvif.ReplayControl
                 this.sessionTimeoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -194,20 +194,20 @@ namespace QuickNV.Onvif.ReplayControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Transport
     {
-        
+
         private TransportProtocol protocolField;
-        
+
         private Transport tunnelField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public TransportProtocol Protocol
         {
             get
@@ -219,9 +219,9 @@ namespace QuickNV.Onvif.ReplayControl
                 this.protocolField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Transport Tunnel
         {
             get
@@ -234,41 +234,41 @@ namespace QuickNV.Onvif.ReplayControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum TransportProtocol
     {
-        
+
         /// <remarks/>
         UDP,
-        
+
         /// <remarks/>
         TCP,
-        
+
         /// <remarks/>
         RTSP,
-        
+
         /// <remarks/>
         HTTP,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class StreamSetup
     {
-        
+
         private StreamType streamField;
-        
+
         private Transport transportField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public StreamType Stream
         {
             get
@@ -280,9 +280,9 @@ namespace QuickNV.Onvif.ReplayControl
                 this.streamField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Transport Transport
         {
             get
@@ -294,9 +294,9 @@ namespace QuickNV.Onvif.ReplayControl
                 this.transportField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -309,93 +309,93 @@ namespace QuickNV.Onvif.ReplayControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum StreamType
     {
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("RTP-Unicast")]
         RTPUnicast,
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("RTP-Multicast")]
         RTPMulticast,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetReplayUri", WrapperNamespace="http://www.onvif.org/ver10/replay/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetReplayUri", WrapperNamespace = "http://www.onvif.org/ver10/replay/wsdl", IsWrapped = true)]
     public partial class GetReplayUriRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/replay/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/replay/wsdl", Order = 0)]
         public QuickNV.Onvif.ReplayControl.StreamSetup StreamSetup;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/replay/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/replay/wsdl", Order = 1)]
         public string RecordingToken;
-        
+
         public GetReplayUriRequest()
         {
         }
-        
+
         public GetReplayUriRequest(QuickNV.Onvif.ReplayControl.StreamSetup StreamSetup, string RecordingToken)
         {
             this.StreamSetup = StreamSetup;
             this.RecordingToken = RecordingToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetReplayUriResponse", WrapperNamespace="http://www.onvif.org/ver10/replay/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetReplayUriResponse", WrapperNamespace = "http://www.onvif.org/ver10/replay/wsdl", IsWrapped = true)]
     public partial class GetReplayUriResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/replay/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/replay/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
         public string Uri;
-        
+
         public GetReplayUriResponse()
         {
         }
-        
+
         public GetReplayUriResponse(string Uri)
         {
             this.Uri = Uri;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface ReplayPortChannel : QuickNV.Onvif.ReplayControl.ReplayPort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class ReplayPortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.ReplayControl.ReplayPort>, QuickNV.Onvif.ReplayControl.ReplayPort
     {
-        
-        public ReplayPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public ReplayPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ReplayControl.Capabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ReplayControl.GetReplayUriResponse> QuickNV.Onvif.ReplayControl.ReplayPort.GetReplayUriAsync(QuickNV.Onvif.ReplayControl.GetReplayUriRequest request)
         {
             return base.Channel.GetReplayUriAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ReplayControl.GetReplayUriResponse> GetReplayUriAsync(QuickNV.Onvif.ReplayControl.StreamSetup StreamSetup, string RecordingToken)
         {
             QuickNV.Onvif.ReplayControl.GetReplayUriRequest inValue = new QuickNV.Onvif.ReplayControl.GetReplayUriRequest();
@@ -403,17 +403,17 @@ namespace QuickNV.Onvif.ReplayControl
             inValue.RecordingToken = RecordingToken;
             return ((QuickNV.Onvif.ReplayControl.ReplayPort)(this)).GetReplayUriAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ReplayControl.ReplayConfiguration> GetReplayConfigurationAsync()
         {
             return base.Channel.GetReplayConfigurationAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetReplayConfigurationAsync(QuickNV.Onvif.ReplayControl.ReplayConfiguration Configuration)
         {
             return base.Channel.SetReplayConfigurationAsync(Configuration);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

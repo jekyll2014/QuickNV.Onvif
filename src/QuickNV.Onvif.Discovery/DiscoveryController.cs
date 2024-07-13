@@ -1,6 +1,7 @@
-﻿using System.Net;
+﻿using QuickNV.Onvif.Discovery.Common.Discovery;
 using QuickNV.Onvif.Discovery.WSDiscovery;
-using QuickNV.Onvif.Discovery.Common.Discovery;
+
+using System.Net;
 
 namespace QuickNV.Onvif.Discovery
 {
@@ -15,7 +16,7 @@ namespace QuickNV.Onvif.Discovery
         public event Action<Exception> DiscoveryError;
         public event Action DiscoveryCompleted;
 
-        public DiscoveryController() 
+        public DiscoveryController()
         {
             this.searchScopes = string.Empty;
             this.timeout = TimeSpan.FromSeconds(5);

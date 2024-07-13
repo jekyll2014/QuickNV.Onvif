@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,33 +14,33 @@ namespace QuickNV.Onvif.Discovery.Common.Soap;
 [XmlRoot(Namespace = "http://www.w3.org/2003/05/soap-envelope", IsNullable = false)]
 public class Header
 {
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

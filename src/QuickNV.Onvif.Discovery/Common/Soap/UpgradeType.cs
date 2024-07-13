@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -14,18 +13,18 @@ namespace QuickNV.Onvif.Discovery.Common.Soap;
 [XmlRoot("Upgrade", Namespace = "http://www.w3.org/2003/05/soap-envelope", IsNullable = false)]
 public class UpgradeType
 {
-	private SupportedEnvType[] supportedEnvelopeField;
+    private SupportedEnvType[] supportedEnvelopeField;
 
-	[XmlElement("SupportedEnvelope")]
-	public SupportedEnvType[] SupportedEnvelope
-	{
-		get
-		{
-			return supportedEnvelopeField;
-		}
-		set
-		{
-			supportedEnvelopeField = value;
-		}
-	}
+    [XmlElement("SupportedEnvelope")]
+    public SupportedEnvType[] SupportedEnvelope
+    {
+        get
+        {
+            return supportedEnvelopeField;
+        }
+        set
+        {
+            supportedEnvelopeField = value;
+        }
+    }
 }

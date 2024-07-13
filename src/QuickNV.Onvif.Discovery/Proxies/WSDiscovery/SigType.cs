@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,93 +14,93 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlRoot("Sig", Namespace = "http://schemas.xmlsoap.org/ws/2005/04/discovery", IsNullable = false)]
 public class SigType
 {
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private string schemeField;
+    private string schemeField;
 
-	private byte[] keyIdField;
+    private byte[] keyIdField;
 
-	private string refsField;
+    private string refsField;
 
-	private byte[] sigField;
+    private byte[] sigField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAttribute(DataType = "anyURI")]
-	public string Scheme
-	{
-		get
-		{
-			return schemeField;
-		}
-		set
-		{
-			schemeField = value;
-		}
-	}
+    [XmlAttribute(DataType = "anyURI")]
+    public string Scheme
+    {
+        get
+        {
+            return schemeField;
+        }
+        set
+        {
+            schemeField = value;
+        }
+    }
 
-	[XmlAttribute(DataType = "base64Binary")]
-	public byte[] KeyId
-	{
-		get
-		{
-			return keyIdField;
-		}
-		set
-		{
-			keyIdField = value;
-		}
-	}
+    [XmlAttribute(DataType = "base64Binary")]
+    public byte[] KeyId
+    {
+        get
+        {
+            return keyIdField;
+        }
+        set
+        {
+            keyIdField = value;
+        }
+    }
 
-	[XmlAttribute(DataType = "IDREFS")]
-	public string Refs
-	{
-		get
-		{
-			return refsField;
-		}
-		set
-		{
-			refsField = value;
-		}
-	}
+    [XmlAttribute(DataType = "IDREFS")]
+    public string Refs
+    {
+        get
+        {
+            return refsField;
+        }
+        set
+        {
+            refsField = value;
+        }
+    }
 
-	[XmlAttribute(DataType = "base64Binary")]
-	public byte[] Sig
-	{
-		get
-		{
-			return sigField;
-		}
-		set
-		{
-			sigField = value;
-		}
-	}
+    [XmlAttribute(DataType = "base64Binary")]
+    public byte[] Sig
+    {
+        get
+        {
+            return sigField;
+        }
+        set
+        {
+            sigField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

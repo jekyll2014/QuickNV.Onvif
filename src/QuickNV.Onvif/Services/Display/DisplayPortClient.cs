@@ -1,4 +1,5 @@
 ﻿using QuickNV.Onvif.Factorys;
+
 using System.ServiceModel;
 
 namespace QuickNV.Onvif.Display

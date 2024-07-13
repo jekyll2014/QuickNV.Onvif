@@ -9,73 +9,73 @@
 
 namespace QuickNV.Onvif.ActionEngine
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", ConfigurationName="Quick.Onvif.ActionEngine.ActionEnginePort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", ConfigurationName = "Quick.Onvif.ActionEngine.ActionEnginePort")]
     public interface ActionEnginePort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/GetSupportedActions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="SupportedActions")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/GetSupportedActions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "SupportedActions")]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.SupportedActions> GetSupportedActionsAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/GetActions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/GetActions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.GetActionsResponse> GetActionsAsync(QuickNV.Onvif.ActionEngine.GetActionsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/CreateActions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/CreateActions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.CreateActionsResponse> CreateActionsAsync(QuickNV.Onvif.ActionEngine.CreateActionsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/DeleteActions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/DeleteActions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.DeleteActionsResponse> DeleteActionsAsync(QuickNV.Onvif.ActionEngine.DeleteActionsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/ModifyActions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/ModifyActions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.ModifyActionsResponse> ModifyActionsAsync(QuickNV.Onvif.ActionEngine.ModifyActionsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.ActionEngineCapabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/GetActionTriggers", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/GetActionTriggers", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.GetActionTriggersResponse> GetActionTriggersAsync(QuickNV.Onvif.ActionEngine.GetActionTriggersRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/CreateActionTriggers", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/CreateActionTriggers", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.CreateActionTriggersResponse> CreateActionTriggersAsync(QuickNV.Onvif.ActionEngine.CreateActionTriggersRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/DeleteActionTriggers", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/DeleteActionTriggers", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.DeleteActionTriggersResponse> DeleteActionTriggersAsync(QuickNV.Onvif.ActionEngine.DeleteActionTriggersRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/actionengine/wsdl/ModifyActionTriggers", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/actionengine/wsdl/ModifyActionTriggers", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.ModifyActionTriggersResponse> ModifyActionTriggersAsync(QuickNV.Onvif.ActionEngine.ModifyActionTriggersRequest request);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class SupportedActions
     {
-        
+
         private string[] actionContentSchemaLocationField;
-        
+
         private ActionConfigDescription[] actionDescriptionField;
-        
+
         private SupportedActionsExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ActionContentSchemaLocation", DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("ActionContentSchemaLocation", DataType = "anyURI", Order = 0)]
         public string[] ActionContentSchemaLocation
         {
             get
@@ -87,9 +87,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.actionContentSchemaLocationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ActionDescription", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ActionDescription", Order = 1)]
         public ActionConfigDescription[] ActionDescription
         {
             get
@@ -101,9 +101,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.actionDescriptionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public SupportedActionsExtension Extension
         {
             get
@@ -116,20 +116,20 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class ActionConfigDescription
     {
-        
+
         private ItemListDescription parameterDescriptionField;
-        
+
         private System.Xml.XmlQualifiedName nameField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ItemListDescription ParameterDescription
         {
             get
@@ -141,7 +141,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.parameterDescriptionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.Xml.XmlQualifiedName Name
@@ -156,22 +156,22 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListDescription
     {
-        
+
         private ItemListDescriptionSimpleItemDescription[] simpleItemDescriptionField;
-        
+
         private ItemListDescriptionElementItemDescription[] elementItemDescriptionField;
-        
+
         private ItemListDescriptionExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SimpleItemDescription", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("SimpleItemDescription", Order = 0)]
         public ItemListDescriptionSimpleItemDescription[] SimpleItemDescription
         {
             get
@@ -183,9 +183,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.simpleItemDescriptionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ElementItemDescription", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ElementItemDescription", Order = 1)]
         public ItemListDescriptionElementItemDescription[] ElementItemDescription
         {
             get
@@ -197,9 +197,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.elementItemDescriptionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ItemListDescriptionExtension Extension
         {
             get
@@ -212,18 +212,18 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListDescriptionSimpleItemDescription
     {
-        
+
         private string nameField;
-        
+
         private System.Xml.XmlQualifiedName typeField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
@@ -237,7 +237,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.Xml.XmlQualifiedName Type
@@ -252,18 +252,18 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class ActionTriggerConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -276,21 +276,21 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://docs.oasis-open.org/wsn/b-2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://docs.oasis-open.org/wsn/b-2")]
     public partial class QueryExpressionType
     {
-        
+
         private System.Xml.XmlNode[] anyField;
-        
+
         private string dialectField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlTextAttribute()]
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlNode[] Any
         {
             get
@@ -302,9 +302,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Dialect
         {
             get
@@ -317,21 +317,21 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://docs.oasis-open.org/wsn/b-2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://docs.oasis-open.org/wsn/b-2")]
     public partial class TopicExpressionType
     {
-        
+
         private System.Xml.XmlNode[] anyField;
-        
+
         private string dialectField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlTextAttribute()]
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlNode[] Any
         {
             get
@@ -343,9 +343,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Dialect
         {
             get
@@ -358,24 +358,24 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class ActionTriggerConfiguration
     {
-        
+
         private TopicExpressionType topicExpressionField;
-        
+
         private QueryExpressionType contentExpressionField;
-        
+
         private string[] actionTokenField;
-        
+
         private ActionTriggerConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public TopicExpressionType TopicExpression
         {
             get
@@ -387,9 +387,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.topicExpressionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public QueryExpressionType ContentExpression
         {
             get
@@ -401,9 +401,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.contentExpressionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ActionToken", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("ActionToken", Order = 2)]
         public string[] ActionToken
         {
             get
@@ -415,9 +415,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.actionTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public ActionTriggerConfigurationExtension Extension
         {
             get
@@ -430,22 +430,22 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class ActionTrigger
     {
-        
+
         private ActionTriggerConfiguration configurationField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ActionTriggerConfiguration Configuration
         {
             get
@@ -457,9 +457,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.configurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -471,7 +471,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Token
@@ -486,18 +486,18 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class ActionEngineCapabilitiesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -510,29 +510,29 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class ActionTypeLimits
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private System.Xml.XmlQualifiedName typeField;
-        
+
         private string maximumField;
-        
+
         private string inUseField;
-        
+
         public ActionTypeLimits()
         {
             this.inUseField = "0";
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -544,7 +544,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.Xml.XmlQualifiedName Type
@@ -558,9 +558,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string Maximum
         {
             get
@@ -572,9 +572,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.maximumField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         [System.ComponentModel.DefaultValueAttribute("0")]
         public string InUse
         {
@@ -588,24 +588,24 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class ActionEngineCapabilities
     {
-        
+
         private ActionTypeLimits[] actionCapabilitiesField;
-        
+
         private ActionEngineCapabilitiesExtension extensionField;
-        
+
         private string maximumTriggersField;
-        
+
         private string maximumActionsField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ActionCapabilities", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("ActionCapabilities", Order = 0)]
         public ActionTypeLimits[] ActionCapabilities
         {
             get
@@ -617,9 +617,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.actionCapabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ActionEngineCapabilitiesExtension Extension
         {
             get
@@ -631,9 +631,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumTriggers
         {
             get
@@ -645,9 +645,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.maximumTriggersField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumActions
         {
             get
@@ -660,18 +660,18 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -684,22 +684,22 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemList
     {
-        
+
         private ItemListSimpleItem[] simpleItemField;
-        
+
         private ItemListElementItem[] elementItemField;
-        
+
         private ItemListExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SimpleItem", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("SimpleItem", Order = 0)]
         public ItemListSimpleItem[] SimpleItem
         {
             get
@@ -711,9 +711,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.simpleItemField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ElementItem", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ElementItem", Order = 1)]
         public ItemListElementItem[] ElementItem
         {
             get
@@ -725,9 +725,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.elementItemField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ItemListExtension Extension
         {
             get
@@ -740,18 +740,18 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListSimpleItem
     {
-        
+
         private string nameField;
-        
+
         private string valueField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
@@ -765,7 +765,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Value
@@ -780,20 +780,20 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListElementItem
     {
-        
+
         private System.Xml.XmlElement anyField;
-        
+
         private string nameField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement Any
         {
             get
@@ -805,7 +805,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
@@ -820,24 +820,24 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class ActionConfiguration
     {
-        
+
         private ItemList parametersField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string nameField;
-        
+
         private System.Xml.XmlQualifiedName typeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ItemList Parameters
         {
             get
@@ -849,9 +849,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.parametersField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -863,7 +863,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
@@ -877,7 +877,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.Xml.XmlQualifiedName Type
@@ -892,22 +892,22 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class Action
     {
-        
+
         private ActionConfiguration configurationField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ActionConfiguration Configuration
         {
             get
@@ -919,9 +919,9 @@ namespace QuickNV.Onvif.ActionEngine
                 this.configurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -933,7 +933,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Token
@@ -948,18 +948,18 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl")]
     public partial class SupportedActionsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -972,18 +972,18 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListDescriptionExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -996,18 +996,18 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListDescriptionElementItemDescription
     {
-        
+
         private string nameField;
-        
+
         private System.Xml.XmlQualifiedName typeField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
@@ -1021,7 +1021,7 @@ namespace QuickNV.Onvif.ActionEngine
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.Xml.XmlQualifiedName Type
@@ -1036,396 +1036,396 @@ namespace QuickNV.Onvif.ActionEngine
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetActions", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetActions", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class GetActionsRequest
     {
-        
+
         public GetActionsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetActionsResponse", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetActionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class GetActionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Action")]
         public QuickNV.Onvif.ActionEngine.Action[] Action;
-        
+
         public GetActionsResponse()
         {
         }
-        
+
         public GetActionsResponse(QuickNV.Onvif.ActionEngine.Action[] Action)
         {
             this.Action = Action;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateActions", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateActions", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class CreateActionsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Action")]
         public QuickNV.Onvif.ActionEngine.ActionConfiguration[] Action;
-        
+
         public CreateActionsRequest()
         {
         }
-        
+
         public CreateActionsRequest(QuickNV.Onvif.ActionEngine.ActionConfiguration[] Action)
         {
             this.Action = Action;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateActionsResponse", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateActionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class CreateActionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Action")]
         public QuickNV.Onvif.ActionEngine.Action[] Action;
-        
+
         public CreateActionsResponse()
         {
         }
-        
+
         public CreateActionsResponse(QuickNV.Onvif.ActionEngine.Action[] Action)
         {
             this.Action = Action;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteActions", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteActions", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class DeleteActionsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public DeleteActionsRequest()
         {
         }
-        
+
         public DeleteActionsRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteActionsResponse", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteActionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class DeleteActionsResponse
     {
-        
+
         public DeleteActionsResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ModifyActions", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ModifyActions", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class ModifyActionsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Action")]
         public QuickNV.Onvif.ActionEngine.Action[] Action;
-        
+
         public ModifyActionsRequest()
         {
         }
-        
+
         public ModifyActionsRequest(QuickNV.Onvif.ActionEngine.Action[] Action)
         {
             this.Action = Action;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ModifyActionsResponse", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ModifyActionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class ModifyActionsResponse
     {
-        
+
         public ModifyActionsResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetActionTriggers", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetActionTriggers", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class GetActionTriggersRequest
     {
-        
+
         public GetActionTriggersRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetActionTriggersResponse", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetActionTriggersResponse", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class GetActionTriggersResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("ActionTrigger")]
         public QuickNV.Onvif.ActionEngine.ActionTrigger[] ActionTrigger;
-        
+
         public GetActionTriggersResponse()
         {
         }
-        
+
         public GetActionTriggersResponse(QuickNV.Onvif.ActionEngine.ActionTrigger[] ActionTrigger)
         {
             this.ActionTrigger = ActionTrigger;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateActionTriggers", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateActionTriggers", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class CreateActionTriggersRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("ActionTrigger")]
         public QuickNV.Onvif.ActionEngine.ActionTriggerConfiguration[] ActionTrigger;
-        
+
         public CreateActionTriggersRequest()
         {
         }
-        
+
         public CreateActionTriggersRequest(QuickNV.Onvif.ActionEngine.ActionTriggerConfiguration[] ActionTrigger)
         {
             this.ActionTrigger = ActionTrigger;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateActionTriggersResponse", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateActionTriggersResponse", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class CreateActionTriggersResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("ActionTrigger")]
         public QuickNV.Onvif.ActionEngine.ActionTrigger[] ActionTrigger;
-        
+
         public CreateActionTriggersResponse()
         {
         }
-        
+
         public CreateActionTriggersResponse(QuickNV.Onvif.ActionEngine.ActionTrigger[] ActionTrigger)
         {
             this.ActionTrigger = ActionTrigger;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteActionTriggers", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteActionTriggers", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class DeleteActionTriggersRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public DeleteActionTriggersRequest()
         {
         }
-        
+
         public DeleteActionTriggersRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteActionTriggersResponse", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteActionTriggersResponse", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class DeleteActionTriggersResponse
     {
-        
+
         public DeleteActionTriggersResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ModifyActionTriggers", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ModifyActionTriggers", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class ModifyActionTriggersRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/actionengine/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/actionengine/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("ActionTrigger")]
         public QuickNV.Onvif.ActionEngine.ActionTrigger[] ActionTrigger;
-        
+
         public ModifyActionTriggersRequest()
         {
         }
-        
+
         public ModifyActionTriggersRequest(QuickNV.Onvif.ActionEngine.ActionTrigger[] ActionTrigger)
         {
             this.ActionTrigger = ActionTrigger;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ModifyActionTriggersResponse", WrapperNamespace="http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ModifyActionTriggersResponse", WrapperNamespace = "http://www.onvif.org/ver10/actionengine/wsdl", IsWrapped = true)]
     public partial class ModifyActionTriggersResponse
     {
-        
+
         public ModifyActionTriggersResponse()
         {
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface ActionEnginePortChannel : QuickNV.Onvif.ActionEngine.ActionEnginePort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class ActionEnginePortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.ActionEngine.ActionEnginePort>, QuickNV.Onvif.ActionEngine.ActionEnginePort
     {
-        
-        public ActionEnginePortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public ActionEnginePortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.SupportedActions> GetSupportedActionsAsync()
         {
             return base.Channel.GetSupportedActionsAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.GetActionsResponse> QuickNV.Onvif.ActionEngine.ActionEnginePort.GetActionsAsync(QuickNV.Onvif.ActionEngine.GetActionsRequest request)
         {
             return base.Channel.GetActionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.GetActionsResponse> GetActionsAsync()
         {
             QuickNV.Onvif.ActionEngine.GetActionsRequest inValue = new QuickNV.Onvif.ActionEngine.GetActionsRequest();
             return ((QuickNV.Onvif.ActionEngine.ActionEnginePort)(this)).GetActionsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.CreateActionsResponse> CreateActionsAsync(QuickNV.Onvif.ActionEngine.CreateActionsRequest request)
         {
             return base.Channel.CreateActionsAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.DeleteActionsResponse> QuickNV.Onvif.ActionEngine.ActionEnginePort.DeleteActionsAsync(QuickNV.Onvif.ActionEngine.DeleteActionsRequest request)
         {
             return base.Channel.DeleteActionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.DeleteActionsResponse> DeleteActionsAsync(string[] Token)
         {
             QuickNV.Onvif.ActionEngine.DeleteActionsRequest inValue = new QuickNV.Onvif.ActionEngine.DeleteActionsRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.ActionEngine.ActionEnginePort)(this)).DeleteActionsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.ModifyActionsResponse> QuickNV.Onvif.ActionEngine.ActionEnginePort.ModifyActionsAsync(QuickNV.Onvif.ActionEngine.ModifyActionsRequest request)
         {
             return base.Channel.ModifyActionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.ModifyActionsResponse> ModifyActionsAsync(QuickNV.Onvif.ActionEngine.Action[] Action)
         {
             QuickNV.Onvif.ActionEngine.ModifyActionsRequest inValue = new QuickNV.Onvif.ActionEngine.ModifyActionsRequest();
             inValue.Action = Action;
             return ((QuickNV.Onvif.ActionEngine.ActionEnginePort)(this)).ModifyActionsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.ActionEngineCapabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.GetActionTriggersResponse> QuickNV.Onvif.ActionEngine.ActionEnginePort.GetActionTriggersAsync(QuickNV.Onvif.ActionEngine.GetActionTriggersRequest request)
         {
             return base.Channel.GetActionTriggersAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.GetActionTriggersResponse> GetActionTriggersAsync()
         {
             QuickNV.Onvif.ActionEngine.GetActionTriggersRequest inValue = new QuickNV.Onvif.ActionEngine.GetActionTriggersRequest();
             return ((QuickNV.Onvif.ActionEngine.ActionEnginePort)(this)).GetActionTriggersAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.CreateActionTriggersResponse> CreateActionTriggersAsync(QuickNV.Onvif.ActionEngine.CreateActionTriggersRequest request)
         {
             return base.Channel.CreateActionTriggersAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.DeleteActionTriggersResponse> QuickNV.Onvif.ActionEngine.ActionEnginePort.DeleteActionTriggersAsync(QuickNV.Onvif.ActionEngine.DeleteActionTriggersRequest request)
         {
             return base.Channel.DeleteActionTriggersAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.DeleteActionTriggersResponse> DeleteActionTriggersAsync(string[] Token)
         {
             QuickNV.Onvif.ActionEngine.DeleteActionTriggersRequest inValue = new QuickNV.Onvif.ActionEngine.DeleteActionTriggersRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.ActionEngine.ActionEnginePort)(this)).DeleteActionTriggersAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.ModifyActionTriggersResponse> QuickNV.Onvif.ActionEngine.ActionEnginePort.ModifyActionTriggersAsync(QuickNV.Onvif.ActionEngine.ModifyActionTriggersRequest request)
         {
             return base.Channel.ModifyActionTriggersAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.ActionEngine.ModifyActionTriggersResponse> ModifyActionTriggersAsync(QuickNV.Onvif.ActionEngine.ActionTrigger[] ActionTrigger)
         {
             QuickNV.Onvif.ActionEngine.ModifyActionTriggersRequest inValue = new QuickNV.Onvif.ActionEngine.ModifyActionTriggersRequest();
             inValue.ActionTrigger = ActionTrigger;
             return ((QuickNV.Onvif.ActionEngine.ActionEnginePort)(this)).ModifyActionTriggersAsync(inValue);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

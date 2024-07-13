@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,48 +14,48 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlRoot("ProbeMatches", Namespace = "http://schemas.xmlsoap.org/ws/2005/04/discovery", IsNullable = false)]
 public class ProbeMatchesType
 {
-	private ProbeMatchType[] probeMatchField;
+    private ProbeMatchType[] probeMatchField;
 
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	[XmlElement("ProbeMatch")]
-	public ProbeMatchType[] ProbeMatch
-	{
-		get
-		{
-			return probeMatchField;
-		}
-		set
-		{
-			probeMatchField = value;
-		}
-	}
+    [XmlElement("ProbeMatch")]
+    public ProbeMatchType[] ProbeMatch
+    {
+        get
+        {
+            return probeMatchField;
+        }
+        set
+        {
+            probeMatchField = value;
+        }
+    }
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

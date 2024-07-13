@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,103 +14,103 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlRoot("EndpointReference", Namespace = "http://schemas.xmlsoap.org/ws/2004/08/addressing", IsNullable = false)]
 public class EndpointReferenceType
 {
-	private AttributedURI addressField;
+    private AttributedURI addressField;
 
-	private ReferencePropertiesType referencePropertiesField;
+    private ReferencePropertiesType referencePropertiesField;
 
-	private ReferenceParametersType referenceParametersField;
+    private ReferenceParametersType referenceParametersField;
 
-	private AttributedQName portTypeField;
+    private AttributedQName portTypeField;
 
-	private ServiceNameType serviceNameField;
+    private ServiceNameType serviceNameField;
 
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	public AttributedURI Address
-	{
-		get
-		{
-			return addressField;
-		}
-		set
-		{
-			addressField = value;
-		}
-	}
+    public AttributedURI Address
+    {
+        get
+        {
+            return addressField;
+        }
+        set
+        {
+            addressField = value;
+        }
+    }
 
-	public ReferencePropertiesType ReferenceProperties
-	{
-		get
-		{
-			return referencePropertiesField;
-		}
-		set
-		{
-			referencePropertiesField = value;
-		}
-	}
+    public ReferencePropertiesType ReferenceProperties
+    {
+        get
+        {
+            return referencePropertiesField;
+        }
+        set
+        {
+            referencePropertiesField = value;
+        }
+    }
 
-	public ReferenceParametersType ReferenceParameters
-	{
-		get
-		{
-			return referenceParametersField;
-		}
-		set
-		{
-			referenceParametersField = value;
-		}
-	}
+    public ReferenceParametersType ReferenceParameters
+    {
+        get
+        {
+            return referenceParametersField;
+        }
+        set
+        {
+            referenceParametersField = value;
+        }
+    }
 
-	public AttributedQName PortType
-	{
-		get
-		{
-			return portTypeField;
-		}
-		set
-		{
-			portTypeField = value;
-		}
-	}
+    public AttributedQName PortType
+    {
+        get
+        {
+            return portTypeField;
+        }
+        set
+        {
+            portTypeField = value;
+        }
+    }
 
-	public ServiceNameType ServiceName
-	{
-		get
-		{
-			return serviceNameField;
-		}
-		set
-		{
-			serviceNameField = value;
-		}
-	}
+    public ServiceNameType ServiceName
+    {
+        get
+        {
+            return serviceNameField;
+        }
+        set
+        {
+            serviceNameField = value;
+        }
+    }
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

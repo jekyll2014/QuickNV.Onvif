@@ -9,36 +9,36 @@
 
 namespace QuickNV.Onvif.Security
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", ConfigurationName="Quick.Onvif.Security.AdvancedSecurityService")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", ConfigurationName = "Quick.Onvif.Security.AdvancedSecurityService")]
     public interface AdvancedSecurityService
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.Capabilities> GetServiceCapabilitiesAsync();
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class Capabilities
     {
-        
+
         private KeystoreCapabilities keystoreCapabilitiesField;
-        
+
         private TLSServerCapabilities tLSServerCapabilitiesField;
-        
+
         private Dot1XCapabilities dot1XCapabilitiesField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public KeystoreCapabilities KeystoreCapabilities
         {
             get
@@ -50,9 +50,9 @@ namespace QuickNV.Onvif.Security
                 this.keystoreCapabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public TLSServerCapabilities TLSServerCapabilities
         {
             get
@@ -64,9 +64,9 @@ namespace QuickNV.Onvif.Security
                 this.tLSServerCapabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Dot1XCapabilities Dot1XCapabilities
         {
             get
@@ -78,9 +78,9 @@ namespace QuickNV.Onvif.Security
                 this.dot1XCapabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -93,68 +93,68 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class KeystoreCapabilities
     {
-        
+
         private AlgorithmIdentifier[] signatureAlgorithmsField;
-        
+
         private KeystoreCapabilitiesAnyElement anyElementField;
-        
+
         private string maximumNumberOfKeysField;
-        
+
         private string maximumNumberOfCertificatesField;
-        
+
         private string maximumNumberOfCertificationPathsField;
-        
+
         private bool rSAKeyPairGenerationField;
-        
+
         private bool rSAKeyPairGenerationFieldSpecified;
-        
+
         private string[] rSAKeyLengthsField;
-        
+
         private bool pKCS10ExternalCertificationWithRSAField;
-        
+
         private bool pKCS10ExternalCertificationWithRSAFieldSpecified;
-        
+
         private bool selfSignedCertificateCreationWithRSAField;
-        
+
         private bool selfSignedCertificateCreationWithRSAFieldSpecified;
-        
+
         private int[] x509VersionsField;
-        
+
         private string maximumNumberOfPassphrasesField;
-        
+
         private bool pKCS8RSAKeyPairUploadField;
-        
+
         private bool pKCS8RSAKeyPairUploadFieldSpecified;
-        
+
         private bool pKCS12CertificateWithRSAPrivateKeyUploadField;
-        
+
         private bool pKCS12CertificateWithRSAPrivateKeyUploadFieldSpecified;
-        
+
         private string[] passwordBasedEncryptionAlgorithmsField;
-        
+
         private string[] passwordBasedMACAlgorithmsField;
-        
+
         private string maximumNumberOfCRLsField;
-        
+
         private string maximumNumberOfCertificationPathValidationPoliciesField;
-        
+
         private bool enforceTLSWebClientAuthExtKeyUsageField;
-        
+
         private bool enforceTLSWebClientAuthExtKeyUsageFieldSpecified;
-        
+
         private bool noPrivateKeySharingField;
-        
+
         private bool noPrivateKeySharingFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SignatureAlgorithms", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("SignatureAlgorithms", Order = 0)]
         public AlgorithmIdentifier[] SignatureAlgorithms
         {
             get
@@ -166,9 +166,9 @@ namespace QuickNV.Onvif.Security
                 this.signatureAlgorithmsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public KeystoreCapabilitiesAnyElement anyElement
         {
             get
@@ -180,9 +180,9 @@ namespace QuickNV.Onvif.Security
                 this.anyElementField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumNumberOfKeys
         {
             get
@@ -194,9 +194,9 @@ namespace QuickNV.Onvif.Security
                 this.maximumNumberOfKeysField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumNumberOfCertificates
         {
             get
@@ -208,9 +208,9 @@ namespace QuickNV.Onvif.Security
                 this.maximumNumberOfCertificatesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumNumberOfCertificationPaths
         {
             get
@@ -222,7 +222,7 @@ namespace QuickNV.Onvif.Security
                 this.maximumNumberOfCertificationPathsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool RSAKeyPairGeneration
@@ -236,7 +236,7 @@ namespace QuickNV.Onvif.Security
                 this.rSAKeyPairGenerationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RSAKeyPairGenerationSpecified
@@ -250,9 +250,9 @@ namespace QuickNV.Onvif.Security
                 this.rSAKeyPairGenerationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         public string[] RSAKeyLengths
         {
             get
@@ -264,7 +264,7 @@ namespace QuickNV.Onvif.Security
                 this.rSAKeyLengthsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool PKCS10ExternalCertificationWithRSA
@@ -278,7 +278,7 @@ namespace QuickNV.Onvif.Security
                 this.pKCS10ExternalCertificationWithRSAField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PKCS10ExternalCertificationWithRSASpecified
@@ -292,7 +292,7 @@ namespace QuickNV.Onvif.Security
                 this.pKCS10ExternalCertificationWithRSAFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool SelfSignedCertificateCreationWithRSA
@@ -306,7 +306,7 @@ namespace QuickNV.Onvif.Security
                 this.selfSignedCertificateCreationWithRSAField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SelfSignedCertificateCreationWithRSASpecified
@@ -320,7 +320,7 @@ namespace QuickNV.Onvif.Security
                 this.selfSignedCertificateCreationWithRSAFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int[] X509Versions
@@ -334,9 +334,9 @@ namespace QuickNV.Onvif.Security
                 this.x509VersionsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         public string MaximumNumberOfPassphrases
         {
             get
@@ -348,7 +348,7 @@ namespace QuickNV.Onvif.Security
                 this.maximumNumberOfPassphrasesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool PKCS8RSAKeyPairUpload
@@ -362,7 +362,7 @@ namespace QuickNV.Onvif.Security
                 this.pKCS8RSAKeyPairUploadField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PKCS8RSAKeyPairUploadSpecified
@@ -376,7 +376,7 @@ namespace QuickNV.Onvif.Security
                 this.pKCS8RSAKeyPairUploadFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool PKCS12CertificateWithRSAPrivateKeyUpload
@@ -390,7 +390,7 @@ namespace QuickNV.Onvif.Security
                 this.pKCS12CertificateWithRSAPrivateKeyUploadField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PKCS12CertificateWithRSAPrivateKeyUploadSpecified
@@ -404,7 +404,7 @@ namespace QuickNV.Onvif.Security
                 this.pKCS12CertificateWithRSAPrivateKeyUploadFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] PasswordBasedEncryptionAlgorithms
@@ -418,7 +418,7 @@ namespace QuickNV.Onvif.Security
                 this.passwordBasedEncryptionAlgorithmsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] PasswordBasedMACAlgorithms
@@ -432,9 +432,9 @@ namespace QuickNV.Onvif.Security
                 this.passwordBasedMACAlgorithmsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         public string MaximumNumberOfCRLs
         {
             get
@@ -446,9 +446,9 @@ namespace QuickNV.Onvif.Security
                 this.maximumNumberOfCRLsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         public string MaximumNumberOfCertificationPathValidationPolicies
         {
             get
@@ -460,7 +460,7 @@ namespace QuickNV.Onvif.Security
                 this.maximumNumberOfCertificationPathValidationPoliciesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool EnforceTLSWebClientAuthExtKeyUsage
@@ -474,7 +474,7 @@ namespace QuickNV.Onvif.Security
                 this.enforceTLSWebClientAuthExtKeyUsageField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool EnforceTLSWebClientAuthExtKeyUsageSpecified
@@ -488,7 +488,7 @@ namespace QuickNV.Onvif.Security
                 this.enforceTLSWebClientAuthExtKeyUsageFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool NoPrivateKeySharing
@@ -502,7 +502,7 @@ namespace QuickNV.Onvif.Security
                 this.noPrivateKeySharingField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool NoPrivateKeySharingSpecified
@@ -517,22 +517,22 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class AlgorithmIdentifier
     {
-        
+
         private string algorithmField;
-        
+
         private byte[] parametersField;
-        
+
         private AlgorithmIdentifierAnyParameters anyParametersField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string algorithm
         {
             get
@@ -544,9 +544,9 @@ namespace QuickNV.Onvif.Security
                 this.algorithmField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary", Order = 1)]
         public byte[] parameters
         {
             get
@@ -558,9 +558,9 @@ namespace QuickNV.Onvif.Security
                 this.parametersField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public AlgorithmIdentifierAnyParameters anyParameters
         {
             get
@@ -573,18 +573,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class AlgorithmIdentifierAnyParameters
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -597,18 +597,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class Dot1XStageExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -621,28 +621,28 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class Dot1XStage
     {
-        
+
         private string identityField;
-        
+
         private string certificationPathIDField;
-        
+
         private string passphraseIDField;
-        
+
         private Dot1XStage innerField;
-        
+
         private Dot1XStageExtension extensionField;
-        
+
         private string methodField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Identity
         {
             get
@@ -654,9 +654,9 @@ namespace QuickNV.Onvif.Security
                 this.identityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 1)]
         public string CertificationPathID
         {
             get
@@ -668,9 +668,9 @@ namespace QuickNV.Onvif.Security
                 this.certificationPathIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 2)]
         public string PassphraseID
         {
             get
@@ -682,9 +682,9 @@ namespace QuickNV.Onvif.Security
                 this.passphraseIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public Dot1XStage Inner
         {
             get
@@ -696,9 +696,9 @@ namespace QuickNV.Onvif.Security
                 this.innerField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public Dot1XStageExtension Extension
         {
             get
@@ -710,7 +710,7 @@ namespace QuickNV.Onvif.Security
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Method
@@ -725,24 +725,24 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class Dot1XConfiguration
     {
-        
+
         private string dot1XIDField;
-        
+
         private string aliasField;
-        
+
         private Dot1XStage outerField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 0)]
         public string Dot1XID
         {
             get
@@ -754,9 +754,9 @@ namespace QuickNV.Onvif.Security
                 this.dot1XIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Alias
         {
             get
@@ -768,9 +768,9 @@ namespace QuickNV.Onvif.Security
                 this.aliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Dot1XStage Outer
         {
             get
@@ -782,9 +782,9 @@ namespace QuickNV.Onvif.Security
                 this.outerField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -797,26 +797,26 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CertPathValidationPolicy
     {
-        
+
         private string certPathValidationPolicyIDField;
-        
+
         private string aliasField;
-        
+
         private CertPathValidationParameters parametersField;
-        
+
         private TrustAnchor[] trustAnchorField;
-        
+
         private CertPathValidationPolicyAnyParameters anyParametersField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 0)]
         public string CertPathValidationPolicyID
         {
             get
@@ -828,9 +828,9 @@ namespace QuickNV.Onvif.Security
                 this.certPathValidationPolicyIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Alias
         {
             get
@@ -842,9 +842,9 @@ namespace QuickNV.Onvif.Security
                 this.aliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public CertPathValidationParameters Parameters
         {
             get
@@ -856,9 +856,9 @@ namespace QuickNV.Onvif.Security
                 this.parametersField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TrustAnchor", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute("TrustAnchor", Order = 3)]
         public TrustAnchor[] TrustAnchor
         {
             get
@@ -870,9 +870,9 @@ namespace QuickNV.Onvif.Security
                 this.trustAnchorField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public CertPathValidationPolicyAnyParameters anyParameters
         {
             get
@@ -885,28 +885,28 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CertPathValidationParameters
     {
-        
+
         private bool requireTLSWWWClientAuthExtendedKeyUsageField;
-        
+
         private bool useDeltaCRLsField;
-        
+
         private CertPathValidationParametersAnyParameters anyParametersField;
-        
+
         public CertPathValidationParameters()
         {
             this.requireTLSWWWClientAuthExtendedKeyUsageField = false;
             this.useDeltaCRLsField = false;
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         [System.ComponentModel.DefaultValueAttribute(false)]
         public bool RequireTLSWWWClientAuthExtendedKeyUsage
         {
@@ -919,9 +919,9 @@ namespace QuickNV.Onvif.Security
                 this.requireTLSWWWClientAuthExtendedKeyUsageField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         [System.ComponentModel.DefaultValueAttribute(false)]
         public bool UseDeltaCRLs
         {
@@ -934,9 +934,9 @@ namespace QuickNV.Onvif.Security
                 this.useDeltaCRLsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public CertPathValidationParametersAnyParameters anyParameters
         {
             get
@@ -949,18 +949,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CertPathValidationParametersAnyParameters
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -973,20 +973,20 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class TrustAnchor
     {
-        
+
         private string certificateIDField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 0)]
         public string CertificateID
         {
             get
@@ -998,9 +998,9 @@ namespace QuickNV.Onvif.Security
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1013,18 +1013,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CertPathValidationPolicyAnyParameters
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1037,24 +1037,24 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CRL
     {
-        
+
         private string cRLIDField;
-        
+
         private string aliasField;
-        
+
         private byte[] cRLContentField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 0)]
         public string CRLID
         {
             get
@@ -1066,9 +1066,9 @@ namespace QuickNV.Onvif.Security
                 this.cRLIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Alias
         {
             get
@@ -1080,9 +1080,9 @@ namespace QuickNV.Onvif.Security
                 this.aliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary", Order = 2)]
         public byte[] CRLContent
         {
             get
@@ -1094,9 +1094,9 @@ namespace QuickNV.Onvif.Security
                 this.cRLContentField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1109,22 +1109,22 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class PassphraseAttribute
     {
-        
+
         private string passphraseIDField;
-        
+
         private string aliasField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 0)]
         public string PassphraseID
         {
             get
@@ -1136,9 +1136,9 @@ namespace QuickNV.Onvif.Security
                 this.passphraseIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Alias
         {
             get
@@ -1150,9 +1150,9 @@ namespace QuickNV.Onvif.Security
                 this.aliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1165,22 +1165,22 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CertificationPath
     {
-        
+
         private string[] certificateIDField;
-        
+
         private string aliasField;
-        
+
         private CertificationPathAnyElement anyElementField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CertificateID", DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CertificateID", DataType = "NCName", Order = 0)]
         public string[] CertificateID
         {
             get
@@ -1192,9 +1192,9 @@ namespace QuickNV.Onvif.Security
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Alias
         {
             get
@@ -1206,9 +1206,9 @@ namespace QuickNV.Onvif.Security
                 this.aliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public CertificationPathAnyElement anyElement
         {
             get
@@ -1221,18 +1221,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CertificationPathAnyElement
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1245,18 +1245,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CertificateIDs
     {
-        
+
         private string[] certificateIDField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CertificateID", DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CertificateID", DataType = "NCName", Order = 0)]
         public string[] CertificateID
         {
             get
@@ -1269,26 +1269,26 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class X509Certificate
     {
-        
+
         private string certificateIDField;
-        
+
         private string keyIDField;
-        
+
         private string aliasField;
-        
+
         private byte[] certificateContentField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 0)]
         public string CertificateID
         {
             get
@@ -1300,9 +1300,9 @@ namespace QuickNV.Onvif.Security
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 1)]
         public string KeyID
         {
             get
@@ -1314,9 +1314,9 @@ namespace QuickNV.Onvif.Security
                 this.keyIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string Alias
         {
             get
@@ -1328,9 +1328,9 @@ namespace QuickNV.Onvif.Security
                 this.aliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary", Order = 3)]
         public byte[] CertificateContent
         {
             get
@@ -1342,9 +1342,9 @@ namespace QuickNV.Onvif.Security
                 this.certificateContentField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1357,22 +1357,22 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class BasicRequestAttribute
     {
-        
+
         private string oIDField;
-        
+
         private byte[] valueField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string OID
         {
             get
@@ -1384,9 +1384,9 @@ namespace QuickNV.Onvif.Security
                 this.oIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary", Order = 1)]
         public byte[] value
         {
             get
@@ -1398,9 +1398,9 @@ namespace QuickNV.Onvif.Security
                 this.valueField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1413,29 +1413,29 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class X509v3Extension
     {
-        
+
         private string extnOIDField;
-        
+
         private bool criticalField;
-        
+
         private byte[] extnValueField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         public X509v3Extension()
         {
             this.criticalField = false;
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string extnOID
         {
             get
@@ -1447,9 +1447,9 @@ namespace QuickNV.Onvif.Security
                 this.extnOIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool critical
         {
             get
@@ -1461,9 +1461,9 @@ namespace QuickNV.Onvif.Security
                 this.criticalField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary", Order = 2)]
         public byte[] extnValue
         {
             get
@@ -1475,9 +1475,9 @@ namespace QuickNV.Onvif.Security
                 this.extnValueField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1490,20 +1490,20 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CSRAttribute
     {
-        
+
         private object itemField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BasicRequestAttribute", typeof(BasicRequestAttribute), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("X509v3Extension", typeof(X509v3Extension), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("anyAttribute", typeof(CSRAttributeAnyAttribute), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("BasicRequestAttribute", typeof(BasicRequestAttribute), Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("X509v3Extension", typeof(X509v3Extension), Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("anyAttribute", typeof(CSRAttributeAnyAttribute), Order = 0)]
         public object Item
         {
             get
@@ -1516,18 +1516,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CSRAttributeAnyAttribute
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1540,22 +1540,22 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class DNAttributeTypeAndValue
     {
-        
+
         private string typeField;
-        
+
         private string valueField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Type
         {
             get
@@ -1567,9 +1567,9 @@ namespace QuickNV.Onvif.Security
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Value
         {
             get
@@ -1581,9 +1581,9 @@ namespace QuickNV.Onvif.Security
                 this.valueField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1596,50 +1596,50 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class DistinguishedName
     {
-        
+
         private string[] countryField;
-        
+
         private string[] organizationField;
-        
+
         private string[] organizationalUnitField;
-        
+
         private string[] distinguishedNameQualifierField;
-        
+
         private string[] stateOrProvinceNameField;
-        
+
         private string[] commonNameField;
-        
+
         private string[] serialNumberField;
-        
+
         private string[] localityField;
-        
+
         private string[] titleField;
-        
+
         private string[] surnameField;
-        
+
         private string[] givenNameField;
-        
+
         private string[] initialsField;
-        
+
         private string[] pseudonymField;
-        
+
         private string[] generationQualifierField;
-        
+
         private DNAttributeTypeAndValue[] genericAttributeField;
-        
+
         private DNAttributeTypeAndValue[][] multiValuedRDNField;
-        
+
         private DistinguishedNameAnyAttribute anyAttributeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Country", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Country", Order = 0)]
         public string[] Country
         {
             get
@@ -1651,9 +1651,9 @@ namespace QuickNV.Onvif.Security
                 this.countryField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Organization", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Organization", Order = 1)]
         public string[] Organization
         {
             get
@@ -1665,9 +1665,9 @@ namespace QuickNV.Onvif.Security
                 this.organizationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OrganizationalUnit", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("OrganizationalUnit", Order = 2)]
         public string[] OrganizationalUnit
         {
             get
@@ -1679,9 +1679,9 @@ namespace QuickNV.Onvif.Security
                 this.organizationalUnitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DistinguishedNameQualifier", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute("DistinguishedNameQualifier", Order = 3)]
         public string[] DistinguishedNameQualifier
         {
             get
@@ -1693,9 +1693,9 @@ namespace QuickNV.Onvif.Security
                 this.distinguishedNameQualifierField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("StateOrProvinceName", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute("StateOrProvinceName", Order = 4)]
         public string[] StateOrProvinceName
         {
             get
@@ -1707,9 +1707,9 @@ namespace QuickNV.Onvif.Security
                 this.stateOrProvinceNameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CommonName", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute("CommonName", Order = 5)]
         public string[] CommonName
         {
             get
@@ -1721,9 +1721,9 @@ namespace QuickNV.Onvif.Security
                 this.commonNameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SerialNumber", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute("SerialNumber", Order = 6)]
         public string[] SerialNumber
         {
             get
@@ -1735,9 +1735,9 @@ namespace QuickNV.Onvif.Security
                 this.serialNumberField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Locality", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute("Locality", Order = 7)]
         public string[] Locality
         {
             get
@@ -1749,9 +1749,9 @@ namespace QuickNV.Onvif.Security
                 this.localityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Title", Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute("Title", Order = 8)]
         public string[] Title
         {
             get
@@ -1763,9 +1763,9 @@ namespace QuickNV.Onvif.Security
                 this.titleField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Surname", Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute("Surname", Order = 9)]
         public string[] Surname
         {
             get
@@ -1777,9 +1777,9 @@ namespace QuickNV.Onvif.Security
                 this.surnameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("GivenName", Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute("GivenName", Order = 10)]
         public string[] GivenName
         {
             get
@@ -1791,9 +1791,9 @@ namespace QuickNV.Onvif.Security
                 this.givenNameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Initials", Order=11)]
+        [System.Xml.Serialization.XmlElementAttribute("Initials", Order = 11)]
         public string[] Initials
         {
             get
@@ -1805,9 +1805,9 @@ namespace QuickNV.Onvif.Security
                 this.initialsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Pseudonym", Order=12)]
+        [System.Xml.Serialization.XmlElementAttribute("Pseudonym", Order = 12)]
         public string[] Pseudonym
         {
             get
@@ -1819,9 +1819,9 @@ namespace QuickNV.Onvif.Security
                 this.pseudonymField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("GenerationQualifier", Order=13)]
+        [System.Xml.Serialization.XmlElementAttribute("GenerationQualifier", Order = 13)]
         public string[] GenerationQualifier
         {
             get
@@ -1833,9 +1833,9 @@ namespace QuickNV.Onvif.Security
                 this.generationQualifierField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("GenericAttribute", Order=14)]
+        [System.Xml.Serialization.XmlElementAttribute("GenericAttribute", Order = 14)]
         public DNAttributeTypeAndValue[] GenericAttribute
         {
             get
@@ -1847,10 +1847,10 @@ namespace QuickNV.Onvif.Security
                 this.genericAttributeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=15)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("Attribute", typeof(DNAttributeTypeAndValue), IsNullable=false)]
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 15)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Attribute", typeof(DNAttributeTypeAndValue), IsNullable = false)]
         public DNAttributeTypeAndValue[][] MultiValuedRDN
         {
             get
@@ -1862,9 +1862,9 @@ namespace QuickNV.Onvif.Security
                 this.multiValuedRDNField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 16)]
         public DistinguishedNameAnyAttribute anyAttribute
         {
             get
@@ -1877,20 +1877,20 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class DistinguishedNameAnyAttribute
     {
-        
+
         private string[] domainComponentField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DomainComponent", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("DomainComponent", Order = 0)]
         public string[] DomainComponent
         {
             get
@@ -1902,9 +1902,9 @@ namespace QuickNV.Onvif.Security
                 this.domainComponentField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1917,38 +1917,38 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class KeyAttribute
     {
-        
+
         private string keyIDField;
-        
+
         private string aliasField;
-        
+
         private bool hasPrivateKeyField;
-        
+
         private bool hasPrivateKeyFieldSpecified;
-        
+
         private string keyStatusField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool externallyGeneratedField;
-        
+
         private bool externallyGeneratedFieldSpecified;
-        
+
         private bool securelyStoredField;
-        
+
         private bool securelyStoredFieldSpecified;
-        
+
         private KeyAttributeExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName", Order = 0)]
         public string KeyID
         {
             get
@@ -1960,9 +1960,9 @@ namespace QuickNV.Onvif.Security
                 this.keyIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Alias
         {
             get
@@ -1974,9 +1974,9 @@ namespace QuickNV.Onvif.Security
                 this.aliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool hasPrivateKey
         {
             get
@@ -1988,7 +1988,7 @@ namespace QuickNV.Onvif.Security
                 this.hasPrivateKeyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool hasPrivateKeySpecified
@@ -2002,9 +2002,9 @@ namespace QuickNV.Onvif.Security
                 this.hasPrivateKeyFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public string KeyStatus
         {
             get
@@ -2016,9 +2016,9 @@ namespace QuickNV.Onvif.Security
                 this.keyStatusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2030,9 +2030,9 @@ namespace QuickNV.Onvif.Security
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public bool externallyGenerated
         {
             get
@@ -2044,7 +2044,7 @@ namespace QuickNV.Onvif.Security
                 this.externallyGeneratedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool externallyGeneratedSpecified
@@ -2058,9 +2058,9 @@ namespace QuickNV.Onvif.Security
                 this.externallyGeneratedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public bool securelyStored
         {
             get
@@ -2072,7 +2072,7 @@ namespace QuickNV.Onvif.Security
                 this.securelyStoredField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool securelyStoredSpecified
@@ -2086,9 +2086,9 @@ namespace QuickNV.Onvif.Security
                 this.securelyStoredFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public KeyAttributeExtension Extension
         {
             get
@@ -2101,18 +2101,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class KeyAttributeExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2125,22 +2125,22 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class Dot1XCapabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string maximumNumberOfDot1XConfigurationsField;
-        
+
         private string[] dot1XMethodsField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2152,9 +2152,9 @@ namespace QuickNV.Onvif.Security
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumNumberOfDot1XConfigurations
         {
             get
@@ -2166,7 +2166,7 @@ namespace QuickNV.Onvif.Security
                 this.maximumNumberOfDot1XConfigurationsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] Dot1XMethods
@@ -2181,36 +2181,36 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class TLSServerCapabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string[] tLSServerSupportedField;
-        
+
         private bool enabledVersionsSupportedField;
-        
+
         private bool enabledVersionsSupportedFieldSpecified;
-        
+
         private string maximumNumberOfTLSCertificationPathsField;
-        
+
         private bool tLSClientAuthSupportedField;
-        
+
         private bool tLSClientAuthSupportedFieldSpecified;
-        
+
         private bool cnMapsToUserSupportedField;
-        
+
         private bool cnMapsToUserSupportedFieldSpecified;
-        
+
         private string maximumNumberOfTLSCertificationPathValidationPoliciesField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2222,7 +2222,7 @@ namespace QuickNV.Onvif.Security
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] TLSServerSupported
@@ -2236,7 +2236,7 @@ namespace QuickNV.Onvif.Security
                 this.tLSServerSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool EnabledVersionsSupported
@@ -2250,7 +2250,7 @@ namespace QuickNV.Onvif.Security
                 this.enabledVersionsSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool EnabledVersionsSupportedSpecified
@@ -2264,9 +2264,9 @@ namespace QuickNV.Onvif.Security
                 this.enabledVersionsSupportedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumNumberOfTLSCertificationPaths
         {
             get
@@ -2278,7 +2278,7 @@ namespace QuickNV.Onvif.Security
                 this.maximumNumberOfTLSCertificationPathsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool TLSClientAuthSupported
@@ -2292,7 +2292,7 @@ namespace QuickNV.Onvif.Security
                 this.tLSClientAuthSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool TLSClientAuthSupportedSpecified
@@ -2306,7 +2306,7 @@ namespace QuickNV.Onvif.Security
                 this.tLSClientAuthSupportedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool CnMapsToUserSupported
@@ -2320,7 +2320,7 @@ namespace QuickNV.Onvif.Security
                 this.cnMapsToUserSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool CnMapsToUserSupportedSpecified
@@ -2334,9 +2334,9 @@ namespace QuickNV.Onvif.Security
                 this.cnMapsToUserSupportedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         public string MaximumNumberOfTLSCertificationPathValidationPolicies
         {
             get
@@ -2349,18 +2349,18 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class KeystoreCapabilitiesAnyElement
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2373,230 +2373,230 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface AdvancedSecurityServiceChannel : QuickNV.Onvif.Security.AdvancedSecurityService, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class AdvancedSecurityServiceClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Security.AdvancedSecurityService>, QuickNV.Onvif.Security.AdvancedSecurityService
     {
-        
-        public AdvancedSecurityServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public AdvancedSecurityServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.Capabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", ConfigurationName="Quick.Onvif.Security.Keystore")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", ConfigurationName = "Quick.Onvif.Security.Keystore")]
     public interface Keystore
     {
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/CreateRSAKeyPair", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/CreateRSAKeyPair", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateRSAKeyPairResponse> CreateRSAKeyPairAsync(QuickNV.Onvif.Security.CreateRSAKeyPairRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadKeyPairInPKCS8", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadKeyPairInPKCS8", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadKeyPairInPKCS8Response> UploadKeyPairInPKCS8Async(QuickNV.Onvif.Security.UploadKeyPairInPKCS8Request request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadCertificateWithPrivateKeyI" +
-            "nPKCS12", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadCertificateWithPrivateKeyI" +
+            "nPKCS12", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadCertificateWithPrivateKeyInPKCS12Response> UploadCertificateWithPrivateKeyInPKCS12Async(QuickNV.Onvif.Security.UploadCertificateWithPrivateKeyInPKCS12Request request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetKeyStatus", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetKeyStatus", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetKeyStatusResponse> GetKeyStatusAsync(QuickNV.Onvif.Security.GetKeyStatusRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetPrivateKeyStatus", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetPrivateKeyStatus", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetPrivateKeyStatusResponse> GetPrivateKeyStatusAsync(QuickNV.Onvif.Security.GetPrivateKeyStatusRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllKeys", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllKeys", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllKeysResponse> GetAllKeysAsync(QuickNV.Onvif.Security.GetAllKeysRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteKey", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteKey", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteKeyResponse> DeleteKeyAsync(QuickNV.Onvif.Security.DeleteKeyRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/CreatePKCS10CSR", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/CreatePKCS10CSR", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreatePKCS10CSRResponse> CreatePKCS10CSRAsync(QuickNV.Onvif.Security.CreatePKCS10CSRRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/CreateSelfSignedCertificate", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/CreateSelfSignedCertificate", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateSelfSignedCertificateResponse> CreateSelfSignedCertificateAsync(QuickNV.Onvif.Security.CreateSelfSignedCertificateRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadCertificate", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadCertificate", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadCertificateResponse> UploadCertificateAsync(QuickNV.Onvif.Security.UploadCertificateRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCertificate", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCertificate", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertificateResponse> GetCertificateAsync(QuickNV.Onvif.Security.GetCertificateRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllCertificates", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllCertificates", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertificatesResponse> GetAllCertificatesAsync(QuickNV.Onvif.Security.GetAllCertificatesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteCertificate", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteCertificate", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertificateResponse> DeleteCertificateAsync(QuickNV.Onvif.Security.DeleteCertificateRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/CreateCertificationPath", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/CreateCertificationPath", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateCertificationPathResponse> CreateCertificationPathAsync(QuickNV.Onvif.Security.CreateCertificationPathRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCertificationPath", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCertificationPath", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertificationPathResponse> GetCertificationPathAsync(QuickNV.Onvif.Security.GetCertificationPathRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllCertificationPaths", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllCertificationPaths", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertificationPathsResponse> GetAllCertificationPathsAsync(QuickNV.Onvif.Security.GetAllCertificationPathsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteCertificationPath", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteCertificationPath", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertificationPathResponse> DeleteCertificationPathAsync(QuickNV.Onvif.Security.DeleteCertificationPathRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadPassphrase", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadPassphrase", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadPassphraseResponse> UploadPassphraseAsync(QuickNV.Onvif.Security.UploadPassphraseRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllPassphrases", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllPassphrases", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllPassphrasesResponse> GetAllPassphrasesAsync(QuickNV.Onvif.Security.GetAllPassphrasesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/DeletePassphrase", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/DeletePassphrase", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeletePassphraseResponse> DeletePassphraseAsync(QuickNV.Onvif.Security.DeletePassphraseRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadCRL", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/UploadCRL", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadCRLResponse> UploadCRLAsync(QuickNV.Onvif.Security.UploadCRLRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCRL", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCRL", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCRLResponse> GetCRLAsync(QuickNV.Onvif.Security.GetCRLRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllCRLs", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllCRLs", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCRLsResponse> GetAllCRLsAsync(QuickNV.Onvif.Security.GetAllCRLsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteCRL", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteCRL", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCRLResponse> DeleteCRLAsync(QuickNV.Onvif.Security.DeleteCRLRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/CreateCertPathValidationPolicy", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/CreateCertPathValidationPolicy", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateCertPathValidationPolicyResponse> CreateCertPathValidationPolicyAsync(QuickNV.Onvif.Security.CreateCertPathValidationPolicyRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCertPathValidationPolicy", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCertPathValidationPolicy", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertPathValidationPolicyResponse> GetCertPathValidationPolicyAsync(QuickNV.Onvif.Security.GetCertPathValidationPolicyRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllCertPathValidationPolicies" +
-            "", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllCertPathValidationPolicies" +
+            "", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertPathValidationPoliciesResponse> GetAllCertPathValidationPoliciesAsync(QuickNV.Onvif.Security.GetAllCertPathValidationPoliciesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteCertPathValidationPolicy", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteCertPathValidationPolicy", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertPathValidationPolicyResponse> DeleteCertPathValidationPolicyAsync(QuickNV.Onvif.Security.DeleteCertPathValidationPolicyRequest request);
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateRSAKeyPair", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateRSAKeyPair", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreateRSAKeyPairRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="nonNegativeInteger")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "nonNegativeInteger")]
         public string KeyLength;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public string Alias;
-        
+
         public CreateRSAKeyPairRequest()
         {
         }
-        
+
         public CreateRSAKeyPairRequest(string KeyLength, string Alias)
         {
             this.KeyLength = KeyLength;
             this.Alias = Alias;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateRSAKeyPairResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateRSAKeyPairResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreateRSAKeyPairResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string EstimatedCreationTime;
-        
+
         public CreateRSAKeyPairResponse()
         {
         }
-        
+
         public CreateRSAKeyPairResponse(string KeyID, string EstimatedCreationTime)
         {
             this.KeyID = KeyID;
             this.EstimatedCreationTime = EstimatedCreationTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadKeyPairInPKCS8", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadKeyPairInPKCS8", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadKeyPairInPKCS8Request
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] KeyPair;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public string Alias;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string EncryptionPassphraseID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 3)]
         public string EncryptionPassphrase;
-        
+
         public UploadKeyPairInPKCS8Request()
         {
         }
-        
+
         public UploadKeyPairInPKCS8Request(byte[] KeyPair, string Alias, string EncryptionPassphraseID, string EncryptionPassphrase)
         {
             this.KeyPair = KeyPair;
@@ -2605,63 +2605,63 @@ namespace QuickNV.Onvif.Security
             this.EncryptionPassphrase = EncryptionPassphrase;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadKeyPairInPKCS8Response", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadKeyPairInPKCS8Response", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadKeyPairInPKCS8Response
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
+
         public UploadKeyPairInPKCS8Response()
         {
         }
-        
+
         public UploadKeyPairInPKCS8Response(string KeyID)
         {
             this.KeyID = KeyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadCertificateWithPrivateKeyInPKCS12", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadCertificateWithPrivateKeyInPKCS12", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadCertificateWithPrivateKeyInPKCS12Request
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] CertWithPrivateKey;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public string CertificationPathAlias;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 2)]
         public string KeyAlias;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 3)]
         [System.ComponentModel.DefaultValueAttribute(false)]
         public bool IgnoreAdditionalCertificates;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 4)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string IntegrityPassphraseID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 5)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string EncryptionPassphraseID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=6)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 6)]
         public string Passphrase;
-        
+
         public UploadCertificateWithPrivateKeyInPKCS12Request()
         {
         }
-        
+
         public UploadCertificateWithPrivateKeyInPKCS12Request(byte[] CertWithPrivateKey, string CertificationPathAlias, string KeyAlias, bool IgnoreAdditionalCertificates, string IntegrityPassphraseID, string EncryptionPassphraseID, string Passphrase)
         {
             this.CertWithPrivateKey = CertWithPrivateKey;
@@ -2673,205 +2673,205 @@ namespace QuickNV.Onvif.Security
             this.Passphrase = Passphrase;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadCertificateWithPrivateKeyInPKCS12Response", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadCertificateWithPrivateKeyInPKCS12Response", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadCertificateWithPrivateKeyInPKCS12Response
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificationPathID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
+
         public UploadCertificateWithPrivateKeyInPKCS12Response()
         {
         }
-        
+
         public UploadCertificateWithPrivateKeyInPKCS12Response(string CertificationPathID, string KeyID)
         {
             this.CertificationPathID = CertificationPathID;
             this.KeyID = KeyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetKeyStatus", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetKeyStatus", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetKeyStatusRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
+
         public GetKeyStatusRequest()
         {
         }
-        
+
         public GetKeyStatusRequest(string KeyID)
         {
             this.KeyID = KeyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetKeyStatusResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetKeyStatusResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetKeyStatusResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public string KeyStatus;
-        
+
         public GetKeyStatusResponse()
         {
         }
-        
+
         public GetKeyStatusResponse(string KeyStatus)
         {
             this.KeyStatus = KeyStatus;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPrivateKeyStatus", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPrivateKeyStatus", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetPrivateKeyStatusRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
+
         public GetPrivateKeyStatusRequest()
         {
         }
-        
+
         public GetPrivateKeyStatusRequest(string KeyID)
         {
             this.KeyID = KeyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPrivateKeyStatusResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPrivateKeyStatusResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetPrivateKeyStatusResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public bool hasPrivateKey;
-        
+
         public GetPrivateKeyStatusResponse()
         {
         }
-        
+
         public GetPrivateKeyStatusResponse(bool hasPrivateKey)
         {
             this.hasPrivateKey = hasPrivateKey;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllKeys", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllKeys", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllKeysRequest
     {
-        
+
         public GetAllKeysRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllKeysResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllKeysResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllKeysResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("KeyAttribute")]
         public QuickNV.Onvif.Security.KeyAttribute[] KeyAttribute;
-        
+
         public GetAllKeysResponse()
         {
         }
-        
+
         public GetAllKeysResponse(QuickNV.Onvif.Security.KeyAttribute[] KeyAttribute)
         {
             this.KeyAttribute = KeyAttribute;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteKey", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteKey", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteKeyRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
+
         public DeleteKeyRequest()
         {
         }
-        
+
         public DeleteKeyRequest(string KeyID)
         {
             this.KeyID = KeyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteKeyResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteKeyResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteKeyResponse
     {
-        
+
         public DeleteKeyResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreatePKCS10CSR", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreatePKCS10CSR", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreatePKCS10CSRRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public QuickNV.Onvif.Security.DistinguishedName Subject;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 2)]
         [System.Xml.Serialization.XmlElementAttribute("CSRAttribute")]
         public QuickNV.Onvif.Security.CSRAttribute[] CSRAttribute;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 3)]
         public QuickNV.Onvif.Security.AlgorithmIdentifier SignatureAlgorithm;
-        
+
         public CreatePKCS10CSRRequest()
         {
         }
-        
+
         public CreatePKCS10CSRRequest(QuickNV.Onvif.Security.DistinguishedName Subject, string KeyID, QuickNV.Onvif.Security.CSRAttribute[] CSRAttribute, QuickNV.Onvif.Security.AlgorithmIdentifier SignatureAlgorithm)
         {
             this.Subject = Subject;
@@ -2880,66 +2880,66 @@ namespace QuickNV.Onvif.Security
             this.SignatureAlgorithm = SignatureAlgorithm;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreatePKCS10CSRResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreatePKCS10CSRResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreatePKCS10CSRResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] PKCS10CSR;
-        
+
         public CreatePKCS10CSRResponse()
         {
         }
-        
+
         public CreatePKCS10CSRResponse(byte[] PKCS10CSR)
         {
             this.PKCS10CSR = PKCS10CSR;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateSelfSignedCertificate", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateSelfSignedCertificate", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreateSelfSignedCertificateRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "positiveInteger")]
         public string X509Version;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public QuickNV.Onvif.Security.DistinguishedName Subject;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 3)]
         public string Alias;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 4)]
         public System.DateTime notValidBefore;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=5)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 5)]
         public System.DateTime notValidAfter;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=6)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 6)]
         public QuickNV.Onvif.Security.AlgorithmIdentifier SignatureAlgorithm;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=7)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 7)]
         [System.Xml.Serialization.XmlElementAttribute("Extension")]
         public QuickNV.Onvif.Security.X509v3Extension[] Extension;
-        
+
         public CreateSelfSignedCertificateRequest()
         {
         }
-        
+
         public CreateSelfSignedCertificateRequest(string X509Version, QuickNV.Onvif.Security.DistinguishedName Subject, string KeyID, string Alias, System.DateTime notValidBefore, System.DateTime notValidAfter, QuickNV.Onvif.Security.AlgorithmIdentifier SignatureAlgorithm, QuickNV.Onvif.Security.X509v3Extension[] Extension)
         {
             this.X509Version = X509Version;
@@ -2952,52 +2952,52 @@ namespace QuickNV.Onvif.Security
             this.Extension = Extension;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateSelfSignedCertificateResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateSelfSignedCertificateResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreateSelfSignedCertificateResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificateID;
-        
+
         public CreateSelfSignedCertificateResponse()
         {
         }
-        
+
         public CreateSelfSignedCertificateResponse(string CertificateID)
         {
             this.CertificateID = CertificateID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadCertificate", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadCertificate", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadCertificateRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] Certificate;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public string Alias;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 2)]
         public string KeyAlias;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 3)]
         [System.ComponentModel.DefaultValueAttribute(false)]
         public bool PrivateKeyRequired;
-        
+
         public UploadCertificateRequest()
         {
         }
-        
+
         public UploadCertificateRequest(byte[] Certificate, string Alias, string KeyAlias, bool PrivateKeyRequired)
         {
             this.Certificate = Certificate;
@@ -3006,413 +3006,413 @@ namespace QuickNV.Onvif.Security
             this.PrivateKeyRequired = PrivateKeyRequired;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadCertificateResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadCertificateResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadCertificateResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificateID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string KeyID;
-        
+
         public UploadCertificateResponse()
         {
         }
-        
+
         public UploadCertificateResponse(string CertificateID, string KeyID)
         {
             this.CertificateID = CertificateID;
             this.KeyID = KeyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificate", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificate", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetCertificateRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificateID;
-        
+
         public GetCertificateRequest()
         {
         }
-        
+
         public GetCertificateRequest(string CertificateID)
         {
             this.CertificateID = CertificateID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificateResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificateResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetCertificateResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public QuickNV.Onvif.Security.X509Certificate Certificate;
-        
+
         public GetCertificateResponse()
         {
         }
-        
+
         public GetCertificateResponse(QuickNV.Onvif.Security.X509Certificate Certificate)
         {
             this.Certificate = Certificate;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllCertificates", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllCertificates", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllCertificatesRequest
     {
-        
+
         public GetAllCertificatesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllCertificatesResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllCertificatesResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllCertificatesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Certificate")]
         public QuickNV.Onvif.Security.X509Certificate[] Certificate;
-        
+
         public GetAllCertificatesResponse()
         {
         }
-        
+
         public GetAllCertificatesResponse(QuickNV.Onvif.Security.X509Certificate[] Certificate)
         {
             this.Certificate = Certificate;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCertificate", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCertificate", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteCertificateRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificateID;
-        
+
         public DeleteCertificateRequest()
         {
         }
-        
+
         public DeleteCertificateRequest(string CertificateID)
         {
             this.CertificateID = CertificateID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCertificateResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCertificateResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteCertificateResponse
     {
-        
+
         public DeleteCertificateResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateCertificationPath", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateCertificationPath", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreateCertificationPathRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public QuickNV.Onvif.Security.CertificateIDs CertificateIDs;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public string Alias;
-        
+
         public CreateCertificationPathRequest()
         {
         }
-        
+
         public CreateCertificationPathRequest(QuickNV.Onvif.Security.CertificateIDs CertificateIDs, string Alias)
         {
             this.CertificateIDs = CertificateIDs;
             this.Alias = Alias;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateCertificationPathResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateCertificationPathResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreateCertificationPathResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificationPathID;
-        
+
         public CreateCertificationPathResponse()
         {
         }
-        
+
         public CreateCertificationPathResponse(string CertificationPathID)
         {
             this.CertificationPathID = CertificationPathID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificationPath", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificationPath", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetCertificationPathRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificationPathID;
-        
+
         public GetCertificationPathRequest()
         {
         }
-        
+
         public GetCertificationPathRequest(string CertificationPathID)
         {
             this.CertificationPathID = CertificationPathID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificationPathResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificationPathResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetCertificationPathResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public QuickNV.Onvif.Security.CertificationPath CertificationPath;
-        
+
         public GetCertificationPathResponse()
         {
         }
-        
+
         public GetCertificationPathResponse(QuickNV.Onvif.Security.CertificationPath CertificationPath)
         {
             this.CertificationPath = CertificationPath;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllCertificationPaths", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllCertificationPaths", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllCertificationPathsRequest
     {
-        
+
         public GetAllCertificationPathsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllCertificationPathsResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllCertificationPathsResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllCertificationPathsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CertificationPathID", DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("CertificationPathID", DataType = "NCName")]
         public string[] CertificationPathID;
-        
+
         public GetAllCertificationPathsResponse()
         {
         }
-        
+
         public GetAllCertificationPathsResponse(string[] CertificationPathID)
         {
             this.CertificationPathID = CertificationPathID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCertificationPath", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCertificationPath", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteCertificationPathRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificationPathID;
-        
+
         public DeleteCertificationPathRequest()
         {
         }
-        
+
         public DeleteCertificationPathRequest(string CertificationPathID)
         {
             this.CertificationPathID = CertificationPathID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCertificationPathResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCertificationPathResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteCertificationPathResponse
     {
-        
+
         public DeleteCertificationPathResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadPassphrase", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadPassphrase", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadPassphraseRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public string Passphrase;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public string PassphraseAlias;
-        
+
         public UploadPassphraseRequest()
         {
         }
-        
+
         public UploadPassphraseRequest(string Passphrase, string PassphraseAlias)
         {
             this.Passphrase = Passphrase;
             this.PassphraseAlias = PassphraseAlias;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadPassphraseResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadPassphraseResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadPassphraseResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string PassphraseID;
-        
+
         public UploadPassphraseResponse()
         {
         }
-        
+
         public UploadPassphraseResponse(string PassphraseID)
         {
             this.PassphraseID = PassphraseID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllPassphrases", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllPassphrases", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllPassphrasesRequest
     {
-        
+
         public GetAllPassphrasesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllPassphrasesResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllPassphrasesResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllPassphrasesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("PassphraseAttribute")]
         public QuickNV.Onvif.Security.PassphraseAttribute[] PassphraseAttribute;
-        
+
         public GetAllPassphrasesResponse()
         {
         }
-        
+
         public GetAllPassphrasesResponse(QuickNV.Onvif.Security.PassphraseAttribute[] PassphraseAttribute)
         {
             this.PassphraseAttribute = PassphraseAttribute;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeletePassphrase", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeletePassphrase", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeletePassphraseRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string PassphraseID;
-        
+
         public DeletePassphraseRequest()
         {
         }
-        
+
         public DeletePassphraseRequest(string PassphraseID)
         {
             this.PassphraseID = PassphraseID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeletePassphraseResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeletePassphraseResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeletePassphraseResponse
     {
-        
+
         public DeletePassphraseResponse()
         {
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class UploadCRLAnyParameters
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -3425,28 +3425,28 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadCRL", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadCRL", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadCRLRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
         public byte[] Crl;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public string Alias;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 2)]
         public QuickNV.Onvif.Security.UploadCRLAnyParameters anyParameters;
-        
+
         public UploadCRLRequest()
         {
         }
-        
+
         public UploadCRLRequest(byte[] Crl, string Alias, QuickNV.Onvif.Security.UploadCRLAnyParameters anyParameters)
         {
             this.Crl = Crl;
@@ -3454,146 +3454,146 @@ namespace QuickNV.Onvif.Security
             this.anyParameters = anyParameters;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadCRLResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "UploadCRLResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class UploadCRLResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CrlID;
-        
+
         public UploadCRLResponse()
         {
         }
-        
+
         public UploadCRLResponse(string CrlID)
         {
             this.CrlID = CrlID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCRL", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCRL", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetCRLRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CrlID;
-        
+
         public GetCRLRequest()
         {
         }
-        
+
         public GetCRLRequest(string CrlID)
         {
             this.CrlID = CrlID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCRLResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCRLResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetCRLResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public QuickNV.Onvif.Security.CRL Crl;
-        
+
         public GetCRLResponse()
         {
         }
-        
+
         public GetCRLResponse(QuickNV.Onvif.Security.CRL Crl)
         {
             this.Crl = Crl;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllCRLs", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllCRLs", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllCRLsRequest
     {
-        
+
         public GetAllCRLsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllCRLsResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllCRLsResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllCRLsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Crl")]
         public QuickNV.Onvif.Security.CRL[] Crl;
-        
+
         public GetAllCRLsResponse()
         {
         }
-        
+
         public GetAllCRLsResponse(QuickNV.Onvif.Security.CRL[] Crl)
         {
             this.Crl = Crl;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCRL", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCRL", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteCRLRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CrlID;
-        
+
         public DeleteCRLRequest()
         {
         }
-        
+
         public DeleteCRLRequest(string CrlID)
         {
             this.CrlID = CrlID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCRLResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCRLResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteCRLResponse
     {
-        
+
         public DeleteCRLResponse()
         {
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl")]
     public partial class CreateCertPathValidationPolicyAnyParameters
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -3606,31 +3606,31 @@ namespace QuickNV.Onvif.Security
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateCertPathValidationPolicy", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateCertPathValidationPolicy", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreateCertPathValidationPolicyRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public string Alias;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
         public QuickNV.Onvif.Security.CertPathValidationParameters Parameters;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 2)]
         [System.Xml.Serialization.XmlElementAttribute("TrustAnchor")]
         public QuickNV.Onvif.Security.TrustAnchor[] TrustAnchor;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 3)]
         public QuickNV.Onvif.Security.CreateCertPathValidationPolicyAnyParameters anyParameters;
-        
+
         public CreateCertPathValidationPolicyRequest()
         {
         }
-        
+
         public CreateCertPathValidationPolicyRequest(string Alias, QuickNV.Onvif.Security.CertPathValidationParameters Parameters, QuickNV.Onvif.Security.TrustAnchor[] TrustAnchor, QuickNV.Onvif.Security.CreateCertPathValidationPolicyAnyParameters anyParameters)
         {
             this.Alias = Alias;
@@ -3639,161 +3639,161 @@ namespace QuickNV.Onvif.Security
             this.anyParameters = anyParameters;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateCertPathValidationPolicyResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateCertPathValidationPolicyResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class CreateCertPathValidationPolicyResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertPathValidationPolicyID;
-        
+
         public CreateCertPathValidationPolicyResponse()
         {
         }
-        
+
         public CreateCertPathValidationPolicyResponse(string CertPathValidationPolicyID)
         {
             this.CertPathValidationPolicyID = CertPathValidationPolicyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertPathValidationPolicy", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertPathValidationPolicy", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetCertPathValidationPolicyRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertPathValidationPolicyID;
-        
+
         public GetCertPathValidationPolicyRequest()
         {
         }
-        
+
         public GetCertPathValidationPolicyRequest(string CertPathValidationPolicyID)
         {
             this.CertPathValidationPolicyID = CertPathValidationPolicyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertPathValidationPolicyResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertPathValidationPolicyResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetCertPathValidationPolicyResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public QuickNV.Onvif.Security.CertPathValidationPolicy CertPathValidationPolicy;
-        
+
         public GetCertPathValidationPolicyResponse()
         {
         }
-        
+
         public GetCertPathValidationPolicyResponse(QuickNV.Onvif.Security.CertPathValidationPolicy CertPathValidationPolicy)
         {
             this.CertPathValidationPolicy = CertPathValidationPolicy;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllCertPathValidationPolicies", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllCertPathValidationPolicies", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllCertPathValidationPoliciesRequest
     {
-        
+
         public GetAllCertPathValidationPoliciesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllCertPathValidationPoliciesResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllCertPathValidationPoliciesResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllCertPathValidationPoliciesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("CertPathValidationPolicy")]
         public QuickNV.Onvif.Security.CertPathValidationPolicy[] CertPathValidationPolicy;
-        
+
         public GetAllCertPathValidationPoliciesResponse()
         {
         }
-        
+
         public GetAllCertPathValidationPoliciesResponse(QuickNV.Onvif.Security.CertPathValidationPolicy[] CertPathValidationPolicy)
         {
             this.CertPathValidationPolicy = CertPathValidationPolicy;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCertPathValidationPolicy", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCertPathValidationPolicy", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteCertPathValidationPolicyRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertPathValidationPolicyID;
-        
+
         public DeleteCertPathValidationPolicyRequest()
         {
         }
-        
+
         public DeleteCertPathValidationPolicyRequest(string CertPathValidationPolicyID)
         {
             this.CertPathValidationPolicyID = CertPathValidationPolicyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCertPathValidationPolicyResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCertPathValidationPolicyResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteCertPathValidationPolicyResponse
     {
-        
+
         public DeleteCertPathValidationPolicyResponse()
         {
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface KeystoreChannel : QuickNV.Onvif.Security.Keystore, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class KeystoreClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Security.Keystore>, QuickNV.Onvif.Security.Keystore
     {
-        
-        public KeystoreClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public KeystoreClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateRSAKeyPairResponse> CreateRSAKeyPairAsync(QuickNV.Onvif.Security.CreateRSAKeyPairRequest request)
         {
             return base.Channel.CreateRSAKeyPairAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadKeyPairInPKCS8Response> QuickNV.Onvif.Security.Keystore.UploadKeyPairInPKCS8Async(QuickNV.Onvif.Security.UploadKeyPairInPKCS8Request request)
         {
             return base.Channel.UploadKeyPairInPKCS8Async(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadKeyPairInPKCS8Response> UploadKeyPairInPKCS8Async(byte[] KeyPair, string Alias, string EncryptionPassphraseID, string EncryptionPassphrase)
         {
             QuickNV.Onvif.Security.UploadKeyPairInPKCS8Request inValue = new QuickNV.Onvif.Security.UploadKeyPairInPKCS8Request();
@@ -3803,69 +3803,69 @@ namespace QuickNV.Onvif.Security
             inValue.EncryptionPassphrase = EncryptionPassphrase;
             return ((QuickNV.Onvif.Security.Keystore)(this)).UploadKeyPairInPKCS8Async(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadCertificateWithPrivateKeyInPKCS12Response> UploadCertificateWithPrivateKeyInPKCS12Async(QuickNV.Onvif.Security.UploadCertificateWithPrivateKeyInPKCS12Request request)
         {
             return base.Channel.UploadCertificateWithPrivateKeyInPKCS12Async(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetKeyStatusResponse> QuickNV.Onvif.Security.Keystore.GetKeyStatusAsync(QuickNV.Onvif.Security.GetKeyStatusRequest request)
         {
             return base.Channel.GetKeyStatusAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetKeyStatusResponse> GetKeyStatusAsync(string KeyID)
         {
             QuickNV.Onvif.Security.GetKeyStatusRequest inValue = new QuickNV.Onvif.Security.GetKeyStatusRequest();
             inValue.KeyID = KeyID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetKeyStatusAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetPrivateKeyStatusResponse> QuickNV.Onvif.Security.Keystore.GetPrivateKeyStatusAsync(QuickNV.Onvif.Security.GetPrivateKeyStatusRequest request)
         {
             return base.Channel.GetPrivateKeyStatusAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetPrivateKeyStatusResponse> GetPrivateKeyStatusAsync(string KeyID)
         {
             QuickNV.Onvif.Security.GetPrivateKeyStatusRequest inValue = new QuickNV.Onvif.Security.GetPrivateKeyStatusRequest();
             inValue.KeyID = KeyID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetPrivateKeyStatusAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllKeysResponse> QuickNV.Onvif.Security.Keystore.GetAllKeysAsync(QuickNV.Onvif.Security.GetAllKeysRequest request)
         {
             return base.Channel.GetAllKeysAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllKeysResponse> GetAllKeysAsync()
         {
             QuickNV.Onvif.Security.GetAllKeysRequest inValue = new QuickNV.Onvif.Security.GetAllKeysRequest();
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetAllKeysAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteKeyResponse> QuickNV.Onvif.Security.Keystore.DeleteKeyAsync(QuickNV.Onvif.Security.DeleteKeyRequest request)
         {
             return base.Channel.DeleteKeyAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteKeyResponse> DeleteKeyAsync(string KeyID)
         {
             QuickNV.Onvif.Security.DeleteKeyRequest inValue = new QuickNV.Onvif.Security.DeleteKeyRequest();
             inValue.KeyID = KeyID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).DeleteKeyAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreatePKCS10CSRResponse> QuickNV.Onvif.Security.Keystore.CreatePKCS10CSRAsync(QuickNV.Onvif.Security.CreatePKCS10CSRRequest request)
         {
             return base.Channel.CreatePKCS10CSRAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreatePKCS10CSRResponse> CreatePKCS10CSRAsync(QuickNV.Onvif.Security.DistinguishedName Subject, string KeyID, QuickNV.Onvif.Security.CSRAttribute[] CSRAttribute, QuickNV.Onvif.Security.AlgorithmIdentifier SignatureAlgorithm)
         {
             QuickNV.Onvif.Security.CreatePKCS10CSRRequest inValue = new QuickNV.Onvif.Security.CreatePKCS10CSRRequest();
@@ -3875,13 +3875,13 @@ namespace QuickNV.Onvif.Security
             inValue.SignatureAlgorithm = SignatureAlgorithm;
             return ((QuickNV.Onvif.Security.Keystore)(this)).CreatePKCS10CSRAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateSelfSignedCertificateResponse> QuickNV.Onvif.Security.Keystore.CreateSelfSignedCertificateAsync(QuickNV.Onvif.Security.CreateSelfSignedCertificateRequest request)
         {
             return base.Channel.CreateSelfSignedCertificateAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateSelfSignedCertificateResponse> CreateSelfSignedCertificateAsync(string X509Version, QuickNV.Onvif.Security.DistinguishedName Subject, string KeyID, string Alias, System.DateTime notValidBefore, System.DateTime notValidAfter, QuickNV.Onvif.Security.AlgorithmIdentifier SignatureAlgorithm, QuickNV.Onvif.Security.X509v3Extension[] Extension)
         {
             QuickNV.Onvif.Security.CreateSelfSignedCertificateRequest inValue = new QuickNV.Onvif.Security.CreateSelfSignedCertificateRequest();
@@ -3895,56 +3895,56 @@ namespace QuickNV.Onvif.Security
             inValue.Extension = Extension;
             return ((QuickNV.Onvif.Security.Keystore)(this)).CreateSelfSignedCertificateAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadCertificateResponse> UploadCertificateAsync(QuickNV.Onvif.Security.UploadCertificateRequest request)
         {
             return base.Channel.UploadCertificateAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertificateResponse> QuickNV.Onvif.Security.Keystore.GetCertificateAsync(QuickNV.Onvif.Security.GetCertificateRequest request)
         {
             return base.Channel.GetCertificateAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertificateResponse> GetCertificateAsync(string CertificateID)
         {
             QuickNV.Onvif.Security.GetCertificateRequest inValue = new QuickNV.Onvif.Security.GetCertificateRequest();
             inValue.CertificateID = CertificateID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetCertificateAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertificatesResponse> QuickNV.Onvif.Security.Keystore.GetAllCertificatesAsync(QuickNV.Onvif.Security.GetAllCertificatesRequest request)
         {
             return base.Channel.GetAllCertificatesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertificatesResponse> GetAllCertificatesAsync()
         {
             QuickNV.Onvif.Security.GetAllCertificatesRequest inValue = new QuickNV.Onvif.Security.GetAllCertificatesRequest();
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetAllCertificatesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertificateResponse> QuickNV.Onvif.Security.Keystore.DeleteCertificateAsync(QuickNV.Onvif.Security.DeleteCertificateRequest request)
         {
             return base.Channel.DeleteCertificateAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertificateResponse> DeleteCertificateAsync(string CertificateID)
         {
             QuickNV.Onvif.Security.DeleteCertificateRequest inValue = new QuickNV.Onvif.Security.DeleteCertificateRequest();
             inValue.CertificateID = CertificateID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).DeleteCertificateAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateCertificationPathResponse> QuickNV.Onvif.Security.Keystore.CreateCertificationPathAsync(QuickNV.Onvif.Security.CreateCertificationPathRequest request)
         {
             return base.Channel.CreateCertificationPathAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateCertificationPathResponse> CreateCertificationPathAsync(QuickNV.Onvif.Security.CertificateIDs CertificateIDs, string Alias)
         {
             QuickNV.Onvif.Security.CreateCertificationPathRequest inValue = new QuickNV.Onvif.Security.CreateCertificationPathRequest();
@@ -3952,51 +3952,51 @@ namespace QuickNV.Onvif.Security
             inValue.Alias = Alias;
             return ((QuickNV.Onvif.Security.Keystore)(this)).CreateCertificationPathAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertificationPathResponse> QuickNV.Onvif.Security.Keystore.GetCertificationPathAsync(QuickNV.Onvif.Security.GetCertificationPathRequest request)
         {
             return base.Channel.GetCertificationPathAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertificationPathResponse> GetCertificationPathAsync(string CertificationPathID)
         {
             QuickNV.Onvif.Security.GetCertificationPathRequest inValue = new QuickNV.Onvif.Security.GetCertificationPathRequest();
             inValue.CertificationPathID = CertificationPathID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetCertificationPathAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertificationPathsResponse> QuickNV.Onvif.Security.Keystore.GetAllCertificationPathsAsync(QuickNV.Onvif.Security.GetAllCertificationPathsRequest request)
         {
             return base.Channel.GetAllCertificationPathsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertificationPathsResponse> GetAllCertificationPathsAsync()
         {
             QuickNV.Onvif.Security.GetAllCertificationPathsRequest inValue = new QuickNV.Onvif.Security.GetAllCertificationPathsRequest();
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetAllCertificationPathsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertificationPathResponse> QuickNV.Onvif.Security.Keystore.DeleteCertificationPathAsync(QuickNV.Onvif.Security.DeleteCertificationPathRequest request)
         {
             return base.Channel.DeleteCertificationPathAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertificationPathResponse> DeleteCertificationPathAsync(string CertificationPathID)
         {
             QuickNV.Onvif.Security.DeleteCertificationPathRequest inValue = new QuickNV.Onvif.Security.DeleteCertificationPathRequest();
             inValue.CertificationPathID = CertificationPathID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).DeleteCertificationPathAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadPassphraseResponse> QuickNV.Onvif.Security.Keystore.UploadPassphraseAsync(QuickNV.Onvif.Security.UploadPassphraseRequest request)
         {
             return base.Channel.UploadPassphraseAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadPassphraseResponse> UploadPassphraseAsync(string Passphrase, string PassphraseAlias)
         {
             QuickNV.Onvif.Security.UploadPassphraseRequest inValue = new QuickNV.Onvif.Security.UploadPassphraseRequest();
@@ -4004,38 +4004,38 @@ namespace QuickNV.Onvif.Security
             inValue.PassphraseAlias = PassphraseAlias;
             return ((QuickNV.Onvif.Security.Keystore)(this)).UploadPassphraseAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllPassphrasesResponse> QuickNV.Onvif.Security.Keystore.GetAllPassphrasesAsync(QuickNV.Onvif.Security.GetAllPassphrasesRequest request)
         {
             return base.Channel.GetAllPassphrasesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllPassphrasesResponse> GetAllPassphrasesAsync()
         {
             QuickNV.Onvif.Security.GetAllPassphrasesRequest inValue = new QuickNV.Onvif.Security.GetAllPassphrasesRequest();
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetAllPassphrasesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeletePassphraseResponse> QuickNV.Onvif.Security.Keystore.DeletePassphraseAsync(QuickNV.Onvif.Security.DeletePassphraseRequest request)
         {
             return base.Channel.DeletePassphraseAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeletePassphraseResponse> DeletePassphraseAsync(string PassphraseID)
         {
             QuickNV.Onvif.Security.DeletePassphraseRequest inValue = new QuickNV.Onvif.Security.DeletePassphraseRequest();
             inValue.PassphraseID = PassphraseID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).DeletePassphraseAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadCRLResponse> QuickNV.Onvif.Security.Keystore.UploadCRLAsync(QuickNV.Onvif.Security.UploadCRLRequest request)
         {
             return base.Channel.UploadCRLAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.UploadCRLResponse> UploadCRLAsync(byte[] Crl, string Alias, QuickNV.Onvif.Security.UploadCRLAnyParameters anyParameters)
         {
             QuickNV.Onvif.Security.UploadCRLRequest inValue = new QuickNV.Onvif.Security.UploadCRLRequest();
@@ -4044,51 +4044,51 @@ namespace QuickNV.Onvif.Security
             inValue.anyParameters = anyParameters;
             return ((QuickNV.Onvif.Security.Keystore)(this)).UploadCRLAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCRLResponse> QuickNV.Onvif.Security.Keystore.GetCRLAsync(QuickNV.Onvif.Security.GetCRLRequest request)
         {
             return base.Channel.GetCRLAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCRLResponse> GetCRLAsync(string CrlID)
         {
             QuickNV.Onvif.Security.GetCRLRequest inValue = new QuickNV.Onvif.Security.GetCRLRequest();
             inValue.CrlID = CrlID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetCRLAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCRLsResponse> QuickNV.Onvif.Security.Keystore.GetAllCRLsAsync(QuickNV.Onvif.Security.GetAllCRLsRequest request)
         {
             return base.Channel.GetAllCRLsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCRLsResponse> GetAllCRLsAsync()
         {
             QuickNV.Onvif.Security.GetAllCRLsRequest inValue = new QuickNV.Onvif.Security.GetAllCRLsRequest();
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetAllCRLsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCRLResponse> QuickNV.Onvif.Security.Keystore.DeleteCRLAsync(QuickNV.Onvif.Security.DeleteCRLRequest request)
         {
             return base.Channel.DeleteCRLAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCRLResponse> DeleteCRLAsync(string CrlID)
         {
             QuickNV.Onvif.Security.DeleteCRLRequest inValue = new QuickNV.Onvif.Security.DeleteCRLRequest();
             inValue.CrlID = CrlID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).DeleteCRLAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateCertPathValidationPolicyResponse> QuickNV.Onvif.Security.Keystore.CreateCertPathValidationPolicyAsync(QuickNV.Onvif.Security.CreateCertPathValidationPolicyRequest request)
         {
             return base.Channel.CreateCertPathValidationPolicyAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.CreateCertPathValidationPolicyResponse> CreateCertPathValidationPolicyAsync(string Alias, QuickNV.Onvif.Security.CertPathValidationParameters Parameters, QuickNV.Onvif.Security.TrustAnchor[] TrustAnchor, QuickNV.Onvif.Security.CreateCertPathValidationPolicyAnyParameters anyParameters)
         {
             QuickNV.Onvif.Security.CreateCertPathValidationPolicyRequest inValue = new QuickNV.Onvif.Security.CreateCertPathValidationPolicyRequest();
@@ -4098,443 +4098,443 @@ namespace QuickNV.Onvif.Security
             inValue.anyParameters = anyParameters;
             return ((QuickNV.Onvif.Security.Keystore)(this)).CreateCertPathValidationPolicyAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertPathValidationPolicyResponse> QuickNV.Onvif.Security.Keystore.GetCertPathValidationPolicyAsync(QuickNV.Onvif.Security.GetCertPathValidationPolicyRequest request)
         {
             return base.Channel.GetCertPathValidationPolicyAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetCertPathValidationPolicyResponse> GetCertPathValidationPolicyAsync(string CertPathValidationPolicyID)
         {
             QuickNV.Onvif.Security.GetCertPathValidationPolicyRequest inValue = new QuickNV.Onvif.Security.GetCertPathValidationPolicyRequest();
             inValue.CertPathValidationPolicyID = CertPathValidationPolicyID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetCertPathValidationPolicyAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertPathValidationPoliciesResponse> QuickNV.Onvif.Security.Keystore.GetAllCertPathValidationPoliciesAsync(QuickNV.Onvif.Security.GetAllCertPathValidationPoliciesRequest request)
         {
             return base.Channel.GetAllCertPathValidationPoliciesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllCertPathValidationPoliciesResponse> GetAllCertPathValidationPoliciesAsync()
         {
             QuickNV.Onvif.Security.GetAllCertPathValidationPoliciesRequest inValue = new QuickNV.Onvif.Security.GetAllCertPathValidationPoliciesRequest();
             return ((QuickNV.Onvif.Security.Keystore)(this)).GetAllCertPathValidationPoliciesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertPathValidationPolicyResponse> QuickNV.Onvif.Security.Keystore.DeleteCertPathValidationPolicyAsync(QuickNV.Onvif.Security.DeleteCertPathValidationPolicyRequest request)
         {
             return base.Channel.DeleteCertPathValidationPolicyAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteCertPathValidationPolicyResponse> DeleteCertPathValidationPolicyAsync(string CertPathValidationPolicyID)
         {
             QuickNV.Onvif.Security.DeleteCertPathValidationPolicyRequest inValue = new QuickNV.Onvif.Security.DeleteCertPathValidationPolicyRequest();
             inValue.CertPathValidationPolicyID = CertPathValidationPolicyID;
             return ((QuickNV.Onvif.Security.Keystore)(this)).DeleteCertPathValidationPolicyAsync(inValue);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", ConfigurationName="Quick.Onvif.Security.TLSServer")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", ConfigurationName = "Quick.Onvif.Security.TLSServer")]
     public interface TLSServer
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/AddServerCertificateAssignment", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/AddServerCertificateAssignment", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddServerCertificateAssignmentResponse> AddServerCertificateAssignmentAsync(QuickNV.Onvif.Security.AddServerCertificateAssignmentRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/RemoveServerCertificateAssignmen" +
-            "t", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/RemoveServerCertificateAssignmen" +
+            "t", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.RemoveServerCertificateAssignmentResponse> RemoveServerCertificateAssignmentAsync(QuickNV.Onvif.Security.RemoveServerCertificateAssignmentRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/ReplaceServerCertificateAssignme" +
-            "nt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/ReplaceServerCertificateAssignme" +
+            "nt", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.ReplaceServerCertificateAssignmentResponse> ReplaceServerCertificateAssignmentAsync(QuickNV.Onvif.Security.ReplaceServerCertificateAssignmentRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/SetEnabledTLSVersions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/SetEnabledTLSVersions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetEnabledTLSVersionsAsync(string Versions);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetEnabledTLSVersions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Versions")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetEnabledTLSVersions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Versions")]
         System.Threading.Tasks.Task<string> GetEnabledTLSVersionsAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAssignedServerCertificates", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAssignedServerCertificates", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAssignedServerCertificatesResponse> GetAssignedServerCertificatesAsync(QuickNV.Onvif.Security.GetAssignedServerCertificatesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/SetClientAuthenticationRequired", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/SetClientAuthenticationRequired", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetClientAuthenticationRequiredAsync(bool clientAuthenticationRequired);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetClientAuthenticationRequired", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="clientAuthenticationRequired")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetClientAuthenticationRequired", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "clientAuthenticationRequired")]
         System.Threading.Tasks.Task<bool> GetClientAuthenticationRequiredAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/SetCnMapsToUser", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/SetCnMapsToUser", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetCnMapsToUserAsync(bool cnMapsToUser);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCnMapsToUser", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="cnMapsToUser")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetCnMapsToUser", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "cnMapsToUser")]
         System.Threading.Tasks.Task<bool> GetCnMapsToUserAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/AddCertPathValidationPolicyAssig" +
-            "nment", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/AddCertPathValidationPolicyAssig" +
+            "nment", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddCertPathValidationPolicyAssignmentResponse> AddCertPathValidationPolicyAssignmentAsync(QuickNV.Onvif.Security.AddCertPathValidationPolicyAssignmentRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/RemoveCertPathValidationPolicyAs" +
-            "signment", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/RemoveCertPathValidationPolicyAs" +
+            "signment", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.RemoveCertPathValidationPolicyAssignmentResponse> RemoveCertPathValidationPolicyAssignmentAsync(QuickNV.Onvif.Security.RemoveCertPathValidationPolicyAssignmentRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/ReplaceCertPathValidationPolicyA" +
-            "ssignment", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/ReplaceCertPathValidationPolicyA" +
+            "ssignment", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.ReplaceCertPathValidationPolicyAssignmentResponse> ReplaceCertPathValidationPolicyAssignmentAsync(QuickNV.Onvif.Security.ReplaceCertPathValidationPolicyAssignmentRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAssignedCertPathValidationPol" +
-            "icies", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAssignedCertPathValidationPol" +
+            "icies", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAssignedCertPathValidationPoliciesResponse> GetAssignedCertPathValidationPoliciesAsync(QuickNV.Onvif.Security.GetAssignedCertPathValidationPoliciesRequest request);
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddServerCertificateAssignment", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AddServerCertificateAssignment", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class AddServerCertificateAssignmentRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificationPathID;
-        
+
         public AddServerCertificateAssignmentRequest()
         {
         }
-        
+
         public AddServerCertificateAssignmentRequest(string CertificationPathID)
         {
             this.CertificationPathID = CertificationPathID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddServerCertificateAssignmentResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AddServerCertificateAssignmentResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class AddServerCertificateAssignmentResponse
     {
-        
+
         public AddServerCertificateAssignmentResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveServerCertificateAssignment", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveServerCertificateAssignment", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class RemoveServerCertificateAssignmentRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertificationPathID;
-        
+
         public RemoveServerCertificateAssignmentRequest()
         {
         }
-        
+
         public RemoveServerCertificateAssignmentRequest(string CertificationPathID)
         {
             this.CertificationPathID = CertificationPathID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveServerCertificateAssignmentResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveServerCertificateAssignmentResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class RemoveServerCertificateAssignmentResponse
     {
-        
+
         public RemoveServerCertificateAssignmentResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReplaceServerCertificateAssignment", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ReplaceServerCertificateAssignment", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class ReplaceServerCertificateAssignmentRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string OldCertificationPathID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string NewCertificationPathID;
-        
+
         public ReplaceServerCertificateAssignmentRequest()
         {
         }
-        
+
         public ReplaceServerCertificateAssignmentRequest(string OldCertificationPathID, string NewCertificationPathID)
         {
             this.OldCertificationPathID = OldCertificationPathID;
             this.NewCertificationPathID = NewCertificationPathID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReplaceServerCertificateAssignmentResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ReplaceServerCertificateAssignmentResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class ReplaceServerCertificateAssignmentResponse
     {
-        
+
         public ReplaceServerCertificateAssignmentResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAssignedServerCertificates", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAssignedServerCertificates", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAssignedServerCertificatesRequest
     {
-        
+
         public GetAssignedServerCertificatesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAssignedServerCertificatesResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAssignedServerCertificatesResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAssignedServerCertificatesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CertificationPathID", DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("CertificationPathID", DataType = "NCName")]
         public string[] CertificationPathID;
-        
+
         public GetAssignedServerCertificatesResponse()
         {
         }
-        
+
         public GetAssignedServerCertificatesResponse(string[] CertificationPathID)
         {
             this.CertificationPathID = CertificationPathID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddCertPathValidationPolicyAssignment", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AddCertPathValidationPolicyAssignment", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class AddCertPathValidationPolicyAssignmentRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertPathValidationPolicyID;
-        
+
         public AddCertPathValidationPolicyAssignmentRequest()
         {
         }
-        
+
         public AddCertPathValidationPolicyAssignmentRequest(string CertPathValidationPolicyID)
         {
             this.CertPathValidationPolicyID = CertPathValidationPolicyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddCertPathValidationPolicyAssignmentResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AddCertPathValidationPolicyAssignmentResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class AddCertPathValidationPolicyAssignmentResponse
     {
-        
+
         public AddCertPathValidationPolicyAssignmentResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveCertPathValidationPolicyAssignment", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveCertPathValidationPolicyAssignment", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class RemoveCertPathValidationPolicyAssignmentRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string CertPathValidationPolicyID;
-        
+
         public RemoveCertPathValidationPolicyAssignmentRequest()
         {
         }
-        
+
         public RemoveCertPathValidationPolicyAssignmentRequest(string CertPathValidationPolicyID)
         {
             this.CertPathValidationPolicyID = CertPathValidationPolicyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveCertPathValidationPolicyAssignmentResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveCertPathValidationPolicyAssignmentResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class RemoveCertPathValidationPolicyAssignmentResponse
     {
-        
+
         public RemoveCertPathValidationPolicyAssignmentResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReplaceCertPathValidationPolicyAssignment", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ReplaceCertPathValidationPolicyAssignment", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class ReplaceCertPathValidationPolicyAssignmentRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string OldCertPathValidationPolicyID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string NewCertPathValidationPolicyID;
-        
+
         public ReplaceCertPathValidationPolicyAssignmentRequest()
         {
         }
-        
+
         public ReplaceCertPathValidationPolicyAssignmentRequest(string OldCertPathValidationPolicyID, string NewCertPathValidationPolicyID)
         {
             this.OldCertPathValidationPolicyID = OldCertPathValidationPolicyID;
             this.NewCertPathValidationPolicyID = NewCertPathValidationPolicyID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReplaceCertPathValidationPolicyAssignmentResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ReplaceCertPathValidationPolicyAssignmentResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class ReplaceCertPathValidationPolicyAssignmentResponse
     {
-        
+
         public ReplaceCertPathValidationPolicyAssignmentResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAssignedCertPathValidationPolicies", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAssignedCertPathValidationPolicies", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAssignedCertPathValidationPoliciesRequest
     {
-        
+
         public GetAssignedCertPathValidationPoliciesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAssignedCertPathValidationPoliciesResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAssignedCertPathValidationPoliciesResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAssignedCertPathValidationPoliciesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CertPathValidationPolicyID", DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("CertPathValidationPolicyID", DataType = "NCName")]
         public string[] CertPathValidationPolicyID;
-        
+
         public GetAssignedCertPathValidationPoliciesResponse()
         {
         }
-        
+
         public GetAssignedCertPathValidationPoliciesResponse(string[] CertPathValidationPolicyID)
         {
             this.CertPathValidationPolicyID = CertPathValidationPolicyID;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface TLSServerChannel : QuickNV.Onvif.Security.TLSServer, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class TLSServerClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Security.TLSServer>, QuickNV.Onvif.Security.TLSServer
     {
-        
-        public TLSServerClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public TLSServerClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddServerCertificateAssignmentResponse> QuickNV.Onvif.Security.TLSServer.AddServerCertificateAssignmentAsync(QuickNV.Onvif.Security.AddServerCertificateAssignmentRequest request)
         {
             return base.Channel.AddServerCertificateAssignmentAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddServerCertificateAssignmentResponse> AddServerCertificateAssignmentAsync(string CertificationPathID)
         {
             QuickNV.Onvif.Security.AddServerCertificateAssignmentRequest inValue = new QuickNV.Onvif.Security.AddServerCertificateAssignmentRequest();
             inValue.CertificationPathID = CertificationPathID;
             return ((QuickNV.Onvif.Security.TLSServer)(this)).AddServerCertificateAssignmentAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.RemoveServerCertificateAssignmentResponse> QuickNV.Onvif.Security.TLSServer.RemoveServerCertificateAssignmentAsync(QuickNV.Onvif.Security.RemoveServerCertificateAssignmentRequest request)
         {
             return base.Channel.RemoveServerCertificateAssignmentAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.RemoveServerCertificateAssignmentResponse> RemoveServerCertificateAssignmentAsync(string CertificationPathID)
         {
             QuickNV.Onvif.Security.RemoveServerCertificateAssignmentRequest inValue = new QuickNV.Onvif.Security.RemoveServerCertificateAssignmentRequest();
             inValue.CertificationPathID = CertificationPathID;
             return ((QuickNV.Onvif.Security.TLSServer)(this)).RemoveServerCertificateAssignmentAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.ReplaceServerCertificateAssignmentResponse> QuickNV.Onvif.Security.TLSServer.ReplaceServerCertificateAssignmentAsync(QuickNV.Onvif.Security.ReplaceServerCertificateAssignmentRequest request)
         {
             return base.Channel.ReplaceServerCertificateAssignmentAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.ReplaceServerCertificateAssignmentResponse> ReplaceServerCertificateAssignmentAsync(string OldCertificationPathID, string NewCertificationPathID)
         {
             QuickNV.Onvif.Security.ReplaceServerCertificateAssignmentRequest inValue = new QuickNV.Onvif.Security.ReplaceServerCertificateAssignmentRequest();
@@ -4542,81 +4542,81 @@ namespace QuickNV.Onvif.Security
             inValue.NewCertificationPathID = NewCertificationPathID;
             return ((QuickNV.Onvif.Security.TLSServer)(this)).ReplaceServerCertificateAssignmentAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task SetEnabledTLSVersionsAsync(string Versions)
         {
             return base.Channel.SetEnabledTLSVersionsAsync(Versions);
         }
-        
+
         public System.Threading.Tasks.Task<string> GetEnabledTLSVersionsAsync()
         {
             return base.Channel.GetEnabledTLSVersionsAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAssignedServerCertificatesResponse> QuickNV.Onvif.Security.TLSServer.GetAssignedServerCertificatesAsync(QuickNV.Onvif.Security.GetAssignedServerCertificatesRequest request)
         {
             return base.Channel.GetAssignedServerCertificatesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAssignedServerCertificatesResponse> GetAssignedServerCertificatesAsync()
         {
             QuickNV.Onvif.Security.GetAssignedServerCertificatesRequest inValue = new QuickNV.Onvif.Security.GetAssignedServerCertificatesRequest();
             return ((QuickNV.Onvif.Security.TLSServer)(this)).GetAssignedServerCertificatesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task SetClientAuthenticationRequiredAsync(bool clientAuthenticationRequired)
         {
             return base.Channel.SetClientAuthenticationRequiredAsync(clientAuthenticationRequired);
         }
-        
+
         public System.Threading.Tasks.Task<bool> GetClientAuthenticationRequiredAsync()
         {
             return base.Channel.GetClientAuthenticationRequiredAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetCnMapsToUserAsync(bool cnMapsToUser)
         {
             return base.Channel.SetCnMapsToUserAsync(cnMapsToUser);
         }
-        
+
         public System.Threading.Tasks.Task<bool> GetCnMapsToUserAsync()
         {
             return base.Channel.GetCnMapsToUserAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddCertPathValidationPolicyAssignmentResponse> QuickNV.Onvif.Security.TLSServer.AddCertPathValidationPolicyAssignmentAsync(QuickNV.Onvif.Security.AddCertPathValidationPolicyAssignmentRequest request)
         {
             return base.Channel.AddCertPathValidationPolicyAssignmentAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddCertPathValidationPolicyAssignmentResponse> AddCertPathValidationPolicyAssignmentAsync(string CertPathValidationPolicyID)
         {
             QuickNV.Onvif.Security.AddCertPathValidationPolicyAssignmentRequest inValue = new QuickNV.Onvif.Security.AddCertPathValidationPolicyAssignmentRequest();
             inValue.CertPathValidationPolicyID = CertPathValidationPolicyID;
             return ((QuickNV.Onvif.Security.TLSServer)(this)).AddCertPathValidationPolicyAssignmentAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.RemoveCertPathValidationPolicyAssignmentResponse> QuickNV.Onvif.Security.TLSServer.RemoveCertPathValidationPolicyAssignmentAsync(QuickNV.Onvif.Security.RemoveCertPathValidationPolicyAssignmentRequest request)
         {
             return base.Channel.RemoveCertPathValidationPolicyAssignmentAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.RemoveCertPathValidationPolicyAssignmentResponse> RemoveCertPathValidationPolicyAssignmentAsync(string CertPathValidationPolicyID)
         {
             QuickNV.Onvif.Security.RemoveCertPathValidationPolicyAssignmentRequest inValue = new QuickNV.Onvif.Security.RemoveCertPathValidationPolicyAssignmentRequest();
             inValue.CertPathValidationPolicyID = CertPathValidationPolicyID;
             return ((QuickNV.Onvif.Security.TLSServer)(this)).RemoveCertPathValidationPolicyAssignmentAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.ReplaceCertPathValidationPolicyAssignmentResponse> QuickNV.Onvif.Security.TLSServer.ReplaceCertPathValidationPolicyAssignmentAsync(QuickNV.Onvif.Security.ReplaceCertPathValidationPolicyAssignmentRequest request)
         {
             return base.Channel.ReplaceCertPathValidationPolicyAssignmentAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.ReplaceCertPathValidationPolicyAssignmentResponse> ReplaceCertPathValidationPolicyAssignmentAsync(string OldCertPathValidationPolicyID, string NewCertPathValidationPolicyID)
         {
             QuickNV.Onvif.Security.ReplaceCertPathValidationPolicyAssignmentRequest inValue = new QuickNV.Onvif.Security.ReplaceCertPathValidationPolicyAssignmentRequest();
@@ -4624,369 +4624,369 @@ namespace QuickNV.Onvif.Security
             inValue.NewCertPathValidationPolicyID = NewCertPathValidationPolicyID;
             return ((QuickNV.Onvif.Security.TLSServer)(this)).ReplaceCertPathValidationPolicyAssignmentAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAssignedCertPathValidationPoliciesResponse> QuickNV.Onvif.Security.TLSServer.GetAssignedCertPathValidationPoliciesAsync(QuickNV.Onvif.Security.GetAssignedCertPathValidationPoliciesRequest request)
         {
             return base.Channel.GetAssignedCertPathValidationPoliciesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAssignedCertPathValidationPoliciesResponse> GetAssignedCertPathValidationPoliciesAsync()
         {
             QuickNV.Onvif.Security.GetAssignedCertPathValidationPoliciesRequest inValue = new QuickNV.Onvif.Security.GetAssignedCertPathValidationPoliciesRequest();
             return ((QuickNV.Onvif.Security.TLSServer)(this)).GetAssignedCertPathValidationPoliciesAsync(inValue);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", ConfigurationName="Quick.Onvif.Security.Dot1X")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", ConfigurationName = "Quick.Onvif.Security.Dot1X")]
     public interface Dot1X
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/AddDot1XConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/AddDot1XConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddDot1XConfigurationResponse> AddDot1XConfigurationAsync(QuickNV.Onvif.Security.AddDot1XConfigurationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllDot1XConfigurations", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetAllDot1XConfigurations", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllDot1XConfigurationsResponse> GetAllDot1XConfigurationsAsync(QuickNV.Onvif.Security.GetAllDot1XConfigurationsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetDot1XConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetDot1XConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetDot1XConfigurationResponse> GetDot1XConfigurationAsync(QuickNV.Onvif.Security.GetDot1XConfigurationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteDot1XConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteDot1XConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteDot1XConfigurationResponse> DeleteDot1XConfigurationAsync(QuickNV.Onvif.Security.DeleteDot1XConfigurationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/SetNetworkInterfaceDot1XConfigur" +
-            "ation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/SetNetworkInterfaceDot1XConfigur" +
+            "ation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.SetNetworkInterfaceDot1XConfigurationResponse> SetNetworkInterfaceDot1XConfigurationAsync(QuickNV.Onvif.Security.SetNetworkInterfaceDot1XConfigurationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/GetNetworkInterfaceDot1XConfigur" +
-            "ation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/GetNetworkInterfaceDot1XConfigur" +
+            "ation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetNetworkInterfaceDot1XConfigurationResponse> GetNetworkInterfaceDot1XConfigurationAsync(QuickNV.Onvif.Security.GetNetworkInterfaceDot1XConfigurationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteNetworkInterfaceDot1XConfi" +
-            "guration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="RebootNeeded")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/advancedsecurity/wsdl/DeleteNetworkInterfaceDot1XConfi" +
+            "guration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "RebootNeeded")]
         System.Threading.Tasks.Task<bool> DeleteNetworkInterfaceDot1XConfigurationAsync(string token);
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddDot1XConfiguration", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AddDot1XConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class AddDot1XConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public QuickNV.Onvif.Security.Dot1XConfiguration Dot1XConfiguration;
-        
+
         public AddDot1XConfigurationRequest()
         {
         }
-        
+
         public AddDot1XConfigurationRequest(QuickNV.Onvif.Security.Dot1XConfiguration Dot1XConfiguration)
         {
             this.Dot1XConfiguration = Dot1XConfiguration;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddDot1XConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AddDot1XConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class AddDot1XConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string Dot1XID;
-        
+
         public AddDot1XConfigurationResponse()
         {
         }
-        
+
         public AddDot1XConfigurationResponse(string Dot1XID)
         {
             this.Dot1XID = Dot1XID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllDot1XConfigurations", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllDot1XConfigurations", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllDot1XConfigurationsRequest
     {
-        
+
         public GetAllDot1XConfigurationsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAllDot1XConfigurationsResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAllDot1XConfigurationsResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetAllDot1XConfigurationsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Configuration")]
         public QuickNV.Onvif.Security.Dot1XConfiguration[] Configuration;
-        
+
         public GetAllDot1XConfigurationsResponse()
         {
         }
-        
+
         public GetAllDot1XConfigurationsResponse(QuickNV.Onvif.Security.Dot1XConfiguration[] Configuration)
         {
             this.Configuration = Configuration;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDot1XConfiguration", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDot1XConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetDot1XConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string Dot1XID;
-        
+
         public GetDot1XConfigurationRequest()
         {
         }
-        
+
         public GetDot1XConfigurationRequest(string Dot1XID)
         {
             this.Dot1XID = Dot1XID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDot1XConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDot1XConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetDot1XConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public QuickNV.Onvif.Security.Dot1XConfiguration Dot1XConfiguration;
-        
+
         public GetDot1XConfigurationResponse()
         {
         }
-        
+
         public GetDot1XConfigurationResponse(QuickNV.Onvif.Security.Dot1XConfiguration Dot1XConfiguration)
         {
             this.Dot1XConfiguration = Dot1XConfiguration;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteDot1XConfiguration", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteDot1XConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteDot1XConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string Dot1XID;
-        
+
         public DeleteDot1XConfigurationRequest()
         {
         }
-        
+
         public DeleteDot1XConfigurationRequest(string Dot1XID)
         {
             this.Dot1XID = Dot1XID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteDot1XConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteDot1XConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class DeleteDot1XConfigurationResponse
     {
-        
+
         public DeleteDot1XConfigurationResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetNetworkInterfaceDot1XConfiguration", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetNetworkInterfaceDot1XConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class SetNetworkInterfaceDot1XConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public string token;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string Dot1XID;
-        
+
         public SetNetworkInterfaceDot1XConfigurationRequest()
         {
         }
-        
+
         public SetNetworkInterfaceDot1XConfigurationRequest(string token, string Dot1XID)
         {
             this.token = token;
             this.Dot1XID = Dot1XID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetNetworkInterfaceDot1XConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetNetworkInterfaceDot1XConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class SetNetworkInterfaceDot1XConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public bool RebootNeeded;
-        
+
         public SetNetworkInterfaceDot1XConfigurationResponse()
         {
         }
-        
+
         public SetNetworkInterfaceDot1XConfigurationResponse(bool RebootNeeded)
         {
             this.RebootNeeded = RebootNeeded;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetNetworkInterfaceDot1XConfiguration", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetNetworkInterfaceDot1XConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetNetworkInterfaceDot1XConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
         public string token;
-        
+
         public GetNetworkInterfaceDot1XConfigurationRequest()
         {
         }
-        
+
         public GetNetworkInterfaceDot1XConfigurationRequest(string token)
         {
             this.token = token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetNetworkInterfaceDot1XConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetNetworkInterfaceDot1XConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", IsWrapped = true)]
     public partial class GetNetworkInterfaceDot1XConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/advancedsecurity/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="NCName")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/advancedsecurity/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
         public string Dot1XID;
-        
+
         public GetNetworkInterfaceDot1XConfigurationResponse()
         {
         }
-        
+
         public GetNetworkInterfaceDot1XConfigurationResponse(string Dot1XID)
         {
             this.Dot1XID = Dot1XID;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface Dot1XChannel : QuickNV.Onvif.Security.Dot1X, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class Dot1XClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Security.Dot1X>, QuickNV.Onvif.Security.Dot1X
     {
-        
-        public Dot1XClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public Dot1XClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddDot1XConfigurationResponse> QuickNV.Onvif.Security.Dot1X.AddDot1XConfigurationAsync(QuickNV.Onvif.Security.AddDot1XConfigurationRequest request)
         {
             return base.Channel.AddDot1XConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.AddDot1XConfigurationResponse> AddDot1XConfigurationAsync(QuickNV.Onvif.Security.Dot1XConfiguration Dot1XConfiguration)
         {
             QuickNV.Onvif.Security.AddDot1XConfigurationRequest inValue = new QuickNV.Onvif.Security.AddDot1XConfigurationRequest();
             inValue.Dot1XConfiguration = Dot1XConfiguration;
             return ((QuickNV.Onvif.Security.Dot1X)(this)).AddDot1XConfigurationAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllDot1XConfigurationsResponse> QuickNV.Onvif.Security.Dot1X.GetAllDot1XConfigurationsAsync(QuickNV.Onvif.Security.GetAllDot1XConfigurationsRequest request)
         {
             return base.Channel.GetAllDot1XConfigurationsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetAllDot1XConfigurationsResponse> GetAllDot1XConfigurationsAsync()
         {
             QuickNV.Onvif.Security.GetAllDot1XConfigurationsRequest inValue = new QuickNV.Onvif.Security.GetAllDot1XConfigurationsRequest();
             return ((QuickNV.Onvif.Security.Dot1X)(this)).GetAllDot1XConfigurationsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetDot1XConfigurationResponse> QuickNV.Onvif.Security.Dot1X.GetDot1XConfigurationAsync(QuickNV.Onvif.Security.GetDot1XConfigurationRequest request)
         {
             return base.Channel.GetDot1XConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetDot1XConfigurationResponse> GetDot1XConfigurationAsync(string Dot1XID)
         {
             QuickNV.Onvif.Security.GetDot1XConfigurationRequest inValue = new QuickNV.Onvif.Security.GetDot1XConfigurationRequest();
             inValue.Dot1XID = Dot1XID;
             return ((QuickNV.Onvif.Security.Dot1X)(this)).GetDot1XConfigurationAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteDot1XConfigurationResponse> QuickNV.Onvif.Security.Dot1X.DeleteDot1XConfigurationAsync(QuickNV.Onvif.Security.DeleteDot1XConfigurationRequest request)
         {
             return base.Channel.DeleteDot1XConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.DeleteDot1XConfigurationResponse> DeleteDot1XConfigurationAsync(string Dot1XID)
         {
             QuickNV.Onvif.Security.DeleteDot1XConfigurationRequest inValue = new QuickNV.Onvif.Security.DeleteDot1XConfigurationRequest();
             inValue.Dot1XID = Dot1XID;
             return ((QuickNV.Onvif.Security.Dot1X)(this)).DeleteDot1XConfigurationAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.SetNetworkInterfaceDot1XConfigurationResponse> QuickNV.Onvif.Security.Dot1X.SetNetworkInterfaceDot1XConfigurationAsync(QuickNV.Onvif.Security.SetNetworkInterfaceDot1XConfigurationRequest request)
         {
             return base.Channel.SetNetworkInterfaceDot1XConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.SetNetworkInterfaceDot1XConfigurationResponse> SetNetworkInterfaceDot1XConfigurationAsync(string token, string Dot1XID)
         {
             QuickNV.Onvif.Security.SetNetworkInterfaceDot1XConfigurationRequest inValue = new QuickNV.Onvif.Security.SetNetworkInterfaceDot1XConfigurationRequest();
@@ -4994,25 +4994,25 @@ namespace QuickNV.Onvif.Security
             inValue.Dot1XID = Dot1XID;
             return ((QuickNV.Onvif.Security.Dot1X)(this)).SetNetworkInterfaceDot1XConfigurationAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetNetworkInterfaceDot1XConfigurationResponse> QuickNV.Onvif.Security.Dot1X.GetNetworkInterfaceDot1XConfigurationAsync(QuickNV.Onvif.Security.GetNetworkInterfaceDot1XConfigurationRequest request)
         {
             return base.Channel.GetNetworkInterfaceDot1XConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Security.GetNetworkInterfaceDot1XConfigurationResponse> GetNetworkInterfaceDot1XConfigurationAsync(string token)
         {
             QuickNV.Onvif.Security.GetNetworkInterfaceDot1XConfigurationRequest inValue = new QuickNV.Onvif.Security.GetNetworkInterfaceDot1XConfigurationRequest();
             inValue.token = token;
             return ((QuickNV.Onvif.Security.Dot1X)(this)).GetNetworkInterfaceDot1XConfigurationAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<bool> DeleteNetworkInterfaceDot1XConfigurationAsync(string token)
         {
             return base.Channel.DeleteNetworkInterfaceDot1XConfigurationAsync(token);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

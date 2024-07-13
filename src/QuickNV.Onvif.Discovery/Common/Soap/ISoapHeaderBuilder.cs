@@ -4,5 +4,5 @@ namespace QuickNV.Onvif.Discovery.Common.Soap;
 
 public interface ISoapHeaderBuilder
 {
-	void WriteHeader(XmlWriter writer, object message);
+    void WriteHeader(XmlWriter writer, object message);
 }

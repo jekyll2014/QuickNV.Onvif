@@ -9,663 +9,663 @@
 
 namespace QuickNV.Onvif.DeviceIO
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", ConfigurationName="Quick.Onvif.DeviceIO.Device")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", ConfigurationName = "Quick.Onvif.DeviceIO.Device")]
     public interface Device
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetServices", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetServices", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetServicesResponse> GetServicesAsync(QuickNV.Onvif.DeviceIO.GetServicesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeviceServiceCapabilities> GetServiceCapabilitiesAsync();
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDeviceInformation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDeviceInformation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDeviceInformationResponse> GetDeviceInformationAsync(QuickNV.Onvif.DeviceIO.GetDeviceInformationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetSystemDateAndTime", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetSystemDateAndTime", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetSystemDateAndTimeAsync(QuickNV.Onvif.DeviceIO.SetDateTimeType DateTimeType, bool DaylightSavings, QuickNV.Onvif.DeviceIO.TimeZone TimeZone, QuickNV.Onvif.DeviceIO.DateTime UTCDateTime);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetSystemDateAndTime", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetSystemDateAndTime", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="SystemDateAndTime")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "SystemDateAndTime")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SystemDateTime> GetSystemDateAndTimeAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetSystemFactoryDefault", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetSystemFactoryDefault", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetSystemFactoryDefaultAsync(QuickNV.Onvif.DeviceIO.FactoryDefaultType FactoryDefault);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/UpgradeSystemFirmware", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/UpgradeSystemFirmware", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Message")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Message")]
         System.Threading.Tasks.Task<string> UpgradeSystemFirmwareAsync(QuickNV.Onvif.DeviceIO.AttachmentData Firmware);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SystemReboot", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SystemReboot", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Message")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Message")]
         System.Threading.Tasks.Task<string> SystemRebootAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/RestoreSystem", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/RestoreSystem", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.RestoreSystemResponse> RestoreSystemAsync(QuickNV.Onvif.DeviceIO.RestoreSystemRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetSystemBackup", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetSystemBackup", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetSystemBackupResponse> GetSystemBackupAsync(QuickNV.Onvif.DeviceIO.GetSystemBackupRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetSystemLog", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetSystemLog", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="SystemLog")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "SystemLog")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SystemLog> GetSystemLogAsync(QuickNV.Onvif.DeviceIO.SystemLogType LogType);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetSystemSupportInformation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetSystemSupportInformation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="SupportInformation")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "SupportInformation")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SupportInformation> GetSystemSupportInformationAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetScopes", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetScopes", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetScopesResponse> GetScopesAsync(QuickNV.Onvif.DeviceIO.GetScopesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetScopes", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetScopes", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetScopesResponse> SetScopesAsync(QuickNV.Onvif.DeviceIO.SetScopesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/AddScopes", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/AddScopes", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.AddScopesResponse> AddScopesAsync(QuickNV.Onvif.DeviceIO.AddScopesRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/RemoveScopes", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/RemoveScopes", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.RemoveScopesResponse> RemoveScopesAsync(QuickNV.Onvif.DeviceIO.RemoveScopesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDiscoveryMode", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDiscoveryMode", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="DiscoveryMode")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "DiscoveryMode")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DiscoveryMode> GetDiscoveryModeAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetDiscoveryMode", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetDiscoveryMode", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetDiscoveryModeAsync(QuickNV.Onvif.DeviceIO.DiscoveryMode DiscoveryMode);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetRemoteDiscoveryMode", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetRemoteDiscoveryMode", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="RemoteDiscoveryMode")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "RemoteDiscoveryMode")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DiscoveryMode> GetRemoteDiscoveryModeAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetRemoteDiscoveryMode", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetRemoteDiscoveryMode", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetRemoteDiscoveryModeAsync(QuickNV.Onvif.DeviceIO.DiscoveryMode RemoteDiscoveryMode);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDPAddresses", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDPAddresses", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDPAddressesResponse> GetDPAddressesAsync(QuickNV.Onvif.DeviceIO.GetDPAddressesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetDPAddresses", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetDPAddresses", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDPAddressesResponse> SetDPAddressesAsync(QuickNV.Onvif.DeviceIO.SetDPAddressesRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetEndpointReference", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetEndpointReference", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetEndpointReferenceResponse> GetEndpointReferenceAsync(QuickNV.Onvif.DeviceIO.GetEndpointReferenceRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetRemoteUser", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetRemoteUser", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="RemoteUser")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "RemoteUser")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.RemoteUser> GetRemoteUserAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetRemoteUser", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetRemoteUser", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetRemoteUserAsync(QuickNV.Onvif.DeviceIO.RemoteUser RemoteUser);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetUsers", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetUsers", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetUsersResponse> GetUsersAsync(QuickNV.Onvif.DeviceIO.GetUsersRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/CreateUsers", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/CreateUsers", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.CreateUsersResponse> CreateUsersAsync(QuickNV.Onvif.DeviceIO.CreateUsersRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/DeleteUsers", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/DeleteUsers", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteUsersResponse> DeleteUsersAsync(QuickNV.Onvif.DeviceIO.DeleteUsersRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetUser", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetUser", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetUserResponse> SetUserAsync(QuickNV.Onvif.DeviceIO.SetUserRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetWsdlUrl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetWsdlUrl", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetWsdlUrlResponse> GetWsdlUrlAsync(QuickNV.Onvif.DeviceIO.GetWsdlUrlRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetPasswordComplexityOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetPasswordComplexityOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPasswordComplexityOptionsResponse> GetPasswordComplexityOptionsAsync(QuickNV.Onvif.DeviceIO.GetPasswordComplexityOptionsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetPasswordComplexityConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetPasswordComplexityConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPasswordComplexityConfigurationResponse> GetPasswordComplexityConfigurationAsync(QuickNV.Onvif.DeviceIO.GetPasswordComplexityConfigurationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetPasswordComplexityConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetPasswordComplexityConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetPasswordComplexityConfigurationAsync(int MinLen, int Uppercase, int Number, int SpecialChars, bool BlockUsernameOccurrence, bool PolicyConfigurationLocked);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetPasswordHistoryConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetPasswordHistoryConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPasswordHistoryConfigurationResponse> GetPasswordHistoryConfigurationAsync(QuickNV.Onvif.DeviceIO.GetPasswordHistoryConfigurationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetPasswordHistoryConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetPasswordHistoryConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetPasswordHistoryConfigurationAsync(bool Enabled, int Length);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetAuthFailureWarningOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetAuthFailureWarningOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAuthFailureWarningOptionsResponse> GetAuthFailureWarningOptionsAsync(QuickNV.Onvif.DeviceIO.GetAuthFailureWarningOptionsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetAuthFailureWarningConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetAuthFailureWarningConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAuthFailureWarningConfigurationResponse> GetAuthFailureWarningConfigurationAsync(QuickNV.Onvif.DeviceIO.GetAuthFailureWarningConfigurationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetAuthFailureWarningConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetAuthFailureWarningConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetAuthFailureWarningConfigurationAsync(bool Enabled, int MonitorPeriod, int MaxAuthFailures);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCapabilitiesResponse> GetCapabilitiesAsync(QuickNV.Onvif.DeviceIO.GetCapabilitiesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetHostname", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetHostname", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="HostnameInformation")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "HostnameInformation")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.HostnameInformation> GetHostnameAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetHostname", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetHostname", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetHostnameResponse> SetHostnameAsync(QuickNV.Onvif.DeviceIO.SetHostnameRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetHostnameFromDHCP", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetHostnameFromDHCP", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="RebootNeeded")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "RebootNeeded")]
         System.Threading.Tasks.Task<bool> SetHostnameFromDHCPAsync(bool FromDHCP);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDNS", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDNS", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="DNSInformation")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "DNSInformation")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DNSInformation> GetDNSAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetDNS", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetDNS", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDNSResponse> SetDNSAsync(QuickNV.Onvif.DeviceIO.SetDNSRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetNTP", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetNTP", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="NTPInformation")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "NTPInformation")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.NTPInformation> GetNTPAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetNTP", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetNTP", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNTPResponse> SetNTPAsync(QuickNV.Onvif.DeviceIO.SetNTPRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDynamicDNS", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDynamicDNS", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="DynamicDNSInformation")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "DynamicDNSInformation")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DynamicDNSInformation> GetDynamicDNSAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetDynamicDNS", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetDynamicDNS", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDynamicDNSResponse> SetDynamicDNSAsync(QuickNV.Onvif.DeviceIO.SetDynamicDNSRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetNetworkInterfaces", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetNetworkInterfaces", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetNetworkInterfacesResponse> GetNetworkInterfacesAsync(QuickNV.Onvif.DeviceIO.GetNetworkInterfacesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetNetworkInterfaces", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetNetworkInterfaces", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="RebootNeeded")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "RebootNeeded")]
         System.Threading.Tasks.Task<bool> SetNetworkInterfacesAsync(string InterfaceToken, QuickNV.Onvif.DeviceIO.NetworkInterfaceSetConfiguration NetworkInterface);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetNetworkProtocols", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetNetworkProtocols", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetNetworkProtocolsResponse> GetNetworkProtocolsAsync(QuickNV.Onvif.DeviceIO.GetNetworkProtocolsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetNetworkProtocols", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetNetworkProtocols", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNetworkProtocolsResponse> SetNetworkProtocolsAsync(QuickNV.Onvif.DeviceIO.SetNetworkProtocolsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetNetworkDefaultGateway", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetNetworkDefaultGateway", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="NetworkGateway")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "NetworkGateway")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.NetworkGateway> GetNetworkDefaultGatewayAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetNetworkDefaultGateway", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetNetworkDefaultGateway", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNetworkDefaultGatewayResponse> SetNetworkDefaultGatewayAsync(QuickNV.Onvif.DeviceIO.SetNetworkDefaultGatewayRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetZeroConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetZeroConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="ZeroConfiguration")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "ZeroConfiguration")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.NetworkZeroConfiguration> GetZeroConfigurationAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetZeroConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetZeroConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetZeroConfigurationAsync(string InterfaceToken, bool Enabled);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetIPAddressFilter", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetIPAddressFilter", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="IPAddressFilter")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "IPAddressFilter")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.IPAddressFilter> GetIPAddressFilterAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetIPAddressFilter", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetIPAddressFilter", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetIPAddressFilterAsync(QuickNV.Onvif.DeviceIO.IPAddressFilter IPAddressFilter);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/AddIPAddressFilter", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/AddIPAddressFilter", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task AddIPAddressFilterAsync(QuickNV.Onvif.DeviceIO.IPAddressFilter IPAddressFilter);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/RemoveIPAddressFilter", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/RemoveIPAddressFilter", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task RemoveIPAddressFilterAsync(QuickNV.Onvif.DeviceIO.IPAddressFilter IPAddressFilter);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetAccessPolicy", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetAccessPolicy", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="PolicyFile")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "PolicyFile")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.BinaryData> GetAccessPolicyAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetAccessPolicy", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetAccessPolicy", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetAccessPolicyAsync(QuickNV.Onvif.DeviceIO.BinaryData PolicyFile);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetRelayOutputs", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetRelayOutputs", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputsResponse> GetRelayOutputsAsync(QuickNV.Onvif.DeviceIO.GetRelayOutputsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetRelayOutputSettings", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetRelayOutputSettings", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetRelayOutputSettingsAsync(string RelayOutputToken, QuickNV.Onvif.DeviceIO.RelayOutputSettings Properties);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetRelayOutputState", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetRelayOutputState", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetRelayOutputStateAsync(string RelayOutputToken, QuickNV.Onvif.DeviceIO.RelayLogicalState LogicalState);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SendAuxiliaryCommand", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SendAuxiliaryCommand", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="AuxiliaryCommandResponse")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "AuxiliaryCommandResponse")]
         System.Threading.Tasks.Task<string> SendAuxiliaryCommandAsync(string AuxiliaryCommand);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDot11Capabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDot11Capabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDot11CapabilitiesResponse> GetDot11CapabilitiesAsync(QuickNV.Onvif.DeviceIO.GetDot11CapabilitiesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDot11Status", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDot11Status", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Status")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Status")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.Dot11Status> GetDot11StatusAsync(string InterfaceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/ScanAvailableDot11Networks", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/ScanAvailableDot11Networks", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.ScanAvailableDot11NetworksResponse> ScanAvailableDot11NetworksAsync(QuickNV.Onvif.DeviceIO.ScanAvailableDot11NetworksRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetSystemUris", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetSystemUris", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetSystemUrisResponse> GetSystemUrisAsync(QuickNV.Onvif.DeviceIO.GetSystemUrisRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/StartFirmwareUpgrade", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/StartFirmwareUpgrade", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.StartFirmwareUpgradeResponse> StartFirmwareUpgradeAsync(QuickNV.Onvif.DeviceIO.StartFirmwareUpgradeRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/StartSystemRestore", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/StartSystemRestore", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.StartSystemRestoreResponse> StartSystemRestoreAsync(QuickNV.Onvif.DeviceIO.StartSystemRestoreRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetStorageConfigurations", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetStorageConfigurations", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetStorageConfigurationsResponse> GetStorageConfigurationsAsync(QuickNV.Onvif.DeviceIO.GetStorageConfigurationsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/CreateStorageConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/CreateStorageConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Token")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Token")]
         System.Threading.Tasks.Task<string> CreateStorageConfigurationAsync(QuickNV.Onvif.DeviceIO.StorageConfigurationData StorageConfiguration);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetStorageConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetStorageConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="StorageConfiguration")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "StorageConfiguration")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.StorageConfiguration> GetStorageConfigurationAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetStorageConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetStorageConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetStorageConfigurationAsync(QuickNV.Onvif.DeviceIO.StorageConfiguration StorageConfiguration);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/DeleteStorageConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/DeleteStorageConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task DeleteStorageConfigurationAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetGeoLocation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetGeoLocation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetGeoLocationResponse> GetGeoLocationAsync(QuickNV.Onvif.DeviceIO.GetGeoLocationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetGeoLocation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetGeoLocation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetGeoLocationResponse> SetGeoLocationAsync(QuickNV.Onvif.DeviceIO.SetGeoLocationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/DeleteGeoLocation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/DeleteGeoLocation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteGeoLocationResponse> DeleteGeoLocationAsync(QuickNV.Onvif.DeviceIO.DeleteGeoLocationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetHashingAlgorithm", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetHashingAlgorithm", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetHashingAlgorithmAsync(string Algorithm);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/CreateCertificate", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/CreateCertificate", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.CreateCertificateResponse> CreateCertificateAsync(QuickNV.Onvif.DeviceIO.CreateCertificateRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetCertificates", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetCertificates", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificatesResponse> GetCertificatesAsync(QuickNV.Onvif.DeviceIO.GetCertificatesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetCertificatesStatus", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetCertificatesStatus", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificatesStatusResponse> GetCertificatesStatusAsync(QuickNV.Onvif.DeviceIO.GetCertificatesStatusRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetCertificatesStatus", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetCertificatesStatus", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetCertificatesStatusResponse> SetCertificatesStatusAsync(QuickNV.Onvif.DeviceIO.SetCertificatesStatusRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/DeleteCertificates", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/DeleteCertificates", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteCertificatesResponse> DeleteCertificatesAsync(QuickNV.Onvif.DeviceIO.DeleteCertificatesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetPkcs10Request", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetPkcs10Request", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPkcs10RequestResponse> GetPkcs10RequestAsync(QuickNV.Onvif.DeviceIO.GetPkcs10RequestRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/LoadCertificates", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/LoadCertificates", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCertificatesResponse> LoadCertificatesAsync(QuickNV.Onvif.DeviceIO.LoadCertificatesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetClientCertificateMode", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetClientCertificateMode", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Enabled")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Enabled")]
         System.Threading.Tasks.Task<bool> GetClientCertificateModeAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetClientCertificateMode", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetClientCertificateMode", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetClientCertificateModeAsync(bool Enabled);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetCACertificates", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetCACertificates", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCACertificatesResponse> GetCACertificatesAsync(QuickNV.Onvif.DeviceIO.GetCACertificatesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/LoadCertificateWithPrivateKey", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/LoadCertificateWithPrivateKey", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCertificateWithPrivateKeyResponse> LoadCertificateWithPrivateKeyAsync(QuickNV.Onvif.DeviceIO.LoadCertificateWithPrivateKeyRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetCertificateInformation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetCertificateInformation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificateInformationResponse> GetCertificateInformationAsync(QuickNV.Onvif.DeviceIO.GetCertificateInformationRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/LoadCACertificates", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/LoadCACertificates", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCACertificatesResponse> LoadCACertificatesAsync(QuickNV.Onvif.DeviceIO.LoadCACertificatesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/CreateDot1XConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/CreateDot1XConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task CreateDot1XConfigurationAsync(QuickNV.Onvif.DeviceIO.Dot1XConfiguration Dot1XConfiguration);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/SetDot1XConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/SetDot1XConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetDot1XConfigurationAsync(QuickNV.Onvif.DeviceIO.Dot1XConfiguration Dot1XConfiguration);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDot1XConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDot1XConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Dot1XConfiguration")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Dot1XConfiguration")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.Dot1XConfiguration> GetDot1XConfigurationAsync(string Dot1XConfigurationToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/GetDot1XConfigurations", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/GetDot1XConfigurations", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDot1XConfigurationsResponse> GetDot1XConfigurationsAsync(QuickNV.Onvif.DeviceIO.GetDot1XConfigurationsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/device/wsdl/DeleteDot1XConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/device/wsdl/DeleteDot1XConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteDot1XConfigurationResponse> DeleteDot1XConfigurationAsync(QuickNV.Onvif.DeviceIO.DeleteDot1XConfigurationRequest request);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class Service
     {
-        
+
         private string namespaceField;
-        
+
         private string xAddrField;
-        
+
         private System.Xml.XmlElement capabilitiesField;
-        
+
         private OnvifVersion versionField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string Namespace
         {
             get
@@ -677,9 +677,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.namespaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 1)]
         public string XAddr
         {
             get
@@ -691,9 +691,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public System.Xml.XmlElement Capabilities
         {
             get
@@ -705,9 +705,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.capabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public OnvifVersion Version
         {
             get
@@ -719,9 +719,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.versionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -734,20 +734,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OnvifVersion
     {
-        
+
         private int majorField;
-        
+
         private int minorField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Major
         {
             get
@@ -759,9 +759,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.majorField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Minor
         {
             get
@@ -774,19 +774,19 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public partial class SerialData
     {
-        
+
         private object itemField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Binary", typeof(byte[]), DataType="base64Binary", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("String", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Binary", typeof(byte[]), DataType = "base64Binary", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("String", typeof(string), Order = 0)]
         public object Item
         {
             get
@@ -799,29 +799,29 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public partial class SerialPortConfigurationOptions
     {
-        
+
         private int[] baudRateListField;
-        
+
         private ParityBit[] parityBitListField;
-        
+
         private int[] characterLengthListField;
-        
+
         private float[] stopBitListField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=0)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("Items", Namespace="http://www.onvif.org/ver10/schema", IsNullable=false)]
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 0)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Items", Namespace = "http://www.onvif.org/ver10/schema", IsNullable = false)]
         public int[] BaudRateList
         {
             get
@@ -833,10 +833,10 @@ namespace QuickNV.Onvif.DeviceIO
                 this.baudRateListField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("Items", IsNullable=false)]
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 1)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Items", IsNullable = false)]
         public ParityBit[] ParityBitList
         {
             get
@@ -848,10 +848,10 @@ namespace QuickNV.Onvif.DeviceIO
                 this.parityBitListField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("Items", Namespace="http://www.onvif.org/ver10/schema", IsNullable=false)]
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 2)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Items", Namespace = "http://www.onvif.org/ver10/schema", IsNullable = false)]
         public int[] CharacterLengthList
         {
             get
@@ -863,10 +863,10 @@ namespace QuickNV.Onvif.DeviceIO
                 this.characterLengthListField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("Items", Namespace="http://www.onvif.org/ver10/schema", IsNullable=false)]
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 3)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Items", Namespace = "http://www.onvif.org/ver10/schema", IsNullable = false)]
         public float[] StopBitList
         {
             get
@@ -878,9 +878,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.stopBitListField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -892,7 +892,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -907,55 +907,55 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public enum ParityBit
     {
-        
+
         /// <remarks/>
         None,
-        
+
         /// <remarks/>
         Even,
-        
+
         /// <remarks/>
         Odd,
-        
+
         /// <remarks/>
         Mark,
-        
+
         /// <remarks/>
         Space,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public partial class SerialPortConfiguration
     {
-        
+
         private int baudRateField;
-        
+
         private ParityBit parityBitField;
-        
+
         private int characterLengthField;
-        
+
         private float stopBitField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string tokenField;
-        
+
         private SerialPortType typeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int BaudRate
         {
             get
@@ -967,9 +967,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.baudRateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ParityBit ParityBit
         {
             get
@@ -981,9 +981,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.parityBitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int CharacterLength
         {
             get
@@ -995,9 +995,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.characterLengthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float StopBit
         {
             get
@@ -1009,9 +1009,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.stopBitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1023,7 +1023,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -1037,7 +1037,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public SerialPortType type
@@ -1052,45 +1052,45 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public enum SerialPortType
     {
-        
+
         /// <remarks/>
         RS232,
-        
+
         /// <remarks/>
         RS422HalfDuplex,
-        
+
         /// <remarks/>
         RS422FullDuplex,
-        
+
         /// <remarks/>
         RS485HalfDuplex,
-        
+
         /// <remarks/>
         RS485FullDuplex,
-        
+
         /// <remarks/>
         Generic,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public partial class DigitalInputConfigurationOptions
     {
-        
+
         private DigitalIdleState[] idleStateField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IdleState", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("IdleState", Order = 0)]
         public DigitalIdleState[] IdleState
         {
             get
@@ -1102,9 +1102,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.idleStateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1117,37 +1117,37 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum DigitalIdleState
     {
-        
+
         /// <remarks/>
         closed,
-        
+
         /// <remarks/>
         open,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioOutputConfigurationOptions
     {
-        
+
         private string[] outputTokensAvailableField;
-        
+
         private string[] sendPrimacyOptionsField;
-        
+
         private IntRange outputLevelRangeField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OutputTokensAvailable", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("OutputTokensAvailable", Order = 0)]
         public string[] OutputTokensAvailable
         {
             get
@@ -1159,9 +1159,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.outputTokensAvailableField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SendPrimacyOptions", DataType="anyURI", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("SendPrimacyOptions", DataType = "anyURI", Order = 1)]
         public string[] SendPrimacyOptions
         {
             get
@@ -1173,9 +1173,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sendPrimacyOptionsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public IntRange OutputLevelRange
         {
             get
@@ -1187,9 +1187,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.outputLevelRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1202,20 +1202,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IntRange
     {
-        
+
         private int minField;
-        
+
         private int maxField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Min
         {
             get
@@ -1227,9 +1227,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Max
         {
             get
@@ -1242,18 +1242,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioSourceOptionsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1266,20 +1266,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioSourceConfigurationOptions
     {
-        
+
         private string[] inputTokensAvailableField;
-        
+
         private AudioSourceOptionsExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InputTokensAvailable", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("InputTokensAvailable", Order = 0)]
         public string[] InputTokensAvailable
         {
             get
@@ -1291,9 +1291,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.inputTokensAvailableField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public AudioSourceOptionsExtension Extension
         {
             get
@@ -1306,18 +1306,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoOutputConfigurationOptions
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1330,20 +1330,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSourceConfigurationOptionsExtension2
     {
-        
+
         private SceneOrientationMode[] sceneOrientationModeField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SceneOrientationMode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("SceneOrientationMode", Order = 0)]
         public SceneOrientationMode[] SceneOrientationMode
         {
             get
@@ -1355,9 +1355,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sceneOrientationModeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1370,31 +1370,31 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum SceneOrientationMode
     {
-        
+
         /// <remarks/>
         MANUAL,
-        
+
         /// <remarks/>
         AUTO,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RotateOptionsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1407,26 +1407,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RotateOptions
     {
-        
+
         private RotateMode[] modeField;
-        
+
         private int[] degreeListField;
-        
+
         private RotateOptionsExtension extensionField;
-        
+
         private bool rebootField;
-        
+
         private bool rebootFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public RotateMode[] Mode
         {
             get
@@ -1438,10 +1438,10 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("Items", IsNullable=false)]
+        [System.Xml.Serialization.XmlArrayAttribute(Order = 1)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("Items", IsNullable = false)]
         public int[] DegreeList
         {
             get
@@ -1453,9 +1453,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.degreeListField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public RotateOptionsExtension Extension
         {
             get
@@ -1467,7 +1467,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Reboot
@@ -1481,7 +1481,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rebootField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RebootSpecified
@@ -1496,38 +1496,38 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum RotateMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
-        
+
         /// <remarks/>
         AUTO,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSourceConfigurationOptionsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private RotateOptions rotateField;
-        
+
         private VideoSourceConfigurationOptionsExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1539,9 +1539,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public RotateOptions Rotate
         {
             get
@@ -1553,9 +1553,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rotateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public VideoSourceConfigurationOptionsExtension2 Extension
         {
             get
@@ -1568,24 +1568,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IntRectangleRange
     {
-        
+
         private IntRange xRangeField;
-        
+
         private IntRange yRangeField;
-        
+
         private IntRange widthRangeField;
-        
+
         private IntRange heightRangeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public IntRange XRange
         {
             get
@@ -1597,9 +1597,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public IntRange YRange
         {
             get
@@ -1611,9 +1611,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public IntRange WidthRange
         {
             get
@@ -1625,9 +1625,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.widthRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IntRange HeightRange
         {
             get
@@ -1640,26 +1640,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSourceConfigurationOptions
     {
-        
+
         private IntRectangleRange boundsRangeField;
-        
+
         private string[] videoSourceTokensAvailableField;
-        
+
         private VideoSourceConfigurationOptionsExtension extensionField;
-        
+
         private int maximumNumberOfProfilesField;
-        
+
         private bool maximumNumberOfProfilesFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public IntRectangleRange BoundsRange
         {
             get
@@ -1671,9 +1671,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.boundsRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("VideoSourceTokensAvailable", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("VideoSourceTokensAvailable", Order = 1)]
         public string[] VideoSourceTokensAvailable
         {
             get
@@ -1685,9 +1685,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.videoSourceTokensAvailableField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public VideoSourceConfigurationOptionsExtension Extension
         {
             get
@@ -1699,7 +1699,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int MaximumNumberOfProfiles
@@ -1713,7 +1713,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maximumNumberOfProfilesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaximumNumberOfProfilesSpecified
@@ -1728,18 +1728,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MetadataInputExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1752,20 +1752,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MetadataInput
     {
-        
+
         private Config[] metadataConfigField;
-        
+
         private MetadataInputExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MetadataConfig", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("MetadataConfig", Order = 0)]
         public Config[] MetadataConfig
         {
             get
@@ -1777,9 +1777,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.metadataConfigField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public MetadataInputExtension Extension
         {
             get
@@ -1792,22 +1792,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Config
     {
-        
+
         private ItemList parametersField;
-        
+
         private string nameField;
-        
+
         private System.Xml.XmlQualifiedName typeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ItemList Parameters
         {
             get
@@ -1819,7 +1819,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.parametersField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
@@ -1833,7 +1833,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.Xml.XmlQualifiedName Type
@@ -1848,22 +1848,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemList
     {
-        
+
         private ItemListSimpleItem[] simpleItemField;
-        
+
         private ItemListElementItem[] elementItemField;
-        
+
         private ItemListExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SimpleItem", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("SimpleItem", Order = 0)]
         public ItemListSimpleItem[] SimpleItem
         {
             get
@@ -1875,9 +1875,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.simpleItemField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ElementItem", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ElementItem", Order = 1)]
         public ItemListElementItem[] ElementItem
         {
             get
@@ -1889,9 +1889,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.elementItemField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ItemListExtension Extension
         {
             get
@@ -1904,18 +1904,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListSimpleItem
     {
-        
+
         private string nameField;
-        
+
         private string valueField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
@@ -1929,7 +1929,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Value
@@ -1944,20 +1944,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListElementItem
     {
-        
+
         private System.Xml.XmlElement anyField;
-        
+
         private string nameField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement Any
         {
             get
@@ -1969,7 +1969,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Name
@@ -1984,18 +1984,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ItemListExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2008,18 +2008,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SourceIdentificationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2032,22 +2032,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SourceIdentification
     {
-        
+
         private string nameField;
-        
+
         private string[] tokenField;
-        
+
         private SourceIdentificationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -2059,9 +2059,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Token", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Token", Order = 1)]
         public string[] Token
         {
             get
@@ -2073,9 +2073,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public SourceIdentificationExtension Extension
         {
             get
@@ -2088,18 +2088,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsDeviceEngineConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2112,18 +2112,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsEngineInputInfoExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2136,20 +2136,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsEngineInputInfo
     {
-        
+
         private Config inputInfoField;
-        
+
         private AnalyticsEngineInputInfoExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Config InputInfo
         {
             get
@@ -2161,9 +2161,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.inputInfoField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public AnalyticsEngineInputInfoExtension Extension
         {
             get
@@ -2176,22 +2176,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EngineConfiguration
     {
-        
+
         private VideoAnalyticsConfiguration videoAnalyticsConfigurationField;
-        
+
         private AnalyticsEngineInputInfo analyticsEngineInputInfoField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public VideoAnalyticsConfiguration VideoAnalyticsConfiguration
         {
             get
@@ -2203,9 +2203,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.videoAnalyticsConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public AnalyticsEngineInputInfo AnalyticsEngineInputInfo
         {
             get
@@ -2217,9 +2217,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsEngineInputInfoField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2232,22 +2232,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoAnalyticsConfiguration : ConfigurationEntity
     {
-        
+
         private AnalyticsEngineConfiguration analyticsEngineConfigurationField;
-        
+
         private RuleEngineConfiguration ruleEngineConfigurationField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AnalyticsEngineConfiguration AnalyticsEngineConfiguration
         {
             get
@@ -2259,9 +2259,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsEngineConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public RuleEngineConfiguration RuleEngineConfiguration
         {
             get
@@ -2273,9 +2273,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.ruleEngineConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2288,20 +2288,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsEngineConfiguration
     {
-        
+
         private Config[] analyticsModuleField;
-        
+
         private AnalyticsEngineConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AnalyticsModule", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AnalyticsModule", Order = 0)]
         public Config[] AnalyticsModule
         {
             get
@@ -2313,9 +2313,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsModuleField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public AnalyticsEngineConfigurationExtension Extension
         {
             get
@@ -2328,18 +2328,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsEngineConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2352,20 +2352,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RuleEngineConfiguration
     {
-        
+
         private Config[] ruleField;
-        
+
         private RuleEngineConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Rule", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Rule", Order = 0)]
         public Config[] Rule
         {
             get
@@ -2377,9 +2377,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.ruleField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public RuleEngineConfigurationExtension Extension
         {
             get
@@ -2392,18 +2392,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RuleEngineConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2416,7 +2416,7 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AnalyticsEngineControl))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AnalyticsEngineInput))]
@@ -2435,18 +2435,18 @@ namespace QuickNV.Onvif.DeviceIO
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(VideoSourceConfiguration))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ConfigurationEntity
     {
-        
+
         private string nameField;
-        
+
         private int useCountField;
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -2458,9 +2458,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int UseCount
         {
             get
@@ -2472,7 +2472,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.useCountField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -2487,32 +2487,32 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsEngineControl : ConfigurationEntity
     {
-        
+
         private string engineTokenField;
-        
+
         private string engineConfigTokenField;
-        
+
         private string[] inputTokenField;
-        
+
         private string[] receiverTokenField;
-        
+
         private MulticastConfiguration multicastField;
-        
+
         private Config subscriptionField;
-        
+
         private ModeOfOperation modeField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string EngineToken
         {
             get
@@ -2524,9 +2524,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.engineTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string EngineConfigToken
         {
             get
@@ -2538,9 +2538,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.engineConfigTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InputToken", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("InputToken", Order = 2)]
         public string[] InputToken
         {
             get
@@ -2552,9 +2552,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.inputTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReceiverToken", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute("ReceiverToken", Order = 3)]
         public string[] ReceiverToken
         {
             get
@@ -2566,9 +2566,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.receiverTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public MulticastConfiguration Multicast
         {
             get
@@ -2580,9 +2580,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.multicastField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public Config Subscription
         {
             get
@@ -2594,9 +2594,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.subscriptionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public ModeOfOperation Mode
         {
             get
@@ -2608,9 +2608,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 7)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2623,26 +2623,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MulticastConfiguration
     {
-        
+
         private IPAddress addressField;
-        
+
         private int portField;
-        
+
         private int tTLField;
-        
+
         private bool autoStartField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public IPAddress Address
         {
             get
@@ -2654,9 +2654,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.addressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Port
         {
             get
@@ -2668,9 +2668,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.portField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int TTL
         {
             get
@@ -2682,9 +2682,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tTLField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool AutoStart
         {
             get
@@ -2696,9 +2696,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.autoStartField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2711,22 +2711,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPAddress
     {
-        
+
         private IPType typeField;
-        
+
         private string iPv4AddressField;
-        
+
         private string iPv6AddressField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public IPType Type
         {
             get
@@ -2738,9 +2738,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 1)]
         public string IPv4Address
         {
             get
@@ -2752,9 +2752,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv4AddressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 2)]
         public string IPv6Address
         {
             get
@@ -2767,53 +2767,53 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum IPType
     {
-        
+
         /// <remarks/>
         IPv4,
-        
+
         /// <remarks/>
         IPv6,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ModeOfOperation
     {
-        
+
         /// <remarks/>
         Idle,
-        
+
         /// <remarks/>
         Active,
-        
+
         /// <remarks/>
         Unknown,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsEngineInput : ConfigurationEntity
     {
-        
+
         private SourceIdentification sourceIdentificationField;
-        
+
         private VideoEncoderConfiguration videoInputField;
-        
+
         private MetadataInput metadataInputField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public SourceIdentification SourceIdentification
         {
             get
@@ -2825,9 +2825,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sourceIdentificationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public VideoEncoderConfiguration VideoInput
         {
             get
@@ -2839,9 +2839,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.videoInputField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public MetadataInput MetadataInput
         {
             get
@@ -2853,9 +2853,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.metadataInputField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2868,38 +2868,38 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoEncoderConfiguration : ConfigurationEntity
     {
-        
+
         private VideoEncoding encodingField;
-        
+
         private VideoResolution resolutionField;
-        
+
         private float qualityField;
-        
+
         private VideoRateControl rateControlField;
-        
+
         private Mpeg4Configuration mPEG4Field;
-        
+
         private H264Configuration h264Field;
-        
+
         private MulticastConfiguration multicastField;
-        
+
         private string sessionTimeoutField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool guaranteedFrameRateField;
-        
+
         private bool guaranteedFrameRateFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public VideoEncoding Encoding
         {
             get
@@ -2911,9 +2911,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.encodingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public VideoResolution Resolution
         {
             get
@@ -2925,9 +2925,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.resolutionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float Quality
         {
             get
@@ -2939,9 +2939,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.qualityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public VideoRateControl RateControl
         {
             get
@@ -2953,9 +2953,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rateControlField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public Mpeg4Configuration MPEG4
         {
             get
@@ -2967,9 +2967,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.mPEG4Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public H264Configuration H264
         {
             get
@@ -2981,9 +2981,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.h264Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public MulticastConfiguration Multicast
         {
             get
@@ -2995,9 +2995,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.multicastField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 7)]
         public string SessionTimeout
         {
             get
@@ -3009,9 +3009,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sessionTimeoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 8)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -3023,7 +3023,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool GuaranteedFrameRate
@@ -3037,7 +3037,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.guaranteedFrameRateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GuaranteedFrameRateSpecified
@@ -3052,36 +3052,36 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum VideoEncoding
     {
-        
+
         /// <remarks/>
         JPEG,
-        
+
         /// <remarks/>
         MPEG4,
-        
+
         /// <remarks/>
         H264,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoResolution
     {
-        
+
         private int widthField;
-        
+
         private int heightField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Width
         {
             get
@@ -3093,9 +3093,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.widthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Height
         {
             get
@@ -3108,22 +3108,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoRateControl
     {
-        
+
         private int frameRateLimitField;
-        
+
         private int encodingIntervalField;
-        
+
         private int bitrateLimitField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int FrameRateLimit
         {
             get
@@ -3135,9 +3135,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.frameRateLimitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int EncodingInterval
         {
             get
@@ -3149,9 +3149,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.encodingIntervalField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int BitrateLimit
         {
             get
@@ -3164,20 +3164,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Mpeg4Configuration
     {
-        
+
         private int govLengthField;
-        
+
         private Mpeg4Profile mpeg4ProfileField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int GovLength
         {
             get
@@ -3189,9 +3189,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.govLengthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Mpeg4Profile Mpeg4Profile
         {
             get
@@ -3204,33 +3204,33 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum Mpeg4Profile
     {
-        
+
         /// <remarks/>
         SP,
-        
+
         /// <remarks/>
         ASP,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class H264Configuration
     {
-        
+
         private int govLengthField;
-        
+
         private H264Profile h264ProfileField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int GovLength
         {
             get
@@ -3242,9 +3242,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.govLengthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public H264Profile H264Profile
         {
             get
@@ -3257,39 +3257,39 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum H264Profile
     {
-        
+
         /// <remarks/>
         Baseline,
-        
+
         /// <remarks/>
         Main,
-        
+
         /// <remarks/>
         Extended,
-        
+
         /// <remarks/>
         High,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsEngine : ConfigurationEntity
     {
-        
+
         private AnalyticsDeviceEngineConfiguration analyticsEngineConfigurationField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AnalyticsDeviceEngineConfiguration AnalyticsEngineConfiguration
         {
             get
@@ -3301,9 +3301,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsEngineConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -3316,20 +3316,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsDeviceEngineConfiguration
     {
-        
+
         private EngineConfiguration[] engineConfigurationField;
-        
+
         private AnalyticsDeviceEngineConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EngineConfiguration", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("EngineConfiguration", Order = 0)]
         public EngineConfiguration[] EngineConfiguration
         {
             get
@@ -3341,9 +3341,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.engineConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public AnalyticsDeviceEngineConfigurationExtension Extension
         {
             get
@@ -3356,52 +3356,52 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZConfiguration : ConfigurationEntity
     {
-        
+
         private string nodeTokenField;
-        
+
         private string defaultAbsolutePantTiltPositionSpaceField;
-        
+
         private string defaultAbsoluteZoomPositionSpaceField;
-        
+
         private string defaultRelativePanTiltTranslationSpaceField;
-        
+
         private string defaultRelativeZoomTranslationSpaceField;
-        
+
         private string defaultContinuousPanTiltVelocitySpaceField;
-        
+
         private string defaultContinuousZoomVelocitySpaceField;
-        
+
         private PTZSpeed defaultPTZSpeedField;
-        
+
         private string defaultPTZTimeoutField;
-        
+
         private PanTiltLimits panTiltLimitsField;
-        
+
         private ZoomLimits zoomLimitsField;
-        
+
         private PTZConfigurationExtension extensionField;
-        
+
         private int moveRampField;
-        
+
         private bool moveRampFieldSpecified;
-        
+
         private int presetRampField;
-        
+
         private bool presetRampFieldSpecified;
-        
+
         private int presetTourRampField;
-        
+
         private bool presetTourRampFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string NodeToken
         {
             get
@@ -3413,9 +3413,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nodeTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 1)]
         public string DefaultAbsolutePantTiltPositionSpace
         {
             get
@@ -3427,9 +3427,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultAbsolutePantTiltPositionSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 2)]
         public string DefaultAbsoluteZoomPositionSpace
         {
             get
@@ -3441,9 +3441,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultAbsoluteZoomPositionSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 3)]
         public string DefaultRelativePanTiltTranslationSpace
         {
             get
@@ -3455,9 +3455,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultRelativePanTiltTranslationSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 4)]
         public string DefaultRelativeZoomTranslationSpace
         {
             get
@@ -3469,9 +3469,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultRelativeZoomTranslationSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 5)]
         public string DefaultContinuousPanTiltVelocitySpace
         {
             get
@@ -3483,9 +3483,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultContinuousPanTiltVelocitySpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 6)]
         public string DefaultContinuousZoomVelocitySpace
         {
             get
@@ -3497,9 +3497,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultContinuousZoomVelocitySpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public PTZSpeed DefaultPTZSpeed
         {
             get
@@ -3511,9 +3511,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultPTZSpeedField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 8)]
         public string DefaultPTZTimeout
         {
             get
@@ -3525,9 +3525,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultPTZTimeoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public PanTiltLimits PanTiltLimits
         {
             get
@@ -3539,9 +3539,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.panTiltLimitsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public ZoomLimits ZoomLimits
         {
             get
@@ -3553,9 +3553,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.zoomLimitsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 11)]
         public PTZConfigurationExtension Extension
         {
             get
@@ -3567,7 +3567,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int MoveRamp
@@ -3581,7 +3581,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.moveRampField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MoveRampSpecified
@@ -3595,7 +3595,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.moveRampFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int PresetRamp
@@ -3609,7 +3609,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.presetRampField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PresetRampSpecified
@@ -3623,7 +3623,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.presetRampFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int PresetTourRamp
@@ -3637,7 +3637,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.presetTourRampField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PresetTourRampSpecified
@@ -3652,20 +3652,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZSpeed
     {
-        
+
         private Vector2D panTiltField;
-        
+
         private Vector1D zoomField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Vector2D PanTilt
         {
             get
@@ -3677,9 +3677,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.panTiltField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Vector1D Zoom
         {
             get
@@ -3692,20 +3692,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Vector2D
     {
-        
+
         private float xField;
-        
+
         private float yField;
-        
+
         private string spaceField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float x
@@ -3719,7 +3719,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float y
@@ -3733,9 +3733,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string space
         {
             get
@@ -3748,18 +3748,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Vector1D
     {
-        
+
         private float xField;
-        
+
         private string spaceField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float x
@@ -3773,9 +3773,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string space
         {
             get
@@ -3788,18 +3788,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PanTiltLimits
     {
-        
+
         private Space2DDescription rangeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Space2DDescription Range
         {
             get
@@ -3812,22 +3812,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Space2DDescription
     {
-        
+
         private string uRIField;
-        
+
         private FloatRange xRangeField;
-        
+
         private FloatRange yRangeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string URI
         {
             get
@@ -3839,9 +3839,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.uRIField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange XRange
         {
             get
@@ -3853,9 +3853,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public FloatRange YRange
         {
             get
@@ -3868,20 +3868,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FloatRange
     {
-        
+
         private float minField;
-        
+
         private float maxField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Min
         {
             get
@@ -3893,9 +3893,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Max
         {
             get
@@ -3908,18 +3908,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ZoomLimits
     {
-        
+
         private Space1DDescription rangeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Space1DDescription Range
         {
             get
@@ -3932,20 +3932,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Space1DDescription
     {
-        
+
         private string uRIField;
-        
+
         private FloatRange xRangeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string URI
         {
             get
@@ -3957,9 +3957,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.uRIField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange XRange
         {
             get
@@ -3972,22 +3972,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private PTControlDirection pTControlDirectionField;
-        
+
         private PTZConfigurationExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -3999,9 +3999,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public PTControlDirection PTControlDirection
         {
             get
@@ -4013,9 +4013,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pTControlDirectionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public PTZConfigurationExtension2 Extension
         {
             get
@@ -4028,22 +4028,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTControlDirection
     {
-        
+
         private EFlip eFlipField;
-        
+
         private Reverse reverseField;
-        
+
         private PTControlDirectionExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public EFlip EFlip
         {
             get
@@ -4055,9 +4055,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.eFlipField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Reverse Reverse
         {
             get
@@ -4069,9 +4069,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.reverseField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public PTControlDirectionExtension Extension
         {
             get
@@ -4084,20 +4084,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EFlip
     {
-        
+
         private EFlipMode modeField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public EFlipMode Mode
         {
             get
@@ -4109,9 +4109,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4124,36 +4124,36 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum EFlipMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Reverse
     {
-        
+
         private ReverseMode modeField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ReverseMode Mode
         {
             get
@@ -4165,9 +4165,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4180,37 +4180,37 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ReverseMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTControlDirectionExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4223,18 +4223,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZConfigurationExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4247,18 +4247,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioDecoderConfiguration : ConfigurationEntity
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4271,24 +4271,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioOutputConfiguration : ConfigurationEntity
     {
-        
+
         private string outputTokenField;
-        
+
         private string sendPrimacyField;
-        
+
         private int outputLevelField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string OutputToken
         {
             get
@@ -4300,9 +4300,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.outputTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 1)]
         public string SendPrimacy
         {
             get
@@ -4314,9 +4314,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sendPrimacyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int OutputLevel
         {
             get
@@ -4328,9 +4328,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.outputLevelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4343,20 +4343,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoOutputConfiguration : ConfigurationEntity
     {
-        
+
         private string outputTokenField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string OutputToken
         {
             get
@@ -4368,9 +4368,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.outputTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4383,44 +4383,44 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MetadataConfiguration : ConfigurationEntity
     {
-        
+
         private PTZFilter pTZStatusField;
-        
+
         private EventSubscription eventsField;
-        
+
         private bool analyticsField;
-        
+
         private bool analyticsFieldSpecified;
-        
+
         private MulticastConfiguration multicastField;
-        
+
         private string sessionTimeoutField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private AnalyticsEngineConfiguration analyticsEngineConfigurationField;
-        
+
         private MetadataConfigurationExtension extensionField;
-        
+
         private string compressionTypeField;
-        
+
         private bool geoLocationField;
-        
+
         private bool geoLocationFieldSpecified;
-        
+
         private bool shapePolygonField;
-        
+
         private bool shapePolygonFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public PTZFilter PTZStatus
         {
             get
@@ -4432,9 +4432,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pTZStatusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public EventSubscription Events
         {
             get
@@ -4446,9 +4446,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.eventsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool Analytics
         {
             get
@@ -4460,7 +4460,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AnalyticsSpecified
@@ -4474,9 +4474,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public MulticastConfiguration Multicast
         {
             get
@@ -4488,9 +4488,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.multicastField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 4)]
         public string SessionTimeout
         {
             get
@@ -4502,9 +4502,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sessionTimeoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4516,9 +4516,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public AnalyticsEngineConfiguration AnalyticsEngineConfiguration
         {
             get
@@ -4530,9 +4530,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsEngineConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public MetadataConfigurationExtension Extension
         {
             get
@@ -4544,7 +4544,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string CompressionType
@@ -4558,7 +4558,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.compressionTypeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool GeoLocation
@@ -4572,7 +4572,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.geoLocationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GeoLocationSpecified
@@ -4586,7 +4586,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.geoLocationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ShapePolygon
@@ -4600,7 +4600,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.shapePolygonField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ShapePolygonSpecified
@@ -4615,20 +4615,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZFilter
     {
-        
+
         private bool statusField;
-        
+
         private bool positionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Status
         {
             get
@@ -4640,9 +4640,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.statusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool Position
         {
             get
@@ -4655,22 +4655,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EventSubscription
     {
-        
+
         private FilterType filterField;
-        
+
         private EventSubscriptionSubscriptionPolicy subscriptionPolicyField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public FilterType Filter
         {
             get
@@ -4682,9 +4682,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.filterField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public EventSubscriptionSubscriptionPolicy SubscriptionPolicy
         {
             get
@@ -4696,9 +4696,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.subscriptionPolicyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4711,19 +4711,19 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(EventFilter))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://docs.oasis-open.org/wsn/b-2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://docs.oasis-open.org/wsn/b-2")]
     public partial class FilterType
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4736,26 +4736,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EventFilter : FilterType
     {
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EventSubscriptionSubscriptionPolicy
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4768,18 +4768,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MetadataConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4792,26 +4792,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioEncoder2Configuration : ConfigurationEntity
     {
-        
+
         private string encodingField;
-        
+
         private MulticastConfiguration multicastField;
-        
+
         private int bitrateField;
-        
+
         private int sampleRateField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Encoding
         {
             get
@@ -4823,9 +4823,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.encodingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public MulticastConfiguration Multicast
         {
             get
@@ -4837,9 +4837,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.multicastField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int Bitrate
         {
             get
@@ -4851,9 +4851,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.bitrateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public int SampleRate
         {
             get
@@ -4865,9 +4865,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sampleRateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4880,28 +4880,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioEncoderConfiguration : ConfigurationEntity
     {
-        
+
         private AudioEncoding encodingField;
-        
+
         private int bitrateField;
-        
+
         private int sampleRateField;
-        
+
         private MulticastConfiguration multicastField;
-        
+
         private string sessionTimeoutField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AudioEncoding Encoding
         {
             get
@@ -4913,9 +4913,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.encodingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Bitrate
         {
             get
@@ -4927,9 +4927,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.bitrateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int SampleRate
         {
             get
@@ -4941,9 +4941,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sampleRateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public MulticastConfiguration Multicast
         {
             get
@@ -4955,9 +4955,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.multicastField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 4)]
         public string SessionTimeout
         {
             get
@@ -4969,9 +4969,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sessionTimeoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -4984,36 +4984,36 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum AudioEncoding
     {
-        
+
         /// <remarks/>
         G711,
-        
+
         /// <remarks/>
         G726,
-        
+
         /// <remarks/>
         AAC,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioSourceConfiguration : ConfigurationEntity
     {
-        
+
         private string sourceTokenField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string SourceToken
         {
             get
@@ -5025,9 +5025,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sourceTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5040,38 +5040,38 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoEncoder2Configuration : ConfigurationEntity
     {
-        
+
         private string encodingField;
-        
+
         private VideoResolution2 resolutionField;
-        
+
         private VideoRateControl2 rateControlField;
-        
+
         private MulticastConfiguration multicastField;
-        
+
         private float qualityField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private int govLengthField;
-        
+
         private bool govLengthFieldSpecified;
-        
+
         private string profileField;
-        
+
         private bool guaranteedFrameRateField;
-        
+
         private bool guaranteedFrameRateFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Encoding
         {
             get
@@ -5083,9 +5083,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.encodingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public VideoResolution2 Resolution
         {
             get
@@ -5097,9 +5097,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.resolutionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public VideoRateControl2 RateControl
         {
             get
@@ -5111,9 +5111,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rateControlField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public MulticastConfiguration Multicast
         {
             get
@@ -5125,9 +5125,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.multicastField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public float Quality
         {
             get
@@ -5139,9 +5139,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.qualityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5153,7 +5153,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int GovLength
@@ -5167,7 +5167,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.govLengthField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GovLengthSpecified
@@ -5181,7 +5181,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.govLengthFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Profile
@@ -5195,7 +5195,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.profileField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool GuaranteedFrameRate
@@ -5209,7 +5209,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.guaranteedFrameRateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GuaranteedFrameRateSpecified
@@ -5224,22 +5224,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoResolution2
     {
-        
+
         private int widthField;
-        
+
         private int heightField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Width
         {
             get
@@ -5251,9 +5251,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.widthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Height
         {
             get
@@ -5265,9 +5265,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.heightField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5280,26 +5280,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoRateControl2
     {
-        
+
         private float frameRateLimitField;
-        
+
         private int bitrateLimitField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool constantBitRateField;
-        
+
         private bool constantBitRateFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float FrameRateLimit
         {
             get
@@ -5311,9 +5311,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.frameRateLimitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int BitrateLimit
         {
             get
@@ -5325,9 +5325,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.bitrateLimitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5339,7 +5339,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ConstantBitRate
@@ -5353,7 +5353,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.constantBitRateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ConstantBitRateSpecified
@@ -5368,26 +5368,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSourceConfiguration : ConfigurationEntity
     {
-        
+
         private string sourceTokenField;
-        
+
         private IntRectangle boundsField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private VideoSourceConfigurationExtension extensionField;
-        
+
         private string viewModeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string SourceToken
         {
             get
@@ -5399,9 +5399,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sourceTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public IntRectangle Bounds
         {
             get
@@ -5413,9 +5413,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.boundsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5427,9 +5427,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public VideoSourceConfigurationExtension Extension
         {
             get
@@ -5441,7 +5441,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string ViewMode
@@ -5456,22 +5456,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IntRectangle
     {
-        
+
         private int xField;
-        
+
         private int yField;
-        
+
         private int widthField;
-        
+
         private int heightField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int x
@@ -5485,7 +5485,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int y
@@ -5499,7 +5499,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int width
@@ -5513,7 +5513,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.widthField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int height
@@ -5528,20 +5528,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSourceConfigurationExtension
     {
-        
+
         private Rotate rotateField;
-        
+
         private VideoSourceConfigurationExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Rotate Rotate
         {
             get
@@ -5553,9 +5553,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rotateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public VideoSourceConfigurationExtension2 Extension
         {
             get
@@ -5568,24 +5568,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Rotate
     {
-        
+
         private RotateMode modeField;
-        
+
         private int degreeField;
-        
+
         private bool degreeFieldSpecified;
-        
+
         private RotateExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public RotateMode Mode
         {
             get
@@ -5597,9 +5597,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Degree
         {
             get
@@ -5611,7 +5611,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.degreeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DegreeSpecified
@@ -5625,9 +5625,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.degreeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public RotateExtension Extension
         {
             get
@@ -5640,18 +5640,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RotateExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5664,22 +5664,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSourceConfigurationExtension2
     {
-        
+
         private LensDescription[] lensDescriptionField;
-        
+
         private SceneOrientation sceneOrientationField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LensDescription", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("LensDescription", Order = 0)]
         public LensDescription[] LensDescription
         {
             get
@@ -5691,9 +5691,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.lensDescriptionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public SceneOrientation SceneOrientation
         {
             get
@@ -5705,9 +5705,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sceneOrientationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5720,28 +5720,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class LensDescription
     {
-        
+
         private LensOffset offsetField;
-        
+
         private LensProjection[] projectionField;
-        
+
         private float xFactorField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private float focalLengthField;
-        
+
         private bool focalLengthFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public LensOffset Offset
         {
             get
@@ -5753,9 +5753,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.offsetField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Projection", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Projection", Order = 1)]
         public LensProjection[] Projection
         {
             get
@@ -5767,9 +5767,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.projectionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float XFactor
         {
             get
@@ -5781,9 +5781,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xFactorField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5795,7 +5795,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float FocalLength
@@ -5809,7 +5809,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.focalLengthField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FocalLengthSpecified
@@ -5824,22 +5824,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class LensOffset
     {
-        
+
         private float xField;
-        
+
         private bool xFieldSpecified;
-        
+
         private float yField;
-        
+
         private bool yFieldSpecified;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float x
@@ -5853,7 +5853,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool xSpecified
@@ -5867,7 +5867,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float y
@@ -5881,7 +5881,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ySpecified
@@ -5896,26 +5896,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class LensProjection
     {
-        
+
         private float angleField;
-        
+
         private float radiusField;
-        
+
         private float transmittanceField;
-        
+
         private bool transmittanceFieldSpecified;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Angle
         {
             get
@@ -5927,9 +5927,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.angleField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Radius
         {
             get
@@ -5941,9 +5941,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.radiusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float Transmittance
         {
             get
@@ -5955,7 +5955,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.transmittanceField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool TransmittanceSpecified
@@ -5969,9 +5969,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.transmittanceFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -5984,20 +5984,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SceneOrientation
     {
-        
+
         private SceneOrientationMode modeField;
-        
+
         private string orientationField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public SceneOrientationMode Mode
         {
             get
@@ -6009,9 +6009,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Orientation
         {
             get
@@ -6024,18 +6024,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public partial class RelayOutputOptionsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -6048,28 +6048,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public partial class RelayOutputOptions
     {
-        
+
         private RelayMode[] modeField;
-        
+
         private string delayTimesField;
-        
+
         private bool discreteField;
-        
+
         private bool discreteFieldSpecified;
-        
+
         private RelayOutputOptionsExtension extensionField;
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public RelayMode[] Mode
         {
             get
@@ -6081,9 +6081,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string DelayTimes
         {
             get
@@ -6095,9 +6095,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.delayTimesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool Discrete
         {
             get
@@ -6109,7 +6109,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discreteField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DiscreteSpecified
@@ -6123,9 +6123,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discreteFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public RelayOutputOptionsExtension Extension
         {
             get
@@ -6137,7 +6137,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -6152,45 +6152,45 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum RelayMode
     {
-        
+
         /// <remarks/>
         Monostable,
-        
+
         /// <remarks/>
         Bistable,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Capabilities", Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName = "Capabilities", Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public partial class Capabilities1
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private int videoSourcesField;
-        
+
         private int videoOutputsField;
-        
+
         private int audioSourcesField;
-        
+
         private int audioOutputsField;
-        
+
         private int relayOutputsField;
-        
+
         private int serialPortsField;
-        
+
         private int digitalInputsField;
-        
+
         private bool digitalInputOptionsField;
-        
+
         public Capabilities1()
         {
             this.videoSourcesField = 0;
@@ -6202,9 +6202,9 @@ namespace QuickNV.Onvif.DeviceIO
             this.digitalInputsField = 0;
             this.digitalInputOptionsField = false;
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -6216,7 +6216,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -6231,7 +6231,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.videoSourcesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -6246,7 +6246,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.videoOutputsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -6261,7 +6261,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.audioSourcesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -6276,7 +6276,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.audioOutputsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -6291,7 +6291,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.relayOutputsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -6306,7 +6306,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.serialPortsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -6321,7 +6321,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.digitalInputsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -6337,18 +6337,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot1XConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -6361,18 +6361,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EapMethodExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -6385,20 +6385,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class TLSConfiguration
     {
-        
+
         private string certificateIDField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 0)]
         public string CertificateID
         {
             get
@@ -6410,9 +6410,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -6425,22 +6425,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EAPMethodConfiguration
     {
-        
+
         private TLSConfiguration tLSConfigurationField;
-        
+
         private string passwordField;
-        
+
         private EapMethodExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public TLSConfiguration TLSConfiguration
         {
             get
@@ -6452,9 +6452,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLSConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Password
         {
             get
@@ -6466,9 +6466,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.passwordField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public EapMethodExtension Extension
         {
             get
@@ -6481,30 +6481,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot1XConfiguration
     {
-        
+
         private string dot1XConfigurationTokenField;
-        
+
         private string identityField;
-        
+
         private string anonymousIDField;
-        
+
         private int eAPMethodField;
-        
+
         private string[] cACertificateIDField;
-        
+
         private EAPMethodConfiguration eAPMethodConfigurationField;
-        
+
         private Dot1XConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Dot1XConfigurationToken
         {
             get
@@ -6516,9 +6516,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot1XConfigurationTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Identity
         {
             get
@@ -6530,9 +6530,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.identityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string AnonymousID
         {
             get
@@ -6544,9 +6544,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anonymousIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public int EAPMethod
         {
             get
@@ -6558,9 +6558,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.eAPMethodField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CACertificateID", DataType="token", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute("CACertificateID", DataType = "token", Order = 4)]
         public string[] CACertificateID
         {
             get
@@ -6572,9 +6572,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.cACertificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public EAPMethodConfiguration EAPMethodConfiguration
         {
             get
@@ -6586,9 +6586,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.eAPMethodConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public Dot1XConfigurationExtension Extension
         {
             get
@@ -6601,18 +6601,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class CertificateInformationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -6625,22 +6625,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DateTimeRange
     {
-        
+
         private System.DateTime fromField;
-        
+
         private System.DateTime untilField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public System.DateTime From
         {
             get
@@ -6652,9 +6652,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fromField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public System.DateTime Until
         {
             get
@@ -6666,9 +6666,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.untilField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -6681,18 +6681,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class CertificateUsage
     {
-        
+
         private bool criticalField;
-        
+
         private string valueField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Critical
@@ -6706,7 +6706,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.criticalField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlTextAttribute()]
         public string Value
@@ -6721,40 +6721,40 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class CertificateInformation
     {
-        
+
         private string certificateIDField;
-        
+
         private string issuerDNField;
-        
+
         private string subjectDNField;
-        
+
         private CertificateUsage keyUsageField;
-        
+
         private CertificateUsage extendedKeyUsageField;
-        
+
         private int keyLengthField;
-        
+
         private bool keyLengthFieldSpecified;
-        
+
         private string versionField;
-        
+
         private string serialNumField;
-        
+
         private string signatureAlgorithmField;
-        
+
         private DateTimeRange validityField;
-        
+
         private CertificateInformationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 0)]
         public string CertificateID
         {
             get
@@ -6766,9 +6766,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string IssuerDN
         {
             get
@@ -6780,9 +6780,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.issuerDNField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string SubjectDN
         {
             get
@@ -6794,9 +6794,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.subjectDNField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public CertificateUsage KeyUsage
         {
             get
@@ -6808,9 +6808,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.keyUsageField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public CertificateUsage ExtendedKeyUsage
         {
             get
@@ -6822,9 +6822,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extendedKeyUsageField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public int KeyLength
         {
             get
@@ -6836,7 +6836,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.keyLengthField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool KeyLengthSpecified
@@ -6850,9 +6850,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.keyLengthFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public string Version
         {
             get
@@ -6864,9 +6864,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.versionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public string SerialNum
         {
             get
@@ -6878,9 +6878,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.serialNumField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public string SignatureAlgorithm
         {
             get
@@ -6892,9 +6892,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.signatureAlgorithmField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public DateTimeRange Validity
         {
             get
@@ -6906,9 +6906,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.validityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public CertificateInformationExtension Extension
         {
             get
@@ -6921,24 +6921,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class CertificateWithPrivateKey
     {
-        
+
         private string certificateIDField;
-        
+
         private BinaryData certificateField;
-        
+
         private BinaryData privateKeyField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 0)]
         public string CertificateID
         {
             get
@@ -6950,9 +6950,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public BinaryData Certificate
         {
             get
@@ -6964,9 +6964,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.certificateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public BinaryData PrivateKey
         {
             get
@@ -6978,9 +6978,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.privateKeyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -6993,20 +6993,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class BinaryData
     {
-        
+
         private byte[] dataField;
-        
+
         private string contentTypeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary", Order = 0)]
         public byte[] Data
         {
             get
@@ -7018,9 +7018,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dataField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified, Namespace="http://www.w3.org/2005/05/xmlmime")]
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/2005/05/xmlmime")]
         public string contentType
         {
             get
@@ -7033,22 +7033,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class CertificateStatus
     {
-        
+
         private string certificateIDField;
-        
+
         private bool statusField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 0)]
         public string CertificateID
         {
             get
@@ -7060,9 +7060,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool Status
         {
             get
@@ -7074,9 +7074,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.statusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -7089,20 +7089,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Certificate
     {
-        
+
         private string certificateIDField;
-        
+
         private BinaryData certificate1Field;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 0)]
         public string CertificateID
         {
             get
@@ -7114,9 +7114,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Certificate", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Certificate", Order = 1)]
         public BinaryData Certificate1
         {
             get
@@ -7129,30 +7129,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class LocalOrientation
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private float panField;
-        
+
         private bool panFieldSpecified;
-        
+
         private float tiltField;
-        
+
         private bool tiltFieldSpecified;
-        
+
         private float rollField;
-        
+
         private bool rollFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -7164,7 +7164,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float pan
@@ -7178,7 +7178,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.panField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool panSpecified
@@ -7192,7 +7192,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.panFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float tilt
@@ -7206,7 +7206,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tiltField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool tiltSpecified
@@ -7220,7 +7220,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tiltFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float roll
@@ -7234,7 +7234,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rollField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool rollSpecified
@@ -7249,30 +7249,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class LocalLocation
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private float xField;
-        
+
         private bool xFieldSpecified;
-        
+
         private float yField;
-        
+
         private bool yFieldSpecified;
-        
+
         private float zField;
-        
+
         private bool zFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -7284,7 +7284,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float x
@@ -7298,7 +7298,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool xSpecified
@@ -7312,7 +7312,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float y
@@ -7326,7 +7326,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ySpecified
@@ -7340,7 +7340,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float z
@@ -7354,7 +7354,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.zField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool zSpecified
@@ -7369,30 +7369,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class GeoOrientation
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private float rollField;
-        
+
         private bool rollFieldSpecified;
-        
+
         private float pitchField;
-        
+
         private bool pitchFieldSpecified;
-        
+
         private float yawField;
-        
+
         private bool yawFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -7404,7 +7404,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float roll
@@ -7418,7 +7418,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rollField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool rollSpecified
@@ -7432,7 +7432,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rollFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float pitch
@@ -7446,7 +7446,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pitchField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool pitchSpecified
@@ -7460,7 +7460,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pitchFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float yaw
@@ -7474,7 +7474,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yawField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool yawSpecified
@@ -7489,30 +7489,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class GeoLocation
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private double lonField;
-        
+
         private bool lonFieldSpecified;
-        
+
         private double latField;
-        
+
         private bool latFieldSpecified;
-        
+
         private float elevationField;
-        
+
         private bool elevationFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -7524,7 +7524,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public double lon
@@ -7538,7 +7538,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.lonField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool lonSpecified
@@ -7552,7 +7552,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.lonFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public double lat
@@ -7566,7 +7566,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.latField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool latSpecified
@@ -7580,7 +7580,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.latFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float elevation
@@ -7594,7 +7594,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.elevationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool elevationSpecified
@@ -7609,38 +7609,38 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class LocationEntity
     {
-        
+
         private GeoLocation geoLocationField;
-        
+
         private GeoOrientation geoOrientationField;
-        
+
         private LocalLocation localLocationField;
-        
+
         private LocalOrientation localOrientationField;
-        
+
         private string entityField;
-        
+
         private string tokenField;
-        
+
         private bool fixedField;
-        
+
         private bool fixedFieldSpecified;
-        
+
         private string geoSourceField;
-        
+
         private bool autoGeoField;
-        
+
         private bool autoGeoFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public GeoLocation GeoLocation
         {
             get
@@ -7652,9 +7652,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.geoLocationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public GeoOrientation GeoOrientation
         {
             get
@@ -7666,9 +7666,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.geoOrientationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public LocalLocation LocalLocation
         {
             get
@@ -7680,9 +7680,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.localLocationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public LocalOrientation LocalOrientation
         {
             get
@@ -7694,7 +7694,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.localOrientationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Entity
@@ -7708,7 +7708,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.entityField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Token
@@ -7722,7 +7722,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Fixed
@@ -7736,7 +7736,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fixedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FixedSpecified
@@ -7750,9 +7750,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fixedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string GeoSource
         {
             get
@@ -7764,7 +7764,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.geoSourceField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AutoGeo
@@ -7778,7 +7778,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.autoGeoField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AutoGeoSpecified
@@ -7793,22 +7793,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SystemLogUri
     {
-        
+
         private SystemLogType typeField;
-        
+
         private string uriField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public SystemLogType Type
         {
             get
@@ -7820,9 +7820,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 1)]
         public string Uri
         {
             get
@@ -7834,9 +7834,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.uriField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -7849,31 +7849,31 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum SystemLogType
     {
-        
+
         /// <remarks/>
         System,
-        
+
         /// <remarks/>
         Access,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11AvailableNetworksExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -7886,32 +7886,32 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11AvailableNetworks
     {
-        
+
         private byte[] sSIDField;
-        
+
         private string bSSIDField;
-        
+
         private Dot11AuthAndMangementSuite[] authAndMangementSuiteField;
-        
+
         private Dot11Cipher[] pairCipherField;
-        
+
         private Dot11Cipher[] groupCipherField;
-        
+
         private Dot11SignalStrength signalStrengthField;
-        
+
         private bool signalStrengthFieldSpecified;
-        
+
         private Dot11AvailableNetworksExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="hexBinary", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "hexBinary", Order = 0)]
         public byte[] SSID
         {
             get
@@ -7923,9 +7923,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sSIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string BSSID
         {
             get
@@ -7937,9 +7937,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.bSSIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AuthAndMangementSuite", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("AuthAndMangementSuite", Order = 2)]
         public Dot11AuthAndMangementSuite[] AuthAndMangementSuite
         {
             get
@@ -7951,9 +7951,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.authAndMangementSuiteField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PairCipher", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute("PairCipher", Order = 3)]
         public Dot11Cipher[] PairCipher
         {
             get
@@ -7965,9 +7965,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pairCipherField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("GroupCipher", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute("GroupCipher", Order = 4)]
         public Dot11Cipher[] GroupCipher
         {
             get
@@ -7979,9 +7979,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.groupCipherField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public Dot11SignalStrength SignalStrength
         {
             get
@@ -7993,7 +7993,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.signalStrengthField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SignalStrengthSpecified
@@ -8007,9 +8007,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.signalStrengthFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public Dot11AvailableNetworksExtension Extension
         {
             get
@@ -8022,101 +8022,101 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum Dot11AuthAndMangementSuite
     {
-        
+
         /// <remarks/>
         None,
-        
+
         /// <remarks/>
         Dot1X,
-        
+
         /// <remarks/>
         PSK,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum Dot11Cipher
     {
-        
+
         /// <remarks/>
         CCMP,
-        
+
         /// <remarks/>
         TKIP,
-        
+
         /// <remarks/>
         Any,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum Dot11SignalStrength
     {
-        
+
         /// <remarks/>
         None,
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("Very Bad")]
         VeryBad,
-        
+
         /// <remarks/>
         Bad,
-        
+
         /// <remarks/>
         Good,
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("Very Good")]
         VeryGood,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11Status
     {
-        
+
         private byte[] sSIDField;
-        
+
         private string bSSIDField;
-        
+
         private Dot11Cipher pairCipherField;
-        
+
         private bool pairCipherFieldSpecified;
-        
+
         private Dot11Cipher groupCipherField;
-        
+
         private bool groupCipherFieldSpecified;
-        
+
         private Dot11SignalStrength signalStrengthField;
-        
+
         private bool signalStrengthFieldSpecified;
-        
+
         private string activeConfigAliasField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="hexBinary", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "hexBinary", Order = 0)]
         public byte[] SSID
         {
             get
@@ -8128,9 +8128,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sSIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string BSSID
         {
             get
@@ -8142,9 +8142,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.bSSIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Dot11Cipher PairCipher
         {
             get
@@ -8156,7 +8156,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pairCipherField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PairCipherSpecified
@@ -8170,9 +8170,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pairCipherFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public Dot11Cipher GroupCipher
         {
             get
@@ -8184,7 +8184,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.groupCipherField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GroupCipherSpecified
@@ -8198,9 +8198,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.groupCipherFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public Dot11SignalStrength SignalStrength
         {
             get
@@ -8212,7 +8212,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.signalStrengthField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SignalStrengthSpecified
@@ -8226,9 +8226,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.signalStrengthFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public string ActiveConfigAlias
         {
             get
@@ -8240,9 +8240,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.activeConfigAliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 6)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8255,28 +8255,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11Capabilities
     {
-        
+
         private bool tKIPField;
-        
+
         private bool scanAvailableNetworksField;
-        
+
         private bool multipleConfigurationField;
-        
+
         private bool adHocStationModeField;
-        
+
         private bool wEPField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool TKIP
         {
             get
@@ -8288,9 +8288,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tKIPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool ScanAvailableNetworks
         {
             get
@@ -8302,9 +8302,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.scanAvailableNetworksField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool MultipleConfiguration
         {
             get
@@ -8316,9 +8316,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.multipleConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool AdHocStationMode
         {
             get
@@ -8330,9 +8330,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.adHocStationModeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public bool WEP
         {
             get
@@ -8344,9 +8344,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.wEPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8359,18 +8359,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPAddressFilterExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8383,24 +8383,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPAddressFilter
     {
-        
+
         private IPAddressFilterType typeField;
-        
+
         private PrefixedIPv4Address[] iPv4AddressField;
-        
+
         private PrefixedIPv6Address[] iPv6AddressField;
-        
+
         private IPAddressFilterExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public IPAddressFilterType Type
         {
             get
@@ -8412,9 +8412,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IPv4Address", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("IPv4Address", Order = 1)]
         public PrefixedIPv4Address[] IPv4Address
         {
             get
@@ -8426,9 +8426,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv4AddressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IPv6Address", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("IPv6Address", Order = 2)]
         public PrefixedIPv6Address[] IPv6Address
         {
             get
@@ -8440,9 +8440,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv6AddressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IPAddressFilterExtension Extension
         {
             get
@@ -8455,33 +8455,33 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum IPAddressFilterType
     {
-        
+
         /// <remarks/>
         Allow,
-        
+
         /// <remarks/>
         Deny,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PrefixedIPv4Address
     {
-        
+
         private string addressField;
-        
+
         private int prefixLengthField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 0)]
         public string Address
         {
             get
@@ -8493,9 +8493,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.addressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int PrefixLength
         {
             get
@@ -8508,20 +8508,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PrefixedIPv6Address
     {
-        
+
         private string addressField;
-        
+
         private int prefixLengthField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 0)]
         public string Address
         {
             get
@@ -8533,9 +8533,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.addressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int PrefixLength
         {
             get
@@ -8548,18 +8548,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkZeroConfigurationExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8572,22 +8572,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkZeroConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private NetworkZeroConfiguration[] additionalField;
-        
+
         private NetworkZeroConfigurationExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8599,9 +8599,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Additional", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Additional", Order = 1)]
         public NetworkZeroConfiguration[] Additional
         {
             get
@@ -8613,9 +8613,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.additionalField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public NetworkZeroConfigurationExtension2 Extension
         {
             get
@@ -8628,24 +8628,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkZeroConfiguration
     {
-        
+
         private string interfaceTokenField;
-        
+
         private bool enabledField;
-        
+
         private string[] addressesField;
-        
+
         private NetworkZeroConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string InterfaceToken
         {
             get
@@ -8657,9 +8657,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.interfaceTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool Enabled
         {
             get
@@ -8671,9 +8671,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Addresses", DataType="token", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("Addresses", DataType = "token", Order = 2)]
         public string[] Addresses
         {
             get
@@ -8685,9 +8685,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.addressesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public NetworkZeroConfigurationExtension Extension
         {
             get
@@ -8700,20 +8700,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkGateway
     {
-        
+
         private string[] iPv4AddressField;
-        
+
         private string[] iPv6AddressField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IPv4Address", DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("IPv4Address", DataType = "token", Order = 0)]
         public string[] IPv4Address
         {
             get
@@ -8725,9 +8725,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv4AddressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IPv6Address", DataType="token", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("IPv6Address", DataType = "token", Order = 1)]
         public string[] IPv6Address
         {
             get
@@ -8740,18 +8740,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkProtocolExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8764,24 +8764,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkProtocol
     {
-        
+
         private NetworkProtocolType nameField;
-        
+
         private bool enabledField;
-        
+
         private int[] portField;
-        
+
         private NetworkProtocolExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public NetworkProtocolType Name
         {
             get
@@ -8793,9 +8793,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool Enabled
         {
             get
@@ -8807,9 +8807,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Port", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("Port", Order = 2)]
         public int[] Port
         {
             get
@@ -8821,9 +8821,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.portField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public NetworkProtocolExtension Extension
         {
             get
@@ -8836,34 +8836,34 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum NetworkProtocolType
     {
-        
+
         /// <remarks/>
         HTTP,
-        
+
         /// <remarks/>
         HTTPS,
-        
+
         /// <remarks/>
         RTSP,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterfaceSetConfigurationExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8876,24 +8876,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterfaceSetConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private Dot3Configuration[] dot3Field;
-        
+
         private Dot11Configuration[] dot11Field;
-        
+
         private NetworkInterfaceSetConfigurationExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8905,9 +8905,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Dot3", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Dot3", Order = 1)]
         public Dot3Configuration[] Dot3
         {
             get
@@ -8919,9 +8919,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot3Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Dot11", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("Dot11", Order = 2)]
         public Dot11Configuration[] Dot11
         {
             get
@@ -8933,9 +8933,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot11Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public NetworkInterfaceSetConfigurationExtension2 Extension
         {
             get
@@ -8948,18 +8948,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot3Configuration
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -8972,28 +8972,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11Configuration
     {
-        
+
         private byte[] sSIDField;
-        
+
         private Dot11StationMode modeField;
-        
+
         private string aliasField;
-        
+
         private string priorityField;
-        
+
         private Dot11SecurityConfiguration securityField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="hexBinary", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "hexBinary", Order = 0)]
         public byte[] SSID
         {
             get
@@ -9005,9 +9005,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sSIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Dot11StationMode Mode
         {
             get
@@ -9019,9 +9019,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string Alias
         {
             get
@@ -9033,9 +9033,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.aliasField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="integer", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "integer", Order = 3)]
         public string Priority
         {
             get
@@ -9047,9 +9047,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.priorityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public Dot11SecurityConfiguration Security
         {
             get
@@ -9061,9 +9061,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.securityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -9076,45 +9076,45 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum Dot11StationMode
     {
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("Ad-hoc")]
         Adhoc,
-        
+
         /// <remarks/>
         Infrastructure,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11SecurityConfiguration
     {
-        
+
         private Dot11SecurityMode modeField;
-        
+
         private Dot11Cipher algorithmField;
-        
+
         private bool algorithmFieldSpecified;
-        
+
         private Dot11PSKSet pSKField;
-        
+
         private string dot1XField;
-        
+
         private Dot11SecurityConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Dot11SecurityMode Mode
         {
             get
@@ -9126,9 +9126,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Dot11Cipher Algorithm
         {
             get
@@ -9140,7 +9140,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.algorithmField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AlgorithmSpecified
@@ -9154,9 +9154,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.algorithmFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Dot11PSKSet PSK
         {
             get
@@ -9168,9 +9168,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pSKField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public string Dot1X
         {
             get
@@ -9182,9 +9182,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot1XField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public Dot11SecurityConfigurationExtension Extension
         {
             get
@@ -9197,44 +9197,44 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum Dot11SecurityMode
     {
-        
+
         /// <remarks/>
         None,
-        
+
         /// <remarks/>
         WEP,
-        
+
         /// <remarks/>
         PSK,
-        
+
         /// <remarks/>
         Dot1X,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11PSKSet
     {
-        
+
         private byte[] keyField;
-        
+
         private string passphraseField;
-        
+
         private Dot11PSKSetExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="hexBinary", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "hexBinary", Order = 0)]
         public byte[] Key
         {
             get
@@ -9246,9 +9246,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.keyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Passphrase
         {
             get
@@ -9260,9 +9260,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.passphraseField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Dot11PSKSetExtension Extension
         {
             get
@@ -9275,18 +9275,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11PSKSetExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -9299,18 +9299,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Dot11SecurityConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -9323,30 +9323,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPv6NetworkInterfaceSetConfiguration
     {
-        
+
         private bool enabledField;
-        
+
         private bool enabledFieldSpecified;
-        
+
         private bool acceptRouterAdvertField;
-        
+
         private bool acceptRouterAdvertFieldSpecified;
-        
+
         private PrefixedIPv6Address[] manualField;
-        
+
         private IPv6DHCPConfiguration dHCPField;
-        
+
         private bool dHCPFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -9358,7 +9358,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool EnabledSpecified
@@ -9372,9 +9372,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool AcceptRouterAdvert
         {
             get
@@ -9386,7 +9386,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.acceptRouterAdvertField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AcceptRouterAdvertSpecified
@@ -9400,9 +9400,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.acceptRouterAdvertFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Manual", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("Manual", Order = 2)]
         public PrefixedIPv6Address[] Manual
         {
             get
@@ -9414,9 +9414,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.manualField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IPv6DHCPConfiguration DHCP
         {
             get
@@ -9428,7 +9428,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dHCPField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DHCPSpecified
@@ -9443,45 +9443,45 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum IPv6DHCPConfiguration
     {
-        
+
         /// <remarks/>
         Auto,
-        
+
         /// <remarks/>
         Stateful,
-        
+
         /// <remarks/>
         Stateless,
-        
+
         /// <remarks/>
         Off,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPv4NetworkInterfaceSetConfiguration
     {
-        
+
         private bool enabledField;
-        
+
         private bool enabledFieldSpecified;
-        
+
         private PrefixedIPv4Address[] manualField;
-        
+
         private bool dHCPField;
-        
+
         private bool dHCPFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -9493,7 +9493,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool EnabledSpecified
@@ -9507,9 +9507,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Manual", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Manual", Order = 1)]
         public PrefixedIPv4Address[] Manual
         {
             get
@@ -9521,9 +9521,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.manualField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool DHCP
         {
             get
@@ -9535,7 +9535,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dHCPField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DHCPSpecified
@@ -9550,32 +9550,32 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterfaceSetConfiguration
     {
-        
+
         private bool enabledField;
-        
+
         private bool enabledFieldSpecified;
-        
+
         private NetworkInterfaceConnectionSetting linkField;
-        
+
         private int mTUField;
-        
+
         private bool mTUFieldSpecified;
-        
+
         private IPv4NetworkInterfaceSetConfiguration iPv4Field;
-        
+
         private IPv6NetworkInterfaceSetConfiguration iPv6Field;
-        
+
         private NetworkInterfaceSetConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -9587,7 +9587,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool EnabledSpecified
@@ -9601,9 +9601,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public NetworkInterfaceConnectionSetting Link
         {
             get
@@ -9615,9 +9615,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.linkField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int MTU
         {
             get
@@ -9629,7 +9629,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.mTUField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MTUSpecified
@@ -9643,9 +9643,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.mTUFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IPv4NetworkInterfaceSetConfiguration IPv4
         {
             get
@@ -9657,9 +9657,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv4Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public IPv6NetworkInterfaceSetConfiguration IPv6
         {
             get
@@ -9671,9 +9671,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv6Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public NetworkInterfaceSetConfigurationExtension Extension
         {
             get
@@ -9686,22 +9686,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterfaceConnectionSetting
     {
-        
+
         private bool autoNegotiationField;
-        
+
         private int speedField;
-        
+
         private Duplex duplexField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool AutoNegotiation
         {
             get
@@ -9713,9 +9713,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.autoNegotiationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Speed
         {
             get
@@ -9727,9 +9727,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.speedField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Duplex Duplex
         {
             get
@@ -9742,31 +9742,31 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum Duplex
     {
-        
+
         /// <remarks/>
         Full,
-        
+
         /// <remarks/>
         Half,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -9779,18 +9779,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDImgConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -9803,20 +9803,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDImgConfiguration
     {
-        
+
         private string imgPathField;
-        
+
         private OSDImgConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string ImgPath
         {
             get
@@ -9828,9 +9828,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.imgPathField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public OSDImgConfigurationExtension Extension
         {
             get
@@ -9843,18 +9843,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDTextConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -9867,26 +9867,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Color
     {
-        
+
         private float xField;
-        
+
         private float yField;
-        
+
         private float zField;
-        
+
         private string colorspaceField;
-        
+
         private float likelihoodField;
-        
+
         private bool likelihoodFieldSpecified;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float X
@@ -9900,7 +9900,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float Y
@@ -9914,7 +9914,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float Z
@@ -9928,9 +9928,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.zField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Colorspace
         {
             get
@@ -9942,7 +9942,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.colorspaceField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float Likelihood
@@ -9956,7 +9956,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.likelihoodField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LikelihoodSpecified
@@ -9971,22 +9971,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDColor
     {
-        
+
         private Color colorField;
-        
+
         private int transparentField;
-        
+
         private bool transparentFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Color Color
         {
             get
@@ -9998,7 +9998,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.colorField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int Transparent
@@ -10012,7 +10012,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.transparentField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool TransparentSpecified
@@ -10027,38 +10027,38 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDTextConfiguration
     {
-        
+
         private string typeField;
-        
+
         private string dateFormatField;
-        
+
         private string timeFormatField;
-        
+
         private int fontSizeField;
-        
+
         private bool fontSizeFieldSpecified;
-        
+
         private OSDColor fontColorField;
-        
+
         private OSDColor backgroundColorField;
-        
+
         private string plainTextField;
-        
+
         private OSDTextConfigurationExtension extensionField;
-        
+
         private bool isPersistentTextField;
-        
+
         private bool isPersistentTextFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Type
         {
             get
@@ -10070,9 +10070,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string DateFormat
         {
             get
@@ -10084,9 +10084,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dateFormatField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string TimeFormat
         {
             get
@@ -10098,9 +10098,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.timeFormatField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public int FontSize
         {
             get
@@ -10112,7 +10112,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fontSizeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FontSizeSpecified
@@ -10126,9 +10126,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fontSizeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public OSDColor FontColor
         {
             get
@@ -10140,9 +10140,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fontColorField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public OSDColor BackgroundColor
         {
             get
@@ -10154,9 +10154,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.backgroundColorField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public string PlainText
         {
             get
@@ -10168,9 +10168,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.plainTextField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public OSDTextConfigurationExtension Extension
         {
             get
@@ -10182,7 +10182,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool IsPersistentText
@@ -10196,7 +10196,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.isPersistentTextField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IsPersistentTextSpecified
@@ -10211,18 +10211,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDPosConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -10235,22 +10235,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Vector
     {
-        
+
         private float xField;
-        
+
         private bool xFieldSpecified;
-        
+
         private float yField;
-        
+
         private bool yFieldSpecified;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float x
@@ -10264,7 +10264,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool xSpecified
@@ -10278,7 +10278,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float y
@@ -10292,7 +10292,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ySpecified
@@ -10307,22 +10307,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDPosConfiguration
     {
-        
+
         private string typeField;
-        
+
         private Vector posField;
-        
+
         private OSDPosConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Type
         {
             get
@@ -10334,9 +10334,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Vector Pos
         {
             get
@@ -10348,9 +10348,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.posField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public OSDPosConfigurationExtension Extension
         {
             get
@@ -10363,16 +10363,16 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDReference
     {
-        
+
         private string valueField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlTextAttribute()]
         public string Value
@@ -10387,18 +10387,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZNodeExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -10411,18 +10411,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZPresetTourSupportedExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -10435,22 +10435,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZPresetTourSupported
     {
-        
+
         private int maximumNumberOfPresetToursField;
-        
+
         private PTZPresetTourOperation[] pTZPresetTourOperationField;
-        
+
         private PTZPresetTourSupportedExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int MaximumNumberOfPresetTours
         {
             get
@@ -10462,9 +10462,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maximumNumberOfPresetToursField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PTZPresetTourOperation", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("PTZPresetTourOperation", Order = 1)]
         public PTZPresetTourOperation[] PTZPresetTourOperation
         {
             get
@@ -10476,9 +10476,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pTZPresetTourOperationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public PTZPresetTourSupportedExtension Extension
         {
             get
@@ -10491,41 +10491,41 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum PTZPresetTourOperation
     {
-        
+
         /// <remarks/>
         Start,
-        
+
         /// <remarks/>
         Stop,
-        
+
         /// <remarks/>
         Pause,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZNodeExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private PTZPresetTourSupported supportedPresetTourField;
-        
+
         private PTZNodeExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -10537,9 +10537,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public PTZPresetTourSupported SupportedPresetTour
         {
             get
@@ -10551,9 +10551,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.supportedPresetTourField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public PTZNodeExtension2 Extension
         {
             get
@@ -10566,18 +10566,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZSpacesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -10590,34 +10590,34 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZSpaces
     {
-        
+
         private Space2DDescription[] absolutePanTiltPositionSpaceField;
-        
+
         private Space1DDescription[] absoluteZoomPositionSpaceField;
-        
+
         private Space2DDescription[] relativePanTiltTranslationSpaceField;
-        
+
         private Space1DDescription[] relativeZoomTranslationSpaceField;
-        
+
         private Space2DDescription[] continuousPanTiltVelocitySpaceField;
-        
+
         private Space1DDescription[] continuousZoomVelocitySpaceField;
-        
+
         private Space1DDescription[] panTiltSpeedSpaceField;
-        
+
         private Space1DDescription[] zoomSpeedSpaceField;
-        
+
         private PTZSpacesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AbsolutePanTiltPositionSpace", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AbsolutePanTiltPositionSpace", Order = 0)]
         public Space2DDescription[] AbsolutePanTiltPositionSpace
         {
             get
@@ -10629,9 +10629,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.absolutePanTiltPositionSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AbsoluteZoomPositionSpace", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("AbsoluteZoomPositionSpace", Order = 1)]
         public Space1DDescription[] AbsoluteZoomPositionSpace
         {
             get
@@ -10643,9 +10643,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.absoluteZoomPositionSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RelativePanTiltTranslationSpace", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("RelativePanTiltTranslationSpace", Order = 2)]
         public Space2DDescription[] RelativePanTiltTranslationSpace
         {
             get
@@ -10657,9 +10657,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.relativePanTiltTranslationSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RelativeZoomTranslationSpace", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute("RelativeZoomTranslationSpace", Order = 3)]
         public Space1DDescription[] RelativeZoomTranslationSpace
         {
             get
@@ -10671,9 +10671,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.relativeZoomTranslationSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ContinuousPanTiltVelocitySpace", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute("ContinuousPanTiltVelocitySpace", Order = 4)]
         public Space2DDescription[] ContinuousPanTiltVelocitySpace
         {
             get
@@ -10685,9 +10685,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.continuousPanTiltVelocitySpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ContinuousZoomVelocitySpace", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute("ContinuousZoomVelocitySpace", Order = 5)]
         public Space1DDescription[] ContinuousZoomVelocitySpace
         {
             get
@@ -10699,9 +10699,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.continuousZoomVelocitySpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PanTiltSpeedSpace", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute("PanTiltSpeedSpace", Order = 6)]
         public Space1DDescription[] PanTiltSpeedSpace
         {
             get
@@ -10713,9 +10713,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.panTiltSpeedSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ZoomSpeedSpace", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute("ZoomSpeedSpace", Order = 7)]
         public Space1DDescription[] ZoomSpeedSpace
         {
             get
@@ -10727,9 +10727,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.zoomSpeedSpaceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public PTZSpacesExtension Extension
         {
             get
@@ -10742,22 +10742,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RelayOutputSettings
     {
-        
+
         private RelayMode modeField;
-        
+
         private string delayTimeField;
-        
+
         private RelayIdleState idleStateField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public RelayMode Mode
         {
             get
@@ -10769,9 +10769,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 1)]
         public string DelayTime
         {
             get
@@ -10783,9 +10783,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.delayTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public RelayIdleState IdleState
         {
             get
@@ -10798,31 +10798,31 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum RelayIdleState
     {
-        
+
         /// <remarks/>
         closed,
-        
+
         /// <remarks/>
         open,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterfaceExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -10835,26 +10835,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterfaceExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private int interfaceTypeField;
-        
+
         private Dot3Configuration[] dot3Field;
-        
+
         private Dot11Configuration[] dot11Field;
-        
+
         private NetworkInterfaceExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -10866,9 +10866,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int InterfaceType
         {
             get
@@ -10880,9 +10880,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.interfaceTypeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Dot3", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("Dot3", Order = 2)]
         public Dot3Configuration[] Dot3
         {
             get
@@ -10894,9 +10894,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot3Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Dot11", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute("Dot11", Order = 3)]
         public Dot11Configuration[] Dot11
         {
             get
@@ -10908,9 +10908,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot11Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public NetworkInterfaceExtension2 Extension
         {
             get
@@ -10923,18 +10923,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPv6ConfigurationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -10947,32 +10947,32 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPv6Configuration
     {
-        
+
         private bool acceptRouterAdvertField;
-        
+
         private bool acceptRouterAdvertFieldSpecified;
-        
+
         private IPv6DHCPConfiguration dHCPField;
-        
+
         private PrefixedIPv6Address[] manualField;
-        
+
         private PrefixedIPv6Address[] linkLocalField;
-        
+
         private PrefixedIPv6Address[] fromDHCPField;
-        
+
         private PrefixedIPv6Address[] fromRAField;
-        
+
         private IPv6ConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool AcceptRouterAdvert
         {
             get
@@ -10984,7 +10984,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.acceptRouterAdvertField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AcceptRouterAdvertSpecified
@@ -10998,9 +10998,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.acceptRouterAdvertFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public IPv6DHCPConfiguration DHCP
         {
             get
@@ -11012,9 +11012,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Manual", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("Manual", Order = 2)]
         public PrefixedIPv6Address[] Manual
         {
             get
@@ -11026,9 +11026,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.manualField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LinkLocal", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute("LinkLocal", Order = 3)]
         public PrefixedIPv6Address[] LinkLocal
         {
             get
@@ -11040,9 +11040,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.linkLocalField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("FromDHCP", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute("FromDHCP", Order = 4)]
         public PrefixedIPv6Address[] FromDHCP
         {
             get
@@ -11054,9 +11054,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fromDHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("FromRA", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute("FromRA", Order = 5)]
         public PrefixedIPv6Address[] FromRA
         {
             get
@@ -11068,9 +11068,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fromRAField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public IPv6ConfigurationExtension Extension
         {
             get
@@ -11083,20 +11083,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPv6NetworkInterface
     {
-        
+
         private bool enabledField;
-        
+
         private IPv6Configuration configField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -11108,9 +11108,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public IPv6Configuration Config
         {
             get
@@ -11123,26 +11123,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPv4Configuration
     {
-        
+
         private PrefixedIPv4Address[] manualField;
-        
+
         private PrefixedIPv4Address linkLocalField;
-        
+
         private PrefixedIPv4Address fromDHCPField;
-        
+
         private bool dHCPField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Manual", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Manual", Order = 0)]
         public PrefixedIPv4Address[] Manual
         {
             get
@@ -11154,9 +11154,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.manualField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public PrefixedIPv4Address LinkLocal
         {
             get
@@ -11168,9 +11168,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.linkLocalField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public PrefixedIPv4Address FromDHCP
         {
             get
@@ -11182,9 +11182,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fromDHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool DHCP
         {
             get
@@ -11196,9 +11196,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11211,20 +11211,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IPv4NetworkInterface
     {
-        
+
         private bool enabledField;
-        
+
         private IPv4Configuration configField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -11236,9 +11236,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public IPv4Configuration Config
         {
             get
@@ -11251,22 +11251,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterfaceLink
     {
-        
+
         private NetworkInterfaceConnectionSetting adminSettingsField;
-        
+
         private NetworkInterfaceConnectionSetting operSettingsField;
-        
+
         private int interfaceTypeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public NetworkInterfaceConnectionSetting AdminSettings
         {
             get
@@ -11278,9 +11278,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.adminSettingsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public NetworkInterfaceConnectionSetting OperSettings
         {
             get
@@ -11292,9 +11292,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.operSettingsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int InterfaceType
         {
             get
@@ -11307,24 +11307,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterfaceInfo
     {
-        
+
         private string nameField;
-        
+
         private string hwAddressField;
-        
+
         private int mTUField;
-        
+
         private bool mTUFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -11336,9 +11336,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 1)]
         public string HwAddress
         {
             get
@@ -11350,9 +11350,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.hwAddressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int MTU
         {
             get
@@ -11364,7 +11364,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.mTUField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MTUSpecified
@@ -11379,18 +11379,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoOutputExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11403,18 +11403,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class LayoutExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11427,22 +11427,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PaneLayout
     {
-        
+
         private string paneField;
-        
+
         private Rectangle areaField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Pane
         {
             get
@@ -11454,9 +11454,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.paneField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Rectangle Area
         {
             get
@@ -11468,9 +11468,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.areaField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11483,30 +11483,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Rectangle
     {
-        
+
         private float bottomField;
-        
+
         private bool bottomFieldSpecified;
-        
+
         private float topField;
-        
+
         private bool topFieldSpecified;
-        
+
         private float rightField;
-        
+
         private bool rightFieldSpecified;
-        
+
         private float leftField;
-        
+
         private bool leftFieldSpecified;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float bottom
@@ -11520,7 +11520,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.bottomField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool bottomSpecified
@@ -11534,7 +11534,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.bottomFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float top
@@ -11548,7 +11548,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.topField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool topSpecified
@@ -11562,7 +11562,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.topFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float right
@@ -11576,7 +11576,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rightField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool rightSpecified
@@ -11590,7 +11590,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rightFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float left
@@ -11604,7 +11604,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.leftField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool leftSpecified
@@ -11619,20 +11619,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Layout
     {
-        
+
         private PaneLayout[] paneLayoutField;
-        
+
         private LayoutExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PaneLayout", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("PaneLayout", Order = 0)]
         public PaneLayout[] PaneLayout
         {
             get
@@ -11644,9 +11644,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.paneLayoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public LayoutExtension Extension
         {
             get
@@ -11659,18 +11659,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSourceExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11683,18 +11683,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension204
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11707,20 +11707,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NoiseReduction
     {
-        
+
         private float levelField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Level
         {
             get
@@ -11732,9 +11732,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11747,18 +11747,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DefoggingExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11771,24 +11771,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Defogging
     {
-        
+
         private string modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         private DefoggingExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Mode
         {
             get
@@ -11800,9 +11800,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -11814,7 +11814,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -11828,9 +11828,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public DefoggingExtension Extension
         {
             get
@@ -11843,18 +11843,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ToneCompensationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -11867,24 +11867,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ToneCompensation
     {
-        
+
         private string modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         private ToneCompensationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Mode
         {
             get
@@ -11896,9 +11896,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -11910,7 +11910,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -11924,9 +11924,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ToneCompensationExtension Extension
         {
             get
@@ -11939,24 +11939,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension203
     {
-        
+
         private ToneCompensation toneCompensationField;
-        
+
         private Defogging defoggingField;
-        
+
         private NoiseReduction noiseReductionField;
-        
+
         private ImagingSettingsExtension204 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ToneCompensation ToneCompensation
         {
             get
@@ -11968,9 +11968,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.toneCompensationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Defogging Defogging
         {
             get
@@ -11982,9 +11982,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defoggingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public NoiseReduction NoiseReduction
         {
             get
@@ -11996,9 +11996,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.noiseReductionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public ImagingSettingsExtension204 Extension
         {
             get
@@ -12011,18 +12011,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IrCutFilterAutoAdjustmentExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -12035,26 +12035,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IrCutFilterAutoAdjustment
     {
-        
+
         private string boundaryTypeField;
-        
+
         private float boundaryOffsetField;
-        
+
         private bool boundaryOffsetFieldSpecified;
-        
+
         private string responseTimeField;
-        
+
         private IrCutFilterAutoAdjustmentExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string BoundaryType
         {
             get
@@ -12066,9 +12066,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.boundaryTypeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float BoundaryOffset
         {
             get
@@ -12080,7 +12080,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.boundaryOffsetField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BoundaryOffsetSpecified
@@ -12094,9 +12094,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.boundaryOffsetFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 2)]
         public string ResponseTime
         {
             get
@@ -12108,9 +12108,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.responseTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IrCutFilterAutoAdjustmentExtension Extension
         {
             get
@@ -12123,20 +12123,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension202
     {
-        
+
         private IrCutFilterAutoAdjustment[] irCutFilterAutoAdjustmentField;
-        
+
         private ImagingSettingsExtension203 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IrCutFilterAutoAdjustment", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("IrCutFilterAutoAdjustment", Order = 0)]
         public IrCutFilterAutoAdjustment[] IrCutFilterAutoAdjustment
         {
             get
@@ -12148,9 +12148,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.irCutFilterAutoAdjustmentField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ImagingSettingsExtension203 Extension
         {
             get
@@ -12163,18 +12163,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImageStabilizationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -12187,24 +12187,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImageStabilization
     {
-        
+
         private ImageStabilizationMode modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         private ImageStabilizationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ImageStabilizationMode Mode
         {
             get
@@ -12216,9 +12216,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -12230,7 +12230,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -12244,9 +12244,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ImageStabilizationExtension Extension
         {
             get
@@ -12259,41 +12259,41 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ImageStabilizationMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension20
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private ImageStabilization imageStabilizationField;
-        
+
         private ImagingSettingsExtension202 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -12305,9 +12305,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ImageStabilization ImageStabilization
         {
             get
@@ -12319,9 +12319,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.imageStabilizationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ImagingSettingsExtension202 Extension
         {
             get
@@ -12334,18 +12334,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WhiteBalance20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -12358,28 +12358,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WhiteBalance20
     {
-        
+
         private WhiteBalanceMode modeField;
-        
+
         private float crGainField;
-        
+
         private bool crGainFieldSpecified;
-        
+
         private float cbGainField;
-        
+
         private bool cbGainFieldSpecified;
-        
+
         private WhiteBalance20Extension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public WhiteBalanceMode Mode
         {
             get
@@ -12391,9 +12391,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float CrGain
         {
             get
@@ -12405,7 +12405,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.crGainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool CrGainSpecified
@@ -12419,9 +12419,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.crGainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float CbGain
         {
             get
@@ -12433,7 +12433,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.cbGainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool CbGainSpecified
@@ -12447,9 +12447,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.cbGainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public WhiteBalance20Extension Extension
         {
             get
@@ -12462,35 +12462,35 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum WhiteBalanceMode
     {
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         MANUAL,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WideDynamicRange20
     {
-        
+
         private WideDynamicMode modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public WideDynamicMode Mode
         {
             get
@@ -12502,9 +12502,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -12516,7 +12516,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -12531,31 +12531,31 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum WideDynamicMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusConfiguration20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -12568,34 +12568,34 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusConfiguration20
     {
-        
+
         private AutoFocusMode autoFocusModeField;
-        
+
         private float defaultSpeedField;
-        
+
         private bool defaultSpeedFieldSpecified;
-        
+
         private float nearLimitField;
-        
+
         private bool nearLimitFieldSpecified;
-        
+
         private float farLimitField;
-        
+
         private bool farLimitFieldSpecified;
-        
+
         private FocusConfiguration20Extension extensionField;
-        
+
         private string[] aFModeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AutoFocusMode AutoFocusMode
         {
             get
@@ -12607,9 +12607,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.autoFocusModeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float DefaultSpeed
         {
             get
@@ -12621,7 +12621,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultSpeedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DefaultSpeedSpecified
@@ -12635,9 +12635,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultSpeedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float NearLimit
         {
             get
@@ -12649,7 +12649,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nearLimitField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool NearLimitSpecified
@@ -12663,9 +12663,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nearLimitFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float FarLimit
         {
             get
@@ -12677,7 +12677,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.farLimitField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FarLimitSpecified
@@ -12691,9 +12691,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.farLimitFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public FocusConfiguration20Extension Extension
         {
             get
@@ -12705,7 +12705,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] AFMode
@@ -12720,73 +12720,73 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum AutoFocusMode
     {
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         MANUAL,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Exposure20
     {
-        
+
         private ExposureMode modeField;
-        
+
         private ExposurePriority priorityField;
-        
+
         private bool priorityFieldSpecified;
-        
+
         private Rectangle windowField;
-        
+
         private float minExposureTimeField;
-        
+
         private bool minExposureTimeFieldSpecified;
-        
+
         private float maxExposureTimeField;
-        
+
         private bool maxExposureTimeFieldSpecified;
-        
+
         private float minGainField;
-        
+
         private bool minGainFieldSpecified;
-        
+
         private float maxGainField;
-        
+
         private bool maxGainFieldSpecified;
-        
+
         private float minIrisField;
-        
+
         private bool minIrisFieldSpecified;
-        
+
         private float maxIrisField;
-        
+
         private bool maxIrisFieldSpecified;
-        
+
         private float exposureTimeField;
-        
+
         private bool exposureTimeFieldSpecified;
-        
+
         private float gainField;
-        
+
         private bool gainFieldSpecified;
-        
+
         private float irisField;
-        
+
         private bool irisFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ExposureMode Mode
         {
             get
@@ -12798,9 +12798,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ExposurePriority Priority
         {
             get
@@ -12812,7 +12812,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.priorityField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PrioritySpecified
@@ -12826,9 +12826,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.priorityFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Rectangle Window
         {
             get
@@ -12840,9 +12840,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.windowField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float MinExposureTime
         {
             get
@@ -12854,7 +12854,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minExposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MinExposureTimeSpecified
@@ -12868,9 +12868,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minExposureTimeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public float MaxExposureTime
         {
             get
@@ -12882,7 +12882,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxExposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxExposureTimeSpecified
@@ -12896,9 +12896,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxExposureTimeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public float MinGain
         {
             get
@@ -12910,7 +12910,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minGainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MinGainSpecified
@@ -12924,9 +12924,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minGainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public float MaxGain
         {
             get
@@ -12938,7 +12938,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxGainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxGainSpecified
@@ -12952,9 +12952,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxGainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public float MinIris
         {
             get
@@ -12966,7 +12966,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minIrisField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MinIrisSpecified
@@ -12980,9 +12980,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minIrisFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public float MaxIris
         {
             get
@@ -12994,7 +12994,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxIrisField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxIrisSpecified
@@ -13008,9 +13008,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxIrisFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public float ExposureTime
         {
             get
@@ -13022,7 +13022,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.exposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ExposureTimeSpecified
@@ -13036,9 +13036,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.exposureTimeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public float Gain
         {
             get
@@ -13050,7 +13050,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.gainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GainSpecified
@@ -13064,9 +13064,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.gainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 11)]
         public float Iris
         {
             get
@@ -13078,7 +13078,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.irisField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IrisSpecified
@@ -13093,48 +13093,48 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ExposureMode
     {
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         MANUAL,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ExposurePriority
     {
-        
+
         /// <remarks/>
         LowNoise,
-        
+
         /// <remarks/>
         FrameRate,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class BacklightCompensation20
     {
-        
+
         private BacklightCompensationMode modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public BacklightCompensationMode Mode
         {
             get
@@ -13146,9 +13146,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -13160,7 +13160,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -13175,61 +13175,61 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum BacklightCompensationMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettings20
     {
-        
+
         private BacklightCompensation20 backlightCompensationField;
-        
+
         private float brightnessField;
-        
+
         private bool brightnessFieldSpecified;
-        
+
         private float colorSaturationField;
-        
+
         private bool colorSaturationFieldSpecified;
-        
+
         private float contrastField;
-        
+
         private bool contrastFieldSpecified;
-        
+
         private Exposure20 exposureField;
-        
+
         private FocusConfiguration20 focusField;
-        
+
         private IrCutFilterMode irCutFilterField;
-        
+
         private bool irCutFilterFieldSpecified;
-        
+
         private float sharpnessField;
-        
+
         private bool sharpnessFieldSpecified;
-        
+
         private WideDynamicRange20 wideDynamicRangeField;
-        
+
         private WhiteBalance20 whiteBalanceField;
-        
+
         private ImagingSettingsExtension20 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public BacklightCompensation20 BacklightCompensation
         {
             get
@@ -13241,9 +13241,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.backlightCompensationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Brightness
         {
             get
@@ -13255,7 +13255,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.brightnessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BrightnessSpecified
@@ -13269,9 +13269,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.brightnessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float ColorSaturation
         {
             get
@@ -13283,7 +13283,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.colorSaturationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ColorSaturationSpecified
@@ -13297,9 +13297,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.colorSaturationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float Contrast
         {
             get
@@ -13311,7 +13311,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.contrastField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ContrastSpecified
@@ -13325,9 +13325,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.contrastFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public Exposure20 Exposure
         {
             get
@@ -13339,9 +13339,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.exposureField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public FocusConfiguration20 Focus
         {
             get
@@ -13353,9 +13353,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.focusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public IrCutFilterMode IrCutFilter
         {
             get
@@ -13367,7 +13367,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.irCutFilterField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IrCutFilterSpecified
@@ -13381,9 +13381,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.irCutFilterFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public float Sharpness
         {
             get
@@ -13395,7 +13395,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sharpnessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SharpnessSpecified
@@ -13409,9 +13409,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sharpnessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public WideDynamicRange20 WideDynamicRange
         {
             get
@@ -13423,9 +13423,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.wideDynamicRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public WhiteBalance20 WhiteBalance
         {
             get
@@ -13437,9 +13437,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.whiteBalanceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public ImagingSettingsExtension20 Extension
         {
             get
@@ -13452,38 +13452,38 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum IrCutFilterMode
     {
-        
+
         /// <remarks/>
         ON,
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         AUTO,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSourceExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private ImagingSettings20 imagingField;
-        
+
         private VideoSourceExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -13495,9 +13495,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ImagingSettings20 Imaging
         {
             get
@@ -13509,9 +13509,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.imagingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public VideoSourceExtension2 Extension
         {
             get
@@ -13524,18 +13524,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -13548,24 +13548,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WhiteBalance
     {
-        
+
         private WhiteBalanceMode modeField;
-        
+
         private float crGainField;
-        
+
         private float cbGainField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public WhiteBalanceMode Mode
         {
             get
@@ -13577,9 +13577,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float CrGain
         {
             get
@@ -13591,9 +13591,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.crGainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float CbGain
         {
             get
@@ -13605,9 +13605,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.cbGainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -13620,20 +13620,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WideDynamicRange
     {
-        
+
         private WideDynamicMode modeField;
-        
+
         private float levelField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public WideDynamicMode Mode
         {
             get
@@ -13645,9 +13645,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -13660,26 +13660,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusConfiguration
     {
-        
+
         private AutoFocusMode autoFocusModeField;
-        
+
         private float defaultSpeedField;
-        
+
         private float nearLimitField;
-        
+
         private float farLimitField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AutoFocusMode AutoFocusMode
         {
             get
@@ -13691,9 +13691,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.autoFocusModeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float DefaultSpeed
         {
             get
@@ -13705,9 +13705,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultSpeedField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float NearLimit
         {
             get
@@ -13719,9 +13719,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nearLimitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float FarLimit
         {
             get
@@ -13733,9 +13733,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.farLimitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -13748,40 +13748,40 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Exposure
     {
-        
+
         private ExposureMode modeField;
-        
+
         private ExposurePriority priorityField;
-        
+
         private Rectangle windowField;
-        
+
         private float minExposureTimeField;
-        
+
         private float maxExposureTimeField;
-        
+
         private float minGainField;
-        
+
         private float maxGainField;
-        
+
         private float minIrisField;
-        
+
         private float maxIrisField;
-        
+
         private float exposureTimeField;
-        
+
         private float gainField;
-        
+
         private float irisField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ExposureMode Mode
         {
             get
@@ -13793,9 +13793,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ExposurePriority Priority
         {
             get
@@ -13807,9 +13807,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.priorityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Rectangle Window
         {
             get
@@ -13821,9 +13821,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.windowField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float MinExposureTime
         {
             get
@@ -13835,9 +13835,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minExposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public float MaxExposureTime
         {
             get
@@ -13849,9 +13849,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxExposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public float MinGain
         {
             get
@@ -13863,9 +13863,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minGainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public float MaxGain
         {
             get
@@ -13877,9 +13877,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxGainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public float MinIris
         {
             get
@@ -13891,9 +13891,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minIrisField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public float MaxIris
         {
             get
@@ -13905,9 +13905,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxIrisField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public float ExposureTime
         {
             get
@@ -13919,9 +13919,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.exposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public float Gain
         {
             get
@@ -13933,9 +13933,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.gainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 11)]
         public float Iris
         {
             get
@@ -13948,20 +13948,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class BacklightCompensation
     {
-        
+
         private BacklightCompensationMode modeField;
-        
+
         private float levelField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public BacklightCompensationMode Mode
         {
             get
@@ -13973,9 +13973,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -13988,48 +13988,48 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettings
     {
-        
+
         private BacklightCompensation backlightCompensationField;
-        
+
         private float brightnessField;
-        
+
         private bool brightnessFieldSpecified;
-        
+
         private float colorSaturationField;
-        
+
         private bool colorSaturationFieldSpecified;
-        
+
         private float contrastField;
-        
+
         private bool contrastFieldSpecified;
-        
+
         private Exposure exposureField;
-        
+
         private FocusConfiguration focusField;
-        
+
         private IrCutFilterMode irCutFilterField;
-        
+
         private bool irCutFilterFieldSpecified;
-        
+
         private float sharpnessField;
-        
+
         private bool sharpnessFieldSpecified;
-        
+
         private WideDynamicRange wideDynamicRangeField;
-        
+
         private WhiteBalance whiteBalanceField;
-        
+
         private ImagingSettingsExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public BacklightCompensation BacklightCompensation
         {
             get
@@ -14041,9 +14041,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.backlightCompensationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Brightness
         {
             get
@@ -14055,7 +14055,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.brightnessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BrightnessSpecified
@@ -14069,9 +14069,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.brightnessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float ColorSaturation
         {
             get
@@ -14083,7 +14083,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.colorSaturationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ColorSaturationSpecified
@@ -14097,9 +14097,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.colorSaturationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float Contrast
         {
             get
@@ -14111,7 +14111,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.contrastField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ContrastSpecified
@@ -14125,9 +14125,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.contrastFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public Exposure Exposure
         {
             get
@@ -14139,9 +14139,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.exposureField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public FocusConfiguration Focus
         {
             get
@@ -14153,9 +14153,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.focusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public IrCutFilterMode IrCutFilter
         {
             get
@@ -14167,7 +14167,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.irCutFilterField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IrCutFilterSpecified
@@ -14181,9 +14181,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.irCutFilterFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public float Sharpness
         {
             get
@@ -14195,7 +14195,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sharpnessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SharpnessSpecified
@@ -14209,9 +14209,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sharpnessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public WideDynamicRange WideDynamicRange
         {
             get
@@ -14223,9 +14223,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.wideDynamicRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public WhiteBalance WhiteBalance
         {
             get
@@ -14237,9 +14237,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.whiteBalanceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public ImagingSettingsExtension Extension
         {
             get
@@ -14252,22 +14252,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class UserCredential
     {
-        
+
         private string userNameField;
-        
+
         private string passwordField;
-        
+
         private UserCredentialExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string UserName
         {
             get
@@ -14279,9 +14279,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.userNameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Password
         {
             get
@@ -14293,9 +14293,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.passwordField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public UserCredentialExtension Extension
         {
             get
@@ -14308,18 +14308,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class UserCredentialExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -14332,26 +14332,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class StorageConfigurationData
     {
-        
+
         private string localPathField;
-        
+
         private string storageUriField;
-        
+
         private UserCredential userField;
-        
+
         private StorageConfigurationDataExtension extensionField;
-        
+
         private string typeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string LocalPath
         {
             get
@@ -14363,9 +14363,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.localPathField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 1)]
         public string StorageUri
         {
             get
@@ -14377,9 +14377,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.storageUriField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public UserCredential User
         {
             get
@@ -14391,9 +14391,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.userField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public StorageConfigurationDataExtension Extension
         {
             get
@@ -14405,7 +14405,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string type
@@ -14420,18 +14420,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class StorageConfigurationDataExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -14444,7 +14444,7 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OSDConfiguration))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(PTZNode))]
@@ -14459,12 +14459,12 @@ namespace QuickNV.Onvif.DeviceIO
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(StorageConfiguration))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DeviceEntity
     {
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -14479,28 +14479,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class OSDConfiguration : DeviceEntity
     {
-        
+
         private OSDReference videoSourceConfigurationTokenField;
-        
+
         private OSDType typeField;
-        
+
         private OSDPosConfiguration positionField;
-        
+
         private OSDTextConfiguration textStringField;
-        
+
         private OSDImgConfiguration imageField;
-        
+
         private OSDConfigurationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public OSDReference VideoSourceConfigurationToken
         {
             get
@@ -14512,9 +14512,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.videoSourceConfigurationTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public OSDType Type
         {
             get
@@ -14526,9 +14526,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public OSDPosConfiguration Position
         {
             get
@@ -14540,9 +14540,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.positionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public OSDTextConfiguration TextString
         {
             get
@@ -14554,9 +14554,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.textStringField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public OSDImgConfiguration Image
         {
             get
@@ -14568,9 +14568,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.imageField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public OSDConfigurationExtension Extension
         {
             get
@@ -14583,52 +14583,52 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum OSDType
     {
-        
+
         /// <remarks/>
         Text,
-        
+
         /// <remarks/>
         Image,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZNode : DeviceEntity
     {
-        
+
         private string nameField;
-        
+
         private PTZSpaces supportedPTZSpacesField;
-        
+
         private int maximumNumberOfPresetsField;
-        
+
         private bool homeSupportedField;
-        
+
         private string[] auxiliaryCommandsField;
-        
+
         private PTZNodeExtension extensionField;
-        
+
         private bool fixedHomePositionField;
-        
+
         private bool fixedHomePositionFieldSpecified;
-        
+
         private bool geoMoveField;
-        
+
         private bool geoMoveFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -14640,9 +14640,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public PTZSpaces SupportedPTZSpaces
         {
             get
@@ -14654,9 +14654,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.supportedPTZSpacesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int MaximumNumberOfPresets
         {
             get
@@ -14668,9 +14668,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maximumNumberOfPresetsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool HomeSupported
         {
             get
@@ -14682,9 +14682,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.homeSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AuxiliaryCommands", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute("AuxiliaryCommands", Order = 4)]
         public string[] AuxiliaryCommands
         {
             get
@@ -14696,9 +14696,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.auxiliaryCommandsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public PTZNodeExtension Extension
         {
             get
@@ -14710,7 +14710,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool FixedHomePosition
@@ -14724,7 +14724,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fixedHomePositionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FixedHomePositionSpecified
@@ -14738,7 +14738,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fixedHomePositionFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool GeoMove
@@ -14752,7 +14752,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.geoMoveField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GeoMoveSpecified
@@ -14767,22 +14767,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DigitalInput : DeviceEntity
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private DigitalIdleState idleStateField;
-        
+
         private bool idleStateFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -14794,7 +14794,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public DigitalIdleState IdleState
@@ -14808,7 +14808,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.idleStateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IdleStateSpecified
@@ -14823,20 +14823,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RelayOutput : DeviceEntity
     {
-        
+
         private RelayOutputSettings propertiesField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public RelayOutputSettings Properties
         {
             get
@@ -14848,9 +14848,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.propertiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -14863,28 +14863,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkInterface : DeviceEntity
     {
-        
+
         private bool enabledField;
-        
+
         private NetworkInterfaceInfo infoField;
-        
+
         private NetworkInterfaceLink linkField;
-        
+
         private IPv4NetworkInterface iPv4Field;
-        
+
         private IPv6NetworkInterface iPv6Field;
-        
+
         private NetworkInterfaceExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -14896,9 +14896,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public NetworkInterfaceInfo Info
         {
             get
@@ -14910,9 +14910,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.infoField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public NetworkInterfaceLink Link
         {
             get
@@ -14924,9 +14924,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.linkField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IPv4NetworkInterface IPv4
         {
             get
@@ -14938,9 +14938,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv4Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public IPv6NetworkInterface IPv6
         {
             get
@@ -14952,9 +14952,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv6Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public NetworkInterfaceExtension Extension
         {
             get
@@ -14967,18 +14967,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioOutput : DeviceEntity
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -14991,30 +14991,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoOutput : DeviceEntity
     {
-        
+
         private Layout layoutField;
-        
+
         private VideoResolution resolutionField;
-        
+
         private float refreshRateField;
-        
+
         private bool refreshRateFieldSpecified;
-        
+
         private float aspectRatioField;
-        
+
         private bool aspectRatioFieldSpecified;
-        
+
         private VideoOutputExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Layout Layout
         {
             get
@@ -15026,9 +15026,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.layoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public VideoResolution Resolution
         {
             get
@@ -15040,9 +15040,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.resolutionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float RefreshRate
         {
             get
@@ -15054,7 +15054,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.refreshRateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RefreshRateSpecified
@@ -15068,9 +15068,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.refreshRateFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float AspectRatio
         {
             get
@@ -15082,7 +15082,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.aspectRatioField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AspectRatioSpecified
@@ -15096,9 +15096,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.aspectRatioFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public VideoOutputExtension Extension
         {
             get
@@ -15111,20 +15111,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioSource : DeviceEntity
     {
-        
+
         private int channelsField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Channels
         {
             get
@@ -15136,9 +15136,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.channelsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15151,24 +15151,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoSource : DeviceEntity
     {
-        
+
         private float framerateField;
-        
+
         private VideoResolution resolutionField;
-        
+
         private ImagingSettings imagingField;
-        
+
         private VideoSourceExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Framerate
         {
             get
@@ -15180,9 +15180,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.framerateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public VideoResolution Resolution
         {
             get
@@ -15194,9 +15194,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.resolutionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ImagingSettings Imaging
         {
             get
@@ -15208,9 +15208,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.imagingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public VideoSourceExtension Extension
         {
             get
@@ -15223,18 +15223,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl")]
     public partial class SerialPort : DeviceEntity
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15247,18 +15247,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class StorageConfiguration : DeviceEntity
     {
-        
+
         private StorageConfigurationData dataField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public StorageConfigurationData Data
         {
             get
@@ -15271,18 +15271,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DynamicDNSInformationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15295,24 +15295,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DynamicDNSInformation
     {
-        
+
         private DynamicDNSType typeField;
-        
+
         private string nameField;
-        
+
         private string tTLField;
-        
+
         private DynamicDNSInformationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public DynamicDNSType Type
         {
             get
@@ -15324,9 +15324,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 1)]
         public string Name
         {
             get
@@ -15338,9 +15338,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 2)]
         public string TTL
         {
             get
@@ -15352,9 +15352,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tTLField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public DynamicDNSInformationExtension Extension
         {
             get
@@ -15367,34 +15367,34 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum DynamicDNSType
     {
-        
+
         /// <remarks/>
         NoUpdate,
-        
+
         /// <remarks/>
         ClientUpdates,
-        
+
         /// <remarks/>
         ServerUpdates,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NTPInformationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15407,24 +15407,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NTPInformation
     {
-        
+
         private bool fromDHCPField;
-        
+
         private NetworkHost[] nTPFromDHCPField;
-        
+
         private NetworkHost[] nTPManualField;
-        
+
         private NTPInformationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool FromDHCP
         {
             get
@@ -15436,9 +15436,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fromDHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NTPFromDHCP", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("NTPFromDHCP", Order = 1)]
         public NetworkHost[] NTPFromDHCP
         {
             get
@@ -15450,9 +15450,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nTPFromDHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NTPManual", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("NTPManual", Order = 2)]
         public NetworkHost[] NTPManual
         {
             get
@@ -15464,9 +15464,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nTPManualField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public NTPInformationExtension Extension
         {
             get
@@ -15479,26 +15479,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkHost
     {
-        
+
         private NetworkHostType typeField;
-        
+
         private string iPv4AddressField;
-        
+
         private string iPv6AddressField;
-        
+
         private string dNSnameField;
-        
+
         private NetworkHostExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public NetworkHostType Type
         {
             get
@@ -15510,9 +15510,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.typeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 1)]
         public string IPv4Address
         {
             get
@@ -15524,9 +15524,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv4AddressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 2)]
         public string IPv6Address
         {
             get
@@ -15538,9 +15538,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPv6AddressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 3)]
         public string DNSname
         {
             get
@@ -15552,9 +15552,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dNSnameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public NetworkHostExtension Extension
         {
             get
@@ -15567,34 +15567,34 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum NetworkHostType
     {
-        
+
         /// <remarks/>
         IPv4,
-        
+
         /// <remarks/>
         IPv6,
-        
+
         /// <remarks/>
         DNS,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkHostExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15607,18 +15607,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DNSInformationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15631,26 +15631,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DNSInformation
     {
-        
+
         private bool fromDHCPField;
-        
+
         private string[] searchDomainField;
-        
+
         private IPAddress[] dNSFromDHCPField;
-        
+
         private IPAddress[] dNSManualField;
-        
+
         private DNSInformationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool FromDHCP
         {
             get
@@ -15662,9 +15662,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fromDHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SearchDomain", DataType="token", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("SearchDomain", DataType = "token", Order = 1)]
         public string[] SearchDomain
         {
             get
@@ -15676,9 +15676,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.searchDomainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DNSFromDHCP", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("DNSFromDHCP", Order = 2)]
         public IPAddress[] DNSFromDHCP
         {
             get
@@ -15690,9 +15690,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dNSFromDHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DNSManual", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute("DNSManual", Order = 3)]
         public IPAddress[] DNSManual
         {
             get
@@ -15704,9 +15704,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dNSManualField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public DNSInformationExtension Extension
         {
             get
@@ -15719,18 +15719,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class HostnameInformationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15743,22 +15743,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class HostnameInformation
     {
-        
+
         private bool fromDHCPField;
-        
+
         private string nameField;
-        
+
         private HostnameInformationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool FromDHCP
         {
             get
@@ -15770,9 +15770,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fromDHCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 1)]
         public string Name
         {
             get
@@ -15784,9 +15784,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public HostnameInformationExtension Extension
         {
             get
@@ -15799,18 +15799,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class CapabilitiesExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15823,18 +15823,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsDeviceExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -15847,24 +15847,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsDeviceCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private bool ruleSupportField;
-        
+
         private bool ruleSupportFieldSpecified;
-        
+
         private AnalyticsDeviceExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -15876,9 +15876,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool RuleSupport
         {
             get
@@ -15890,7 +15890,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.ruleSupportField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RuleSupportSpecified
@@ -15904,9 +15904,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.ruleSupportFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public AnalyticsDeviceExtension Extension
         {
             get
@@ -15919,30 +15919,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ReceiverCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private bool rTP_MulticastField;
-        
+
         private bool rTP_TCPField;
-        
+
         private bool rTP_RTSP_TCPField;
-        
+
         private int supportedReceiversField;
-        
+
         private int maximumRTSPURILengthField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -15954,9 +15954,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool RTP_Multicast
         {
             get
@@ -15968,9 +15968,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTP_MulticastField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool RTP_TCP
         {
             get
@@ -15982,9 +15982,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTP_TCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool RTP_RTSP_TCP
         {
             get
@@ -15996,9 +15996,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTP_RTSP_TCPField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public int SupportedReceivers
         {
             get
@@ -16010,9 +16010,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.supportedReceiversField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public int MaximumRTSPURILength
         {
             get
@@ -16024,9 +16024,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maximumRTSPURILengthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 6)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16039,20 +16039,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ReplayCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16064,9 +16064,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16079,22 +16079,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SearchCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private bool metadataSearchField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16106,9 +16106,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool MetadataSearch
         {
             get
@@ -16120,9 +16120,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.metadataSearchField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16135,30 +16135,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RecordingCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private bool receiverSourceField;
-        
+
         private bool mediaProfileSourceField;
-        
+
         private bool dynamicRecordingsField;
-        
+
         private bool dynamicTracksField;
-        
+
         private int maxStringLengthField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16170,9 +16170,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool ReceiverSource
         {
             get
@@ -16184,9 +16184,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.receiverSourceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool MediaProfileSource
         {
             get
@@ -16198,9 +16198,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.mediaProfileSourceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool DynamicRecordings
         {
             get
@@ -16212,9 +16212,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dynamicRecordingsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public bool DynamicTracks
         {
             get
@@ -16226,9 +16226,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dynamicTracksField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public int MaxStringLength
         {
             get
@@ -16240,9 +16240,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxStringLengthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 6)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16255,22 +16255,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DisplayCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private bool fixedLayoutField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16282,9 +16282,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool FixedLayout
         {
             get
@@ -16296,9 +16296,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.fixedLayoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16311,30 +16311,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DeviceIOCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private int videoSourcesField;
-        
+
         private int videoOutputsField;
-        
+
         private int audioSourcesField;
-        
+
         private int audioOutputsField;
-        
+
         private int relayOutputsField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16346,9 +16346,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int VideoSources
         {
             get
@@ -16360,9 +16360,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.videoSourcesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int VideoOutputs
         {
             get
@@ -16374,9 +16374,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.videoOutputsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public int AudioSources
         {
             get
@@ -16388,9 +16388,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.audioSourcesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public int AudioOutputs
         {
             get
@@ -16402,9 +16402,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.audioOutputsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public int RelayOutputs
         {
             get
@@ -16416,9 +16416,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.relayOutputsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 6)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16431,34 +16431,34 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class CapabilitiesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private DeviceIOCapabilities deviceIOField;
-        
+
         private DisplayCapabilities displayField;
-        
+
         private RecordingCapabilities recordingField;
-        
+
         private SearchCapabilities searchField;
-        
+
         private ReplayCapabilities replayField;
-        
+
         private ReceiverCapabilities receiverField;
-        
+
         private AnalyticsDeviceCapabilities analyticsDeviceField;
-        
+
         private CapabilitiesExtension2 extensionsField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16470,9 +16470,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public DeviceIOCapabilities DeviceIO
         {
             get
@@ -16484,9 +16484,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.deviceIOField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public DisplayCapabilities Display
         {
             get
@@ -16498,9 +16498,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.displayField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public RecordingCapabilities Recording
         {
             get
@@ -16512,9 +16512,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.recordingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public SearchCapabilities Search
         {
             get
@@ -16526,9 +16526,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.searchField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public ReplayCapabilities Replay
         {
             get
@@ -16540,9 +16540,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.replayField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public ReceiverCapabilities Receiver
         {
             get
@@ -16554,9 +16554,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.receiverField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public AnalyticsDeviceCapabilities AnalyticsDevice
         {
             get
@@ -16568,9 +16568,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsDeviceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public CapabilitiesExtension2 Extensions
         {
             get
@@ -16583,20 +16583,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16608,9 +16608,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16623,20 +16623,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ProfileCapabilities
     {
-        
+
         private int maximumNumberOfProfilesField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int MaximumNumberOfProfiles
         {
             get
@@ -16648,9 +16648,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maximumNumberOfProfilesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16663,20 +16663,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MediaCapabilitiesExtension
     {
-        
+
         private ProfileCapabilities profileCapabilitiesField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ProfileCapabilities ProfileCapabilities
         {
             get
@@ -16688,9 +16688,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.profileCapabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16703,18 +16703,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RealTimeStreamingCapabilitiesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16727,30 +16727,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RealTimeStreamingCapabilities
     {
-        
+
         private bool rTPMulticastField;
-        
+
         private bool rTPMulticastFieldSpecified;
-        
+
         private bool rTP_TCPField;
-        
+
         private bool rTP_TCPFieldSpecified;
-        
+
         private bool rTP_RTSP_TCPField;
-        
+
         private bool rTP_RTSP_TCPFieldSpecified;
-        
+
         private RealTimeStreamingCapabilitiesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool RTPMulticast
         {
             get
@@ -16762,7 +16762,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTPMulticastField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RTPMulticastSpecified
@@ -16776,9 +16776,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTPMulticastFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool RTP_TCP
         {
             get
@@ -16790,7 +16790,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTP_TCPField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RTP_TCPSpecified
@@ -16804,9 +16804,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTP_TCPFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool RTP_RTSP_TCP
         {
             get
@@ -16818,7 +16818,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTP_RTSP_TCPField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RTP_RTSP_TCPSpecified
@@ -16832,9 +16832,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rTP_RTSP_TCPFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public RealTimeStreamingCapabilitiesExtension Extension
         {
             get
@@ -16847,24 +16847,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MediaCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private RealTimeStreamingCapabilities streamingCapabilitiesField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private MediaCapabilitiesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16876,9 +16876,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public RealTimeStreamingCapabilities StreamingCapabilities
         {
             get
@@ -16890,9 +16890,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.streamingCapabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -16904,9 +16904,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public MediaCapabilitiesExtension Extension
         {
             get
@@ -16919,18 +16919,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16943,26 +16943,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EventCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private bool wSSubscriptionPolicySupportField;
-        
+
         private bool wSPullPointSupportField;
-        
+
         private bool wSPausableSubscriptionManagerInterfaceSupportField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -16974,9 +16974,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool WSSubscriptionPolicySupport
         {
             get
@@ -16988,9 +16988,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.wSSubscriptionPolicySupportField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool WSPullPointSupport
         {
             get
@@ -17002,9 +17002,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.wSPullPointSupportField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool WSPausableSubscriptionManagerInterfaceSupport
         {
             get
@@ -17016,9 +17016,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.wSPausableSubscriptionManagerInterfaceSupportField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17031,18 +17031,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DeviceCapabilitiesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17055,24 +17055,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SecurityCapabilitiesExtension2
     {
-        
+
         private bool dot1XField;
-        
+
         private int[] supportedEAPMethodField;
-        
+
         private bool remoteUserHandlingField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Dot1X
         {
             get
@@ -17084,9 +17084,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot1XField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SupportedEAPMethod", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("SupportedEAPMethod", Order = 1)]
         public int[] SupportedEAPMethod
         {
             get
@@ -17098,9 +17098,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.supportedEAPMethodField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool RemoteUserHandling
         {
             get
@@ -17112,9 +17112,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.remoteUserHandlingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17127,20 +17127,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SecurityCapabilitiesExtension
     {
-        
+
         private bool tLS10Field;
-        
+
         private SecurityCapabilitiesExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TLS1.0", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("TLS1.0", Order = 0)]
         public bool TLS10
         {
             get
@@ -17152,9 +17152,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS10Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public SecurityCapabilitiesExtension2 Extension
         {
             get
@@ -17167,36 +17167,36 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="SecurityCapabilities", Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName = "SecurityCapabilities", Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SecurityCapabilities1
     {
-        
+
         private bool tLS11Field;
-        
+
         private bool tLS12Field;
-        
+
         private bool onboardKeyGenerationField;
-        
+
         private bool accessPolicyConfigField;
-        
+
         private bool x509TokenField;
-        
+
         private bool sAMLTokenField;
-        
+
         private bool kerberosTokenField;
-        
+
         private bool rELTokenField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private SecurityCapabilitiesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TLS1.1", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("TLS1.1", Order = 0)]
         public bool TLS11
         {
             get
@@ -17208,9 +17208,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS11Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TLS1.2", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("TLS1.2", Order = 1)]
         public bool TLS12
         {
             get
@@ -17222,9 +17222,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS12Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool OnboardKeyGeneration
         {
             get
@@ -17236,9 +17236,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.onboardKeyGenerationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool AccessPolicyConfig
         {
             get
@@ -17250,9 +17250,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.accessPolicyConfigField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("X.509Token", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute("X.509Token", Order = 4)]
         public bool X509Token
         {
             get
@@ -17264,9 +17264,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.x509TokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public bool SAMLToken
         {
             get
@@ -17278,9 +17278,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sAMLTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public bool KerberosToken
         {
             get
@@ -17292,9 +17292,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.kerberosTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public bool RELToken
         {
             get
@@ -17306,9 +17306,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rELTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 8)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17320,9 +17320,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public SecurityCapabilitiesExtension Extension
         {
             get
@@ -17335,18 +17335,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IOCapabilitiesExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17359,26 +17359,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IOCapabilitiesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool auxiliaryField;
-        
+
         private bool auxiliaryFieldSpecified;
-        
+
         private string[] auxiliaryCommandsField;
-        
+
         private IOCapabilitiesExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17390,9 +17390,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool Auxiliary
         {
             get
@@ -17404,7 +17404,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.auxiliaryField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AuxiliarySpecified
@@ -17418,9 +17418,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.auxiliaryFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AuxiliaryCommands", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("AuxiliaryCommands", Order = 2)]
         public string[] AuxiliaryCommands
         {
             get
@@ -17432,9 +17432,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.auxiliaryCommandsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IOCapabilitiesExtension2 Extension
         {
             get
@@ -17447,26 +17447,26 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IOCapabilities
     {
-        
+
         private int inputConnectorsField;
-        
+
         private bool inputConnectorsFieldSpecified;
-        
+
         private int relayOutputsField;
-        
+
         private bool relayOutputsFieldSpecified;
-        
+
         private IOCapabilitiesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int InputConnectors
         {
             get
@@ -17478,7 +17478,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.inputConnectorsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool InputConnectorsSpecified
@@ -17492,9 +17492,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.inputConnectorsFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int RelayOutputs
         {
             get
@@ -17506,7 +17506,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.relayOutputsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RelayOutputsSpecified
@@ -17520,9 +17520,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.relayOutputsFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public IOCapabilitiesExtension Extension
         {
             get
@@ -17535,18 +17535,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SystemCapabilitiesExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17559,36 +17559,36 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SystemCapabilitiesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool httpFirmwareUpgradeField;
-        
+
         private bool httpFirmwareUpgradeFieldSpecified;
-        
+
         private bool httpSystemBackupField;
-        
+
         private bool httpSystemBackupFieldSpecified;
-        
+
         private bool httpSystemLoggingField;
-        
+
         private bool httpSystemLoggingFieldSpecified;
-        
+
         private bool httpSupportInformationField;
-        
+
         private bool httpSupportInformationFieldSpecified;
-        
+
         private SystemCapabilitiesExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17600,9 +17600,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool HttpFirmwareUpgrade
         {
             get
@@ -17614,7 +17614,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpFirmwareUpgradeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpFirmwareUpgradeSpecified
@@ -17628,9 +17628,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpFirmwareUpgradeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool HttpSystemBackup
         {
             get
@@ -17642,7 +17642,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSystemBackupField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpSystemBackupSpecified
@@ -17656,9 +17656,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSystemBackupFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool HttpSystemLogging
         {
             get
@@ -17670,7 +17670,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSystemLoggingField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpSystemLoggingSpecified
@@ -17684,9 +17684,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSystemLoggingFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public bool HttpSupportInformation
         {
             get
@@ -17698,7 +17698,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSupportInformationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpSupportInformationSpecified
@@ -17712,9 +17712,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSupportInformationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public SystemCapabilitiesExtension2 Extension
         {
             get
@@ -17727,32 +17727,32 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="SystemCapabilities", Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName = "SystemCapabilities", Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SystemCapabilities1
     {
-        
+
         private bool discoveryResolveField;
-        
+
         private bool discoveryByeField;
-        
+
         private bool remoteDiscoveryField;
-        
+
         private bool systemBackupField;
-        
+
         private bool systemLoggingField;
-        
+
         private bool firmwareUpgradeField;
-        
+
         private OnvifVersion[] supportedVersionsField;
-        
+
         private SystemCapabilitiesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool DiscoveryResolve
         {
             get
@@ -17764,9 +17764,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discoveryResolveField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool DiscoveryBye
         {
             get
@@ -17778,9 +17778,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discoveryByeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool RemoteDiscovery
         {
             get
@@ -17792,9 +17792,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.remoteDiscoveryField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool SystemBackup
         {
             get
@@ -17806,9 +17806,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.systemBackupField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public bool SystemLogging
         {
             get
@@ -17820,9 +17820,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.systemLoggingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public bool FirmwareUpgrade
         {
             get
@@ -17834,9 +17834,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.firmwareUpgradeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SupportedVersions", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute("SupportedVersions", Order = 6)]
         public OnvifVersion[] SupportedVersions
         {
             get
@@ -17848,9 +17848,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.supportedVersionsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public SystemCapabilitiesExtension Extension
         {
             get
@@ -17863,18 +17863,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkCapabilitiesExtension2
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17887,24 +17887,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkCapabilitiesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool dot11ConfigurationField;
-        
+
         private bool dot11ConfigurationFieldSpecified;
-        
+
         private NetworkCapabilitiesExtension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -17916,9 +17916,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool Dot11Configuration
         {
             get
@@ -17930,7 +17930,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot11ConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool Dot11ConfigurationSpecified
@@ -17944,9 +17944,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot11ConfigurationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public NetworkCapabilitiesExtension2 Extension
         {
             get
@@ -17959,34 +17959,34 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="NetworkCapabilities", Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName = "NetworkCapabilities", Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NetworkCapabilities1
     {
-        
+
         private bool iPFilterField;
-        
+
         private bool iPFilterFieldSpecified;
-        
+
         private bool zeroConfigurationField;
-        
+
         private bool zeroConfigurationFieldSpecified;
-        
+
         private bool iPVersion6Field;
-        
+
         private bool iPVersion6FieldSpecified;
-        
+
         private bool dynDNSField;
-        
+
         private bool dynDNSFieldSpecified;
-        
+
         private NetworkCapabilitiesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool IPFilter
         {
             get
@@ -17998,7 +17998,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPFilterField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IPFilterSpecified
@@ -18012,9 +18012,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPFilterFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool ZeroConfiguration
         {
             get
@@ -18026,7 +18026,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.zeroConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ZeroConfigurationSpecified
@@ -18040,9 +18040,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.zeroConfigurationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool IPVersion6
         {
             get
@@ -18054,7 +18054,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPVersion6Field = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IPVersion6Specified
@@ -18068,9 +18068,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPVersion6FieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public bool DynDNS
         {
             get
@@ -18082,7 +18082,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dynDNSField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DynDNSSpecified
@@ -18096,9 +18096,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dynDNSFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public NetworkCapabilitiesExtension Extension
         {
             get
@@ -18111,28 +18111,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DeviceCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private NetworkCapabilities1 networkField;
-        
+
         private SystemCapabilities1 systemField;
-        
+
         private IOCapabilities ioField;
-        
+
         private SecurityCapabilities1 securityField;
-        
+
         private DeviceCapabilitiesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -18144,9 +18144,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public NetworkCapabilities1 Network
         {
             get
@@ -18158,9 +18158,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.networkField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public SystemCapabilities1 System
         {
             get
@@ -18172,9 +18172,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.systemField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IOCapabilities IO
         {
             get
@@ -18186,9 +18186,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.ioField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public SecurityCapabilities1 Security
         {
             get
@@ -18200,9 +18200,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.securityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public DeviceCapabilitiesExtension Extension
         {
             get
@@ -18215,24 +18215,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AnalyticsCapabilities
     {
-        
+
         private string xAddrField;
-        
+
         private bool ruleSupportField;
-        
+
         private bool analyticsModuleSupportField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string XAddr
         {
             get
@@ -18244,9 +18244,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.xAddrField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool RuleSupport
         {
             get
@@ -18258,9 +18258,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.ruleSupportField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool AnalyticsModuleSupport
         {
             get
@@ -18272,9 +18272,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsModuleSupportField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -18287,30 +18287,30 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Capabilities
     {
-        
+
         private AnalyticsCapabilities analyticsField;
-        
+
         private DeviceCapabilities deviceField;
-        
+
         private EventCapabilities eventsField;
-        
+
         private ImagingCapabilities imagingField;
-        
+
         private MediaCapabilities mediaField;
-        
+
         private PTZCapabilities pTZField;
-        
+
         private CapabilitiesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AnalyticsCapabilities Analytics
         {
             get
@@ -18322,9 +18322,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.analyticsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public DeviceCapabilities Device
         {
             get
@@ -18336,9 +18336,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.deviceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public EventCapabilities Events
         {
             get
@@ -18350,9 +18350,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.eventsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public ImagingCapabilities Imaging
         {
             get
@@ -18364,9 +18364,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.imagingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public MediaCapabilities Media
         {
             get
@@ -18378,9 +18378,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.mediaField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public PTZCapabilities PTZ
         {
             get
@@ -18392,9 +18392,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.pTZField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public CapabilitiesExtension Extension
         {
             get
@@ -18407,18 +18407,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class UserExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -18431,24 +18431,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class User
     {
-        
+
         private string usernameField;
-        
+
         private string passwordField;
-        
+
         private UserLevel userLevelField;
-        
+
         private UserExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Username
         {
             get
@@ -18460,9 +18460,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.usernameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Password
         {
             get
@@ -18474,9 +18474,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.passwordField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public UserLevel UserLevel
         {
             get
@@ -18488,9 +18488,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.userLevelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public UserExtension Extension
         {
             get
@@ -18503,46 +18503,46 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum UserLevel
     {
-        
+
         /// <remarks/>
         Administrator,
-        
+
         /// <remarks/>
         Operator,
-        
+
         /// <remarks/>
         User,
-        
+
         /// <remarks/>
         Anonymous,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RemoteUser
     {
-        
+
         private string usernameField;
-        
+
         private string passwordField;
-        
+
         private bool useDerivedPasswordField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Username
         {
             get
@@ -18554,9 +18554,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.usernameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Password
         {
             get
@@ -18568,9 +18568,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.passwordField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool UseDerivedPassword
         {
             get
@@ -18582,9 +18582,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.useDerivedPasswordField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -18597,20 +18597,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Scope
     {
-        
+
         private ScopeDefinition scopeDefField;
-        
+
         private string scopeItemField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ScopeDefinition ScopeDef
         {
             get
@@ -18622,9 +18622,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.scopeDefField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 1)]
         public string ScopeItem
         {
             get
@@ -18637,33 +18637,33 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ScopeDefinition
     {
-        
+
         /// <remarks/>
         Fixed,
-        
+
         /// <remarks/>
         Configurable,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SupportInformation
     {
-        
+
         private AttachmentData binaryField;
-        
+
         private string stringField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AttachmentData Binary
         {
             get
@@ -18675,9 +18675,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.binaryField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string String
         {
             get
@@ -18690,20 +18690,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AttachmentData
     {
-        
+
         private Include includeField;
-        
+
         private string contentTypeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.w3.org/2004/08/xop/include", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2004/08/xop/include", Order = 0)]
         public Include Include
         {
             get
@@ -18715,9 +18715,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.includeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified, Namespace="http://www.w3.org/2005/05/xmlmime")]
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/2005/05/xmlmime")]
         public string contentType
         {
             get
@@ -18730,20 +18730,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2004/08/xop/include")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2004/08/xop/include")]
     public partial class Include
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string hrefField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -18755,9 +18755,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string href
         {
             get
@@ -18770,20 +18770,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SystemLog
     {
-        
+
         private AttachmentData binaryField;
-        
+
         private string stringField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AttachmentData Binary
         {
             get
@@ -18795,9 +18795,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.binaryField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string String
         {
             get
@@ -18810,20 +18810,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class BackupFile
     {
-        
+
         private string nameField;
-        
+
         private AttachmentData dataField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -18835,9 +18835,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public AttachmentData Data
         {
             get
@@ -18850,18 +18850,18 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SystemDateTimeExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -18874,28 +18874,28 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SystemDateTime
     {
-        
+
         private SetDateTimeType dateTimeTypeField;
-        
+
         private bool daylightSavingsField;
-        
+
         private TimeZone timeZoneField;
-        
+
         private DateTime uTCDateTimeField;
-        
+
         private DateTime localDateTimeField;
-        
+
         private SystemDateTimeExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public SetDateTimeType DateTimeType
         {
             get
@@ -18907,9 +18907,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dateTimeTypeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool DaylightSavings
         {
             get
@@ -18921,9 +18921,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.daylightSavingsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public TimeZone TimeZone
         {
             get
@@ -18935,9 +18935,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.timeZoneField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public DateTime UTCDateTime
         {
             get
@@ -18949,9 +18949,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.uTCDateTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public DateTime LocalDateTime
         {
             get
@@ -18963,9 +18963,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.localDateTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public SystemDateTimeExtension Extension
         {
             get
@@ -18978,31 +18978,31 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum SetDateTimeType
     {
-        
+
         /// <remarks/>
         Manual,
-        
+
         /// <remarks/>
         NTP,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class TimeZone
     {
-        
+
         private string tzField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token", Order = 0)]
         public string TZ
         {
             get
@@ -19015,20 +19015,20 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DateTime
     {
-        
+
         private Time timeField;
-        
+
         private Date dateField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Time Time
         {
             get
@@ -19040,9 +19040,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.timeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Date Date
         {
             get
@@ -19055,22 +19055,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Time
     {
-        
+
         private int hourField;
-        
+
         private int minuteField;
-        
+
         private int secondField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Hour
         {
             get
@@ -19082,9 +19082,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.hourField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Minute
         {
             get
@@ -19096,9 +19096,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.minuteField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int Second
         {
             get
@@ -19111,22 +19111,22 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Date
     {
-        
+
         private int yearField;
-        
+
         private int monthField;
-        
+
         private int dayField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Year
         {
             get
@@ -19138,9 +19138,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.yearField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Month
         {
             get
@@ -19152,9 +19152,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.monthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int Day
         {
             get
@@ -19167,16 +19167,16 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class MiscCapabilities
     {
-        
+
         private string[] auxiliaryCommandsField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] AuxiliaryCommands
@@ -19191,84 +19191,84 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class SystemCapabilities
     {
-        
+
         private bool discoveryResolveField;
-        
+
         private bool discoveryResolveFieldSpecified;
-        
+
         private bool discoveryByeField;
-        
+
         private bool discoveryByeFieldSpecified;
-        
+
         private bool remoteDiscoveryField;
-        
+
         private bool remoteDiscoveryFieldSpecified;
-        
+
         private bool systemBackupField;
-        
+
         private bool systemBackupFieldSpecified;
-        
+
         private bool systemLoggingField;
-        
+
         private bool systemLoggingFieldSpecified;
-        
+
         private bool firmwareUpgradeField;
-        
+
         private bool firmwareUpgradeFieldSpecified;
-        
+
         private bool httpFirmwareUpgradeField;
-        
+
         private bool httpFirmwareUpgradeFieldSpecified;
-        
+
         private bool httpSystemBackupField;
-        
+
         private bool httpSystemBackupFieldSpecified;
-        
+
         private bool httpSystemLoggingField;
-        
+
         private bool httpSystemLoggingFieldSpecified;
-        
+
         private bool httpSupportInformationField;
-        
+
         private bool httpSupportInformationFieldSpecified;
-        
+
         private bool storageConfigurationField;
-        
+
         private bool storageConfigurationFieldSpecified;
-        
+
         private int maxStorageConfigurationsField;
-        
+
         private bool maxStorageConfigurationsFieldSpecified;
-        
+
         private int geoLocationEntriesField;
-        
+
         private bool geoLocationEntriesFieldSpecified;
-        
+
         private string[] autoGeoField;
-        
+
         private string[] storageTypesSupportedField;
-        
+
         private bool discoveryNotSupportedField;
-        
+
         private bool discoveryNotSupportedFieldSpecified;
-        
+
         private bool networkConfigNotSupportedField;
-        
+
         private bool networkConfigNotSupportedFieldSpecified;
-        
+
         private bool userConfigNotSupportedField;
-        
+
         private bool userConfigNotSupportedFieldSpecified;
-        
+
         private string[] addonsField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DiscoveryResolve
@@ -19282,7 +19282,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discoveryResolveField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DiscoveryResolveSpecified
@@ -19296,7 +19296,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discoveryResolveFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DiscoveryBye
@@ -19310,7 +19310,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discoveryByeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DiscoveryByeSpecified
@@ -19324,7 +19324,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discoveryByeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool RemoteDiscovery
@@ -19338,7 +19338,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.remoteDiscoveryField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RemoteDiscoverySpecified
@@ -19352,7 +19352,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.remoteDiscoveryFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool SystemBackup
@@ -19366,7 +19366,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.systemBackupField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SystemBackupSpecified
@@ -19380,7 +19380,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.systemBackupFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool SystemLogging
@@ -19394,7 +19394,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.systemLoggingField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SystemLoggingSpecified
@@ -19408,7 +19408,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.systemLoggingFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool FirmwareUpgrade
@@ -19422,7 +19422,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.firmwareUpgradeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FirmwareUpgradeSpecified
@@ -19436,7 +19436,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.firmwareUpgradeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool HttpFirmwareUpgrade
@@ -19450,7 +19450,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpFirmwareUpgradeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpFirmwareUpgradeSpecified
@@ -19464,7 +19464,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpFirmwareUpgradeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool HttpSystemBackup
@@ -19478,7 +19478,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSystemBackupField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpSystemBackupSpecified
@@ -19492,7 +19492,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSystemBackupFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool HttpSystemLogging
@@ -19506,7 +19506,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSystemLoggingField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpSystemLoggingSpecified
@@ -19520,7 +19520,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSystemLoggingFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool HttpSupportInformation
@@ -19534,7 +19534,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSupportInformationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpSupportInformationSpecified
@@ -19548,7 +19548,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpSupportInformationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool StorageConfiguration
@@ -19562,7 +19562,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.storageConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool StorageConfigurationSpecified
@@ -19576,7 +19576,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.storageConfigurationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int MaxStorageConfigurations
@@ -19590,7 +19590,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxStorageConfigurationsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxStorageConfigurationsSpecified
@@ -19604,7 +19604,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxStorageConfigurationsFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int GeoLocationEntries
@@ -19618,7 +19618,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.geoLocationEntriesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GeoLocationEntriesSpecified
@@ -19632,7 +19632,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.geoLocationEntriesFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] AutoGeo
@@ -19646,7 +19646,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.autoGeoField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] StorageTypesSupported
@@ -19660,7 +19660,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.storageTypesSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DiscoveryNotSupported
@@ -19674,7 +19674,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discoveryNotSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DiscoveryNotSupportedSpecified
@@ -19688,7 +19688,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.discoveryNotSupportedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool NetworkConfigNotSupported
@@ -19702,7 +19702,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.networkConfigNotSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool NetworkConfigNotSupportedSpecified
@@ -19716,7 +19716,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.networkConfigNotSupportedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool UserConfigNotSupported
@@ -19730,7 +19730,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.userConfigNotSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool UserConfigNotSupportedSpecified
@@ -19744,7 +19744,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.userConfigNotSupportedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] Addons
@@ -19759,92 +19759,92 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class SecurityCapabilities
     {
-        
+
         private bool tLS10Field;
-        
+
         private bool tLS10FieldSpecified;
-        
+
         private bool tLS11Field;
-        
+
         private bool tLS11FieldSpecified;
-        
+
         private bool tLS12Field;
-        
+
         private bool tLS12FieldSpecified;
-        
+
         private bool onboardKeyGenerationField;
-        
+
         private bool onboardKeyGenerationFieldSpecified;
-        
+
         private bool accessPolicyConfigField;
-        
+
         private bool accessPolicyConfigFieldSpecified;
-        
+
         private bool defaultAccessPolicyField;
-        
+
         private bool defaultAccessPolicyFieldSpecified;
-        
+
         private bool dot1XField;
-        
+
         private bool dot1XFieldSpecified;
-        
+
         private bool remoteUserHandlingField;
-        
+
         private bool remoteUserHandlingFieldSpecified;
-        
+
         private bool x509TokenField;
-        
+
         private bool x509TokenFieldSpecified;
-        
+
         private bool sAMLTokenField;
-        
+
         private bool sAMLTokenFieldSpecified;
-        
+
         private bool kerberosTokenField;
-        
+
         private bool kerberosTokenFieldSpecified;
-        
+
         private bool usernameTokenField;
-        
+
         private bool usernameTokenFieldSpecified;
-        
+
         private bool httpDigestField;
-        
+
         private bool httpDigestFieldSpecified;
-        
+
         private bool rELTokenField;
-        
+
         private bool rELTokenFieldSpecified;
-        
+
         private int[] supportedEAPMethodsField;
-        
+
         private int maxUsersField;
-        
+
         private bool maxUsersFieldSpecified;
-        
+
         private int maxUserNameLengthField;
-        
+
         private bool maxUserNameLengthFieldSpecified;
-        
+
         private int maxPasswordLengthField;
-        
+
         private bool maxPasswordLengthFieldSpecified;
-        
+
         private string[] securityPoliciesField;
-        
+
         private int maxPasswordHistoryField;
-        
+
         private bool maxPasswordHistoryFieldSpecified;
-        
+
         private string[] hashingAlgorithmsField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute("TLS1.0")]
         public bool TLS10
@@ -19858,7 +19858,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS10Field = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool TLS10Specified
@@ -19872,7 +19872,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS10FieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute("TLS1.1")]
         public bool TLS11
@@ -19886,7 +19886,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS11Field = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool TLS11Specified
@@ -19900,7 +19900,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS11FieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute("TLS1.2")]
         public bool TLS12
@@ -19914,7 +19914,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS12Field = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool TLS12Specified
@@ -19928,7 +19928,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.tLS12FieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool OnboardKeyGeneration
@@ -19942,7 +19942,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.onboardKeyGenerationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool OnboardKeyGenerationSpecified
@@ -19956,7 +19956,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.onboardKeyGenerationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AccessPolicyConfig
@@ -19970,7 +19970,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.accessPolicyConfigField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AccessPolicyConfigSpecified
@@ -19984,7 +19984,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.accessPolicyConfigFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DefaultAccessPolicy
@@ -19998,7 +19998,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultAccessPolicyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DefaultAccessPolicySpecified
@@ -20012,7 +20012,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.defaultAccessPolicyFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Dot1X
@@ -20026,7 +20026,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot1XField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool Dot1XSpecified
@@ -20040,7 +20040,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot1XFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool RemoteUserHandling
@@ -20054,7 +20054,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.remoteUserHandlingField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RemoteUserHandlingSpecified
@@ -20068,7 +20068,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.remoteUserHandlingFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute("X.509Token")]
         public bool X509Token
@@ -20082,7 +20082,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.x509TokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool X509TokenSpecified
@@ -20096,7 +20096,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.x509TokenFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool SAMLToken
@@ -20110,7 +20110,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sAMLTokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SAMLTokenSpecified
@@ -20124,7 +20124,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.sAMLTokenFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool KerberosToken
@@ -20138,7 +20138,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.kerberosTokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool KerberosTokenSpecified
@@ -20152,7 +20152,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.kerberosTokenFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool UsernameToken
@@ -20166,7 +20166,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.usernameTokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool UsernameTokenSpecified
@@ -20180,7 +20180,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.usernameTokenFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool HttpDigest
@@ -20194,7 +20194,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpDigestField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HttpDigestSpecified
@@ -20208,7 +20208,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.httpDigestFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool RELToken
@@ -20222,7 +20222,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rELTokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RELTokenSpecified
@@ -20236,7 +20236,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.rELTokenFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int[] SupportedEAPMethods
@@ -20250,7 +20250,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.supportedEAPMethodsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int MaxUsers
@@ -20264,7 +20264,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxUsersField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxUsersSpecified
@@ -20278,7 +20278,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxUsersFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int MaxUserNameLength
@@ -20292,7 +20292,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxUserNameLengthField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxUserNameLengthSpecified
@@ -20306,7 +20306,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxUserNameLengthFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int MaxPasswordLength
@@ -20320,7 +20320,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxPasswordLengthField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxPasswordLengthSpecified
@@ -20334,7 +20334,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxPasswordLengthFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] SecurityPolicies
@@ -20348,7 +20348,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.securityPoliciesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int MaxPasswordHistory
@@ -20362,7 +20362,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxPasswordHistoryField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxPasswordHistorySpecified
@@ -20376,7 +20376,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.maxPasswordHistoryFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] HashingAlgorithms
@@ -20391,50 +20391,50 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class NetworkCapabilities
     {
-        
+
         private bool iPFilterField;
-        
+
         private bool iPFilterFieldSpecified;
-        
+
         private bool zeroConfigurationField;
-        
+
         private bool zeroConfigurationFieldSpecified;
-        
+
         private bool iPVersion6Field;
-        
+
         private bool iPVersion6FieldSpecified;
-        
+
         private bool dynDNSField;
-        
+
         private bool dynDNSFieldSpecified;
-        
+
         private bool dot11ConfigurationField;
-        
+
         private bool dot11ConfigurationFieldSpecified;
-        
+
         private int dot1XConfigurationsField;
-        
+
         private bool dot1XConfigurationsFieldSpecified;
-        
+
         private bool hostnameFromDHCPField;
-        
+
         private bool hostnameFromDHCPFieldSpecified;
-        
+
         private int nTPField;
-        
+
         private bool nTPFieldSpecified;
-        
+
         private bool dHCPv6Field;
-        
+
         private bool dHCPv6FieldSpecified;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool IPFilter
@@ -20448,7 +20448,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPFilterField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IPFilterSpecified
@@ -20462,7 +20462,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPFilterFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ZeroConfiguration
@@ -20476,7 +20476,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.zeroConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ZeroConfigurationSpecified
@@ -20490,7 +20490,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.zeroConfigurationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool IPVersion6
@@ -20504,7 +20504,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPVersion6Field = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IPVersion6Specified
@@ -20518,7 +20518,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.iPVersion6FieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DynDNS
@@ -20532,7 +20532,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dynDNSField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DynDNSSpecified
@@ -20546,7 +20546,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dynDNSFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Dot11Configuration
@@ -20560,7 +20560,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot11ConfigurationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool Dot11ConfigurationSpecified
@@ -20574,7 +20574,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot11ConfigurationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int Dot1XConfigurations
@@ -20588,7 +20588,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot1XConfigurationsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool Dot1XConfigurationsSpecified
@@ -20602,7 +20602,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dot1XConfigurationsFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool HostnameFromDHCP
@@ -20616,7 +20616,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.hostnameFromDHCPField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HostnameFromDHCPSpecified
@@ -20630,7 +20630,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.hostnameFromDHCPFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int NTP
@@ -20644,7 +20644,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nTPField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool NTPSpecified
@@ -20658,7 +20658,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.nTPFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DHCPv6
@@ -20672,7 +20672,7 @@ namespace QuickNV.Onvif.DeviceIO
                 this.dHCPv6Field = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DHCPv6Specified
@@ -20687,24 +20687,24 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class DeviceServiceCapabilities
     {
-        
+
         private NetworkCapabilities networkField;
-        
+
         private SecurityCapabilities securityField;
-        
+
         private SystemCapabilities systemField;
-        
+
         private MiscCapabilities miscField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public NetworkCapabilities Network
         {
             get
@@ -20716,9 +20716,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.networkField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public SecurityCapabilities Security
         {
             get
@@ -20730,9 +20730,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.securityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public SystemCapabilities System
         {
             get
@@ -20744,9 +20744,9 @@ namespace QuickNV.Onvif.DeviceIO
                 this.systemField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public MiscCapabilities Misc
         {
             get
@@ -20759,84 +20759,84 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetServices", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetServices", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetServicesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public bool IncludeCapability;
-        
+
         public GetServicesRequest()
         {
         }
-        
+
         public GetServicesRequest(bool IncludeCapability)
         {
             this.IncludeCapability = IncludeCapability;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetServicesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetServicesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetServicesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Service")]
         public QuickNV.Onvif.DeviceIO.Service[] Service;
-        
+
         public GetServicesResponse()
         {
         }
-        
+
         public GetServicesResponse(QuickNV.Onvif.DeviceIO.Service[] Service)
         {
             this.Service = Service;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDeviceInformation", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDeviceInformation", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetDeviceInformationRequest
     {
-        
+
         public GetDeviceInformationRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDeviceInformationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDeviceInformationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetDeviceInformationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public string Manufacturer;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public string Model;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
         public string FirmwareVersion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 3)]
         public string SerialNumber;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 4)]
         public string HardwareId;
-        
+
         public GetDeviceInformationResponse()
         {
         }
-        
+
         public GetDeviceInformationResponse(string Manufacturer, string Model, string FirmwareVersion, string SerialNumber, string HardwareId)
         {
             this.Manufacturer = Manufacturer;
@@ -20846,543 +20846,543 @@ namespace QuickNV.Onvif.DeviceIO
             this.HardwareId = HardwareId;
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum FactoryDefaultType
     {
-        
+
         /// <remarks/>
         Hard,
-        
+
         /// <remarks/>
         Soft,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RestoreSystem", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RestoreSystem", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class RestoreSystemRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("BackupFiles")]
         public QuickNV.Onvif.DeviceIO.BackupFile[] BackupFiles;
-        
+
         public RestoreSystemRequest()
         {
         }
-        
+
         public RestoreSystemRequest(QuickNV.Onvif.DeviceIO.BackupFile[] BackupFiles)
         {
             this.BackupFiles = BackupFiles;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RestoreSystemResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RestoreSystemResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class RestoreSystemResponse
     {
-        
+
         public RestoreSystemResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSystemBackup", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSystemBackup", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetSystemBackupRequest
     {
-        
+
         public GetSystemBackupRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSystemBackupResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSystemBackupResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetSystemBackupResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("BackupFiles")]
         public QuickNV.Onvif.DeviceIO.BackupFile[] BackupFiles;
-        
+
         public GetSystemBackupResponse()
         {
         }
-        
+
         public GetSystemBackupResponse(QuickNV.Onvif.DeviceIO.BackupFile[] BackupFiles)
         {
             this.BackupFiles = BackupFiles;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScopes", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetScopes", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetScopesRequest
     {
-        
+
         public GetScopesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScopesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetScopesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetScopesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Scopes")]
         public QuickNV.Onvif.DeviceIO.Scope[] Scopes;
-        
+
         public GetScopesResponse()
         {
         }
-        
+
         public GetScopesResponse(QuickNV.Onvif.DeviceIO.Scope[] Scopes)
         {
             this.Scopes = Scopes;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetScopes", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetScopes", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetScopesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Scopes", DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("Scopes", DataType = "anyURI")]
         public string[] Scopes;
-        
+
         public SetScopesRequest()
         {
         }
-        
+
         public SetScopesRequest(string[] Scopes)
         {
             this.Scopes = Scopes;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetScopesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetScopesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetScopesResponse
     {
-        
+
         public SetScopesResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddScopes", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AddScopes", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class AddScopesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ScopeItem", DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("ScopeItem", DataType = "anyURI")]
         public string[] ScopeItem;
-        
+
         public AddScopesRequest()
         {
         }
-        
+
         public AddScopesRequest(string[] ScopeItem)
         {
             this.ScopeItem = ScopeItem;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddScopesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AddScopesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class AddScopesResponse
     {
-        
+
         public AddScopesResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveScopes", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveScopes", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class RemoveScopesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ScopeItem", DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("ScopeItem", DataType = "anyURI")]
         public string[] ScopeItem;
-        
+
         public RemoveScopesRequest()
         {
         }
-        
+
         public RemoveScopesRequest(string[] ScopeItem)
         {
             this.ScopeItem = ScopeItem;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveScopesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveScopesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class RemoveScopesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ScopeItem", DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("ScopeItem", DataType = "anyURI")]
         public string[] ScopeItem;
-        
+
         public RemoveScopesResponse()
         {
         }
-        
+
         public RemoveScopesResponse(string[] ScopeItem)
         {
             this.ScopeItem = ScopeItem;
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum DiscoveryMode
     {
-        
+
         /// <remarks/>
         Discoverable,
-        
+
         /// <remarks/>
         NonDiscoverable,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDPAddresses", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDPAddresses", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetDPAddressesRequest
     {
-        
+
         public GetDPAddressesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDPAddressesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDPAddressesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetDPAddressesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("DPAddress")]
         public QuickNV.Onvif.DeviceIO.NetworkHost[] DPAddress;
-        
+
         public GetDPAddressesResponse()
         {
         }
-        
+
         public GetDPAddressesResponse(QuickNV.Onvif.DeviceIO.NetworkHost[] DPAddress)
         {
             this.DPAddress = DPAddress;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDPAddresses", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetDPAddresses", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetDPAddressesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("DPAddress")]
         public QuickNV.Onvif.DeviceIO.NetworkHost[] DPAddress;
-        
+
         public SetDPAddressesRequest()
         {
         }
-        
+
         public SetDPAddressesRequest(QuickNV.Onvif.DeviceIO.NetworkHost[] DPAddress)
         {
             this.DPAddress = DPAddress;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDPAddressesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetDPAddressesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetDPAddressesResponse
     {
-        
+
         public SetDPAddressesResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetEndpointReference", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetEndpointReference", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetEndpointReferenceRequest
     {
-        
+
         public GetEndpointReferenceRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetEndpointReferenceResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetEndpointReferenceResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetEndpointReferenceResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public string GUID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetEndpointReferenceResponse()
         {
         }
-        
+
         public GetEndpointReferenceResponse(string GUID, System.Xml.XmlElement[] Any)
         {
             this.GUID = GUID;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetUsers", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetUsers", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetUsersRequest
     {
-        
+
         public GetUsersRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetUsersResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetUsersResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetUsersResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("User")]
         public QuickNV.Onvif.DeviceIO.User[] User;
-        
+
         public GetUsersResponse()
         {
         }
-        
+
         public GetUsersResponse(QuickNV.Onvif.DeviceIO.User[] User)
         {
             this.User = User;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateUsers", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateUsers", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class CreateUsersRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("User")]
         public QuickNV.Onvif.DeviceIO.User[] User;
-        
+
         public CreateUsersRequest()
         {
         }
-        
+
         public CreateUsersRequest(QuickNV.Onvif.DeviceIO.User[] User)
         {
             this.User = User;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateUsersResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateUsersResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class CreateUsersResponse
     {
-        
+
         public CreateUsersResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteUsers", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteUsers", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class DeleteUsersRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Username")]
         public string[] Username;
-        
+
         public DeleteUsersRequest()
         {
         }
-        
+
         public DeleteUsersRequest(string[] Username)
         {
             this.Username = Username;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteUsersResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteUsersResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class DeleteUsersResponse
     {
-        
+
         public DeleteUsersResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetUser", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetUser", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetUserRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("User")]
         public QuickNV.Onvif.DeviceIO.User[] User;
-        
+
         public SetUserRequest()
         {
         }
-        
+
         public SetUserRequest(QuickNV.Onvif.DeviceIO.User[] User)
         {
             this.User = User;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetUserResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetUserResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetUserResponse
     {
-        
+
         public SetUserResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetWsdlUrl", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetWsdlUrl", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetWsdlUrlRequest
     {
-        
+
         public GetWsdlUrlRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetWsdlUrlResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetWsdlUrlResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetWsdlUrlResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
         public string WsdlUrl;
-        
+
         public GetWsdlUrlResponse()
         {
         }
-        
+
         public GetWsdlUrlResponse(string WsdlUrl)
         {
             this.WsdlUrl = WsdlUrl;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPasswordComplexityOptions", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPasswordComplexityOptions", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetPasswordComplexityOptionsRequest
     {
-        
+
         public GetPasswordComplexityOptionsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPasswordComplexityOptionsResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPasswordComplexityOptionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetPasswordComplexityOptionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.IntRange MinLenRange;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public QuickNV.Onvif.DeviceIO.IntRange UppercaseRange;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
         public QuickNV.Onvif.DeviceIO.IntRange NumberRange;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 3)]
         public QuickNV.Onvif.DeviceIO.IntRange SpecialCharsRange;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 4)]
         public bool BlockUsernameOccurrenceSupported;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=5)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 5)]
         public bool PolicyConfigurationLockSupported;
-        
+
         public GetPasswordComplexityOptionsResponse()
         {
         }
-        
+
         public GetPasswordComplexityOptionsResponse(QuickNV.Onvif.DeviceIO.IntRange MinLenRange, QuickNV.Onvif.DeviceIO.IntRange UppercaseRange, QuickNV.Onvif.DeviceIO.IntRange NumberRange, QuickNV.Onvif.DeviceIO.IntRange SpecialCharsRange, bool BlockUsernameOccurrenceSupported, bool PolicyConfigurationLockSupported)
         {
             this.MinLenRange = MinLenRange;
@@ -21393,46 +21393,46 @@ namespace QuickNV.Onvif.DeviceIO
             this.PolicyConfigurationLockSupported = PolicyConfigurationLockSupported;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPasswordComplexityConfiguration", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPasswordComplexityConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetPasswordComplexityConfigurationRequest
     {
-        
+
         public GetPasswordComplexityConfigurationRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPasswordComplexityConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPasswordComplexityConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetPasswordComplexityConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public int MinLen;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public int Uppercase;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
         public int Number;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 3)]
         public int SpecialChars;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 4)]
         public bool BlockUsernameOccurrence;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=5)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 5)]
         public bool PolicyConfigurationLocked;
-        
+
         public GetPasswordComplexityConfigurationResponse()
         {
         }
-        
+
         public GetPasswordComplexityConfigurationResponse(int MinLen, int Uppercase, int Number, int SpecialChars, bool BlockUsernameOccurrence, bool PolicyConfigurationLocked)
         {
             this.MinLen = MinLen;
@@ -21443,105 +21443,105 @@ namespace QuickNV.Onvif.DeviceIO
             this.PolicyConfigurationLocked = PolicyConfigurationLocked;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPasswordHistoryConfiguration", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPasswordHistoryConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetPasswordHistoryConfigurationRequest
     {
-        
+
         public GetPasswordHistoryConfigurationRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPasswordHistoryConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPasswordHistoryConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetPasswordHistoryConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public bool Enabled;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public int Length;
-        
+
         public GetPasswordHistoryConfigurationResponse()
         {
         }
-        
+
         public GetPasswordHistoryConfigurationResponse(bool Enabled, int Length)
         {
             this.Enabled = Enabled;
             this.Length = Length;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAuthFailureWarningOptions", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAuthFailureWarningOptions", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetAuthFailureWarningOptionsRequest
     {
-        
+
         public GetAuthFailureWarningOptionsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAuthFailureWarningOptionsResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAuthFailureWarningOptionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetAuthFailureWarningOptionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.IntRange MonitorPeriodRange;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public QuickNV.Onvif.DeviceIO.IntRange AuthFailureRange;
-        
+
         public GetAuthFailureWarningOptionsResponse()
         {
         }
-        
+
         public GetAuthFailureWarningOptionsResponse(QuickNV.Onvif.DeviceIO.IntRange MonitorPeriodRange, QuickNV.Onvif.DeviceIO.IntRange AuthFailureRange)
         {
             this.MonitorPeriodRange = MonitorPeriodRange;
             this.AuthFailureRange = AuthFailureRange;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAuthFailureWarningConfiguration", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAuthFailureWarningConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetAuthFailureWarningConfigurationRequest
     {
-        
+
         public GetAuthFailureWarningConfigurationRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAuthFailureWarningConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAuthFailureWarningConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetAuthFailureWarningConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public bool Enabled;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public int MonitorPeriod;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
         public int MaxAuthFailures;
-        
+
         public GetAuthFailureWarningConfigurationResponse()
         {
         }
-        
+
         public GetAuthFailureWarningConfigurationResponse(bool Enabled, int MonitorPeriod, int MaxAuthFailures)
         {
             this.Enabled = Enabled;
@@ -21549,131 +21549,131 @@ namespace QuickNV.Onvif.DeviceIO
             this.MaxAuthFailures = MaxAuthFailures;
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum CapabilityCategory
     {
-        
+
         /// <remarks/>
         All,
-        
+
         /// <remarks/>
         Analytics,
-        
+
         /// <remarks/>
         Device,
-        
+
         /// <remarks/>
         Events,
-        
+
         /// <remarks/>
         Imaging,
-        
+
         /// <remarks/>
         Media,
-        
+
         /// <remarks/>
         PTZ,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCapabilities", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCapabilities", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCapabilitiesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Category")]
         public QuickNV.Onvif.DeviceIO.CapabilityCategory[] Category;
-        
+
         public GetCapabilitiesRequest()
         {
         }
-        
+
         public GetCapabilitiesRequest(QuickNV.Onvif.DeviceIO.CapabilityCategory[] Category)
         {
             this.Category = Category;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCapabilitiesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCapabilitiesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCapabilitiesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.Capabilities Capabilities;
-        
+
         public GetCapabilitiesResponse()
         {
         }
-        
+
         public GetCapabilitiesResponse(QuickNV.Onvif.DeviceIO.Capabilities Capabilities)
         {
             this.Capabilities = Capabilities;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetHostname", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetHostname", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetHostnameRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token")]
         public string Name;
-        
+
         public SetHostnameRequest()
         {
         }
-        
+
         public SetHostnameRequest(string Name)
         {
             this.Name = Name;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetHostnameResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetHostnameResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetHostnameResponse
     {
-        
+
         public SetHostnameResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDNS", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetDNS", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetDNSRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public bool FromDHCP;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("SearchDomain", DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute("SearchDomain", DataType = "token")]
         public string[] SearchDomain;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
         [System.Xml.Serialization.XmlElementAttribute("DNSManual")]
         public QuickNV.Onvif.DeviceIO.IPAddress[] DNSManual;
-        
+
         public SetDNSRequest()
         {
         }
-        
+
         public SetDNSRequest(bool FromDHCP, string[] SearchDomain, QuickNV.Onvif.DeviceIO.IPAddress[] DNSManual)
         {
             this.FromDHCP = FromDHCP;
@@ -21681,78 +21681,78 @@ namespace QuickNV.Onvif.DeviceIO
             this.DNSManual = DNSManual;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDNSResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetDNSResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetDNSResponse
     {
-        
+
         public SetDNSResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetNTP", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetNTP", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetNTPRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public bool FromDHCP;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("NTPManual")]
         public QuickNV.Onvif.DeviceIO.NetworkHost[] NTPManual;
-        
+
         public SetNTPRequest()
         {
         }
-        
+
         public SetNTPRequest(bool FromDHCP, QuickNV.Onvif.DeviceIO.NetworkHost[] NTPManual)
         {
             this.FromDHCP = FromDHCP;
             this.NTPManual = NTPManual;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetNTPResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetNTPResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetNTPResponse
     {
-        
+
         public SetNTPResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDynamicDNS", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetDynamicDNS", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetDynamicDNSRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.DynamicDNSType Type;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token")]
         public string Name;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string TTL;
-        
+
         public SetDynamicDNSRequest()
         {
         }
-        
+
         public SetDynamicDNSRequest(QuickNV.Onvif.DeviceIO.DynamicDNSType Type, string Name, string TTL)
         {
             this.Type = Type;
@@ -21760,295 +21760,295 @@ namespace QuickNV.Onvif.DeviceIO
             this.TTL = TTL;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDynamicDNSResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetDynamicDNSResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetDynamicDNSResponse
     {
-        
+
         public SetDynamicDNSResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetNetworkInterfaces", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetNetworkInterfaces", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetNetworkInterfacesRequest
     {
-        
+
         public GetNetworkInterfacesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetNetworkInterfacesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetNetworkInterfacesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetNetworkInterfacesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("NetworkInterfaces")]
         public QuickNV.Onvif.DeviceIO.NetworkInterface[] NetworkInterfaces;
-        
+
         public GetNetworkInterfacesResponse()
         {
         }
-        
+
         public GetNetworkInterfacesResponse(QuickNV.Onvif.DeviceIO.NetworkInterface[] NetworkInterfaces)
         {
             this.NetworkInterfaces = NetworkInterfaces;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetNetworkProtocols", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetNetworkProtocols", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetNetworkProtocolsRequest
     {
-        
+
         public GetNetworkProtocolsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetNetworkProtocolsResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetNetworkProtocolsResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetNetworkProtocolsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("NetworkProtocols")]
         public QuickNV.Onvif.DeviceIO.NetworkProtocol[] NetworkProtocols;
-        
+
         public GetNetworkProtocolsResponse()
         {
         }
-        
+
         public GetNetworkProtocolsResponse(QuickNV.Onvif.DeviceIO.NetworkProtocol[] NetworkProtocols)
         {
             this.NetworkProtocols = NetworkProtocols;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetNetworkProtocols", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetNetworkProtocols", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetNetworkProtocolsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("NetworkProtocols")]
         public QuickNV.Onvif.DeviceIO.NetworkProtocol[] NetworkProtocols;
-        
+
         public SetNetworkProtocolsRequest()
         {
         }
-        
+
         public SetNetworkProtocolsRequest(QuickNV.Onvif.DeviceIO.NetworkProtocol[] NetworkProtocols)
         {
             this.NetworkProtocols = NetworkProtocols;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetNetworkProtocolsResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetNetworkProtocolsResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetNetworkProtocolsResponse
     {
-        
+
         public SetNetworkProtocolsResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetNetworkDefaultGateway", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetNetworkDefaultGateway", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetNetworkDefaultGatewayRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IPv4Address", DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("IPv4Address", DataType = "token")]
         public string[] IPv4Address;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute("IPv6Address", DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute("IPv6Address", DataType = "token")]
         public string[] IPv6Address;
-        
+
         public SetNetworkDefaultGatewayRequest()
         {
         }
-        
+
         public SetNetworkDefaultGatewayRequest(string[] IPv4Address, string[] IPv6Address)
         {
             this.IPv4Address = IPv4Address;
             this.IPv6Address = IPv6Address;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetNetworkDefaultGatewayResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetNetworkDefaultGatewayResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetNetworkDefaultGatewayResponse
     {
-        
+
         public SetNetworkDefaultGatewayResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetRelayOutputs", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRelayOutputs", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetRelayOutputsRequest
     {
-        
+
         public GetRelayOutputsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetRelayOutputsResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRelayOutputsResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetRelayOutputsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("RelayOutputs")]
         public QuickNV.Onvif.DeviceIO.RelayOutput[] RelayOutputs;
-        
+
         public GetRelayOutputsResponse()
         {
         }
-        
+
         public GetRelayOutputsResponse(QuickNV.Onvif.DeviceIO.RelayOutput[] RelayOutputs)
         {
             this.RelayOutputs = RelayOutputs;
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum RelayLogicalState
     {
-        
+
         /// <remarks/>
         active,
-        
+
         /// <remarks/>
         inactive,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDot11Capabilities", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDot11Capabilities", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetDot11CapabilitiesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetDot11CapabilitiesRequest()
         {
         }
-        
+
         public GetDot11CapabilitiesRequest(System.Xml.XmlElement[] Any)
         {
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDot11CapabilitiesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDot11CapabilitiesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetDot11CapabilitiesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.Dot11Capabilities Capabilities;
-        
+
         public GetDot11CapabilitiesResponse()
         {
         }
-        
+
         public GetDot11CapabilitiesResponse(QuickNV.Onvif.DeviceIO.Dot11Capabilities Capabilities)
         {
             this.Capabilities = Capabilities;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ScanAvailableDot11Networks", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ScanAvailableDot11Networks", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class ScanAvailableDot11NetworksRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public string InterfaceToken;
-        
+
         public ScanAvailableDot11NetworksRequest()
         {
         }
-        
+
         public ScanAvailableDot11NetworksRequest(string InterfaceToken)
         {
             this.InterfaceToken = InterfaceToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ScanAvailableDot11NetworksResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ScanAvailableDot11NetworksResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class ScanAvailableDot11NetworksResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Networks")]
         public QuickNV.Onvif.DeviceIO.Dot11AvailableNetworks[] Networks;
-        
+
         public ScanAvailableDot11NetworksResponse()
         {
         }
-        
+
         public ScanAvailableDot11NetworksResponse(QuickNV.Onvif.DeviceIO.Dot11AvailableNetworks[] Networks)
         {
             this.Networks = Networks;
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.onvif.org/ver10/device/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.onvif.org/ver10/device/wsdl")]
     public partial class GetSystemUrisResponseExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -22061,43 +22061,43 @@ namespace QuickNV.Onvif.DeviceIO
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSystemUris", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSystemUris", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetSystemUrisRequest
     {
-        
+
         public GetSystemUrisRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSystemUrisResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSystemUrisResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetSystemUrisResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("SystemLog", Namespace="http://www.onvif.org/ver10/schema", IsNullable=false)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("SystemLog", Namespace = "http://www.onvif.org/ver10/schema", IsNullable = false)]
         public QuickNV.Onvif.DeviceIO.SystemLogUri[] SystemLogUris;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
         public string SupportInfoUri;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
         public string SystemBackupUri;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 3)]
         public QuickNV.Onvif.DeviceIO.GetSystemUrisResponseExtension Extension;
-        
+
         public GetSystemUrisResponse()
         {
         }
-        
+
         public GetSystemUrisResponse(QuickNV.Onvif.DeviceIO.SystemLogUri[] SystemLogUris, string SupportInfoUri, string SystemBackupUri, QuickNV.Onvif.DeviceIO.GetSystemUrisResponseExtension Extension)
         {
             this.SystemLogUris = SystemLogUris;
@@ -22106,40 +22106,40 @@ namespace QuickNV.Onvif.DeviceIO
             this.Extension = Extension;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="StartFirmwareUpgrade", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "StartFirmwareUpgrade", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class StartFirmwareUpgradeRequest
     {
-        
+
         public StartFirmwareUpgradeRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="StartFirmwareUpgradeResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "StartFirmwareUpgradeResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class StartFirmwareUpgradeResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
         public string UploadUri;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string UploadDelay;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string ExpectedDownTime;
-        
+
         public StartFirmwareUpgradeResponse()
         {
         }
-        
+
         public StartFirmwareUpgradeResponse(string UploadUri, string UploadDelay, string ExpectedDownTime)
         {
             this.UploadUri = UploadUri;
@@ -22147,199 +22147,199 @@ namespace QuickNV.Onvif.DeviceIO
             this.ExpectedDownTime = ExpectedDownTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="StartSystemRestore", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "StartSystemRestore", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class StartSystemRestoreRequest
     {
-        
+
         public StartSystemRestoreRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="StartSystemRestoreResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "StartSystemRestoreResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class StartSystemRestoreResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
         public string UploadUri;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string ExpectedDownTime;
-        
+
         public StartSystemRestoreResponse()
         {
         }
-        
+
         public StartSystemRestoreResponse(string UploadUri, string ExpectedDownTime)
         {
             this.UploadUri = UploadUri;
             this.ExpectedDownTime = ExpectedDownTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetStorageConfigurations", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetStorageConfigurations", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetStorageConfigurationsRequest
     {
-        
+
         public GetStorageConfigurationsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetStorageConfigurationsResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetStorageConfigurationsResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetStorageConfigurationsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("StorageConfigurations")]
         public QuickNV.Onvif.DeviceIO.StorageConfiguration[] StorageConfigurations;
-        
+
         public GetStorageConfigurationsResponse()
         {
         }
-        
+
         public GetStorageConfigurationsResponse(QuickNV.Onvif.DeviceIO.StorageConfiguration[] StorageConfigurations)
         {
             this.StorageConfigurations = StorageConfigurations;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetGeoLocation", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetGeoLocation", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetGeoLocationRequest
     {
-        
+
         public GetGeoLocationRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetGeoLocationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetGeoLocationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetGeoLocationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Location")]
         public QuickNV.Onvif.DeviceIO.LocationEntity[] Location;
-        
+
         public GetGeoLocationResponse()
         {
         }
-        
+
         public GetGeoLocationResponse(QuickNV.Onvif.DeviceIO.LocationEntity[] Location)
         {
             this.Location = Location;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetGeoLocation", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetGeoLocation", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetGeoLocationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Location")]
         public QuickNV.Onvif.DeviceIO.LocationEntity[] Location;
-        
+
         public SetGeoLocationRequest()
         {
         }
-        
+
         public SetGeoLocationRequest(QuickNV.Onvif.DeviceIO.LocationEntity[] Location)
         {
             this.Location = Location;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetGeoLocationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetGeoLocationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetGeoLocationResponse
     {
-        
+
         public SetGeoLocationResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteGeoLocation", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteGeoLocation", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class DeleteGeoLocationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Location")]
         public QuickNV.Onvif.DeviceIO.LocationEntity[] Location;
-        
+
         public DeleteGeoLocationRequest()
         {
         }
-        
+
         public DeleteGeoLocationRequest(QuickNV.Onvif.DeviceIO.LocationEntity[] Location)
         {
             this.Location = Location;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteGeoLocationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteGeoLocationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class DeleteGeoLocationResponse
     {
-        
+
         public DeleteGeoLocationResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateCertificate", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateCertificate", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class CreateCertificateRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token")]
         public string CertificateID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public string Subject;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
         public System.DateTime ValidNotBefore;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 3)]
         public System.DateTime ValidNotAfter;
-        
+
         public CreateCertificateRequest()
         {
         }
-        
+
         public CreateCertificateRequest(string CertificateID, string Subject, System.DateTime ValidNotBefore, System.DateTime ValidNotAfter)
         {
             this.CertificateID = CertificateID;
@@ -22348,180 +22348,180 @@ namespace QuickNV.Onvif.DeviceIO
             this.ValidNotAfter = ValidNotAfter;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="CreateCertificateResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "CreateCertificateResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class CreateCertificateResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.Certificate NvtCertificate;
-        
+
         public CreateCertificateResponse()
         {
         }
-        
+
         public CreateCertificateResponse(QuickNV.Onvif.DeviceIO.Certificate NvtCertificate)
         {
             this.NvtCertificate = NvtCertificate;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificates", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificates", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCertificatesRequest
     {
-        
+
         public GetCertificatesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificatesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificatesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCertificatesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("NvtCertificate")]
         public QuickNV.Onvif.DeviceIO.Certificate[] NvtCertificate;
-        
+
         public GetCertificatesResponse()
         {
         }
-        
+
         public GetCertificatesResponse(QuickNV.Onvif.DeviceIO.Certificate[] NvtCertificate)
         {
             this.NvtCertificate = NvtCertificate;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificatesStatus", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificatesStatus", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCertificatesStatusRequest
     {
-        
+
         public GetCertificatesStatusRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificatesStatusResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificatesStatusResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCertificatesStatusResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("CertificateStatus")]
         public QuickNV.Onvif.DeviceIO.CertificateStatus[] CertificateStatus;
-        
+
         public GetCertificatesStatusResponse()
         {
         }
-        
+
         public GetCertificatesStatusResponse(QuickNV.Onvif.DeviceIO.CertificateStatus[] CertificateStatus)
         {
             this.CertificateStatus = CertificateStatus;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetCertificatesStatus", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetCertificatesStatus", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetCertificatesStatusRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("CertificateStatus")]
         public QuickNV.Onvif.DeviceIO.CertificateStatus[] CertificateStatus;
-        
+
         public SetCertificatesStatusRequest()
         {
         }
-        
+
         public SetCertificatesStatusRequest(QuickNV.Onvif.DeviceIO.CertificateStatus[] CertificateStatus)
         {
             this.CertificateStatus = CertificateStatus;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetCertificatesStatusResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetCertificatesStatusResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetCertificatesStatusResponse
     {
-        
+
         public SetCertificatesStatusResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCertificates", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCertificates", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class DeleteCertificatesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CertificateID", DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute("CertificateID", DataType = "token")]
         public string[] CertificateID;
-        
+
         public DeleteCertificatesRequest()
         {
         }
-        
+
         public DeleteCertificatesRequest(string[] CertificateID)
         {
             this.CertificateID = CertificateID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCertificatesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteCertificatesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class DeleteCertificatesResponse
     {
-        
+
         public DeleteCertificatesResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPkcs10Request", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPkcs10Request", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetPkcs10RequestRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token")]
         public string CertificateID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public string Subject;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 2)]
         public QuickNV.Onvif.DeviceIO.BinaryData Attributes;
-        
+
         public GetPkcs10RequestRequest()
         {
         }
-        
+
         public GetPkcs10RequestRequest(string CertificateID, string Subject, QuickNV.Onvif.DeviceIO.BinaryData Attributes)
         {
             this.CertificateID = CertificateID;
@@ -22529,617 +22529,617 @@ namespace QuickNV.Onvif.DeviceIO
             this.Attributes = Attributes;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPkcs10RequestResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPkcs10RequestResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetPkcs10RequestResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.BinaryData Pkcs10Request;
-        
+
         public GetPkcs10RequestResponse()
         {
         }
-        
+
         public GetPkcs10RequestResponse(QuickNV.Onvif.DeviceIO.BinaryData Pkcs10Request)
         {
             this.Pkcs10Request = Pkcs10Request;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="LoadCertificates", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadCertificates", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class LoadCertificatesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("NVTCertificate")]
         public QuickNV.Onvif.DeviceIO.Certificate[] NVTCertificate;
-        
+
         public LoadCertificatesRequest()
         {
         }
-        
+
         public LoadCertificatesRequest(QuickNV.Onvif.DeviceIO.Certificate[] NVTCertificate)
         {
             this.NVTCertificate = NVTCertificate;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="LoadCertificatesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadCertificatesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class LoadCertificatesResponse
     {
-        
+
         public LoadCertificatesResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCACertificates", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCACertificates", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCACertificatesRequest
     {
-        
+
         public GetCACertificatesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCACertificatesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCACertificatesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCACertificatesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("CACertificate")]
         public QuickNV.Onvif.DeviceIO.Certificate[] CACertificate;
-        
+
         public GetCACertificatesResponse()
         {
         }
-        
+
         public GetCACertificatesResponse(QuickNV.Onvif.DeviceIO.Certificate[] CACertificate)
         {
             this.CACertificate = CACertificate;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="LoadCertificateWithPrivateKey", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadCertificateWithPrivateKey", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class LoadCertificateWithPrivateKeyRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("CertificateWithPrivateKey")]
         public QuickNV.Onvif.DeviceIO.CertificateWithPrivateKey[] CertificateWithPrivateKey;
-        
+
         public LoadCertificateWithPrivateKeyRequest()
         {
         }
-        
+
         public LoadCertificateWithPrivateKeyRequest(QuickNV.Onvif.DeviceIO.CertificateWithPrivateKey[] CertificateWithPrivateKey)
         {
             this.CertificateWithPrivateKey = CertificateWithPrivateKey;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="LoadCertificateWithPrivateKeyResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadCertificateWithPrivateKeyResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class LoadCertificateWithPrivateKeyResponse
     {
-        
+
         public LoadCertificateWithPrivateKeyResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificateInformation", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificateInformation", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCertificateInformationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="token")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "token")]
         public string CertificateID;
-        
+
         public GetCertificateInformationRequest()
         {
         }
-        
+
         public GetCertificateInformationRequest(string CertificateID)
         {
             this.CertificateID = CertificateID;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetCertificateInformationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCertificateInformationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetCertificateInformationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.CertificateInformation CertificateInformation;
-        
+
         public GetCertificateInformationResponse()
         {
         }
-        
+
         public GetCertificateInformationResponse(QuickNV.Onvif.DeviceIO.CertificateInformation CertificateInformation)
         {
             this.CertificateInformation = CertificateInformation;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="LoadCACertificates", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadCACertificates", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class LoadCACertificatesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("CACertificate")]
         public QuickNV.Onvif.DeviceIO.Certificate[] CACertificate;
-        
+
         public LoadCACertificatesRequest()
         {
         }
-        
+
         public LoadCACertificatesRequest(QuickNV.Onvif.DeviceIO.Certificate[] CACertificate)
         {
             this.CACertificate = CACertificate;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="LoadCACertificatesResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "LoadCACertificatesResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class LoadCACertificatesResponse
     {
-        
+
         public LoadCACertificatesResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDot1XConfigurations", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDot1XConfigurations", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetDot1XConfigurationsRequest
     {
-        
+
         public GetDot1XConfigurationsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDot1XConfigurationsResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDot1XConfigurationsResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetDot1XConfigurationsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Dot1XConfiguration")]
         public QuickNV.Onvif.DeviceIO.Dot1XConfiguration[] Dot1XConfiguration;
-        
+
         public GetDot1XConfigurationsResponse()
         {
         }
-        
+
         public GetDot1XConfigurationsResponse(QuickNV.Onvif.DeviceIO.Dot1XConfiguration[] Dot1XConfiguration)
         {
             this.Dot1XConfiguration = Dot1XConfiguration;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteDot1XConfiguration", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteDot1XConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class DeleteDot1XConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Dot1XConfigurationToken")]
         public string[] Dot1XConfigurationToken;
-        
+
         public DeleteDot1XConfigurationRequest()
         {
         }
-        
+
         public DeleteDot1XConfigurationRequest(string[] Dot1XConfigurationToken)
         {
             this.Dot1XConfigurationToken = Dot1XConfigurationToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteDot1XConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteDot1XConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class DeleteDot1XConfigurationResponse
     {
-        
+
         public DeleteDot1XConfigurationResponse()
         {
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface DeviceChannel : QuickNV.Onvif.DeviceIO.Device, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class DeviceClient : System.ServiceModel.ClientBase<QuickNV.Onvif.DeviceIO.Device>, QuickNV.Onvif.DeviceIO.Device
     {
-        
-        public DeviceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public DeviceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetServicesResponse> QuickNV.Onvif.DeviceIO.Device.GetServicesAsync(QuickNV.Onvif.DeviceIO.GetServicesRequest request)
         {
             return base.Channel.GetServicesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetServicesResponse> GetServicesAsync(bool IncludeCapability)
         {
             QuickNV.Onvif.DeviceIO.GetServicesRequest inValue = new QuickNV.Onvif.DeviceIO.GetServicesRequest();
             inValue.IncludeCapability = IncludeCapability;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetServicesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeviceServiceCapabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDeviceInformationResponse> GetDeviceInformationAsync(QuickNV.Onvif.DeviceIO.GetDeviceInformationRequest request)
         {
             return base.Channel.GetDeviceInformationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task SetSystemDateAndTimeAsync(QuickNV.Onvif.DeviceIO.SetDateTimeType DateTimeType, bool DaylightSavings, QuickNV.Onvif.DeviceIO.TimeZone TimeZone, QuickNV.Onvif.DeviceIO.DateTime UTCDateTime)
         {
             return base.Channel.SetSystemDateAndTimeAsync(DateTimeType, DaylightSavings, TimeZone, UTCDateTime);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SystemDateTime> GetSystemDateAndTimeAsync()
         {
             return base.Channel.GetSystemDateAndTimeAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetSystemFactoryDefaultAsync(QuickNV.Onvif.DeviceIO.FactoryDefaultType FactoryDefault)
         {
             return base.Channel.SetSystemFactoryDefaultAsync(FactoryDefault);
         }
-        
+
         public System.Threading.Tasks.Task<string> UpgradeSystemFirmwareAsync(QuickNV.Onvif.DeviceIO.AttachmentData Firmware)
         {
             return base.Channel.UpgradeSystemFirmwareAsync(Firmware);
         }
-        
+
         public System.Threading.Tasks.Task<string> SystemRebootAsync()
         {
             return base.Channel.SystemRebootAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.RestoreSystemResponse> QuickNV.Onvif.DeviceIO.Device.RestoreSystemAsync(QuickNV.Onvif.DeviceIO.RestoreSystemRequest request)
         {
             return base.Channel.RestoreSystemAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.RestoreSystemResponse> RestoreSystemAsync(QuickNV.Onvif.DeviceIO.BackupFile[] BackupFiles)
         {
             QuickNV.Onvif.DeviceIO.RestoreSystemRequest inValue = new QuickNV.Onvif.DeviceIO.RestoreSystemRequest();
             inValue.BackupFiles = BackupFiles;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).RestoreSystemAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetSystemBackupResponse> QuickNV.Onvif.DeviceIO.Device.GetSystemBackupAsync(QuickNV.Onvif.DeviceIO.GetSystemBackupRequest request)
         {
             return base.Channel.GetSystemBackupAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetSystemBackupResponse> GetSystemBackupAsync()
         {
             QuickNV.Onvif.DeviceIO.GetSystemBackupRequest inValue = new QuickNV.Onvif.DeviceIO.GetSystemBackupRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetSystemBackupAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SystemLog> GetSystemLogAsync(QuickNV.Onvif.DeviceIO.SystemLogType LogType)
         {
             return base.Channel.GetSystemLogAsync(LogType);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SupportInformation> GetSystemSupportInformationAsync()
         {
             return base.Channel.GetSystemSupportInformationAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetScopesResponse> QuickNV.Onvif.DeviceIO.Device.GetScopesAsync(QuickNV.Onvif.DeviceIO.GetScopesRequest request)
         {
             return base.Channel.GetScopesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetScopesResponse> GetScopesAsync()
         {
             QuickNV.Onvif.DeviceIO.GetScopesRequest inValue = new QuickNV.Onvif.DeviceIO.GetScopesRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetScopesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetScopesResponse> QuickNV.Onvif.DeviceIO.Device.SetScopesAsync(QuickNV.Onvif.DeviceIO.SetScopesRequest request)
         {
             return base.Channel.SetScopesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetScopesResponse> SetScopesAsync(string[] Scopes)
         {
             QuickNV.Onvif.DeviceIO.SetScopesRequest inValue = new QuickNV.Onvif.DeviceIO.SetScopesRequest();
             inValue.Scopes = Scopes;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetScopesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.AddScopesResponse> QuickNV.Onvif.DeviceIO.Device.AddScopesAsync(QuickNV.Onvif.DeviceIO.AddScopesRequest request)
         {
             return base.Channel.AddScopesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.AddScopesResponse> AddScopesAsync(string[] ScopeItem)
         {
             QuickNV.Onvif.DeviceIO.AddScopesRequest inValue = new QuickNV.Onvif.DeviceIO.AddScopesRequest();
             inValue.ScopeItem = ScopeItem;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).AddScopesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.RemoveScopesResponse> RemoveScopesAsync(QuickNV.Onvif.DeviceIO.RemoveScopesRequest request)
         {
             return base.Channel.RemoveScopesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DiscoveryMode> GetDiscoveryModeAsync()
         {
             return base.Channel.GetDiscoveryModeAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetDiscoveryModeAsync(QuickNV.Onvif.DeviceIO.DiscoveryMode DiscoveryMode)
         {
             return base.Channel.SetDiscoveryModeAsync(DiscoveryMode);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DiscoveryMode> GetRemoteDiscoveryModeAsync()
         {
             return base.Channel.GetRemoteDiscoveryModeAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetRemoteDiscoveryModeAsync(QuickNV.Onvif.DeviceIO.DiscoveryMode RemoteDiscoveryMode)
         {
             return base.Channel.SetRemoteDiscoveryModeAsync(RemoteDiscoveryMode);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDPAddressesResponse> QuickNV.Onvif.DeviceIO.Device.GetDPAddressesAsync(QuickNV.Onvif.DeviceIO.GetDPAddressesRequest request)
         {
             return base.Channel.GetDPAddressesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDPAddressesResponse> GetDPAddressesAsync()
         {
             QuickNV.Onvif.DeviceIO.GetDPAddressesRequest inValue = new QuickNV.Onvif.DeviceIO.GetDPAddressesRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetDPAddressesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDPAddressesResponse> QuickNV.Onvif.DeviceIO.Device.SetDPAddressesAsync(QuickNV.Onvif.DeviceIO.SetDPAddressesRequest request)
         {
             return base.Channel.SetDPAddressesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDPAddressesResponse> SetDPAddressesAsync(QuickNV.Onvif.DeviceIO.NetworkHost[] DPAddress)
         {
             QuickNV.Onvif.DeviceIO.SetDPAddressesRequest inValue = new QuickNV.Onvif.DeviceIO.SetDPAddressesRequest();
             inValue.DPAddress = DPAddress;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetDPAddressesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetEndpointReferenceResponse> GetEndpointReferenceAsync(QuickNV.Onvif.DeviceIO.GetEndpointReferenceRequest request)
         {
             return base.Channel.GetEndpointReferenceAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.RemoteUser> GetRemoteUserAsync()
         {
             return base.Channel.GetRemoteUserAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetRemoteUserAsync(QuickNV.Onvif.DeviceIO.RemoteUser RemoteUser)
         {
             return base.Channel.SetRemoteUserAsync(RemoteUser);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetUsersResponse> QuickNV.Onvif.DeviceIO.Device.GetUsersAsync(QuickNV.Onvif.DeviceIO.GetUsersRequest request)
         {
             return base.Channel.GetUsersAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetUsersResponse> GetUsersAsync()
         {
             QuickNV.Onvif.DeviceIO.GetUsersRequest inValue = new QuickNV.Onvif.DeviceIO.GetUsersRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetUsersAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.CreateUsersResponse> QuickNV.Onvif.DeviceIO.Device.CreateUsersAsync(QuickNV.Onvif.DeviceIO.CreateUsersRequest request)
         {
             return base.Channel.CreateUsersAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.CreateUsersResponse> CreateUsersAsync(QuickNV.Onvif.DeviceIO.User[] User)
         {
             QuickNV.Onvif.DeviceIO.CreateUsersRequest inValue = new QuickNV.Onvif.DeviceIO.CreateUsersRequest();
             inValue.User = User;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).CreateUsersAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteUsersResponse> QuickNV.Onvif.DeviceIO.Device.DeleteUsersAsync(QuickNV.Onvif.DeviceIO.DeleteUsersRequest request)
         {
             return base.Channel.DeleteUsersAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteUsersResponse> DeleteUsersAsync(string[] Username)
         {
             QuickNV.Onvif.DeviceIO.DeleteUsersRequest inValue = new QuickNV.Onvif.DeviceIO.DeleteUsersRequest();
             inValue.Username = Username;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).DeleteUsersAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetUserResponse> QuickNV.Onvif.DeviceIO.Device.SetUserAsync(QuickNV.Onvif.DeviceIO.SetUserRequest request)
         {
             return base.Channel.SetUserAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetUserResponse> SetUserAsync(QuickNV.Onvif.DeviceIO.User[] User)
         {
             QuickNV.Onvif.DeviceIO.SetUserRequest inValue = new QuickNV.Onvif.DeviceIO.SetUserRequest();
             inValue.User = User;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetUserAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetWsdlUrlResponse> QuickNV.Onvif.DeviceIO.Device.GetWsdlUrlAsync(QuickNV.Onvif.DeviceIO.GetWsdlUrlRequest request)
         {
             return base.Channel.GetWsdlUrlAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetWsdlUrlResponse> GetWsdlUrlAsync()
         {
             QuickNV.Onvif.DeviceIO.GetWsdlUrlRequest inValue = new QuickNV.Onvif.DeviceIO.GetWsdlUrlRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetWsdlUrlAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPasswordComplexityOptionsResponse> GetPasswordComplexityOptionsAsync(QuickNV.Onvif.DeviceIO.GetPasswordComplexityOptionsRequest request)
         {
             return base.Channel.GetPasswordComplexityOptionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPasswordComplexityConfigurationResponse> GetPasswordComplexityConfigurationAsync(QuickNV.Onvif.DeviceIO.GetPasswordComplexityConfigurationRequest request)
         {
             return base.Channel.GetPasswordComplexityConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task SetPasswordComplexityConfigurationAsync(int MinLen, int Uppercase, int Number, int SpecialChars, bool BlockUsernameOccurrence, bool PolicyConfigurationLocked)
         {
             return base.Channel.SetPasswordComplexityConfigurationAsync(MinLen, Uppercase, Number, SpecialChars, BlockUsernameOccurrence, PolicyConfigurationLocked);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPasswordHistoryConfigurationResponse> GetPasswordHistoryConfigurationAsync(QuickNV.Onvif.DeviceIO.GetPasswordHistoryConfigurationRequest request)
         {
             return base.Channel.GetPasswordHistoryConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task SetPasswordHistoryConfigurationAsync(bool Enabled, int Length)
         {
             return base.Channel.SetPasswordHistoryConfigurationAsync(Enabled, Length);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAuthFailureWarningOptionsResponse> GetAuthFailureWarningOptionsAsync(QuickNV.Onvif.DeviceIO.GetAuthFailureWarningOptionsRequest request)
         {
             return base.Channel.GetAuthFailureWarningOptionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAuthFailureWarningConfigurationResponse> GetAuthFailureWarningConfigurationAsync(QuickNV.Onvif.DeviceIO.GetAuthFailureWarningConfigurationRequest request)
         {
             return base.Channel.GetAuthFailureWarningConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task SetAuthFailureWarningConfigurationAsync(bool Enabled, int MonitorPeriod, int MaxAuthFailures)
         {
             return base.Channel.SetAuthFailureWarningConfigurationAsync(Enabled, MonitorPeriod, MaxAuthFailures);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCapabilitiesResponse> QuickNV.Onvif.DeviceIO.Device.GetCapabilitiesAsync(QuickNV.Onvif.DeviceIO.GetCapabilitiesRequest request)
         {
             return base.Channel.GetCapabilitiesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCapabilitiesResponse> GetCapabilitiesAsync(QuickNV.Onvif.DeviceIO.CapabilityCategory[] Category)
         {
             QuickNV.Onvif.DeviceIO.GetCapabilitiesRequest inValue = new QuickNV.Onvif.DeviceIO.GetCapabilitiesRequest();
             inValue.Category = Category;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetCapabilitiesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.HostnameInformation> GetHostnameAsync()
         {
             return base.Channel.GetHostnameAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetHostnameResponse> QuickNV.Onvif.DeviceIO.Device.SetHostnameAsync(QuickNV.Onvif.DeviceIO.SetHostnameRequest request)
         {
             return base.Channel.SetHostnameAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetHostnameResponse> SetHostnameAsync(string Name)
         {
             QuickNV.Onvif.DeviceIO.SetHostnameRequest inValue = new QuickNV.Onvif.DeviceIO.SetHostnameRequest();
             inValue.Name = Name;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetHostnameAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<bool> SetHostnameFromDHCPAsync(bool FromDHCP)
         {
             return base.Channel.SetHostnameFromDHCPAsync(FromDHCP);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DNSInformation> GetDNSAsync()
         {
             return base.Channel.GetDNSAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDNSResponse> QuickNV.Onvif.DeviceIO.Device.SetDNSAsync(QuickNV.Onvif.DeviceIO.SetDNSRequest request)
         {
             return base.Channel.SetDNSAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDNSResponse> SetDNSAsync(bool FromDHCP, string[] SearchDomain, QuickNV.Onvif.DeviceIO.IPAddress[] DNSManual)
         {
             QuickNV.Onvif.DeviceIO.SetDNSRequest inValue = new QuickNV.Onvif.DeviceIO.SetDNSRequest();
@@ -23148,18 +23148,18 @@ namespace QuickNV.Onvif.DeviceIO
             inValue.DNSManual = DNSManual;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetDNSAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.NTPInformation> GetNTPAsync()
         {
             return base.Channel.GetNTPAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNTPResponse> QuickNV.Onvif.DeviceIO.Device.SetNTPAsync(QuickNV.Onvif.DeviceIO.SetNTPRequest request)
         {
             return base.Channel.SetNTPAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNTPResponse> SetNTPAsync(bool FromDHCP, QuickNV.Onvif.DeviceIO.NetworkHost[] NTPManual)
         {
             QuickNV.Onvif.DeviceIO.SetNTPRequest inValue = new QuickNV.Onvif.DeviceIO.SetNTPRequest();
@@ -23167,18 +23167,18 @@ namespace QuickNV.Onvif.DeviceIO
             inValue.NTPManual = NTPManual;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetNTPAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DynamicDNSInformation> GetDynamicDNSAsync()
         {
             return base.Channel.GetDynamicDNSAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDynamicDNSResponse> QuickNV.Onvif.DeviceIO.Device.SetDynamicDNSAsync(QuickNV.Onvif.DeviceIO.SetDynamicDNSRequest request)
         {
             return base.Channel.SetDynamicDNSAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDynamicDNSResponse> SetDynamicDNSAsync(QuickNV.Onvif.DeviceIO.DynamicDNSType Type, string Name, string TTL)
         {
             QuickNV.Onvif.DeviceIO.SetDynamicDNSRequest inValue = new QuickNV.Onvif.DeviceIO.SetDynamicDNSRequest();
@@ -23187,60 +23187,60 @@ namespace QuickNV.Onvif.DeviceIO
             inValue.TTL = TTL;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetDynamicDNSAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetNetworkInterfacesResponse> QuickNV.Onvif.DeviceIO.Device.GetNetworkInterfacesAsync(QuickNV.Onvif.DeviceIO.GetNetworkInterfacesRequest request)
         {
             return base.Channel.GetNetworkInterfacesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetNetworkInterfacesResponse> GetNetworkInterfacesAsync()
         {
             QuickNV.Onvif.DeviceIO.GetNetworkInterfacesRequest inValue = new QuickNV.Onvif.DeviceIO.GetNetworkInterfacesRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetNetworkInterfacesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<bool> SetNetworkInterfacesAsync(string InterfaceToken, QuickNV.Onvif.DeviceIO.NetworkInterfaceSetConfiguration NetworkInterface)
         {
             return base.Channel.SetNetworkInterfacesAsync(InterfaceToken, NetworkInterface);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetNetworkProtocolsResponse> QuickNV.Onvif.DeviceIO.Device.GetNetworkProtocolsAsync(QuickNV.Onvif.DeviceIO.GetNetworkProtocolsRequest request)
         {
             return base.Channel.GetNetworkProtocolsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetNetworkProtocolsResponse> GetNetworkProtocolsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetNetworkProtocolsRequest inValue = new QuickNV.Onvif.DeviceIO.GetNetworkProtocolsRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetNetworkProtocolsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNetworkProtocolsResponse> QuickNV.Onvif.DeviceIO.Device.SetNetworkProtocolsAsync(QuickNV.Onvif.DeviceIO.SetNetworkProtocolsRequest request)
         {
             return base.Channel.SetNetworkProtocolsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNetworkProtocolsResponse> SetNetworkProtocolsAsync(QuickNV.Onvif.DeviceIO.NetworkProtocol[] NetworkProtocols)
         {
             QuickNV.Onvif.DeviceIO.SetNetworkProtocolsRequest inValue = new QuickNV.Onvif.DeviceIO.SetNetworkProtocolsRequest();
             inValue.NetworkProtocols = NetworkProtocols;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetNetworkProtocolsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.NetworkGateway> GetNetworkDefaultGatewayAsync()
         {
             return base.Channel.GetNetworkDefaultGatewayAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNetworkDefaultGatewayResponse> QuickNV.Onvif.DeviceIO.Device.SetNetworkDefaultGatewayAsync(QuickNV.Onvif.DeviceIO.SetNetworkDefaultGatewayRequest request)
         {
             return base.Channel.SetNetworkDefaultGatewayAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetNetworkDefaultGatewayResponse> SetNetworkDefaultGatewayAsync(string[] IPv4Address, string[] IPv6Address)
         {
             QuickNV.Onvif.DeviceIO.SetNetworkDefaultGatewayRequest inValue = new QuickNV.Onvif.DeviceIO.SetNetworkDefaultGatewayRequest();
@@ -23248,201 +23248,201 @@ namespace QuickNV.Onvif.DeviceIO
             inValue.IPv6Address = IPv6Address;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetNetworkDefaultGatewayAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.NetworkZeroConfiguration> GetZeroConfigurationAsync()
         {
             return base.Channel.GetZeroConfigurationAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetZeroConfigurationAsync(string InterfaceToken, bool Enabled)
         {
             return base.Channel.SetZeroConfigurationAsync(InterfaceToken, Enabled);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.IPAddressFilter> GetIPAddressFilterAsync()
         {
             return base.Channel.GetIPAddressFilterAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetIPAddressFilterAsync(QuickNV.Onvif.DeviceIO.IPAddressFilter IPAddressFilter)
         {
             return base.Channel.SetIPAddressFilterAsync(IPAddressFilter);
         }
-        
+
         public System.Threading.Tasks.Task AddIPAddressFilterAsync(QuickNV.Onvif.DeviceIO.IPAddressFilter IPAddressFilter)
         {
             return base.Channel.AddIPAddressFilterAsync(IPAddressFilter);
         }
-        
+
         public System.Threading.Tasks.Task RemoveIPAddressFilterAsync(QuickNV.Onvif.DeviceIO.IPAddressFilter IPAddressFilter)
         {
             return base.Channel.RemoveIPAddressFilterAsync(IPAddressFilter);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.BinaryData> GetAccessPolicyAsync()
         {
             return base.Channel.GetAccessPolicyAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetAccessPolicyAsync(QuickNV.Onvif.DeviceIO.BinaryData PolicyFile)
         {
             return base.Channel.SetAccessPolicyAsync(PolicyFile);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputsResponse> QuickNV.Onvif.DeviceIO.Device.GetRelayOutputsAsync(QuickNV.Onvif.DeviceIO.GetRelayOutputsRequest request)
         {
             return base.Channel.GetRelayOutputsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputsResponse> GetRelayOutputsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetRelayOutputsRequest inValue = new QuickNV.Onvif.DeviceIO.GetRelayOutputsRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetRelayOutputsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task SetRelayOutputSettingsAsync(string RelayOutputToken, QuickNV.Onvif.DeviceIO.RelayOutputSettings Properties)
         {
             return base.Channel.SetRelayOutputSettingsAsync(RelayOutputToken, Properties);
         }
-        
+
         public System.Threading.Tasks.Task SetRelayOutputStateAsync(string RelayOutputToken, QuickNV.Onvif.DeviceIO.RelayLogicalState LogicalState)
         {
             return base.Channel.SetRelayOutputStateAsync(RelayOutputToken, LogicalState);
         }
-        
+
         public System.Threading.Tasks.Task<string> SendAuxiliaryCommandAsync(string AuxiliaryCommand)
         {
             return base.Channel.SendAuxiliaryCommandAsync(AuxiliaryCommand);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDot11CapabilitiesResponse> QuickNV.Onvif.DeviceIO.Device.GetDot11CapabilitiesAsync(QuickNV.Onvif.DeviceIO.GetDot11CapabilitiesRequest request)
         {
             return base.Channel.GetDot11CapabilitiesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDot11CapabilitiesResponse> GetDot11CapabilitiesAsync(System.Xml.XmlElement[] Any)
         {
             QuickNV.Onvif.DeviceIO.GetDot11CapabilitiesRequest inValue = new QuickNV.Onvif.DeviceIO.GetDot11CapabilitiesRequest();
             inValue.Any = Any;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetDot11CapabilitiesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.Dot11Status> GetDot11StatusAsync(string InterfaceToken)
         {
             return base.Channel.GetDot11StatusAsync(InterfaceToken);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.ScanAvailableDot11NetworksResponse> QuickNV.Onvif.DeviceIO.Device.ScanAvailableDot11NetworksAsync(QuickNV.Onvif.DeviceIO.ScanAvailableDot11NetworksRequest request)
         {
             return base.Channel.ScanAvailableDot11NetworksAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.ScanAvailableDot11NetworksResponse> ScanAvailableDot11NetworksAsync(string InterfaceToken)
         {
             QuickNV.Onvif.DeviceIO.ScanAvailableDot11NetworksRequest inValue = new QuickNV.Onvif.DeviceIO.ScanAvailableDot11NetworksRequest();
             inValue.InterfaceToken = InterfaceToken;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).ScanAvailableDot11NetworksAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetSystemUrisResponse> GetSystemUrisAsync(QuickNV.Onvif.DeviceIO.GetSystemUrisRequest request)
         {
             return base.Channel.GetSystemUrisAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.StartFirmwareUpgradeResponse> StartFirmwareUpgradeAsync(QuickNV.Onvif.DeviceIO.StartFirmwareUpgradeRequest request)
         {
             return base.Channel.StartFirmwareUpgradeAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.StartSystemRestoreResponse> StartSystemRestoreAsync(QuickNV.Onvif.DeviceIO.StartSystemRestoreRequest request)
         {
             return base.Channel.StartSystemRestoreAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetStorageConfigurationsResponse> QuickNV.Onvif.DeviceIO.Device.GetStorageConfigurationsAsync(QuickNV.Onvif.DeviceIO.GetStorageConfigurationsRequest request)
         {
             return base.Channel.GetStorageConfigurationsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetStorageConfigurationsResponse> GetStorageConfigurationsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetStorageConfigurationsRequest inValue = new QuickNV.Onvif.DeviceIO.GetStorageConfigurationsRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetStorageConfigurationsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<string> CreateStorageConfigurationAsync(QuickNV.Onvif.DeviceIO.StorageConfigurationData StorageConfiguration)
         {
             return base.Channel.CreateStorageConfigurationAsync(StorageConfiguration);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.StorageConfiguration> GetStorageConfigurationAsync(string Token)
         {
             return base.Channel.GetStorageConfigurationAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task SetStorageConfigurationAsync(QuickNV.Onvif.DeviceIO.StorageConfiguration StorageConfiguration)
         {
             return base.Channel.SetStorageConfigurationAsync(StorageConfiguration);
         }
-        
+
         public System.Threading.Tasks.Task DeleteStorageConfigurationAsync(string Token)
         {
             return base.Channel.DeleteStorageConfigurationAsync(Token);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetGeoLocationResponse> QuickNV.Onvif.DeviceIO.Device.GetGeoLocationAsync(QuickNV.Onvif.DeviceIO.GetGeoLocationRequest request)
         {
             return base.Channel.GetGeoLocationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetGeoLocationResponse> GetGeoLocationAsync()
         {
             QuickNV.Onvif.DeviceIO.GetGeoLocationRequest inValue = new QuickNV.Onvif.DeviceIO.GetGeoLocationRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetGeoLocationAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetGeoLocationResponse> QuickNV.Onvif.DeviceIO.Device.SetGeoLocationAsync(QuickNV.Onvif.DeviceIO.SetGeoLocationRequest request)
         {
             return base.Channel.SetGeoLocationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetGeoLocationResponse> SetGeoLocationAsync(QuickNV.Onvif.DeviceIO.LocationEntity[] Location)
         {
             QuickNV.Onvif.DeviceIO.SetGeoLocationRequest inValue = new QuickNV.Onvif.DeviceIO.SetGeoLocationRequest();
             inValue.Location = Location;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetGeoLocationAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteGeoLocationResponse> QuickNV.Onvif.DeviceIO.Device.DeleteGeoLocationAsync(QuickNV.Onvif.DeviceIO.DeleteGeoLocationRequest request)
         {
             return base.Channel.DeleteGeoLocationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteGeoLocationResponse> DeleteGeoLocationAsync(QuickNV.Onvif.DeviceIO.LocationEntity[] Location)
         {
             QuickNV.Onvif.DeviceIO.DeleteGeoLocationRequest inValue = new QuickNV.Onvif.DeviceIO.DeleteGeoLocationRequest();
             inValue.Location = Location;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).DeleteGeoLocationAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task SetHashingAlgorithmAsync(string Algorithm)
         {
             return base.Channel.SetHashingAlgorithmAsync(Algorithm);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.CreateCertificateResponse> QuickNV.Onvif.DeviceIO.Device.CreateCertificateAsync(QuickNV.Onvif.DeviceIO.CreateCertificateRequest request)
         {
             return base.Channel.CreateCertificateAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.CreateCertificateResponse> CreateCertificateAsync(string CertificateID, string Subject, System.DateTime ValidNotBefore, System.DateTime ValidNotAfter)
         {
             QuickNV.Onvif.DeviceIO.CreateCertificateRequest inValue = new QuickNV.Onvif.DeviceIO.CreateCertificateRequest();
@@ -23452,63 +23452,63 @@ namespace QuickNV.Onvif.DeviceIO
             inValue.ValidNotAfter = ValidNotAfter;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).CreateCertificateAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificatesResponse> QuickNV.Onvif.DeviceIO.Device.GetCertificatesAsync(QuickNV.Onvif.DeviceIO.GetCertificatesRequest request)
         {
             return base.Channel.GetCertificatesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificatesResponse> GetCertificatesAsync()
         {
             QuickNV.Onvif.DeviceIO.GetCertificatesRequest inValue = new QuickNV.Onvif.DeviceIO.GetCertificatesRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetCertificatesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificatesStatusResponse> QuickNV.Onvif.DeviceIO.Device.GetCertificatesStatusAsync(QuickNV.Onvif.DeviceIO.GetCertificatesStatusRequest request)
         {
             return base.Channel.GetCertificatesStatusAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificatesStatusResponse> GetCertificatesStatusAsync()
         {
             QuickNV.Onvif.DeviceIO.GetCertificatesStatusRequest inValue = new QuickNV.Onvif.DeviceIO.GetCertificatesStatusRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetCertificatesStatusAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetCertificatesStatusResponse> QuickNV.Onvif.DeviceIO.Device.SetCertificatesStatusAsync(QuickNV.Onvif.DeviceIO.SetCertificatesStatusRequest request)
         {
             return base.Channel.SetCertificatesStatusAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetCertificatesStatusResponse> SetCertificatesStatusAsync(QuickNV.Onvif.DeviceIO.CertificateStatus[] CertificateStatus)
         {
             QuickNV.Onvif.DeviceIO.SetCertificatesStatusRequest inValue = new QuickNV.Onvif.DeviceIO.SetCertificatesStatusRequest();
             inValue.CertificateStatus = CertificateStatus;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).SetCertificatesStatusAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteCertificatesResponse> QuickNV.Onvif.DeviceIO.Device.DeleteCertificatesAsync(QuickNV.Onvif.DeviceIO.DeleteCertificatesRequest request)
         {
             return base.Channel.DeleteCertificatesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteCertificatesResponse> DeleteCertificatesAsync(string[] CertificateID)
         {
             QuickNV.Onvif.DeviceIO.DeleteCertificatesRequest inValue = new QuickNV.Onvif.DeviceIO.DeleteCertificatesRequest();
             inValue.CertificateID = CertificateID;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).DeleteCertificatesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPkcs10RequestResponse> QuickNV.Onvif.DeviceIO.Device.GetPkcs10RequestAsync(QuickNV.Onvif.DeviceIO.GetPkcs10RequestRequest request)
         {
             return base.Channel.GetPkcs10RequestAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetPkcs10RequestResponse> GetPkcs10RequestAsync(string CertificateID, string Subject, QuickNV.Onvif.DeviceIO.BinaryData Attributes)
         {
             QuickNV.Onvif.DeviceIO.GetPkcs10RequestRequest inValue = new QuickNV.Onvif.DeviceIO.GetPkcs10RequestRequest();
@@ -23517,709 +23517,709 @@ namespace QuickNV.Onvif.DeviceIO
             inValue.Attributes = Attributes;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetPkcs10RequestAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCertificatesResponse> QuickNV.Onvif.DeviceIO.Device.LoadCertificatesAsync(QuickNV.Onvif.DeviceIO.LoadCertificatesRequest request)
         {
             return base.Channel.LoadCertificatesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCertificatesResponse> LoadCertificatesAsync(QuickNV.Onvif.DeviceIO.Certificate[] NVTCertificate)
         {
             QuickNV.Onvif.DeviceIO.LoadCertificatesRequest inValue = new QuickNV.Onvif.DeviceIO.LoadCertificatesRequest();
             inValue.NVTCertificate = NVTCertificate;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).LoadCertificatesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<bool> GetClientCertificateModeAsync()
         {
             return base.Channel.GetClientCertificateModeAsync();
         }
-        
+
         public System.Threading.Tasks.Task SetClientCertificateModeAsync(bool Enabled)
         {
             return base.Channel.SetClientCertificateModeAsync(Enabled);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCACertificatesResponse> QuickNV.Onvif.DeviceIO.Device.GetCACertificatesAsync(QuickNV.Onvif.DeviceIO.GetCACertificatesRequest request)
         {
             return base.Channel.GetCACertificatesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCACertificatesResponse> GetCACertificatesAsync()
         {
             QuickNV.Onvif.DeviceIO.GetCACertificatesRequest inValue = new QuickNV.Onvif.DeviceIO.GetCACertificatesRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetCACertificatesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCertificateWithPrivateKeyResponse> QuickNV.Onvif.DeviceIO.Device.LoadCertificateWithPrivateKeyAsync(QuickNV.Onvif.DeviceIO.LoadCertificateWithPrivateKeyRequest request)
         {
             return base.Channel.LoadCertificateWithPrivateKeyAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCertificateWithPrivateKeyResponse> LoadCertificateWithPrivateKeyAsync(QuickNV.Onvif.DeviceIO.CertificateWithPrivateKey[] CertificateWithPrivateKey)
         {
             QuickNV.Onvif.DeviceIO.LoadCertificateWithPrivateKeyRequest inValue = new QuickNV.Onvif.DeviceIO.LoadCertificateWithPrivateKeyRequest();
             inValue.CertificateWithPrivateKey = CertificateWithPrivateKey;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).LoadCertificateWithPrivateKeyAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificateInformationResponse> QuickNV.Onvif.DeviceIO.Device.GetCertificateInformationAsync(QuickNV.Onvif.DeviceIO.GetCertificateInformationRequest request)
         {
             return base.Channel.GetCertificateInformationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetCertificateInformationResponse> GetCertificateInformationAsync(string CertificateID)
         {
             QuickNV.Onvif.DeviceIO.GetCertificateInformationRequest inValue = new QuickNV.Onvif.DeviceIO.GetCertificateInformationRequest();
             inValue.CertificateID = CertificateID;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetCertificateInformationAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCACertificatesResponse> QuickNV.Onvif.DeviceIO.Device.LoadCACertificatesAsync(QuickNV.Onvif.DeviceIO.LoadCACertificatesRequest request)
         {
             return base.Channel.LoadCACertificatesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.LoadCACertificatesResponse> LoadCACertificatesAsync(QuickNV.Onvif.DeviceIO.Certificate[] CACertificate)
         {
             QuickNV.Onvif.DeviceIO.LoadCACertificatesRequest inValue = new QuickNV.Onvif.DeviceIO.LoadCACertificatesRequest();
             inValue.CACertificate = CACertificate;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).LoadCACertificatesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task CreateDot1XConfigurationAsync(QuickNV.Onvif.DeviceIO.Dot1XConfiguration Dot1XConfiguration)
         {
             return base.Channel.CreateDot1XConfigurationAsync(Dot1XConfiguration);
         }
-        
+
         public System.Threading.Tasks.Task SetDot1XConfigurationAsync(QuickNV.Onvif.DeviceIO.Dot1XConfiguration Dot1XConfiguration)
         {
             return base.Channel.SetDot1XConfigurationAsync(Dot1XConfiguration);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.Dot1XConfiguration> GetDot1XConfigurationAsync(string Dot1XConfigurationToken)
         {
             return base.Channel.GetDot1XConfigurationAsync(Dot1XConfigurationToken);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDot1XConfigurationsResponse> QuickNV.Onvif.DeviceIO.Device.GetDot1XConfigurationsAsync(QuickNV.Onvif.DeviceIO.GetDot1XConfigurationsRequest request)
         {
             return base.Channel.GetDot1XConfigurationsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDot1XConfigurationsResponse> GetDot1XConfigurationsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetDot1XConfigurationsRequest inValue = new QuickNV.Onvif.DeviceIO.GetDot1XConfigurationsRequest();
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).GetDot1XConfigurationsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteDot1XConfigurationResponse> QuickNV.Onvif.DeviceIO.Device.DeleteDot1XConfigurationAsync(QuickNV.Onvif.DeviceIO.DeleteDot1XConfigurationRequest request)
         {
             return base.Channel.DeleteDot1XConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DeleteDot1XConfigurationResponse> DeleteDot1XConfigurationAsync(string[] Dot1XConfigurationToken)
         {
             QuickNV.Onvif.DeviceIO.DeleteDot1XConfigurationRequest inValue = new QuickNV.Onvif.DeviceIO.DeleteDot1XConfigurationRequest();
             inValue.Dot1XConfigurationToken = Dot1XConfigurationToken;
             return ((QuickNV.Onvif.DeviceIO.Device)(this)).DeleteDot1XConfigurationAsync(inValue);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", ConfigurationName="Quick.Onvif.DeviceIO.DeviceIOPort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", ConfigurationName = "Quick.Onvif.DeviceIO.DeviceIOPort")]
     public interface DeviceIOPort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.Capabilities1> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetRelayOutputOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetRelayOutputOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputOptionsResponse> GetRelayOutputOptionsAsync(QuickNV.Onvif.DeviceIO.GetRelayOutputOptionsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetAudioSources", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetAudioSources", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioSourcesResponse> GetAudioSourcesAsync(QuickNV.Onvif.DeviceIO.GetAudioSourcesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetAudioOutputs", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetAudioOutputs", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioOutputsResponse> GetAudioOutputsAsync(QuickNV.Onvif.DeviceIO.GetAudioOutputsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetVideoSources", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetVideoSources", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoSourcesResponse> GetVideoSourcesAsync(QuickNV.Onvif.DeviceIO.GetVideoSourcesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetVideoOutputs", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetVideoOutputs", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoOutputsResponse> GetVideoOutputsAsync(QuickNV.Onvif.DeviceIO.GetVideoOutputsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetVideoSourceConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetVideoSourceConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoSourceConfigurationResponse> GetVideoSourceConfigurationAsync(QuickNV.Onvif.DeviceIO.GetVideoSourceConfigurationRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetVideoOutputConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetVideoOutputConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoOutputConfigurationResponse> GetVideoOutputConfigurationAsync(QuickNV.Onvif.DeviceIO.GetVideoOutputConfigurationRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetAudioSourceConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetAudioSourceConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioSourceConfigurationResponse> GetAudioSourceConfigurationAsync(QuickNV.Onvif.DeviceIO.GetAudioSourceConfigurationRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetAudioOutputConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetAudioOutputConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioOutputConfigurationResponse> GetAudioOutputConfigurationAsync(QuickNV.Onvif.DeviceIO.GetAudioOutputConfigurationRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SetVideoSourceConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SetVideoSourceConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetVideoSourceConfigurationResponse> SetVideoSourceConfigurationAsync(QuickNV.Onvif.DeviceIO.SetVideoSourceConfigurationRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SetVideoOutputConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SetVideoOutputConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetVideoOutputConfigurationResponse> SetVideoOutputConfigurationAsync(QuickNV.Onvif.DeviceIO.SetVideoOutputConfigurationRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SetAudioSourceConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SetAudioSourceConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetAudioSourceConfigurationResponse> SetAudioSourceConfigurationAsync(QuickNV.Onvif.DeviceIO.SetAudioSourceConfigurationRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SetAudioOutputConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SetAudioOutputConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetAudioOutputConfigurationResponse> SetAudioOutputConfigurationAsync(QuickNV.Onvif.DeviceIO.SetAudioOutputConfigurationRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetVideoSourceConfigurationOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetVideoSourceConfigurationOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoSourceConfigurationOptionsResponse> GetVideoSourceConfigurationOptionsAsync(QuickNV.Onvif.DeviceIO.GetVideoSourceConfigurationOptionsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetVideoOutputConfigurationOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetVideoOutputConfigurationOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoOutputConfigurationOptionsResponse> GetVideoOutputConfigurationOptionsAsync(QuickNV.Onvif.DeviceIO.GetVideoOutputConfigurationOptionsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetAudioSourceConfigurationOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetAudioSourceConfigurationOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioSourceConfigurationOptionsResponse> GetAudioSourceConfigurationOptionsAsync(QuickNV.Onvif.DeviceIO.GetAudioSourceConfigurationOptionsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetAudioOutputConfigurationOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetAudioOutputConfigurationOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioOutputConfigurationOptionsResponse> GetAudioOutputConfigurationOptionsAsync(QuickNV.Onvif.DeviceIO.GetAudioOutputConfigurationOptionsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetRelayOutputs", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetRelayOutputs", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputsResponse1> GetRelayOutputsAsync(QuickNV.Onvif.DeviceIO.GetRelayOutputsRequest1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SetRelayOutputSettings", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SetRelayOutputSettings", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetRelayOutputSettingsAsync(QuickNV.Onvif.DeviceIO.RelayOutput RelayOutput);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SetRelayOutputState", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SetRelayOutputState", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetRelayOutputStateResponse> SetRelayOutputStateAsync(QuickNV.Onvif.DeviceIO.SetRelayOutputStateRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetDigitalInputs", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetDigitalInputs", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDigitalInputsResponse> GetDigitalInputsAsync(QuickNV.Onvif.DeviceIO.GetDigitalInputsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetDigitalInputConfigurationOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetDigitalInputConfigurationOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="DigitalInputOptions")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "DigitalInputOptions")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DigitalInputConfigurationOptions> GetDigitalInputConfigurationOptionsAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SetDigitalInputConfigurations", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SetDigitalInputConfigurations", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDigitalInputConfigurationsResponse> SetDigitalInputConfigurationsAsync(QuickNV.Onvif.DeviceIO.SetDigitalInputConfigurationsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetSerialPorts", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetSerialPorts", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetSerialPortsResponse> GetSerialPortsAsync(QuickNV.Onvif.DeviceIO.GetSerialPortsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetSerialPortConfigurations", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetSerialPortConfigurations", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="SerialPortConfiguration")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "SerialPortConfiguration")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SerialPortConfiguration> GetSerialPortConfigurationAsync(string SerialPortToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SetSerialPortConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SetSerialPortConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task SetSerialPortConfigurationAsync(QuickNV.Onvif.DeviceIO.SerialPortConfiguration SerialPortConfiguration, bool ForcePersistance);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/GetSerialPortConfigurationOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/GetSerialPortConfigurationOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="SerialPortOptions")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "SerialPortOptions")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SerialPortConfigurationOptions> GetSerialPortConfigurationOptionsAsync(string SerialPortToken);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/deviceio/wsdl/SendReceiveSerialCommand", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/deviceio/wsdl/SendReceiveSerialCommand", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConfigurationEntity))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DeviceEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SendReceiveSerialCommandResponse> SendReceiveSerialCommandAsync(QuickNV.Onvif.DeviceIO.SendReceiveSerialCommandRequest request);
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetRelayOutputOptions", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRelayOutputOptions", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetRelayOutputOptionsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string RelayOutputToken;
-        
+
         public GetRelayOutputOptionsRequest()
         {
         }
-        
+
         public GetRelayOutputOptionsRequest(string RelayOutputToken)
         {
             this.RelayOutputToken = RelayOutputToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetRelayOutputOptionsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRelayOutputOptionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetRelayOutputOptionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("RelayOutputOptions")]
         public QuickNV.Onvif.DeviceIO.RelayOutputOptions[] RelayOutputOptions;
-        
+
         public GetRelayOutputOptionsResponse()
         {
         }
-        
+
         public GetRelayOutputOptionsResponse(QuickNV.Onvif.DeviceIO.RelayOutputOptions[] RelayOutputOptions)
         {
             this.RelayOutputOptions = RelayOutputOptions;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioSources", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioSources", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioSourcesRequest
     {
-        
+
         public GetAudioSourcesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioSourcesResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioSourcesResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioSourcesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetAudioSourcesResponse()
         {
         }
-        
+
         public GetAudioSourcesResponse(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioOutputs", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioOutputs", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioOutputsRequest
     {
-        
+
         public GetAudioOutputsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioOutputsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioOutputsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioOutputsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetAudioOutputsResponse()
         {
         }
-        
+
         public GetAudioOutputsResponse(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoSources", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoSources", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoSourcesRequest
     {
-        
+
         public GetVideoSourcesRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoSourcesResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoSourcesResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoSourcesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetVideoSourcesResponse()
         {
         }
-        
+
         public GetVideoSourcesResponse(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoOutputs", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoOutputs", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoOutputsRequest
     {
-        
+
         public GetVideoOutputsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoOutputsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoOutputsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoOutputsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("VideoOutputs")]
         public QuickNV.Onvif.DeviceIO.VideoOutput[] VideoOutputs;
-        
+
         public GetVideoOutputsResponse()
         {
         }
-        
+
         public GetVideoOutputsResponse(QuickNV.Onvif.DeviceIO.VideoOutput[] VideoOutputs)
         {
             this.VideoOutputs = VideoOutputs;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoSourceConfiguration", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoSourceConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoSourceConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string VideoSourceToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetVideoSourceConfigurationRequest()
         {
         }
-        
+
         public GetVideoSourceConfigurationRequest(string VideoSourceToken, System.Xml.XmlElement[] Any)
         {
             this.VideoSourceToken = VideoSourceToken;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoSourceConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoSourceConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoSourceConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.VideoSourceConfiguration VideoSourceConfiguration;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetVideoSourceConfigurationResponse()
         {
         }
-        
+
         public GetVideoSourceConfigurationResponse(QuickNV.Onvif.DeviceIO.VideoSourceConfiguration VideoSourceConfiguration, System.Xml.XmlElement[] Any)
         {
             this.VideoSourceConfiguration = VideoSourceConfiguration;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoOutputConfiguration", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoOutputConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoOutputConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string VideoOutputToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetVideoOutputConfigurationRequest()
         {
         }
-        
+
         public GetVideoOutputConfigurationRequest(string VideoOutputToken, System.Xml.XmlElement[] Any)
         {
             this.VideoOutputToken = VideoOutputToken;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoOutputConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoOutputConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoOutputConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.VideoOutputConfiguration VideoOutputConfiguration;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetVideoOutputConfigurationResponse()
         {
         }
-        
+
         public GetVideoOutputConfigurationResponse(QuickNV.Onvif.DeviceIO.VideoOutputConfiguration VideoOutputConfiguration, System.Xml.XmlElement[] Any)
         {
             this.VideoOutputConfiguration = VideoOutputConfiguration;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioSourceConfiguration", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioSourceConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioSourceConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string AudioSourceToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetAudioSourceConfigurationRequest()
         {
         }
-        
+
         public GetAudioSourceConfigurationRequest(string AudioSourceToken, System.Xml.XmlElement[] Any)
         {
             this.AudioSourceToken = AudioSourceToken;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioSourceConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioSourceConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioSourceConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.AudioSourceConfiguration AudioSourceConfiguration;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetAudioSourceConfigurationResponse()
         {
         }
-        
+
         public GetAudioSourceConfigurationResponse(QuickNV.Onvif.DeviceIO.AudioSourceConfiguration AudioSourceConfiguration, System.Xml.XmlElement[] Any)
         {
             this.AudioSourceConfiguration = AudioSourceConfiguration;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioOutputConfiguration", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioOutputConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioOutputConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string AudioOutputToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetAudioOutputConfigurationRequest()
         {
         }
-        
+
         public GetAudioOutputConfigurationRequest(string AudioOutputToken, System.Xml.XmlElement[] Any)
         {
             this.AudioOutputToken = AudioOutputToken;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioOutputConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioOutputConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioOutputConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.AudioOutputConfiguration AudioOutputConfiguration;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetAudioOutputConfigurationResponse()
         {
         }
-        
+
         public GetAudioOutputConfigurationResponse(QuickNV.Onvif.DeviceIO.AudioOutputConfiguration AudioOutputConfiguration, System.Xml.XmlElement[] Any)
         {
             this.AudioOutputConfiguration = AudioOutputConfiguration;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetVideoSourceConfiguration", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetVideoSourceConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetVideoSourceConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.VideoSourceConfiguration Configuration;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 1)]
         public bool ForcePersistence;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 2)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public SetVideoSourceConfigurationRequest()
         {
         }
-        
+
         public SetVideoSourceConfigurationRequest(QuickNV.Onvif.DeviceIO.VideoSourceConfiguration Configuration, bool ForcePersistence, System.Xml.XmlElement[] Any)
         {
             this.Configuration = Configuration;
@@ -24227,47 +24227,47 @@ namespace QuickNV.Onvif.DeviceIO
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetVideoSourceConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetVideoSourceConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetVideoSourceConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public SetVideoSourceConfigurationResponse()
         {
         }
-        
+
         public SetVideoSourceConfigurationResponse(System.Xml.XmlElement[] Any)
         {
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetVideoOutputConfiguration", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetVideoOutputConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetVideoOutputConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.VideoOutputConfiguration Configuration;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 1)]
         public bool ForcePersistence;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 2)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public SetVideoOutputConfigurationRequest()
         {
         }
-        
+
         public SetVideoOutputConfigurationRequest(QuickNV.Onvif.DeviceIO.VideoOutputConfiguration Configuration, bool ForcePersistence, System.Xml.XmlElement[] Any)
         {
             this.Configuration = Configuration;
@@ -24275,47 +24275,47 @@ namespace QuickNV.Onvif.DeviceIO
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetVideoOutputConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetVideoOutputConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetVideoOutputConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public SetVideoOutputConfigurationResponse()
         {
         }
-        
+
         public SetVideoOutputConfigurationResponse(System.Xml.XmlElement[] Any)
         {
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetAudioSourceConfiguration", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetAudioSourceConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetAudioSourceConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.AudioSourceConfiguration Configuration;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 1)]
         public bool ForcePersistence;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 2)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public SetAudioSourceConfigurationRequest()
         {
         }
-        
+
         public SetAudioSourceConfigurationRequest(QuickNV.Onvif.DeviceIO.AudioSourceConfiguration Configuration, bool ForcePersistence, System.Xml.XmlElement[] Any)
         {
             this.Configuration = Configuration;
@@ -24323,47 +24323,47 @@ namespace QuickNV.Onvif.DeviceIO
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetAudioSourceConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetAudioSourceConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetAudioSourceConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public SetAudioSourceConfigurationResponse()
         {
         }
-        
+
         public SetAudioSourceConfigurationResponse(System.Xml.XmlElement[] Any)
         {
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetAudioOutputConfiguration", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetAudioOutputConfiguration", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetAudioOutputConfigurationRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.AudioOutputConfiguration Configuration;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 1)]
         public bool ForcePersistence;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 2)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public SetAudioOutputConfigurationRequest()
         {
         }
-        
+
         public SetAudioOutputConfigurationRequest(QuickNV.Onvif.DeviceIO.AudioOutputConfiguration Configuration, bool ForcePersistence, System.Xml.XmlElement[] Any)
         {
             this.Configuration = Configuration;
@@ -24371,414 +24371,414 @@ namespace QuickNV.Onvif.DeviceIO
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetAudioOutputConfigurationResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetAudioOutputConfigurationResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetAudioOutputConfigurationResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public SetAudioOutputConfigurationResponse()
         {
         }
-        
+
         public SetAudioOutputConfigurationResponse(System.Xml.XmlElement[] Any)
         {
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoSourceConfigurationOptions", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoSourceConfigurationOptions", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoSourceConfigurationOptionsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string VideoSourceToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetVideoSourceConfigurationOptionsRequest()
         {
         }
-        
+
         public GetVideoSourceConfigurationOptionsRequest(string VideoSourceToken, System.Xml.XmlElement[] Any)
         {
             this.VideoSourceToken = VideoSourceToken;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoSourceConfigurationOptionsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoSourceConfigurationOptionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoSourceConfigurationOptionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.VideoSourceConfigurationOptions VideoSourceConfigurationOptions;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetVideoSourceConfigurationOptionsResponse()
         {
         }
-        
+
         public GetVideoSourceConfigurationOptionsResponse(QuickNV.Onvif.DeviceIO.VideoSourceConfigurationOptions VideoSourceConfigurationOptions, System.Xml.XmlElement[] Any)
         {
             this.VideoSourceConfigurationOptions = VideoSourceConfigurationOptions;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoOutputConfigurationOptions", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoOutputConfigurationOptions", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoOutputConfigurationOptionsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string VideoOutputToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetVideoOutputConfigurationOptionsRequest()
         {
         }
-        
+
         public GetVideoOutputConfigurationOptionsRequest(string VideoOutputToken, System.Xml.XmlElement[] Any)
         {
             this.VideoOutputToken = VideoOutputToken;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetVideoOutputConfigurationOptionsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVideoOutputConfigurationOptionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetVideoOutputConfigurationOptionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.VideoOutputConfigurationOptions VideoOutputConfigurationOptions;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetVideoOutputConfigurationOptionsResponse()
         {
         }
-        
+
         public GetVideoOutputConfigurationOptionsResponse(QuickNV.Onvif.DeviceIO.VideoOutputConfigurationOptions VideoOutputConfigurationOptions, System.Xml.XmlElement[] Any)
         {
             this.VideoOutputConfigurationOptions = VideoOutputConfigurationOptions;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioSourceConfigurationOptions", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioSourceConfigurationOptions", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioSourceConfigurationOptionsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string AudioSourceToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetAudioSourceConfigurationOptionsRequest()
         {
         }
-        
+
         public GetAudioSourceConfigurationOptionsRequest(string AudioSourceToken, System.Xml.XmlElement[] Any)
         {
             this.AudioSourceToken = AudioSourceToken;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioSourceConfigurationOptionsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioSourceConfigurationOptionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioSourceConfigurationOptionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.AudioSourceConfigurationOptions AudioSourceOptions;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetAudioSourceConfigurationOptionsResponse()
         {
         }
-        
+
         public GetAudioSourceConfigurationOptionsResponse(QuickNV.Onvif.DeviceIO.AudioSourceConfigurationOptions AudioSourceOptions, System.Xml.XmlElement[] Any)
         {
             this.AudioSourceOptions = AudioSourceOptions;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioOutputConfigurationOptions", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioOutputConfigurationOptions", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioOutputConfigurationOptionsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string AudioOutputToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetAudioOutputConfigurationOptionsRequest()
         {
         }
-        
+
         public GetAudioOutputConfigurationOptionsRequest(string AudioOutputToken, System.Xml.XmlElement[] Any)
         {
             this.AudioOutputToken = AudioOutputToken;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAudioOutputConfigurationOptionsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAudioOutputConfigurationOptionsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetAudioOutputConfigurationOptionsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.AudioOutputConfigurationOptions AudioOutputOptions;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public GetAudioOutputConfigurationOptionsResponse()
         {
         }
-        
+
         public GetAudioOutputConfigurationOptionsResponse(QuickNV.Onvif.DeviceIO.AudioOutputConfigurationOptions AudioOutputOptions, System.Xml.XmlElement[] Any)
         {
             this.AudioOutputOptions = AudioOutputOptions;
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetRelayOutputs", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRelayOutputs", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetRelayOutputsRequest1
     {
-        
+
         public GetRelayOutputsRequest1()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetRelayOutputsResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRelayOutputsResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class GetRelayOutputsResponse1
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("RelayOutputs")]
         public QuickNV.Onvif.DeviceIO.RelayOutput[] RelayOutputs;
-        
+
         public GetRelayOutputsResponse1()
         {
         }
-        
+
         public GetRelayOutputsResponse1(QuickNV.Onvif.DeviceIO.RelayOutput[] RelayOutputs)
         {
             this.RelayOutputs = RelayOutputs;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetRelayOutputState", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetRelayOutputState", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetRelayOutputStateRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 0)]
         public string RelayOutputToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/device/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/device/wsdl", Order = 1)]
         public QuickNV.Onvif.DeviceIO.RelayLogicalState LogicalState;
-        
+
         public SetRelayOutputStateRequest()
         {
         }
-        
+
         public SetRelayOutputStateRequest(string RelayOutputToken, QuickNV.Onvif.DeviceIO.RelayLogicalState LogicalState)
         {
             this.RelayOutputToken = RelayOutputToken;
             this.LogicalState = LogicalState;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetRelayOutputStateResponse", WrapperNamespace="http://www.onvif.org/ver10/device/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetRelayOutputStateResponse", WrapperNamespace = "http://www.onvif.org/ver10/device/wsdl", IsWrapped = true)]
     public partial class SetRelayOutputStateResponse
     {
-        
+
         public SetRelayOutputStateResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDigitalInputs", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDigitalInputs", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetDigitalInputsRequest
     {
-        
+
         public GetDigitalInputsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDigitalInputsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDigitalInputsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetDigitalInputsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("DigitalInputs")]
         public QuickNV.Onvif.DeviceIO.DigitalInput[] DigitalInputs;
-        
+
         public GetDigitalInputsResponse()
         {
         }
-        
+
         public GetDigitalInputsResponse(QuickNV.Onvif.DeviceIO.DigitalInput[] DigitalInputs)
         {
             this.DigitalInputs = DigitalInputs;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDigitalInputConfigurations", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetDigitalInputConfigurations", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetDigitalInputConfigurationsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("DigitalInputs")]
         public QuickNV.Onvif.DeviceIO.DigitalInput[] DigitalInputs;
-        
+
         public SetDigitalInputConfigurationsRequest()
         {
         }
-        
+
         public SetDigitalInputConfigurationsRequest(QuickNV.Onvif.DeviceIO.DigitalInput[] DigitalInputs)
         {
             this.DigitalInputs = DigitalInputs;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDigitalInputConfigurationsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SetDigitalInputConfigurationsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SetDigitalInputConfigurationsResponse
     {
-        
+
         public SetDigitalInputConfigurationsResponse()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSerialPorts", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSerialPorts", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetSerialPortsRequest
     {
-        
+
         public GetSerialPortsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSerialPortsResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSerialPortsResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class GetSerialPortsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("SerialPort")]
         public QuickNV.Onvif.DeviceIO.SerialPort[] SerialPort;
-        
+
         public GetSerialPortsResponse()
         {
         }
-        
+
         public GetSerialPortsResponse(QuickNV.Onvif.DeviceIO.SerialPort[] SerialPort)
         {
             this.SerialPort = SerialPort;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SendReceiveSerialCommand", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SendReceiveSerialCommand", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SendReceiveSerialCommandRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public string Token;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 1)]
         public QuickNV.Onvif.DeviceIO.SerialData SerialData;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string TimeOut;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "integer")]
         public string DataLength;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 4)]
         public string Delimiter;
-        
+
         public SendReceiveSerialCommandRequest()
         {
         }
-        
+
         public SendReceiveSerialCommandRequest(string Token, QuickNV.Onvif.DeviceIO.SerialData SerialData, string TimeOut, string DataLength, string Delimiter)
         {
             this.Token = Token;
@@ -24788,190 +24788,190 @@ namespace QuickNV.Onvif.DeviceIO
             this.Delimiter = Delimiter;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SendReceiveSerialCommandResponse", WrapperNamespace="http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "SendReceiveSerialCommandResponse", WrapperNamespace = "http://www.onvif.org/ver10/deviceIO/wsdl", IsWrapped = true)]
     public partial class SendReceiveSerialCommandResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/deviceIO/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/deviceIO/wsdl", Order = 0)]
         public QuickNV.Onvif.DeviceIO.SerialData SerialData;
-        
+
         public SendReceiveSerialCommandResponse()
         {
         }
-        
+
         public SendReceiveSerialCommandResponse(QuickNV.Onvif.DeviceIO.SerialData SerialData)
         {
             this.SerialData = SerialData;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface DeviceIOPortChannel : QuickNV.Onvif.DeviceIO.DeviceIOPort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class DeviceIOPortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.DeviceIO.DeviceIOPort>, QuickNV.Onvif.DeviceIO.DeviceIOPort
     {
-        
-        public DeviceIOPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public DeviceIOPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.Capabilities1> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputOptionsResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.GetRelayOutputOptionsAsync(QuickNV.Onvif.DeviceIO.GetRelayOutputOptionsRequest request)
         {
             return base.Channel.GetRelayOutputOptionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputOptionsResponse> GetRelayOutputOptionsAsync(string RelayOutputToken)
         {
             QuickNV.Onvif.DeviceIO.GetRelayOutputOptionsRequest inValue = new QuickNV.Onvif.DeviceIO.GetRelayOutputOptionsRequest();
             inValue.RelayOutputToken = RelayOutputToken;
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).GetRelayOutputOptionsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioSourcesResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.GetAudioSourcesAsync(QuickNV.Onvif.DeviceIO.GetAudioSourcesRequest request)
         {
             return base.Channel.GetAudioSourcesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioSourcesResponse> GetAudioSourcesAsync()
         {
             QuickNV.Onvif.DeviceIO.GetAudioSourcesRequest inValue = new QuickNV.Onvif.DeviceIO.GetAudioSourcesRequest();
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).GetAudioSourcesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioOutputsResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.GetAudioOutputsAsync(QuickNV.Onvif.DeviceIO.GetAudioOutputsRequest request)
         {
             return base.Channel.GetAudioOutputsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioOutputsResponse> GetAudioOutputsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetAudioOutputsRequest inValue = new QuickNV.Onvif.DeviceIO.GetAudioOutputsRequest();
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).GetAudioOutputsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoSourcesResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.GetVideoSourcesAsync(QuickNV.Onvif.DeviceIO.GetVideoSourcesRequest request)
         {
             return base.Channel.GetVideoSourcesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoSourcesResponse> GetVideoSourcesAsync()
         {
             QuickNV.Onvif.DeviceIO.GetVideoSourcesRequest inValue = new QuickNV.Onvif.DeviceIO.GetVideoSourcesRequest();
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).GetVideoSourcesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoOutputsResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.GetVideoOutputsAsync(QuickNV.Onvif.DeviceIO.GetVideoOutputsRequest request)
         {
             return base.Channel.GetVideoOutputsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoOutputsResponse> GetVideoOutputsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetVideoOutputsRequest inValue = new QuickNV.Onvif.DeviceIO.GetVideoOutputsRequest();
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).GetVideoOutputsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoSourceConfigurationResponse> GetVideoSourceConfigurationAsync(QuickNV.Onvif.DeviceIO.GetVideoSourceConfigurationRequest request)
         {
             return base.Channel.GetVideoSourceConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoOutputConfigurationResponse> GetVideoOutputConfigurationAsync(QuickNV.Onvif.DeviceIO.GetVideoOutputConfigurationRequest request)
         {
             return base.Channel.GetVideoOutputConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioSourceConfigurationResponse> GetAudioSourceConfigurationAsync(QuickNV.Onvif.DeviceIO.GetAudioSourceConfigurationRequest request)
         {
             return base.Channel.GetAudioSourceConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioOutputConfigurationResponse> GetAudioOutputConfigurationAsync(QuickNV.Onvif.DeviceIO.GetAudioOutputConfigurationRequest request)
         {
             return base.Channel.GetAudioOutputConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetVideoSourceConfigurationResponse> SetVideoSourceConfigurationAsync(QuickNV.Onvif.DeviceIO.SetVideoSourceConfigurationRequest request)
         {
             return base.Channel.SetVideoSourceConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetVideoOutputConfigurationResponse> SetVideoOutputConfigurationAsync(QuickNV.Onvif.DeviceIO.SetVideoOutputConfigurationRequest request)
         {
             return base.Channel.SetVideoOutputConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetAudioSourceConfigurationResponse> SetAudioSourceConfigurationAsync(QuickNV.Onvif.DeviceIO.SetAudioSourceConfigurationRequest request)
         {
             return base.Channel.SetAudioSourceConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetAudioOutputConfigurationResponse> SetAudioOutputConfigurationAsync(QuickNV.Onvif.DeviceIO.SetAudioOutputConfigurationRequest request)
         {
             return base.Channel.SetAudioOutputConfigurationAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoSourceConfigurationOptionsResponse> GetVideoSourceConfigurationOptionsAsync(QuickNV.Onvif.DeviceIO.GetVideoSourceConfigurationOptionsRequest request)
         {
             return base.Channel.GetVideoSourceConfigurationOptionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetVideoOutputConfigurationOptionsResponse> GetVideoOutputConfigurationOptionsAsync(QuickNV.Onvif.DeviceIO.GetVideoOutputConfigurationOptionsRequest request)
         {
             return base.Channel.GetVideoOutputConfigurationOptionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioSourceConfigurationOptionsResponse> GetAudioSourceConfigurationOptionsAsync(QuickNV.Onvif.DeviceIO.GetAudioSourceConfigurationOptionsRequest request)
         {
             return base.Channel.GetAudioSourceConfigurationOptionsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetAudioOutputConfigurationOptionsResponse> GetAudioOutputConfigurationOptionsAsync(QuickNV.Onvif.DeviceIO.GetAudioOutputConfigurationOptionsRequest request)
         {
             return base.Channel.GetAudioOutputConfigurationOptionsAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputsResponse1> QuickNV.Onvif.DeviceIO.DeviceIOPort.GetRelayOutputsAsync(QuickNV.Onvif.DeviceIO.GetRelayOutputsRequest1 request)
         {
             return base.Channel.GetRelayOutputsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetRelayOutputsResponse1> GetRelayOutputsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetRelayOutputsRequest1 inValue = new QuickNV.Onvif.DeviceIO.GetRelayOutputsRequest1();
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).GetRelayOutputsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task SetRelayOutputSettingsAsync(QuickNV.Onvif.DeviceIO.RelayOutput RelayOutput)
         {
             return base.Channel.SetRelayOutputSettingsAsync(RelayOutput);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetRelayOutputStateResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.SetRelayOutputStateAsync(QuickNV.Onvif.DeviceIO.SetRelayOutputStateRequest request)
         {
             return base.Channel.SetRelayOutputStateAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetRelayOutputStateResponse> SetRelayOutputStateAsync(string RelayOutputToken, QuickNV.Onvif.DeviceIO.RelayLogicalState LogicalState)
         {
             QuickNV.Onvif.DeviceIO.SetRelayOutputStateRequest inValue = new QuickNV.Onvif.DeviceIO.SetRelayOutputStateRequest();
@@ -24979,69 +24979,69 @@ namespace QuickNV.Onvif.DeviceIO
             inValue.LogicalState = LogicalState;
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).SetRelayOutputStateAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDigitalInputsResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.GetDigitalInputsAsync(QuickNV.Onvif.DeviceIO.GetDigitalInputsRequest request)
         {
             return base.Channel.GetDigitalInputsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetDigitalInputsResponse> GetDigitalInputsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetDigitalInputsRequest inValue = new QuickNV.Onvif.DeviceIO.GetDigitalInputsRequest();
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).GetDigitalInputsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.DigitalInputConfigurationOptions> GetDigitalInputConfigurationOptionsAsync(string Token)
         {
             return base.Channel.GetDigitalInputConfigurationOptionsAsync(Token);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDigitalInputConfigurationsResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.SetDigitalInputConfigurationsAsync(QuickNV.Onvif.DeviceIO.SetDigitalInputConfigurationsRequest request)
         {
             return base.Channel.SetDigitalInputConfigurationsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SetDigitalInputConfigurationsResponse> SetDigitalInputConfigurationsAsync(QuickNV.Onvif.DeviceIO.DigitalInput[] DigitalInputs)
         {
             QuickNV.Onvif.DeviceIO.SetDigitalInputConfigurationsRequest inValue = new QuickNV.Onvif.DeviceIO.SetDigitalInputConfigurationsRequest();
             inValue.DigitalInputs = DigitalInputs;
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).SetDigitalInputConfigurationsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetSerialPortsResponse> QuickNV.Onvif.DeviceIO.DeviceIOPort.GetSerialPortsAsync(QuickNV.Onvif.DeviceIO.GetSerialPortsRequest request)
         {
             return base.Channel.GetSerialPortsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.GetSerialPortsResponse> GetSerialPortsAsync()
         {
             QuickNV.Onvif.DeviceIO.GetSerialPortsRequest inValue = new QuickNV.Onvif.DeviceIO.GetSerialPortsRequest();
             return ((QuickNV.Onvif.DeviceIO.DeviceIOPort)(this)).GetSerialPortsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SerialPortConfiguration> GetSerialPortConfigurationAsync(string SerialPortToken)
         {
             return base.Channel.GetSerialPortConfigurationAsync(SerialPortToken);
         }
-        
+
         public System.Threading.Tasks.Task SetSerialPortConfigurationAsync(QuickNV.Onvif.DeviceIO.SerialPortConfiguration SerialPortConfiguration, bool ForcePersistance)
         {
             return base.Channel.SetSerialPortConfigurationAsync(SerialPortConfiguration, ForcePersistance);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SerialPortConfigurationOptions> GetSerialPortConfigurationOptionsAsync(string SerialPortToken)
         {
             return base.Channel.GetSerialPortConfigurationOptionsAsync(SerialPortToken);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DeviceIO.SendReceiveSerialCommandResponse> SendReceiveSerialCommandAsync(QuickNV.Onvif.DeviceIO.SendReceiveSerialCommandRequest request)
         {
             return base.Channel.SendReceiveSerialCommandAsync(request);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

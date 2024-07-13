@@ -9,166 +9,166 @@
 
 namespace QuickNV.Onvif.AccessControl
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", ConfigurationName="Quick.Onvif.AccessControl.PACSPort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", ConfigurationName = "Quick.Onvif.AccessControl.PACSPort")]
     public interface PACSPort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.ServiceCapabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPointInfo", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPointInfo", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointInfoResponse> GetAccessPointInfoAsync(QuickNV.Onvif.AccessControl.GetAccessPointInfoRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPointInfoList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPointInfoList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointInfoListResponse> GetAccessPointInfoListAsync(QuickNV.Onvif.AccessControl.GetAccessPointInfoListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPoints", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPoints", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointsResponse> GetAccessPointsAsync(QuickNV.Onvif.AccessControl.GetAccessPointsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPointList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPointList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointListResponse> GetAccessPointListAsync(QuickNV.Onvif.AccessControl.GetAccessPointListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/CreateAccessPoint", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/CreateAccessPoint", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Token")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Token")]
         System.Threading.Tasks.Task<string> CreateAccessPointAsync(QuickNV.Onvif.AccessControl.AccessPoint AccessPoint);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/SetAccessPoint", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/SetAccessPoint", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task SetAccessPointAsync(QuickNV.Onvif.AccessControl.AccessPoint AccessPoint);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/ModifyAccessPoint", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/ModifyAccessPoint", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task ModifyAccessPointAsync(QuickNV.Onvif.AccessControl.AccessPoint AccessPoint);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/DeleteAccessPoint", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/DeleteAccessPoint", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task DeleteAccessPointAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/SetAccessPointAuthenticationProfile" +
-            "", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/SetAccessPointAuthenticationProfile" +
+            "", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task SetAccessPointAuthenticationProfileAsync(string Token, string AuthenticationProfileToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/DeleteAccessPointAuthenticationProf" +
-            "ile", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/DeleteAccessPointAuthenticationProf" +
+            "ile", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task DeleteAccessPointAuthenticationProfileAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAreaInfo", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAreaInfo", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreaInfoResponse> GetAreaInfoAsync(QuickNV.Onvif.AccessControl.GetAreaInfoRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAreaInfoList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAreaInfoList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreaInfoListResponse> GetAreaInfoListAsync(QuickNV.Onvif.AccessControl.GetAreaInfoListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAreas", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAreas", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreasResponse> GetAreasAsync(QuickNV.Onvif.AccessControl.GetAreasRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAreaList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAreaList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreaListResponse> GetAreaListAsync(QuickNV.Onvif.AccessControl.GetAreaListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/CreateArea", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/CreateArea", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Token")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Token")]
         System.Threading.Tasks.Task<string> CreateAreaAsync(QuickNV.Onvif.AccessControl.Area Area);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/SetArea", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/SetArea", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task SetAreaAsync(QuickNV.Onvif.AccessControl.Area Area);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/ModifyArea", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/ModifyArea", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task ModifyAreaAsync(QuickNV.Onvif.AccessControl.Area Area);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/DeleteArea", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/DeleteArea", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task DeleteAreaAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPointState", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/GetAccessPointState", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="AccessPointState")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "AccessPointState")]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.AccessPointState> GetAccessPointStateAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/EnableAccessPoint", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/EnableAccessPoint", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task EnableAccessPointAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/DisableAccessPoint", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/DisableAccessPoint", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task DisableAccessPointAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/ExternalAuthorization", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/ExternalAuthorization", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task ExternalAuthorizationAsync(string AccessPointToken, string CredentialToken, string Reason, QuickNV.Onvif.AccessControl.Decision Decision);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/accesscontrol/wsdl/Feedback", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/accesscontrol/wsdl/Feedback", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.FeedbackResponse> FeedbackAsync(QuickNV.Onvif.AccessControl.FeedbackRequest request);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class ServiceCapabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private uint maxLimitField;
-        
+
         private uint maxAccessPointsField;
-        
+
         private uint maxAreasField;
-        
+
         private bool clientSuppliedTokenSupportedField;
-        
+
         private bool accessPointManagementSupportedField;
-        
+
         private bool areaManagementSupportedField;
-        
+
         public ServiceCapabilities()
         {
             this.maxAccessPointsField = ((uint)(10));
@@ -177,9 +177,9 @@ namespace QuickNV.Onvif.AccessControl
             this.accessPointManagementSupportedField = false;
             this.areaManagementSupportedField = false;
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -191,7 +191,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public uint MaxLimit
@@ -205,7 +205,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.maxLimitField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(typeof(uint), "10")]
@@ -220,7 +220,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.maxAccessPointsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(typeof(uint), "10")]
@@ -235,7 +235,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.maxAreasField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -250,7 +250,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.clientSuppliedTokenSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -265,7 +265,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.accessPointManagementSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -281,20 +281,20 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AccessPointState
     {
-        
+
         private bool enabledField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -306,9 +306,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -321,18 +321,18 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AreaExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -345,18 +345,18 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AccessPointExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -369,18 +369,18 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class SupportedSecurityLevelsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -393,48 +393,48 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AccessPointCapabilities
     {
-        
+
         private string[] supportedSecurityLevelsField;
-        
+
         private SupportedSecurityLevelsExtension extensionField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool disableAccessPointField;
-        
+
         private bool duressField;
-        
+
         private bool duressFieldSpecified;
-        
+
         private bool anonymousAccessField;
-        
+
         private bool anonymousAccessFieldSpecified;
-        
+
         private bool accessTakenField;
-        
+
         private bool accessTakenFieldSpecified;
-        
+
         private bool externalAuthorizationField;
-        
+
         private bool externalAuthorizationFieldSpecified;
-        
+
         private string[] supportedRecognitionTypesField;
-        
+
         private bool identifierAccessField;
-        
+
         private bool identifierAccessFieldSpecified;
-        
+
         private string[] supportedFeedbackTypesField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SupportedSecurityLevels", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("SupportedSecurityLevels", Order = 0)]
         public string[] SupportedSecurityLevels
         {
             get
@@ -446,9 +446,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.supportedSecurityLevelsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public SupportedSecurityLevelsExtension Extension
         {
             get
@@ -460,9 +460,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -474,7 +474,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DisableAccessPoint
@@ -488,7 +488,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.disableAccessPointField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Duress
@@ -502,7 +502,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.duressField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DuressSpecified
@@ -516,7 +516,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.duressFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AnonymousAccess
@@ -530,7 +530,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.anonymousAccessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AnonymousAccessSpecified
@@ -544,7 +544,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.anonymousAccessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AccessTaken
@@ -558,7 +558,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.accessTakenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AccessTakenSpecified
@@ -572,7 +572,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.accessTakenFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ExternalAuthorization
@@ -586,7 +586,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.externalAuthorizationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ExternalAuthorizationSpecified
@@ -600,7 +600,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.externalAuthorizationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] SupportedRecognitionTypes
@@ -614,7 +614,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.supportedRecognitionTypesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool IdentifierAccess
@@ -628,7 +628,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.identifierAccessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IdentifierAccessSpecified
@@ -642,7 +642,7 @@ namespace QuickNV.Onvif.AccessControl
                 this.identifierAccessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] SupportedFeedbackTypes
@@ -657,7 +657,7 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AreaInfoBase))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AreaInfo))]
@@ -667,12 +667,12 @@ namespace QuickNV.Onvif.AccessControl
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AccessPoint))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/pacs")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/pacs")]
     public partial class DataEntity
     {
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -687,22 +687,22 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AreaInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Area))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AreaInfoBase : DataEntity
     {
-        
+
         private string nameField;
-        
+
         private string descriptionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -714,9 +714,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Description
         {
             get
@@ -729,27 +729,27 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Area))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AreaInfo : AreaInfoBase
     {
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class Area : AreaInfo
     {
-        
+
         private AreaExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AreaExtension Extension
         {
             get
@@ -762,30 +762,30 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AccessPointInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AccessPoint))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AccessPointInfoBase : DataEntity
     {
-        
+
         private string nameField;
-        
+
         private string descriptionField;
-        
+
         private string areaFromField;
-        
+
         private string areaToField;
-        
+
         private System.Xml.XmlQualifiedName entityTypeField;
-        
+
         private string entityField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -797,9 +797,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Description
         {
             get
@@ -811,9 +811,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.descriptionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string AreaFrom
         {
             get
@@ -825,9 +825,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.areaFromField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public string AreaTo
         {
             get
@@ -839,9 +839,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.areaToField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public System.Xml.XmlQualifiedName EntityType
         {
             get
@@ -853,9 +853,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.entityTypeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public string Entity
         {
             get
@@ -868,21 +868,21 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AccessPoint))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AccessPointInfo : AccessPointInfoBase
     {
-        
+
         private AccessPointCapabilities capabilitiesField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AccessPointCapabilities Capabilities
         {
             get
@@ -894,9 +894,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.capabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -909,20 +909,20 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public partial class AccessPoint : AccessPointInfo
     {
-        
+
         private string authenticationProfileTokenField;
-        
+
         private AccessPointExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string AuthenticationProfileToken
         {
             get
@@ -934,9 +934,9 @@ namespace QuickNV.Onvif.AccessControl
                 this.authenticationProfileTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public AccessPointExtension Extension
         {
             get
@@ -949,403 +949,403 @@ namespace QuickNV.Onvif.AccessControl
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAccessPointInfo", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAccessPointInfo", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAccessPointInfoRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetAccessPointInfoRequest()
         {
         }
-        
+
         public GetAccessPointInfoRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAccessPointInfoResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAccessPointInfoResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAccessPointInfoResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("AccessPointInfo")]
         public QuickNV.Onvif.AccessControl.AccessPointInfo[] AccessPointInfo;
-        
+
         public GetAccessPointInfoResponse()
         {
         }
-        
+
         public GetAccessPointInfoResponse(QuickNV.Onvif.AccessControl.AccessPointInfo[] AccessPointInfo)
         {
             this.AccessPointInfo = AccessPointInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAccessPointInfoList", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAccessPointInfoList", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAccessPointInfoListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetAccessPointInfoListRequest()
         {
         }
-        
+
         public GetAccessPointInfoListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAccessPointInfoListResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAccessPointInfoListResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAccessPointInfoListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("AccessPointInfo")]
         public QuickNV.Onvif.AccessControl.AccessPointInfo[] AccessPointInfo;
-        
+
         public GetAccessPointInfoListResponse()
         {
         }
-        
+
         public GetAccessPointInfoListResponse(string NextStartReference, QuickNV.Onvif.AccessControl.AccessPointInfo[] AccessPointInfo)
         {
             this.NextStartReference = NextStartReference;
             this.AccessPointInfo = AccessPointInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAccessPoints", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAccessPoints", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAccessPointsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetAccessPointsRequest()
         {
         }
-        
+
         public GetAccessPointsRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAccessPointsResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAccessPointsResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAccessPointsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("AccessPoint")]
         public QuickNV.Onvif.AccessControl.AccessPoint[] AccessPoint;
-        
+
         public GetAccessPointsResponse()
         {
         }
-        
+
         public GetAccessPointsResponse(QuickNV.Onvif.AccessControl.AccessPoint[] AccessPoint)
         {
             this.AccessPoint = AccessPoint;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAccessPointList", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAccessPointList", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAccessPointListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetAccessPointListRequest()
         {
         }
-        
+
         public GetAccessPointListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAccessPointListResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAccessPointListResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAccessPointListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("AccessPoint")]
         public QuickNV.Onvif.AccessControl.AccessPoint[] AccessPoint;
-        
+
         public GetAccessPointListResponse()
         {
         }
-        
+
         public GetAccessPointListResponse(string NextStartReference, QuickNV.Onvif.AccessControl.AccessPoint[] AccessPoint)
         {
             this.NextStartReference = NextStartReference;
             this.AccessPoint = AccessPoint;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAreaInfo", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAreaInfo", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAreaInfoRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetAreaInfoRequest()
         {
         }
-        
+
         public GetAreaInfoRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAreaInfoResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAreaInfoResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAreaInfoResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("AreaInfo")]
         public QuickNV.Onvif.AccessControl.AreaInfo[] AreaInfo;
-        
+
         public GetAreaInfoResponse()
         {
         }
-        
+
         public GetAreaInfoResponse(QuickNV.Onvif.AccessControl.AreaInfo[] AreaInfo)
         {
             this.AreaInfo = AreaInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAreaInfoList", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAreaInfoList", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAreaInfoListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetAreaInfoListRequest()
         {
         }
-        
+
         public GetAreaInfoListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAreaInfoListResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAreaInfoListResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAreaInfoListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("AreaInfo")]
         public QuickNV.Onvif.AccessControl.AreaInfo[] AreaInfo;
-        
+
         public GetAreaInfoListResponse()
         {
         }
-        
+
         public GetAreaInfoListResponse(string NextStartReference, QuickNV.Onvif.AccessControl.AreaInfo[] AreaInfo)
         {
             this.NextStartReference = NextStartReference;
             this.AreaInfo = AreaInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAreas", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAreas", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAreasRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetAreasRequest()
         {
         }
-        
+
         public GetAreasRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAreasResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAreasResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAreasResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Area")]
         public QuickNV.Onvif.AccessControl.Area[] Area;
-        
+
         public GetAreasResponse()
         {
         }
-        
+
         public GetAreasResponse(QuickNV.Onvif.AccessControl.Area[] Area)
         {
             this.Area = Area;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAreaList", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAreaList", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAreaListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetAreaListRequest()
         {
         }
-        
+
         public GetAreaListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetAreaListResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAreaListResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class GetAreaListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("Area")]
         public QuickNV.Onvif.AccessControl.Area[] Area;
-        
+
         public GetAreaListResponse()
         {
         }
-        
+
         public GetAreaListResponse(string NextStartReference, QuickNV.Onvif.AccessControl.Area[] Area)
         {
             this.NextStartReference = NextStartReference;
             this.Area = Area;
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl")]
     public enum Decision
     {
-        
+
         /// <remarks/>
         Granted,
-        
+
         /// <remarks/>
         Denied,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Feedback", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "Feedback", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class FeedbackRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 0)]
         public string AccessPointToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 1)]
         public string FeedbackType;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 2)]
         [System.Xml.Serialization.XmlElementAttribute("RecognitionType")]
         public string[] RecognitionType;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/accesscontrol/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", Order = 3)]
         public string TextMessage;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 4)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public FeedbackRequest()
         {
         }
-        
+
         public FeedbackRequest(string AccessPointToken, string FeedbackType, string[] RecognitionType, string TextMessage, System.Xml.XmlElement[] Any)
         {
             this.AccessPointToken = AccessPointToken;
@@ -1355,194 +1355,194 @@ namespace QuickNV.Onvif.AccessControl
             this.Any = Any;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FeedbackResponse", WrapperNamespace="http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FeedbackResponse", WrapperNamespace = "http://www.onvif.org/ver10/accesscontrol/wsdl", IsWrapped = true)]
     public partial class FeedbackResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any;
-        
+
         public FeedbackResponse()
         {
         }
-        
+
         public FeedbackResponse(System.Xml.XmlElement[] Any)
         {
             this.Any = Any;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface PACSPortChannel : QuickNV.Onvif.AccessControl.PACSPort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class PACSPortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.AccessControl.PACSPort>, QuickNV.Onvif.AccessControl.PACSPort
     {
-        
-        public PACSPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public PACSPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.ServiceCapabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointInfoResponse> QuickNV.Onvif.AccessControl.PACSPort.GetAccessPointInfoAsync(QuickNV.Onvif.AccessControl.GetAccessPointInfoRequest request)
         {
             return base.Channel.GetAccessPointInfoAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointInfoResponse> GetAccessPointInfoAsync(string[] Token)
         {
             QuickNV.Onvif.AccessControl.GetAccessPointInfoRequest inValue = new QuickNV.Onvif.AccessControl.GetAccessPointInfoRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.AccessControl.PACSPort)(this)).GetAccessPointInfoAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointInfoListResponse> GetAccessPointInfoListAsync(QuickNV.Onvif.AccessControl.GetAccessPointInfoListRequest request)
         {
             return base.Channel.GetAccessPointInfoListAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointsResponse> QuickNV.Onvif.AccessControl.PACSPort.GetAccessPointsAsync(QuickNV.Onvif.AccessControl.GetAccessPointsRequest request)
         {
             return base.Channel.GetAccessPointsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointsResponse> GetAccessPointsAsync(string[] Token)
         {
             QuickNV.Onvif.AccessControl.GetAccessPointsRequest inValue = new QuickNV.Onvif.AccessControl.GetAccessPointsRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.AccessControl.PACSPort)(this)).GetAccessPointsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAccessPointListResponse> GetAccessPointListAsync(QuickNV.Onvif.AccessControl.GetAccessPointListRequest request)
         {
             return base.Channel.GetAccessPointListAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<string> CreateAccessPointAsync(QuickNV.Onvif.AccessControl.AccessPoint AccessPoint)
         {
             return base.Channel.CreateAccessPointAsync(AccessPoint);
         }
-        
+
         public System.Threading.Tasks.Task SetAccessPointAsync(QuickNV.Onvif.AccessControl.AccessPoint AccessPoint)
         {
             return base.Channel.SetAccessPointAsync(AccessPoint);
         }
-        
+
         public System.Threading.Tasks.Task ModifyAccessPointAsync(QuickNV.Onvif.AccessControl.AccessPoint AccessPoint)
         {
             return base.Channel.ModifyAccessPointAsync(AccessPoint);
         }
-        
+
         public System.Threading.Tasks.Task DeleteAccessPointAsync(string Token)
         {
             return base.Channel.DeleteAccessPointAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task SetAccessPointAuthenticationProfileAsync(string Token, string AuthenticationProfileToken)
         {
             return base.Channel.SetAccessPointAuthenticationProfileAsync(Token, AuthenticationProfileToken);
         }
-        
+
         public System.Threading.Tasks.Task DeleteAccessPointAuthenticationProfileAsync(string Token)
         {
             return base.Channel.DeleteAccessPointAuthenticationProfileAsync(Token);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreaInfoResponse> QuickNV.Onvif.AccessControl.PACSPort.GetAreaInfoAsync(QuickNV.Onvif.AccessControl.GetAreaInfoRequest request)
         {
             return base.Channel.GetAreaInfoAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreaInfoResponse> GetAreaInfoAsync(string[] Token)
         {
             QuickNV.Onvif.AccessControl.GetAreaInfoRequest inValue = new QuickNV.Onvif.AccessControl.GetAreaInfoRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.AccessControl.PACSPort)(this)).GetAreaInfoAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreaInfoListResponse> GetAreaInfoListAsync(QuickNV.Onvif.AccessControl.GetAreaInfoListRequest request)
         {
             return base.Channel.GetAreaInfoListAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreasResponse> QuickNV.Onvif.AccessControl.PACSPort.GetAreasAsync(QuickNV.Onvif.AccessControl.GetAreasRequest request)
         {
             return base.Channel.GetAreasAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreasResponse> GetAreasAsync(string[] Token)
         {
             QuickNV.Onvif.AccessControl.GetAreasRequest inValue = new QuickNV.Onvif.AccessControl.GetAreasRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.AccessControl.PACSPort)(this)).GetAreasAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.GetAreaListResponse> GetAreaListAsync(QuickNV.Onvif.AccessControl.GetAreaListRequest request)
         {
             return base.Channel.GetAreaListAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<string> CreateAreaAsync(QuickNV.Onvif.AccessControl.Area Area)
         {
             return base.Channel.CreateAreaAsync(Area);
         }
-        
+
         public System.Threading.Tasks.Task SetAreaAsync(QuickNV.Onvif.AccessControl.Area Area)
         {
             return base.Channel.SetAreaAsync(Area);
         }
-        
+
         public System.Threading.Tasks.Task ModifyAreaAsync(QuickNV.Onvif.AccessControl.Area Area)
         {
             return base.Channel.ModifyAreaAsync(Area);
         }
-        
+
         public System.Threading.Tasks.Task DeleteAreaAsync(string Token)
         {
             return base.Channel.DeleteAreaAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.AccessPointState> GetAccessPointStateAsync(string Token)
         {
             return base.Channel.GetAccessPointStateAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task EnableAccessPointAsync(string Token)
         {
             return base.Channel.EnableAccessPointAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task DisableAccessPointAsync(string Token)
         {
             return base.Channel.DisableAccessPointAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task ExternalAuthorizationAsync(string AccessPointToken, string CredentialToken, string Reason, QuickNV.Onvif.AccessControl.Decision Decision)
         {
             return base.Channel.ExternalAuthorizationAsync(AccessPointToken, CredentialToken, Reason, Decision);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.AccessControl.FeedbackResponse> FeedbackAsync(QuickNV.Onvif.AccessControl.FeedbackRequest request)
         {
             return base.Channel.FeedbackAsync(request);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

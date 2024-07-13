@@ -9,63 +9,63 @@
 
 namespace QuickNV.Onvif.Provisioning
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", ConfigurationName="Quick.Onvif.Provisioning.ProvisioningService")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", ConfigurationName = "Quick.Onvif.Provisioning.ProvisioningService")]
     public interface ProvisioningService
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/provisioning/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/provisioning/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.Capabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/provisioning/wsdl/PanMove", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/provisioning/wsdl/PanMove", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.PanMoveResponse> PanMoveAsync(QuickNV.Onvif.Provisioning.PanMoveRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/provisioning/wsdl/TiltMove", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/provisioning/wsdl/TiltMove", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.TiltMoveResponse> TiltMoveAsync(QuickNV.Onvif.Provisioning.TiltMoveRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/provisioning/wsdl/ZoomMove", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/provisioning/wsdl/ZoomMove", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.ZoomMoveResponse> ZoomMoveAsync(QuickNV.Onvif.Provisioning.ZoomMoveRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/provisioning/wsdl/RollMove", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/provisioning/wsdl/RollMove", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.RollMoveResponse> RollMoveAsync(QuickNV.Onvif.Provisioning.RollMoveRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/provisioning/wsdl/FocusMove", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/provisioning/wsdl/FocusMove", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.FocusMoveResponse> FocusMoveAsync(QuickNV.Onvif.Provisioning.FocusMoveRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/provisioning/wsdl/Stop", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/provisioning/wsdl/Stop", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task StopAsync(string VideoSource);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/provisioning/wsdl/Usage", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Usage")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/provisioning/wsdl/Usage", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Usage")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.Usage> GetUsageAsync(string VideoSource);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl")]
     public partial class Capabilities
     {
-        
+
         private string defaultTimeoutField;
-        
+
         private SourceCapabilities[] sourceField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 0)]
         public string DefaultTimeout
         {
             get
@@ -77,9 +77,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.defaultTimeoutField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Source", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Source", Order = 1)]
         public SourceCapabilities[] Source
         {
             get
@@ -91,9 +91,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.sourceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -106,38 +106,38 @@ namespace QuickNV.Onvif.Provisioning
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl")]
     public partial class SourceCapabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string videoSourceTokenField;
-        
+
         private string maximumPanMovesField;
-        
+
         private string maximumTiltMovesField;
-        
+
         private string maximumZoomMovesField;
-        
+
         private string maximumRollMovesField;
-        
+
         private bool autoLevelField;
-        
+
         private bool autoLevelFieldSpecified;
-        
+
         private string maximumFocusMovesField;
-        
+
         private bool autoFocusField;
-        
+
         private bool autoFocusFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -149,7 +149,7 @@ namespace QuickNV.Onvif.Provisioning
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string VideoSourceToken
@@ -163,9 +163,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.videoSourceTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumPanMoves
         {
             get
@@ -177,9 +177,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.maximumPanMovesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumTiltMoves
         {
             get
@@ -191,9 +191,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.maximumTiltMovesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumZoomMoves
         {
             get
@@ -205,9 +205,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.maximumZoomMovesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumRollMoves
         {
             get
@@ -219,7 +219,7 @@ namespace QuickNV.Onvif.Provisioning
                 this.maximumRollMovesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AutoLevel
@@ -233,7 +233,7 @@ namespace QuickNV.Onvif.Provisioning
                 this.autoLevelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AutoLevelSpecified
@@ -247,9 +247,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.autoLevelFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaximumFocusMoves
         {
             get
@@ -261,7 +261,7 @@ namespace QuickNV.Onvif.Provisioning
                 this.maximumFocusMovesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AutoFocus
@@ -275,7 +275,7 @@ namespace QuickNV.Onvif.Provisioning
                 this.autoFocusField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AutoFocusSpecified
@@ -290,28 +290,28 @@ namespace QuickNV.Onvif.Provisioning
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl")]
     public partial class Usage
     {
-        
+
         private string panField;
-        
+
         private string tiltField;
-        
+
         private string zoomField;
-        
+
         private string rollField;
-        
+
         private string focusField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "positiveInteger", Order = 0)]
         public string Pan
         {
             get
@@ -323,9 +323,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.panField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "positiveInteger", Order = 1)]
         public string Tilt
         {
             get
@@ -337,9 +337,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.tiltField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "positiveInteger", Order = 2)]
         public string Zoom
         {
             get
@@ -351,9 +351,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.zoomField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "positiveInteger", Order = 3)]
         public string Roll
         {
             get
@@ -365,9 +365,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.rollField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "positiveInteger", Order = 4)]
         public string Focus
         {
             get
@@ -379,9 +379,9 @@ namespace QuickNV.Onvif.Provisioning
                 this.focusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -394,41 +394,41 @@ namespace QuickNV.Onvif.Provisioning
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl")]
     public enum PanDirection
     {
-        
+
         /// <remarks/>
         Left,
-        
+
         /// <remarks/>
         Right,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="PanMove", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "PanMove", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class PanMoveRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 0)]
         public string VideoSource;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 1)]
         public QuickNV.Onvif.Provisioning.PanDirection Direction;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string Timeout;
-        
+
         public PanMoveRequest()
         {
         }
-        
+
         public PanMoveRequest(string VideoSource, QuickNV.Onvif.Provisioning.PanDirection Direction, string Timeout)
         {
             this.VideoSource = VideoSource;
@@ -436,53 +436,53 @@ namespace QuickNV.Onvif.Provisioning
             this.Timeout = Timeout;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="PanMoveResponse", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "PanMoveResponse", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class PanMoveResponse
     {
-        
+
         public PanMoveResponse()
         {
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl")]
     public enum TiltDirection
     {
-        
+
         /// <remarks/>
         Up,
-        
+
         /// <remarks/>
         Down,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="TiltMove", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "TiltMove", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class TiltMoveRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 0)]
         public string VideoSource;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 1)]
         public QuickNV.Onvif.Provisioning.TiltDirection Direction;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string Timeout;
-        
+
         public TiltMoveRequest()
         {
         }
-        
+
         public TiltMoveRequest(string VideoSource, QuickNV.Onvif.Provisioning.TiltDirection Direction, string Timeout)
         {
             this.VideoSource = VideoSource;
@@ -490,53 +490,53 @@ namespace QuickNV.Onvif.Provisioning
             this.Timeout = Timeout;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="TiltMoveResponse", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "TiltMoveResponse", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class TiltMoveResponse
     {
-        
+
         public TiltMoveResponse()
         {
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl")]
     public enum ZoomDirection
     {
-        
+
         /// <remarks/>
         Wide,
-        
+
         /// <remarks/>
         Telephoto,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ZoomMove", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ZoomMove", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class ZoomMoveRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 0)]
         public string VideoSource;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 1)]
         public QuickNV.Onvif.Provisioning.ZoomDirection Direction;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string Timeout;
-        
+
         public ZoomMoveRequest()
         {
         }
-        
+
         public ZoomMoveRequest(string VideoSource, QuickNV.Onvif.Provisioning.ZoomDirection Direction, string Timeout)
         {
             this.VideoSource = VideoSource;
@@ -544,56 +544,56 @@ namespace QuickNV.Onvif.Provisioning
             this.Timeout = Timeout;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ZoomMoveResponse", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "ZoomMoveResponse", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class ZoomMoveResponse
     {
-        
+
         public ZoomMoveResponse()
         {
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl")]
     public enum RollDirection
     {
-        
+
         /// <remarks/>
         Clockwise,
-        
+
         /// <remarks/>
         Counterclockwise,
-        
+
         /// <remarks/>
         Auto,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RollMove", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RollMove", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class RollMoveRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 0)]
         public string VideoSource;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 1)]
         public QuickNV.Onvif.Provisioning.RollDirection Direction;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string Timeout;
-        
+
         public RollMoveRequest()
         {
         }
-        
+
         public RollMoveRequest(string VideoSource, QuickNV.Onvif.Provisioning.RollDirection Direction, string Timeout)
         {
             this.VideoSource = VideoSource;
@@ -601,56 +601,56 @@ namespace QuickNV.Onvif.Provisioning
             this.Timeout = Timeout;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RollMoveResponse", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "RollMoveResponse", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class RollMoveResponse
     {
-        
+
         public RollMoveResponse()
         {
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl")]
     public enum FocusDirection
     {
-        
+
         /// <remarks/>
         Near,
-        
+
         /// <remarks/>
         Far,
-        
+
         /// <remarks/>
         Auto,
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FocusMove", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FocusMove", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class FocusMoveRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 0)]
         public string VideoSource;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 1)]
         public QuickNV.Onvif.Provisioning.FocusDirection Direction;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/provisioning/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/provisioning/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string Timeout;
-        
+
         public FocusMoveRequest()
         {
         }
-        
+
         public FocusMoveRequest(string VideoSource, QuickNV.Onvif.Provisioning.FocusDirection Direction, string Timeout)
         {
             this.VideoSource = VideoSource;
@@ -658,45 +658,45 @@ namespace QuickNV.Onvif.Provisioning
             this.Timeout = Timeout;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FocusMoveResponse", WrapperNamespace="http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FocusMoveResponse", WrapperNamespace = "http://www.onvif.org/ver10/provisioning/wsdl", IsWrapped = true)]
     public partial class FocusMoveResponse
     {
-        
+
         public FocusMoveResponse()
         {
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface ProvisioningServiceChannel : QuickNV.Onvif.Provisioning.ProvisioningService, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class ProvisioningServiceClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Provisioning.ProvisioningService>, QuickNV.Onvif.Provisioning.ProvisioningService
     {
-        
-        public ProvisioningServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public ProvisioningServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.Capabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.PanMoveResponse> QuickNV.Onvif.Provisioning.ProvisioningService.PanMoveAsync(QuickNV.Onvif.Provisioning.PanMoveRequest request)
         {
             return base.Channel.PanMoveAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.PanMoveResponse> PanMoveAsync(string VideoSource, QuickNV.Onvif.Provisioning.PanDirection Direction, string Timeout)
         {
             QuickNV.Onvif.Provisioning.PanMoveRequest inValue = new QuickNV.Onvif.Provisioning.PanMoveRequest();
@@ -705,13 +705,13 @@ namespace QuickNV.Onvif.Provisioning
             inValue.Timeout = Timeout;
             return ((QuickNV.Onvif.Provisioning.ProvisioningService)(this)).PanMoveAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.TiltMoveResponse> QuickNV.Onvif.Provisioning.ProvisioningService.TiltMoveAsync(QuickNV.Onvif.Provisioning.TiltMoveRequest request)
         {
             return base.Channel.TiltMoveAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.TiltMoveResponse> TiltMoveAsync(string VideoSource, QuickNV.Onvif.Provisioning.TiltDirection Direction, string Timeout)
         {
             QuickNV.Onvif.Provisioning.TiltMoveRequest inValue = new QuickNV.Onvif.Provisioning.TiltMoveRequest();
@@ -720,13 +720,13 @@ namespace QuickNV.Onvif.Provisioning
             inValue.Timeout = Timeout;
             return ((QuickNV.Onvif.Provisioning.ProvisioningService)(this)).TiltMoveAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.ZoomMoveResponse> QuickNV.Onvif.Provisioning.ProvisioningService.ZoomMoveAsync(QuickNV.Onvif.Provisioning.ZoomMoveRequest request)
         {
             return base.Channel.ZoomMoveAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.ZoomMoveResponse> ZoomMoveAsync(string VideoSource, QuickNV.Onvif.Provisioning.ZoomDirection Direction, string Timeout)
         {
             QuickNV.Onvif.Provisioning.ZoomMoveRequest inValue = new QuickNV.Onvif.Provisioning.ZoomMoveRequest();
@@ -735,13 +735,13 @@ namespace QuickNV.Onvif.Provisioning
             inValue.Timeout = Timeout;
             return ((QuickNV.Onvif.Provisioning.ProvisioningService)(this)).ZoomMoveAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.RollMoveResponse> QuickNV.Onvif.Provisioning.ProvisioningService.RollMoveAsync(QuickNV.Onvif.Provisioning.RollMoveRequest request)
         {
             return base.Channel.RollMoveAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.RollMoveResponse> RollMoveAsync(string VideoSource, QuickNV.Onvif.Provisioning.RollDirection Direction, string Timeout)
         {
             QuickNV.Onvif.Provisioning.RollMoveRequest inValue = new QuickNV.Onvif.Provisioning.RollMoveRequest();
@@ -750,13 +750,13 @@ namespace QuickNV.Onvif.Provisioning
             inValue.Timeout = Timeout;
             return ((QuickNV.Onvif.Provisioning.ProvisioningService)(this)).RollMoveAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.FocusMoveResponse> QuickNV.Onvif.Provisioning.ProvisioningService.FocusMoveAsync(QuickNV.Onvif.Provisioning.FocusMoveRequest request)
         {
             return base.Channel.FocusMoveAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.FocusMoveResponse> FocusMoveAsync(string VideoSource, QuickNV.Onvif.Provisioning.FocusDirection Direction, string Timeout)
         {
             QuickNV.Onvif.Provisioning.FocusMoveRequest inValue = new QuickNV.Onvif.Provisioning.FocusMoveRequest();
@@ -765,17 +765,17 @@ namespace QuickNV.Onvif.Provisioning
             inValue.Timeout = Timeout;
             return ((QuickNV.Onvif.Provisioning.ProvisioningService)(this)).FocusMoveAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task StopAsync(string VideoSource)
         {
             return base.Channel.StopAsync(VideoSource);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Provisioning.Usage> GetUsageAsync(string VideoSource)
         {
             return base.Channel.GetUsageAsync(VideoSource);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

@@ -9,140 +9,140 @@
 
 namespace QuickNV.Onvif.DoorControl
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", ConfigurationName="Quick.Onvif.DoorControl.DoorControlPort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", ConfigurationName = "Quick.Onvif.DoorControl.DoorControlPort")]
     public interface DoorControlPort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.ServiceCapabilities> GetServiceCapabilitiesAsync();
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoorInfoList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoorInfoList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorInfoListResponse> GetDoorInfoListAsync(QuickNV.Onvif.DoorControl.GetDoorInfoListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoorInfo", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoorInfo", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorInfoResponse> GetDoorInfoAsync(QuickNV.Onvif.DoorControl.GetDoorInfoRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoorList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoorList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorListResponse> GetDoorListAsync(QuickNV.Onvif.DoorControl.GetDoorListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoors", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoors", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorsResponse> GetDoorsAsync(QuickNV.Onvif.DoorControl.GetDoorsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/CreateDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/CreateDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Token")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Token")]
         System.Threading.Tasks.Task<string> CreateDoorAsync(QuickNV.Onvif.DoorControl.Door Door);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/SetDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/SetDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task SetDoorAsync(QuickNV.Onvif.DoorControl.Door Door);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/ModifyDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/ModifyDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task ModifyDoorAsync(QuickNV.Onvif.DoorControl.Door Door);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/DeleteDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/DeleteDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task DeleteDoorAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoorState", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/GetDoorState", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="DoorState")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "DoorState")]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.DoorState> GetDoorStateAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/AccessDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/AccessDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.AccessDoorResponse> AccessDoorAsync(QuickNV.Onvif.DoorControl.AccessDoorRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/LockDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/LockDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task LockDoorAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/UnlockDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/UnlockDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task UnlockDoorAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/BlockDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/BlockDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task BlockDoorAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/LockDownDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/LockDownDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task LockDownDoorAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/LockDownReleaseDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/LockDownReleaseDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task LockDownReleaseDoorAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/LockOpenDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/LockOpenDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task LockOpenDoorAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/LockOpenReleaseDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/LockOpenReleaseDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task LockOpenReleaseDoorAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/doorcontrol/wsdl/DoubleLockDoor", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/doorcontrol/wsdl/DoubleLockDoor", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task DoubleLockDoorAsync(string Token);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class ServiceCapabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private uint maxLimitField;
-        
+
         private uint maxDoorsField;
-        
+
         private bool clientSuppliedTokenSupportedField;
-        
+
         private bool doorManagementSupportedField;
-        
+
         public ServiceCapabilities()
         {
             this.maxDoorsField = ((uint)(10));
             this.clientSuppliedTokenSupportedField = false;
             this.doorManagementSupportedField = false;
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -154,7 +154,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public uint MaxLimit
@@ -168,7 +168,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.maxLimitField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(typeof(uint), "10")]
@@ -183,7 +183,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.maxDoorsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -198,7 +198,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.clientSuppliedTokenSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -214,18 +214,18 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class AccessDoorExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -238,22 +238,22 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class DoorFault
     {
-        
+
         private string reasonField;
-        
+
         private DoorFaultState stateField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Reason
         {
             get
@@ -265,9 +265,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.reasonField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public DoorFaultState State
         {
             get
@@ -279,9 +279,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.stateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -294,38 +294,38 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public enum DoorFaultState
     {
-        
+
         /// <remarks/>
         Unknown,
-        
+
         /// <remarks/>
         NotInFault,
-        
+
         /// <remarks/>
         FaultDetected,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class DoorTamper
     {
-        
+
         private string reasonField;
-        
+
         private DoorTamperState stateField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Reason
         {
             get
@@ -337,9 +337,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.reasonField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public DoorTamperState State
         {
             get
@@ -351,9 +351,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.stateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -366,56 +366,56 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public enum DoorTamperState
     {
-        
+
         /// <remarks/>
         Unknown,
-        
+
         /// <remarks/>
         NotInTamper,
-        
+
         /// <remarks/>
         TamperDetected,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class DoorState
     {
-        
+
         private DoorPhysicalState doorPhysicalStateField;
-        
+
         private bool doorPhysicalStateFieldSpecified;
-        
+
         private LockPhysicalState lockPhysicalStateField;
-        
+
         private bool lockPhysicalStateFieldSpecified;
-        
+
         private LockPhysicalState doubleLockPhysicalStateField;
-        
+
         private bool doubleLockPhysicalStateFieldSpecified;
-        
+
         private DoorAlarmState alarmField;
-        
+
         private bool alarmFieldSpecified;
-        
+
         private DoorTamper tamperField;
-        
+
         private DoorFault faultField;
-        
+
         private DoorMode doorModeField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public DoorPhysicalState DoorPhysicalState
         {
             get
@@ -427,7 +427,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.doorPhysicalStateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DoorPhysicalStateSpecified
@@ -441,9 +441,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.doorPhysicalStateFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public LockPhysicalState LockPhysicalState
         {
             get
@@ -455,7 +455,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockPhysicalStateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LockPhysicalStateSpecified
@@ -469,9 +469,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockPhysicalStateFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public LockPhysicalState DoubleLockPhysicalState
         {
             get
@@ -483,7 +483,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.doubleLockPhysicalStateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DoubleLockPhysicalStateSpecified
@@ -497,9 +497,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.doubleLockPhysicalStateFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public DoorAlarmState Alarm
         {
             get
@@ -511,7 +511,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.alarmField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AlarmSpecified
@@ -525,9 +525,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.alarmFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public DoorTamper Tamper
         {
             get
@@ -539,9 +539,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.tamperField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public DoorFault Fault
         {
             get
@@ -553,9 +553,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.faultField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public DoorMode DoorMode
         {
             get
@@ -567,9 +567,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.doorModeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 7)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -582,103 +582,103 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public enum DoorPhysicalState
     {
-        
+
         /// <remarks/>
         Unknown,
-        
+
         /// <remarks/>
         Open,
-        
+
         /// <remarks/>
         Closed,
-        
+
         /// <remarks/>
         Fault,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public enum LockPhysicalState
     {
-        
+
         /// <remarks/>
         Unknown,
-        
+
         /// <remarks/>
         Locked,
-        
+
         /// <remarks/>
         Unlocked,
-        
+
         /// <remarks/>
         Fault,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public enum DoorAlarmState
     {
-        
+
         /// <remarks/>
         Normal,
-        
+
         /// <remarks/>
         DoorForcedOpen,
-        
+
         /// <remarks/>
         DoorOpenTooLong,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public enum DoorMode
     {
-        
+
         /// <remarks/>
         Unknown,
-        
+
         /// <remarks/>
         Locked,
-        
+
         /// <remarks/>
         Unlocked,
-        
+
         /// <remarks/>
         Accessed,
-        
+
         /// <remarks/>
         Blocked,
-        
+
         /// <remarks/>
         LockedDown,
-        
+
         /// <remarks/>
         LockedOpen,
-        
+
         /// <remarks/>
         DoubleLocked,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class DoorExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -691,18 +691,18 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class TimingsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -715,30 +715,30 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class Timings
     {
-        
+
         private string releaseTimeField;
-        
+
         private string openTimeField;
-        
+
         private string extendedReleaseTimeField;
-        
+
         private string delayTimeBeforeRelockField;
-        
+
         private string extendedOpenTimeField;
-        
+
         private string preAlarmTimeField;
-        
+
         private TimingsExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 0)]
         public string ReleaseTime
         {
             get
@@ -750,9 +750,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.releaseTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 1)]
         public string OpenTime
         {
             get
@@ -764,9 +764,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.openTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 2)]
         public string ExtendedReleaseTime
         {
             get
@@ -778,9 +778,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.extendedReleaseTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 3)]
         public string DelayTimeBeforeRelock
         {
             get
@@ -792,9 +792,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.delayTimeBeforeRelockField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 4)]
         public string ExtendedOpenTime
         {
             get
@@ -806,9 +806,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.extendedOpenTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 5)]
         public string PreAlarmTime
         {
             get
@@ -820,9 +820,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.preAlarmTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public TimingsExtension Extension
         {
             get
@@ -835,74 +835,74 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class DoorCapabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool accessField;
-        
+
         private bool accessFieldSpecified;
-        
+
         private bool accessTimingOverrideField;
-        
+
         private bool accessTimingOverrideFieldSpecified;
-        
+
         private bool lockField;
-        
+
         private bool lockFieldSpecified;
-        
+
         private bool unlockField;
-        
+
         private bool unlockFieldSpecified;
-        
+
         private bool blockField;
-        
+
         private bool blockFieldSpecified;
-        
+
         private bool doubleLockField;
-        
+
         private bool doubleLockFieldSpecified;
-        
+
         private bool lockDownField;
-        
+
         private bool lockDownFieldSpecified;
-        
+
         private bool lockOpenField;
-        
+
         private bool lockOpenFieldSpecified;
-        
+
         private bool doorMonitorField;
-        
+
         private bool doorMonitorFieldSpecified;
-        
+
         private bool lockMonitorField;
-        
+
         private bool lockMonitorFieldSpecified;
-        
+
         private bool doubleLockMonitorField;
-        
+
         private bool doubleLockMonitorFieldSpecified;
-        
+
         private bool alarmField;
-        
+
         private bool alarmFieldSpecified;
-        
+
         private bool tamperField;
-        
+
         private bool tamperFieldSpecified;
-        
+
         private bool faultField;
-        
+
         private bool faultFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -914,7 +914,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Access
@@ -928,7 +928,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.accessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AccessSpecified
@@ -942,7 +942,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.accessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AccessTimingOverride
@@ -956,7 +956,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.accessTimingOverrideField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AccessTimingOverrideSpecified
@@ -970,7 +970,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.accessTimingOverrideFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Lock
@@ -984,7 +984,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LockSpecified
@@ -998,7 +998,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Unlock
@@ -1012,7 +1012,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.unlockField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool UnlockSpecified
@@ -1026,7 +1026,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.unlockFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Block
@@ -1040,7 +1040,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.blockField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BlockSpecified
@@ -1054,7 +1054,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.blockFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DoubleLock
@@ -1068,7 +1068,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.doubleLockField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DoubleLockSpecified
@@ -1082,7 +1082,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.doubleLockFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool LockDown
@@ -1096,7 +1096,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockDownField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LockDownSpecified
@@ -1110,7 +1110,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockDownFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool LockOpen
@@ -1124,7 +1124,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockOpenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LockOpenSpecified
@@ -1138,7 +1138,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockOpenFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DoorMonitor
@@ -1152,7 +1152,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.doorMonitorField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DoorMonitorSpecified
@@ -1166,7 +1166,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.doorMonitorFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool LockMonitor
@@ -1180,7 +1180,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockMonitorField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LockMonitorSpecified
@@ -1194,7 +1194,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.lockMonitorFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool DoubleLockMonitor
@@ -1208,7 +1208,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.doubleLockMonitorField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DoubleLockMonitorSpecified
@@ -1222,7 +1222,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.doubleLockMonitorFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Alarm
@@ -1236,7 +1236,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.alarmField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AlarmSpecified
@@ -1250,7 +1250,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.alarmFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Tamper
@@ -1264,7 +1264,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.tamperField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool TamperSpecified
@@ -1278,7 +1278,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.tamperFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Fault
@@ -1292,7 +1292,7 @@ namespace QuickNV.Onvif.DoorControl
                 this.faultField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FaultSpecified
@@ -1307,19 +1307,19 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DoorInfoBase))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Door))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DoorInfo))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/pacs")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/pacs")]
     public partial class DataEntity
     {
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -1334,22 +1334,22 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Door))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DoorInfo))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class DoorInfoBase : DataEntity
     {
-        
+
         private string nameField;
-        
+
         private string descriptionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -1361,9 +1361,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Description
         {
             get
@@ -1376,24 +1376,24 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class Door : DoorInfoBase
     {
-        
+
         private DoorCapabilities capabilitiesField;
-        
+
         private string doorTypeField;
-        
+
         private Timings timingsField;
-        
+
         private DoorExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public DoorCapabilities Capabilities
         {
             get
@@ -1405,9 +1405,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.capabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string DoorType
         {
             get
@@ -1419,9 +1419,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.doorTypeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Timings Timings
         {
             get
@@ -1433,9 +1433,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.timingsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public DoorExtension Extension
         {
             get
@@ -1448,20 +1448,20 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl")]
     public partial class DoorInfo : DoorInfoBase
     {
-        
+
         private DoorCapabilities capabilitiesField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public DoorCapabilities Capabilities
         {
             get
@@ -1473,9 +1473,9 @@ namespace QuickNV.Onvif.DoorControl
                 this.capabilitiesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1488,217 +1488,217 @@ namespace QuickNV.Onvif.DoorControl
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDoorInfoList", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDoorInfoList", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class GetDoorInfoListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetDoorInfoListRequest()
         {
         }
-        
+
         public GetDoorInfoListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDoorInfoListResponse", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDoorInfoListResponse", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class GetDoorInfoListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("DoorInfo")]
         public QuickNV.Onvif.DoorControl.DoorInfo[] DoorInfo;
-        
+
         public GetDoorInfoListResponse()
         {
         }
-        
+
         public GetDoorInfoListResponse(string NextStartReference, QuickNV.Onvif.DoorControl.DoorInfo[] DoorInfo)
         {
             this.NextStartReference = NextStartReference;
             this.DoorInfo = DoorInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDoorInfo", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDoorInfo", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class GetDoorInfoRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetDoorInfoRequest()
         {
         }
-        
+
         public GetDoorInfoRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDoorInfoResponse", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDoorInfoResponse", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class GetDoorInfoResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("DoorInfo")]
         public QuickNV.Onvif.DoorControl.DoorInfo[] DoorInfo;
-        
+
         public GetDoorInfoResponse()
         {
         }
-        
+
         public GetDoorInfoResponse(QuickNV.Onvif.DoorControl.DoorInfo[] DoorInfo)
         {
             this.DoorInfo = DoorInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDoorList", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDoorList", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class GetDoorListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetDoorListRequest()
         {
         }
-        
+
         public GetDoorListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDoorListResponse", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDoorListResponse", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class GetDoorListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("Door")]
         public QuickNV.Onvif.DoorControl.Door[] Door;
-        
+
         public GetDoorListResponse()
         {
         }
-        
+
         public GetDoorListResponse(string NextStartReference, QuickNV.Onvif.DoorControl.Door[] Door)
         {
             this.NextStartReference = NextStartReference;
             this.Door = Door;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDoors", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDoors", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class GetDoorsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetDoorsRequest()
         {
         }
-        
+
         public GetDoorsRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDoorsResponse", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetDoorsResponse", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class GetDoorsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Door")]
         public QuickNV.Onvif.DoorControl.Door[] Door;
-        
+
         public GetDoorsResponse()
         {
         }
-        
+
         public GetDoorsResponse(QuickNV.Onvif.DoorControl.Door[] Door)
         {
             this.Door = Door;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AccessDoor", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AccessDoor", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class AccessDoorRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 0)]
         public string Token;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 1)]
         public bool UseExtendedTime;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string AccessTime;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string OpenTooLongTime;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 4)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string PreAlarmTime;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/doorcontrol/wsdl", Order=5)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", Order = 5)]
         public QuickNV.Onvif.DoorControl.AccessDoorExtension Extension;
-        
+
         public AccessDoorRequest()
         {
         }
-        
+
         public AccessDoorRequest(string Token, bool UseExtendedTime, string AccessTime, string OpenTooLongTime, string PreAlarmTime, QuickNV.Onvif.DoorControl.AccessDoorExtension Extension)
         {
             this.Token = Token;
@@ -1709,106 +1709,106 @@ namespace QuickNV.Onvif.DoorControl
             this.Extension = Extension;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AccessDoorResponse", WrapperNamespace="http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "AccessDoorResponse", WrapperNamespace = "http://www.onvif.org/ver10/doorcontrol/wsdl", IsWrapped = true)]
     public partial class AccessDoorResponse
     {
-        
+
         public AccessDoorResponse()
         {
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface DoorControlPortChannel : QuickNV.Onvif.DoorControl.DoorControlPort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class DoorControlPortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.DoorControl.DoorControlPort>, QuickNV.Onvif.DoorControl.DoorControlPort
     {
-        
-        public DoorControlPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public DoorControlPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.ServiceCapabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorInfoListResponse> GetDoorInfoListAsync(QuickNV.Onvif.DoorControl.GetDoorInfoListRequest request)
         {
             return base.Channel.GetDoorInfoListAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorInfoResponse> QuickNV.Onvif.DoorControl.DoorControlPort.GetDoorInfoAsync(QuickNV.Onvif.DoorControl.GetDoorInfoRequest request)
         {
             return base.Channel.GetDoorInfoAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorInfoResponse> GetDoorInfoAsync(string[] Token)
         {
             QuickNV.Onvif.DoorControl.GetDoorInfoRequest inValue = new QuickNV.Onvif.DoorControl.GetDoorInfoRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.DoorControl.DoorControlPort)(this)).GetDoorInfoAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorListResponse> GetDoorListAsync(QuickNV.Onvif.DoorControl.GetDoorListRequest request)
         {
             return base.Channel.GetDoorListAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorsResponse> QuickNV.Onvif.DoorControl.DoorControlPort.GetDoorsAsync(QuickNV.Onvif.DoorControl.GetDoorsRequest request)
         {
             return base.Channel.GetDoorsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.GetDoorsResponse> GetDoorsAsync(string[] Token)
         {
             QuickNV.Onvif.DoorControl.GetDoorsRequest inValue = new QuickNV.Onvif.DoorControl.GetDoorsRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.DoorControl.DoorControlPort)(this)).GetDoorsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<string> CreateDoorAsync(QuickNV.Onvif.DoorControl.Door Door)
         {
             return base.Channel.CreateDoorAsync(Door);
         }
-        
+
         public System.Threading.Tasks.Task SetDoorAsync(QuickNV.Onvif.DoorControl.Door Door)
         {
             return base.Channel.SetDoorAsync(Door);
         }
-        
+
         public System.Threading.Tasks.Task ModifyDoorAsync(QuickNV.Onvif.DoorControl.Door Door)
         {
             return base.Channel.ModifyDoorAsync(Door);
         }
-        
+
         public System.Threading.Tasks.Task DeleteDoorAsync(string Token)
         {
             return base.Channel.DeleteDoorAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.DoorState> GetDoorStateAsync(string Token)
         {
             return base.Channel.GetDoorStateAsync(Token);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.AccessDoorResponse> QuickNV.Onvif.DoorControl.DoorControlPort.AccessDoorAsync(QuickNV.Onvif.DoorControl.AccessDoorRequest request)
         {
             return base.Channel.AccessDoorAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.DoorControl.AccessDoorResponse> AccessDoorAsync(string Token, bool UseExtendedTime, string AccessTime, string OpenTooLongTime, string PreAlarmTime, QuickNV.Onvif.DoorControl.AccessDoorExtension Extension)
         {
             QuickNV.Onvif.DoorControl.AccessDoorRequest inValue = new QuickNV.Onvif.DoorControl.AccessDoorRequest();
@@ -1820,47 +1820,47 @@ namespace QuickNV.Onvif.DoorControl
             inValue.Extension = Extension;
             return ((QuickNV.Onvif.DoorControl.DoorControlPort)(this)).AccessDoorAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task LockDoorAsync(string Token)
         {
             return base.Channel.LockDoorAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task UnlockDoorAsync(string Token)
         {
             return base.Channel.UnlockDoorAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task BlockDoorAsync(string Token)
         {
             return base.Channel.BlockDoorAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task LockDownDoorAsync(string Token)
         {
             return base.Channel.LockDownDoorAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task LockDownReleaseDoorAsync(string Token)
         {
             return base.Channel.LockDownReleaseDoorAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task LockOpenDoorAsync(string Token)
         {
             return base.Channel.LockOpenDoorAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task LockOpenReleaseDoorAsync(string Token)
         {
             return base.Channel.LockOpenReleaseDoorAsync(Token);
         }
-        
+
         public System.Threading.Tasks.Task DoubleLockDoorAsync(string Token)
         {
             return base.Channel.DoubleLockDoorAsync(Token);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

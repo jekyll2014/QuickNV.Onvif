@@ -9,108 +9,108 @@
 
 namespace QuickNV.Onvif.RecordingSearch
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", ConfigurationName="Quick.Onvif.RecordingSearch.SearchPort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", ConfigurationName = "Quick.Onvif.RecordingSearch.SearchPort")]
     public interface SearchPort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.Capabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetRecordingSummary", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetRecordingSummary", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Summary")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Summary")]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.RecordingSummary> GetRecordingSummaryAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetRecordingInformation", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetRecordingInformation", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="RecordingInformation")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "RecordingInformation")]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.RecordingInformation> GetRecordingInformationAsync(string RecordingToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetMediaAttributes", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetMediaAttributes", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetMediaAttributesResponse> GetMediaAttributesAsync(QuickNV.Onvif.RecordingSearch.GetMediaAttributesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/FindRecordings", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/FindRecordings", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindRecordingsResponse> FindRecordingsAsync(QuickNV.Onvif.RecordingSearch.FindRecordingsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetRecordingSearchResults", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetRecordingSearchResults", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetRecordingSearchResultsResponse> GetRecordingSearchResultsAsync(QuickNV.Onvif.RecordingSearch.GetRecordingSearchResultsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/FindEvents", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/FindEvents", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindEventsResponse> FindEventsAsync(QuickNV.Onvif.RecordingSearch.FindEventsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetEventSearchResults", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetEventSearchResults", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetEventSearchResultsResponse> GetEventSearchResultsAsync(QuickNV.Onvif.RecordingSearch.GetEventSearchResultsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/FindPTZPosition", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/FindPTZPosition", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindPTZPositionResponse> FindPTZPositionAsync(QuickNV.Onvif.RecordingSearch.FindPTZPositionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetPTZPositionSearchResults", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetPTZPositionSearchResults", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetPTZPositionSearchResultsResponse> GetPTZPositionSearchResultsAsync(QuickNV.Onvif.RecordingSearch.GetPTZPositionSearchResultsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetSearchState", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetSearchState", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="State")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "State")]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.SearchState> GetSearchStateAsync(string SearchToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/EndSearch", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/EndSearch", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Endpoint")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Endpoint")]
         System.Threading.Tasks.Task<System.DateTime> EndSearchAsync(string SearchToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/FindMetadata", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/FindMetadata", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindMetadataResponse> FindMetadataAsync(QuickNV.Onvif.RecordingSearch.FindMetadataRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/search/wsdl/GetMetadataSearchResults", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/search/wsdl/GetMetadataSearchResults", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(FilterType))]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetMetadataSearchResultsResponse> GetMetadataSearchResultsAsync(QuickNV.Onvif.RecordingSearch.GetMetadataSearchResultsRequest request);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl")]
     public partial class Capabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool metadataSearchField;
-        
+
         private bool metadataSearchFieldSpecified;
-        
+
         private bool generalStartEventsField;
-        
+
         private bool generalStartEventsFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -122,7 +122,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool MetadataSearch
@@ -136,7 +136,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.metadataSearchField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MetadataSearchSpecified
@@ -150,7 +150,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.metadataSearchFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool GeneralStartEvents
@@ -164,7 +164,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.generalStartEventsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GeneralStartEventsSpecified
@@ -179,24 +179,24 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FindMetadataResult
     {
-        
+
         private string recordingTokenField;
-        
+
         private string trackTokenField;
-        
+
         private System.DateTime timeField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string RecordingToken
         {
             get
@@ -208,9 +208,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.recordingTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string TrackToken
         {
             get
@@ -222,9 +222,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.trackTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public System.DateTime Time
         {
             get
@@ -236,9 +236,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.timeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -251,20 +251,20 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FindMetadataResultList
     {
-        
+
         private SearchState searchStateField;
-        
+
         private FindMetadataResult[] resultField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public SearchState SearchState
         {
             get
@@ -276,9 +276,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.searchStateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Result", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Result", Order = 1)]
         public FindMetadataResult[] Result
         {
             get
@@ -291,39 +291,39 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum SearchState
     {
-        
+
         /// <remarks/>
         Queued,
-        
+
         /// <remarks/>
         Searching,
-        
+
         /// <remarks/>
         Completed,
-        
+
         /// <remarks/>
         Unknown,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MetadataFilter
     {
-        
+
         private string metadataStreamFilterField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string MetadataStreamFilter
         {
             get
@@ -335,9 +335,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.metadataStreamFilterField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -350,26 +350,26 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FindPTZPositionResult
     {
-        
+
         private string recordingTokenField;
-        
+
         private string trackTokenField;
-        
+
         private System.DateTime timeField;
-        
+
         private PTZVector positionField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string RecordingToken
         {
             get
@@ -381,9 +381,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.recordingTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string TrackToken
         {
             get
@@ -395,9 +395,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.trackTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public System.DateTime Time
         {
             get
@@ -409,9 +409,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.timeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public PTZVector Position
         {
             get
@@ -423,9 +423,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.positionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -438,20 +438,20 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZVector
     {
-        
+
         private Vector2D panTiltField;
-        
+
         private Vector1D zoomField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Vector2D PanTilt
         {
             get
@@ -463,9 +463,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.panTiltField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Vector1D Zoom
         {
             get
@@ -478,20 +478,20 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Vector2D
     {
-        
+
         private float xField;
-        
+
         private float yField;
-        
+
         private string spaceField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float x
@@ -505,7 +505,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float y
@@ -519,9 +519,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.yField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string space
         {
             get
@@ -534,18 +534,18 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Vector1D
     {
-        
+
         private float xField;
-        
+
         private string spaceField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float x
@@ -559,9 +559,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.xField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string space
         {
             get
@@ -574,20 +574,20 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FindPTZPositionResultList
     {
-        
+
         private SearchState searchStateField;
-        
+
         private FindPTZPositionResult[] resultField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public SearchState SearchState
         {
             get
@@ -599,9 +599,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.searchStateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Result", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Result", Order = 1)]
         public FindPTZPositionResult[] Result
         {
             get
@@ -614,24 +614,24 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class PTZPositionFilter
     {
-        
+
         private PTZVector minPositionField;
-        
+
         private PTZVector maxPositionField;
-        
+
         private bool enterOrExitField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public PTZVector MinPosition
         {
             get
@@ -643,9 +643,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.minPositionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public PTZVector MaxPosition
         {
             get
@@ -657,9 +657,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.maxPositionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool EnterOrExit
         {
             get
@@ -671,9 +671,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.enterOrExitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -686,21 +686,21 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://docs.oasis-open.org/wsn/b-2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://docs.oasis-open.org/wsn/b-2")]
     public partial class TopicExpressionType
     {
-        
+
         private System.Xml.XmlNode[] anyField;
-        
+
         private string dialectField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlTextAttribute()]
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlNode[] Any
         {
             get
@@ -712,9 +712,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         public string Dialect
         {
             get
@@ -727,18 +727,18 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2005/08/addressing")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2005/08/addressing")]
     public partial class MetadataType
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -751,18 +751,18 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2005/08/addressing")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2005/08/addressing")]
     public partial class ReferenceParametersType
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -775,18 +775,18 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2005/08/addressing")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2005/08/addressing")]
     public partial class AttributedURIType
     {
-        
+
         private string valueField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlTextAttribute(DataType = "anyURI")]
         public string Value
         {
             get
@@ -799,24 +799,24 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2005/08/addressing")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2005/08/addressing")]
     public partial class EndpointReferenceType
     {
-        
+
         private AttributedURIType addressField;
-        
+
         private ReferenceParametersType referenceParametersField;
-        
+
         private MetadataType metadataField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AttributedURIType Address
         {
             get
@@ -828,9 +828,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.addressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ReferenceParametersType ReferenceParameters
         {
             get
@@ -842,9 +842,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.referenceParametersField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public MetadataType Metadata
         {
             get
@@ -856,9 +856,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.metadataField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -871,24 +871,24 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://docs.oasis-open.org/wsn/b-2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://docs.oasis-open.org/wsn/b-2")]
     public partial class NotificationMessageHolderType
     {
-        
+
         private EndpointReferenceType subscriptionReferenceField;
-        
+
         private TopicExpressionType topicField;
-        
+
         private EndpointReferenceType producerReferenceField;
-        
+
         private System.Xml.XmlElement messageField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public EndpointReferenceType SubscriptionReference
         {
             get
@@ -900,9 +900,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.subscriptionReferenceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public TopicExpressionType Topic
         {
             get
@@ -914,9 +914,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.topicField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public EndpointReferenceType ProducerReference
         {
             get
@@ -928,9 +928,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.producerReferenceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public System.Xml.XmlElement Message
         {
             get
@@ -943,28 +943,28 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FindEventResult
     {
-        
+
         private string recordingTokenField;
-        
+
         private string trackTokenField;
-        
+
         private System.DateTime timeField;
-        
+
         private NotificationMessageHolderType eventField;
-        
+
         private bool startStateEventField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string RecordingToken
         {
             get
@@ -976,9 +976,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.recordingTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string TrackToken
         {
             get
@@ -990,9 +990,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.trackTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public System.DateTime Time
         {
             get
@@ -1004,9 +1004,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.timeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public NotificationMessageHolderType Event
         {
             get
@@ -1018,9 +1018,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.eventField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public bool StartStateEvent
         {
             get
@@ -1032,9 +1032,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.startStateEventField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1047,20 +1047,20 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FindEventResultList
     {
-        
+
         private SearchState searchStateField;
-        
+
         private FindEventResult[] resultField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public SearchState SearchState
         {
             get
@@ -1072,9 +1072,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.searchStateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Result", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Result", Order = 1)]
         public FindEventResult[] Result
         {
             get
@@ -1087,19 +1087,19 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(EventFilter))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://docs.oasis-open.org/wsn/b-2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://docs.oasis-open.org/wsn/b-2")]
     public partial class FilterType
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1112,28 +1112,28 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class EventFilter : FilterType
     {
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FindRecordingResultList
     {
-        
+
         private SearchState searchStateField;
-        
+
         private RecordingInformation[] recordingInformationField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public SearchState SearchState
         {
             get
@@ -1145,9 +1145,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.searchStateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RecordingInformation", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("RecordingInformation", Order = 1)]
         public RecordingInformation[] RecordingInformation
         {
             get
@@ -1160,36 +1160,36 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RecordingInformation
     {
-        
+
         private string recordingTokenField;
-        
+
         private RecordingSourceInformation sourceField;
-        
+
         private System.DateTime earliestRecordingField;
-        
+
         private bool earliestRecordingFieldSpecified;
-        
+
         private System.DateTime latestRecordingField;
-        
+
         private bool latestRecordingFieldSpecified;
-        
+
         private string contentField;
-        
+
         private TrackInformation[] trackField;
-        
+
         private RecordingStatus recordingStatusField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string RecordingToken
         {
             get
@@ -1201,9 +1201,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.recordingTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public RecordingSourceInformation Source
         {
             get
@@ -1215,9 +1215,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.sourceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public System.DateTime EarliestRecording
         {
             get
@@ -1229,7 +1229,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.earliestRecordingField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool EarliestRecordingSpecified
@@ -1243,9 +1243,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.earliestRecordingFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public System.DateTime LatestRecording
         {
             get
@@ -1257,7 +1257,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.latestRecordingField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LatestRecordingSpecified
@@ -1271,9 +1271,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.latestRecordingFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public string Content
         {
             get
@@ -1285,9 +1285,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.contentField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Track", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute("Track", Order = 5)]
         public TrackInformation[] Track
         {
             get
@@ -1299,9 +1299,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.trackField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public RecordingStatus RecordingStatus
         {
             get
@@ -1313,9 +1313,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.recordingStatusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 7)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1328,28 +1328,28 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RecordingSourceInformation
     {
-        
+
         private string sourceIdField;
-        
+
         private string nameField;
-        
+
         private string locationField;
-        
+
         private string descriptionField;
-        
+
         private string addressField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string SourceId
         {
             get
@@ -1361,9 +1361,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.sourceIdField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Name
         {
             get
@@ -1375,9 +1375,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string Location
         {
             get
@@ -1389,9 +1389,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.locationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public string Description
         {
             get
@@ -1403,9 +1403,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.descriptionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 4)]
         public string Address
         {
             get
@@ -1417,9 +1417,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.addressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1432,28 +1432,28 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class TrackInformation
     {
-        
+
         private string trackTokenField;
-        
+
         private TrackType trackTypeField;
-        
+
         private string descriptionField;
-        
+
         private System.DateTime dataFromField;
-        
+
         private System.DateTime dataToField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string TrackToken
         {
             get
@@ -1465,9 +1465,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.trackTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public TrackType TrackType
         {
             get
@@ -1479,9 +1479,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.trackTypeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string Description
         {
             get
@@ -1493,9 +1493,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.descriptionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public System.DateTime DataFrom
         {
             get
@@ -1507,9 +1507,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.dataFromField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public System.DateTime DataTo
         {
             get
@@ -1521,9 +1521,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.dataToField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1536,62 +1536,62 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum TrackType
     {
-        
+
         /// <remarks/>
         Video,
-        
+
         /// <remarks/>
         Audio,
-        
+
         /// <remarks/>
         Metadata,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum RecordingStatus
     {
-        
+
         /// <remarks/>
         Initiated,
-        
+
         /// <remarks/>
         Recording,
-        
+
         /// <remarks/>
         Stopped,
-        
+
         /// <remarks/>
         Removing,
-        
+
         /// <remarks/>
         Removed,
-        
+
         /// <remarks/>
         Unknown,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SearchScopeExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1604,27 +1604,27 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SourceReference
     {
-        
+
         private string tokenField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string typeField;
-        
+
         public SourceReference()
         {
             this.typeField = "http://www.onvif.org/ver10/schema/Receiver";
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Token
         {
             get
@@ -1636,9 +1636,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.tokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1650,9 +1650,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "anyURI")]
         [System.ComponentModel.DefaultValueAttribute("http://www.onvif.org/ver10/schema/Receiver")]
         public string Type
         {
@@ -1666,24 +1666,24 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class SearchScope
     {
-        
+
         private SourceReference[] includedSourcesField;
-        
+
         private string[] includedRecordingsField;
-        
+
         private string recordingInformationFilterField;
-        
+
         private SearchScopeExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IncludedSources", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("IncludedSources", Order = 0)]
         public SourceReference[] IncludedSources
         {
             get
@@ -1695,9 +1695,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.includedSourcesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IncludedRecordings", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("IncludedRecordings", Order = 1)]
         public string[] IncludedRecordings
         {
             get
@@ -1709,9 +1709,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.includedRecordingsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string RecordingInformationFilter
         {
             get
@@ -1723,9 +1723,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.recordingInformationFilterField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public SearchScopeExtension Extension
         {
             get
@@ -1738,18 +1738,18 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class TrackAttributesExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1762,26 +1762,26 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MetadataAttributes
     {
-        
+
         private bool canContainPTZField;
-        
+
         private bool canContainAnalyticsField;
-        
+
         private bool canContainNotificationsField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string[] ptzSpacesField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool CanContainPTZ
         {
             get
@@ -1793,9 +1793,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.canContainPTZField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool CanContainAnalytics
         {
             get
@@ -1807,9 +1807,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.canContainAnalyticsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public bool CanContainNotifications
         {
             get
@@ -1821,9 +1821,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.canContainNotificationsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1835,7 +1835,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] PtzSpaces
@@ -1850,26 +1850,26 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AudioAttributes
     {
-        
+
         private int bitrateField;
-        
+
         private bool bitrateFieldSpecified;
-        
+
         private string encodingField;
-        
+
         private int samplerateField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Bitrate
         {
             get
@@ -1881,7 +1881,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.bitrateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BitrateSpecified
@@ -1895,9 +1895,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.bitrateFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Encoding
         {
             get
@@ -1909,9 +1909,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.encodingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int Samplerate
         {
             get
@@ -1923,9 +1923,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.samplerateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1938,30 +1938,30 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class VideoAttributes
     {
-        
+
         private int bitrateField;
-        
+
         private bool bitrateFieldSpecified;
-        
+
         private int widthField;
-        
+
         private int heightField;
-        
+
         private string encodingField;
-        
+
         private float framerateField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public int Bitrate
         {
             get
@@ -1973,7 +1973,7 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.bitrateField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BitrateSpecified
@@ -1987,9 +1987,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.bitrateFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public int Width
         {
             get
@@ -2001,9 +2001,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.widthField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int Height
         {
             get
@@ -2015,9 +2015,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.heightField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public string Encoding
         {
             get
@@ -2029,9 +2029,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.encodingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public float Framerate
         {
             get
@@ -2043,9 +2043,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.framerateField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2058,26 +2058,26 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class TrackAttributes
     {
-        
+
         private TrackInformation trackInformationField;
-        
+
         private VideoAttributes videoAttributesField;
-        
+
         private AudioAttributes audioAttributesField;
-        
+
         private MetadataAttributes metadataAttributesField;
-        
+
         private TrackAttributesExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public TrackInformation TrackInformation
         {
             get
@@ -2089,9 +2089,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.trackInformationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public VideoAttributes VideoAttributes
         {
             get
@@ -2103,9 +2103,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.videoAttributesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public AudioAttributes AudioAttributes
         {
             get
@@ -2117,9 +2117,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.audioAttributesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public MetadataAttributes MetadataAttributes
         {
             get
@@ -2131,9 +2131,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.metadataAttributesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public TrackAttributesExtension Extension
         {
             get
@@ -2146,26 +2146,26 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MediaAttributes
     {
-        
+
         private string recordingTokenField;
-        
+
         private TrackAttributes[] trackAttributesField;
-        
+
         private System.DateTime fromField;
-        
+
         private System.DateTime untilField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string RecordingToken
         {
             get
@@ -2177,9 +2177,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.recordingTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TrackAttributes", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("TrackAttributes", Order = 1)]
         public TrackAttributes[] TrackAttributes
         {
             get
@@ -2191,9 +2191,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.trackAttributesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public System.DateTime From
         {
             get
@@ -2205,9 +2205,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.fromField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public System.DateTime Until
         {
             get
@@ -2219,9 +2219,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.untilField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2234,24 +2234,24 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RecordingSummary
     {
-        
+
         private System.DateTime dataFromField;
-        
+
         private System.DateTime dataUntilField;
-        
+
         private int numberRecordingsField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public System.DateTime DataFrom
         {
             get
@@ -2263,9 +2263,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.dataFromField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public System.DateTime DataUntil
         {
             get
@@ -2277,9 +2277,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.dataUntilField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public int NumberRecordings
         {
             get
@@ -2291,9 +2291,9 @@ namespace QuickNV.Onvif.RecordingSearch
                 this.numberRecordingsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2306,74 +2306,74 @@ namespace QuickNV.Onvif.RecordingSearch
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMediaAttributes", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetMediaAttributes", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetMediaAttributesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("RecordingTokens")]
         public string[] RecordingTokens;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public System.DateTime Time;
-        
+
         public GetMediaAttributesRequest()
         {
         }
-        
+
         public GetMediaAttributesRequest(string[] RecordingTokens, System.DateTime Time)
         {
             this.RecordingTokens = RecordingTokens;
             this.Time = Time;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMediaAttributesResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetMediaAttributesResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetMediaAttributesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("MediaAttributes")]
         public QuickNV.Onvif.RecordingSearch.MediaAttributes[] MediaAttributes;
-        
+
         public GetMediaAttributesResponse()
         {
         }
-        
+
         public GetMediaAttributesResponse(QuickNV.Onvif.RecordingSearch.MediaAttributes[] MediaAttributes)
         {
             this.MediaAttributes = MediaAttributes;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FindRecordings", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindRecordings", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class FindRecordingsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public QuickNV.Onvif.RecordingSearch.SearchScope Scope;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public int MaxMatches;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string KeepAliveTime;
-        
+
         public FindRecordingsRequest()
         {
         }
-        
+
         public FindRecordingsRequest(QuickNV.Onvif.RecordingSearch.SearchScope Scope, int MaxMatches, string KeepAliveTime)
         {
             this.Scope = Scope;
@@ -2381,51 +2381,51 @@ namespace QuickNV.Onvif.RecordingSearch
             this.KeepAliveTime = KeepAliveTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FindRecordingsResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindRecordingsResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class FindRecordingsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public string SearchToken;
-        
+
         public FindRecordingsResponse()
         {
         }
-        
+
         public FindRecordingsResponse(string SearchToken)
         {
             this.SearchToken = SearchToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetRecordingSearchResults", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRecordingSearchResults", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetRecordingSearchResultsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public string SearchToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public int MinResults;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 2)]
         public int MaxResults;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string WaitTime;
-        
+
         public GetRecordingSearchResultsRequest()
         {
         }
-        
+
         public GetRecordingSearchResultsRequest(string SearchToken, int MinResults, int MaxResults, string WaitTime)
         {
             this.SearchToken = SearchToken;
@@ -2434,60 +2434,60 @@ namespace QuickNV.Onvif.RecordingSearch
             this.WaitTime = WaitTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetRecordingSearchResultsResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetRecordingSearchResultsResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetRecordingSearchResultsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public QuickNV.Onvif.RecordingSearch.FindRecordingResultList ResultList;
-        
+
         public GetRecordingSearchResultsResponse()
         {
         }
-        
+
         public GetRecordingSearchResultsResponse(QuickNV.Onvif.RecordingSearch.FindRecordingResultList ResultList)
         {
             this.ResultList = ResultList;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FindEvents", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindEvents", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class FindEventsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public System.DateTime StartPoint;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public System.DateTime EndPoint;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 2)]
         public QuickNV.Onvif.RecordingSearch.SearchScope Scope;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 3)]
         public QuickNV.Onvif.RecordingSearch.EventFilter SearchFilter;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 4)]
         public bool IncludeStartState;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=5)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 5)]
         public int MaxMatches;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 6)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string KeepAliveTime;
-        
+
         public FindEventsRequest()
         {
         }
-        
+
         public FindEventsRequest(System.DateTime StartPoint, System.DateTime EndPoint, QuickNV.Onvif.RecordingSearch.SearchScope Scope, QuickNV.Onvif.RecordingSearch.EventFilter SearchFilter, bool IncludeStartState, int MaxMatches, string KeepAliveTime)
         {
             this.StartPoint = StartPoint;
@@ -2499,51 +2499,51 @@ namespace QuickNV.Onvif.RecordingSearch
             this.KeepAliveTime = KeepAliveTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FindEventsResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindEventsResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class FindEventsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public string SearchToken;
-        
+
         public FindEventsResponse()
         {
         }
-        
+
         public FindEventsResponse(string SearchToken)
         {
             this.SearchToken = SearchToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetEventSearchResults", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetEventSearchResults", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetEventSearchResultsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public string SearchToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public int MinResults;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 2)]
         public int MaxResults;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string WaitTime;
-        
+
         public GetEventSearchResultsRequest()
         {
         }
-        
+
         public GetEventSearchResultsRequest(string SearchToken, int MinResults, int MaxResults, string WaitTime)
         {
             this.SearchToken = SearchToken;
@@ -2552,57 +2552,57 @@ namespace QuickNV.Onvif.RecordingSearch
             this.WaitTime = WaitTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetEventSearchResultsResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetEventSearchResultsResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetEventSearchResultsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public QuickNV.Onvif.RecordingSearch.FindEventResultList ResultList;
-        
+
         public GetEventSearchResultsResponse()
         {
         }
-        
+
         public GetEventSearchResultsResponse(QuickNV.Onvif.RecordingSearch.FindEventResultList ResultList)
         {
             this.ResultList = ResultList;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FindPTZPosition", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindPTZPosition", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class FindPTZPositionRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public System.DateTime StartPoint;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public System.DateTime EndPoint;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 2)]
         public QuickNV.Onvif.RecordingSearch.SearchScope Scope;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 3)]
         public QuickNV.Onvif.RecordingSearch.PTZPositionFilter SearchFilter;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 4)]
         public int MaxMatches;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 5)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string KeepAliveTime;
-        
+
         public FindPTZPositionRequest()
         {
         }
-        
+
         public FindPTZPositionRequest(System.DateTime StartPoint, System.DateTime EndPoint, QuickNV.Onvif.RecordingSearch.SearchScope Scope, QuickNV.Onvif.RecordingSearch.PTZPositionFilter SearchFilter, int MaxMatches, string KeepAliveTime)
         {
             this.StartPoint = StartPoint;
@@ -2613,51 +2613,51 @@ namespace QuickNV.Onvif.RecordingSearch
             this.KeepAliveTime = KeepAliveTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FindPTZPositionResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindPTZPositionResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class FindPTZPositionResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public string SearchToken;
-        
+
         public FindPTZPositionResponse()
         {
         }
-        
+
         public FindPTZPositionResponse(string SearchToken)
         {
             this.SearchToken = SearchToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPTZPositionSearchResults", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPTZPositionSearchResults", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetPTZPositionSearchResultsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public string SearchToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public int MinResults;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 2)]
         public int MaxResults;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string WaitTime;
-        
+
         public GetPTZPositionSearchResultsRequest()
         {
         }
-        
+
         public GetPTZPositionSearchResultsRequest(string SearchToken, int MinResults, int MaxResults, string WaitTime)
         {
             this.SearchToken = SearchToken;
@@ -2666,57 +2666,57 @@ namespace QuickNV.Onvif.RecordingSearch
             this.WaitTime = WaitTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPTZPositionSearchResultsResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPTZPositionSearchResultsResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetPTZPositionSearchResultsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public QuickNV.Onvif.RecordingSearch.FindPTZPositionResultList ResultList;
-        
+
         public GetPTZPositionSearchResultsResponse()
         {
         }
-        
+
         public GetPTZPositionSearchResultsResponse(QuickNV.Onvif.RecordingSearch.FindPTZPositionResultList ResultList)
         {
             this.ResultList = ResultList;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FindMetadata", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindMetadata", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class FindMetadataRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public System.DateTime StartPoint;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public System.DateTime EndPoint;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 2)]
         public QuickNV.Onvif.RecordingSearch.SearchScope Scope;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=3)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 3)]
         public QuickNV.Onvif.RecordingSearch.MetadataFilter MetadataFilter;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=4)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 4)]
         public int MaxMatches;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 5)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string KeepAliveTime;
-        
+
         public FindMetadataRequest()
         {
         }
-        
+
         public FindMetadataRequest(System.DateTime StartPoint, System.DateTime EndPoint, QuickNV.Onvif.RecordingSearch.SearchScope Scope, QuickNV.Onvif.RecordingSearch.MetadataFilter MetadataFilter, int MaxMatches, string KeepAliveTime)
         {
             this.StartPoint = StartPoint;
@@ -2727,51 +2727,51 @@ namespace QuickNV.Onvif.RecordingSearch
             this.KeepAliveTime = KeepAliveTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FindMetadataResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "FindMetadataResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class FindMetadataResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public string SearchToken;
-        
+
         public FindMetadataResponse()
         {
         }
-        
+
         public FindMetadataResponse(string SearchToken)
         {
             this.SearchToken = SearchToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMetadataSearchResults", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetMetadataSearchResults", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetMetadataSearchResultsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public string SearchToken;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 1)]
         public int MinResults;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=2)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 2)]
         public int MaxResults;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 3)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration")]
         public string WaitTime;
-        
+
         public GetMetadataSearchResultsRequest()
         {
         }
-        
+
         public GetMetadataSearchResultsRequest(string SearchToken, int MinResults, int MaxResults, string WaitTime)
         {
             this.SearchToken = SearchToken;
@@ -2780,63 +2780,63 @@ namespace QuickNV.Onvif.RecordingSearch
             this.WaitTime = WaitTime;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMetadataSearchResultsResponse", WrapperNamespace="http://www.onvif.org/ver10/search/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetMetadataSearchResultsResponse", WrapperNamespace = "http://www.onvif.org/ver10/search/wsdl", IsWrapped = true)]
     public partial class GetMetadataSearchResultsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/search/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/search/wsdl", Order = 0)]
         public QuickNV.Onvif.RecordingSearch.FindMetadataResultList ResultList;
-        
+
         public GetMetadataSearchResultsResponse()
         {
         }
-        
+
         public GetMetadataSearchResultsResponse(QuickNV.Onvif.RecordingSearch.FindMetadataResultList ResultList)
         {
             this.ResultList = ResultList;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface SearchPortChannel : QuickNV.Onvif.RecordingSearch.SearchPort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class SearchPortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.RecordingSearch.SearchPort>, QuickNV.Onvif.RecordingSearch.SearchPort
     {
-        
-        public SearchPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public SearchPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.Capabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.RecordingSummary> GetRecordingSummaryAsync()
         {
             return base.Channel.GetRecordingSummaryAsync();
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.RecordingInformation> GetRecordingInformationAsync(string RecordingToken)
         {
             return base.Channel.GetRecordingInformationAsync(RecordingToken);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetMediaAttributesResponse> QuickNV.Onvif.RecordingSearch.SearchPort.GetMediaAttributesAsync(QuickNV.Onvif.RecordingSearch.GetMediaAttributesRequest request)
         {
             return base.Channel.GetMediaAttributesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetMediaAttributesResponse> GetMediaAttributesAsync(string[] RecordingTokens, System.DateTime Time)
         {
             QuickNV.Onvif.RecordingSearch.GetMediaAttributesRequest inValue = new QuickNV.Onvif.RecordingSearch.GetMediaAttributesRequest();
@@ -2844,13 +2844,13 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.Time = Time;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).GetMediaAttributesAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindRecordingsResponse> QuickNV.Onvif.RecordingSearch.SearchPort.FindRecordingsAsync(QuickNV.Onvif.RecordingSearch.FindRecordingsRequest request)
         {
             return base.Channel.FindRecordingsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindRecordingsResponse> FindRecordingsAsync(QuickNV.Onvif.RecordingSearch.SearchScope Scope, int MaxMatches, string KeepAliveTime)
         {
             QuickNV.Onvif.RecordingSearch.FindRecordingsRequest inValue = new QuickNV.Onvif.RecordingSearch.FindRecordingsRequest();
@@ -2859,13 +2859,13 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.KeepAliveTime = KeepAliveTime;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).FindRecordingsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetRecordingSearchResultsResponse> QuickNV.Onvif.RecordingSearch.SearchPort.GetRecordingSearchResultsAsync(QuickNV.Onvif.RecordingSearch.GetRecordingSearchResultsRequest request)
         {
             return base.Channel.GetRecordingSearchResultsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetRecordingSearchResultsResponse> GetRecordingSearchResultsAsync(string SearchToken, int MinResults, int MaxResults, string WaitTime)
         {
             QuickNV.Onvif.RecordingSearch.GetRecordingSearchResultsRequest inValue = new QuickNV.Onvif.RecordingSearch.GetRecordingSearchResultsRequest();
@@ -2875,13 +2875,13 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.WaitTime = WaitTime;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).GetRecordingSearchResultsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindEventsResponse> QuickNV.Onvif.RecordingSearch.SearchPort.FindEventsAsync(QuickNV.Onvif.RecordingSearch.FindEventsRequest request)
         {
             return base.Channel.FindEventsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindEventsResponse> FindEventsAsync(System.DateTime StartPoint, System.DateTime EndPoint, QuickNV.Onvif.RecordingSearch.SearchScope Scope, QuickNV.Onvif.RecordingSearch.EventFilter SearchFilter, bool IncludeStartState, int MaxMatches, string KeepAliveTime)
         {
             QuickNV.Onvif.RecordingSearch.FindEventsRequest inValue = new QuickNV.Onvif.RecordingSearch.FindEventsRequest();
@@ -2894,13 +2894,13 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.KeepAliveTime = KeepAliveTime;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).FindEventsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetEventSearchResultsResponse> QuickNV.Onvif.RecordingSearch.SearchPort.GetEventSearchResultsAsync(QuickNV.Onvif.RecordingSearch.GetEventSearchResultsRequest request)
         {
             return base.Channel.GetEventSearchResultsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetEventSearchResultsResponse> GetEventSearchResultsAsync(string SearchToken, int MinResults, int MaxResults, string WaitTime)
         {
             QuickNV.Onvif.RecordingSearch.GetEventSearchResultsRequest inValue = new QuickNV.Onvif.RecordingSearch.GetEventSearchResultsRequest();
@@ -2910,13 +2910,13 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.WaitTime = WaitTime;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).GetEventSearchResultsAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindPTZPositionResponse> QuickNV.Onvif.RecordingSearch.SearchPort.FindPTZPositionAsync(QuickNV.Onvif.RecordingSearch.FindPTZPositionRequest request)
         {
             return base.Channel.FindPTZPositionAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindPTZPositionResponse> FindPTZPositionAsync(System.DateTime StartPoint, System.DateTime EndPoint, QuickNV.Onvif.RecordingSearch.SearchScope Scope, QuickNV.Onvif.RecordingSearch.PTZPositionFilter SearchFilter, int MaxMatches, string KeepAliveTime)
         {
             QuickNV.Onvif.RecordingSearch.FindPTZPositionRequest inValue = new QuickNV.Onvif.RecordingSearch.FindPTZPositionRequest();
@@ -2928,13 +2928,13 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.KeepAliveTime = KeepAliveTime;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).FindPTZPositionAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetPTZPositionSearchResultsResponse> QuickNV.Onvif.RecordingSearch.SearchPort.GetPTZPositionSearchResultsAsync(QuickNV.Onvif.RecordingSearch.GetPTZPositionSearchResultsRequest request)
         {
             return base.Channel.GetPTZPositionSearchResultsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetPTZPositionSearchResultsResponse> GetPTZPositionSearchResultsAsync(string SearchToken, int MinResults, int MaxResults, string WaitTime)
         {
             QuickNV.Onvif.RecordingSearch.GetPTZPositionSearchResultsRequest inValue = new QuickNV.Onvif.RecordingSearch.GetPTZPositionSearchResultsRequest();
@@ -2944,23 +2944,23 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.WaitTime = WaitTime;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).GetPTZPositionSearchResultsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.SearchState> GetSearchStateAsync(string SearchToken)
         {
             return base.Channel.GetSearchStateAsync(SearchToken);
         }
-        
+
         public System.Threading.Tasks.Task<System.DateTime> EndSearchAsync(string SearchToken)
         {
             return base.Channel.EndSearchAsync(SearchToken);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindMetadataResponse> QuickNV.Onvif.RecordingSearch.SearchPort.FindMetadataAsync(QuickNV.Onvif.RecordingSearch.FindMetadataRequest request)
         {
             return base.Channel.FindMetadataAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.FindMetadataResponse> FindMetadataAsync(System.DateTime StartPoint, System.DateTime EndPoint, QuickNV.Onvif.RecordingSearch.SearchScope Scope, QuickNV.Onvif.RecordingSearch.MetadataFilter MetadataFilter, int MaxMatches, string KeepAliveTime)
         {
             QuickNV.Onvif.RecordingSearch.FindMetadataRequest inValue = new QuickNV.Onvif.RecordingSearch.FindMetadataRequest();
@@ -2972,13 +2972,13 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.KeepAliveTime = KeepAliveTime;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).FindMetadataAsync(inValue);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetMetadataSearchResultsResponse> QuickNV.Onvif.RecordingSearch.SearchPort.GetMetadataSearchResultsAsync(QuickNV.Onvif.RecordingSearch.GetMetadataSearchResultsRequest request)
         {
             return base.Channel.GetMetadataSearchResultsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.RecordingSearch.GetMetadataSearchResultsResponse> GetMetadataSearchResultsAsync(string SearchToken, int MinResults, int MaxResults, string WaitTime)
         {
             QuickNV.Onvif.RecordingSearch.GetMetadataSearchResultsRequest inValue = new QuickNV.Onvif.RecordingSearch.GetMetadataSearchResultsRequest();
@@ -2988,7 +2988,7 @@ namespace QuickNV.Onvif.RecordingSearch
             inValue.WaitTime = WaitTime;
             return ((QuickNV.Onvif.RecordingSearch.SearchPort)(this)).GetMetadataSearchResultsAsync(inValue);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

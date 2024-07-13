@@ -9,46 +9,46 @@
 
 namespace QuickNV.Onvif.Uplink
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/uplink/wsdl", ConfigurationName="Quick.Onvif.Uplink.UplinkPort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/uplink/wsdl", ConfigurationName = "Quick.Onvif.Uplink.UplinkPort")]
     public interface UplinkPort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/uplink/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/uplink/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Uplink.Capabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/uplink/wsdl/GetUplinks", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/uplink/wsdl/GetUplinks", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Uplink.GetUplinksResponse> GetUplinksAsync(QuickNV.Onvif.Uplink.GetUplinksRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/uplink/wsdl/SetUplink", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/uplink/wsdl/SetUplink", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetUplinkAsync(QuickNV.Onvif.Uplink.Configuration Configuration);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/uplink/wsdl/DeleteUplink", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/uplink/wsdl/DeleteUplink", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Uplink.DeleteUplinkResponse> DeleteUplinkAsync(QuickNV.Onvif.Uplink.DeleteUplinkRequest request);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/uplink/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/uplink/wsdl")]
     public partial class Capabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private int maxUplinksField;
-        
+
         private bool maxUplinksFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -60,7 +60,7 @@ namespace QuickNV.Onvif.Uplink
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public int MaxUplinks
@@ -74,7 +74,7 @@ namespace QuickNV.Onvif.Uplink
                 this.maxUplinksField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxUplinksSpecified
@@ -89,28 +89,28 @@ namespace QuickNV.Onvif.Uplink
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/uplink/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/uplink/wsdl")]
     public partial class Configuration
     {
-        
+
         private string remoteAddressField;
-        
+
         private string certificateIDField;
-        
+
         private string userLevelField;
-        
+
         private string statusField;
-        
+
         private string certPathValidationPolicyIDField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI", Order = 0)]
         public string RemoteAddress
         {
             get
@@ -122,9 +122,9 @@ namespace QuickNV.Onvif.Uplink
                 this.remoteAddressField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string CertificateID
         {
             get
@@ -136,9 +136,9 @@ namespace QuickNV.Onvif.Uplink
                 this.certificateIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string UserLevel
         {
             get
@@ -150,9 +150,9 @@ namespace QuickNV.Onvif.Uplink
                 this.userLevelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public string Status
         {
             get
@@ -164,9 +164,9 @@ namespace QuickNV.Onvif.Uplink
                 this.statusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public string CertPathValidationPolicyID
         {
             get
@@ -178,9 +178,9 @@ namespace QuickNV.Onvif.Uplink
                 this.certPathValidationPolicyIDField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 5)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -193,123 +193,123 @@ namespace QuickNV.Onvif.Uplink
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetUplinks", WrapperNamespace="http://www.onvif.org/ver10/uplink/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetUplinks", WrapperNamespace = "http://www.onvif.org/ver10/uplink/wsdl", IsWrapped = true)]
     public partial class GetUplinksRequest
     {
-        
+
         public GetUplinksRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetUplinksResponse", WrapperNamespace="http://www.onvif.org/ver10/uplink/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetUplinksResponse", WrapperNamespace = "http://www.onvif.org/ver10/uplink/wsdl", IsWrapped = true)]
     public partial class GetUplinksResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/uplink/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/uplink/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Configuration")]
         public QuickNV.Onvif.Uplink.Configuration[] Configuration;
-        
+
         public GetUplinksResponse()
         {
         }
-        
+
         public GetUplinksResponse(QuickNV.Onvif.Uplink.Configuration[] Configuration)
         {
             this.Configuration = Configuration;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteUplink", WrapperNamespace="http://www.onvif.org/ver10/uplink/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteUplink", WrapperNamespace = "http://www.onvif.org/ver10/uplink/wsdl", IsWrapped = true)]
     public partial class DeleteUplinkRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/uplink/wsdl", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="anyURI")]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/uplink/wsdl", Order = 0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
         public string RemoteAddress;
-        
+
         public DeleteUplinkRequest()
         {
         }
-        
+
         public DeleteUplinkRequest(string RemoteAddress)
         {
             this.RemoteAddress = RemoteAddress;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteUplinkResponse", WrapperNamespace="http://www.onvif.org/ver10/uplink/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteUplinkResponse", WrapperNamespace = "http://www.onvif.org/ver10/uplink/wsdl", IsWrapped = true)]
     public partial class DeleteUplinkResponse
     {
-        
+
         public DeleteUplinkResponse()
         {
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface UplinkPortChannel : QuickNV.Onvif.Uplink.UplinkPort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class UplinkPortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Uplink.UplinkPort>, QuickNV.Onvif.Uplink.UplinkPort
     {
-        
-        public UplinkPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public UplinkPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Uplink.Capabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Uplink.GetUplinksResponse> QuickNV.Onvif.Uplink.UplinkPort.GetUplinksAsync(QuickNV.Onvif.Uplink.GetUplinksRequest request)
         {
             return base.Channel.GetUplinksAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Uplink.GetUplinksResponse> GetUplinksAsync()
         {
             QuickNV.Onvif.Uplink.GetUplinksRequest inValue = new QuickNV.Onvif.Uplink.GetUplinksRequest();
             return ((QuickNV.Onvif.Uplink.UplinkPort)(this)).GetUplinksAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task SetUplinkAsync(QuickNV.Onvif.Uplink.Configuration Configuration)
         {
             return base.Channel.SetUplinkAsync(Configuration);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Uplink.DeleteUplinkResponse> QuickNV.Onvif.Uplink.UplinkPort.DeleteUplinkAsync(QuickNV.Onvif.Uplink.DeleteUplinkRequest request)
         {
             return base.Channel.DeleteUplinkAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Uplink.DeleteUplinkResponse> DeleteUplinkAsync(string RemoteAddress)
         {
             QuickNV.Onvif.Uplink.DeleteUplinkRequest inValue = new QuickNV.Onvif.Uplink.DeleteUplinkRequest();
             inValue.RemoteAddress = RemoteAddress;
             return ((QuickNV.Onvif.Uplink.UplinkPort)(this)).DeleteUplinkAsync(inValue);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

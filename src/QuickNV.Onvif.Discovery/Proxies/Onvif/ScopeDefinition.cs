@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.Xml.Serialization;
 
@@ -9,6 +8,6 @@ namespace QuickNV.Onvif.Discovery.Onvif;
 [XmlType(Namespace = "http://www.onvif.org/ver10/schema")]
 public enum ScopeDefinition
 {
-	Fixed,
-	Configurable
+    Fixed,
+    Configurable
 }

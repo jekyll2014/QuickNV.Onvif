@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,48 +14,48 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlRoot("Resolve", Namespace = "http://schemas.xmlsoap.org/ws/2005/04/discovery", IsNullable = false)]
 public class ResolveType
 {
-	private EndpointReferenceType endpointReferenceField;
+    private EndpointReferenceType endpointReferenceField;
 
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	[XmlElement(Namespace = "http://schemas.xmlsoap.org/ws/2004/08/addressing")]
-	public EndpointReferenceType EndpointReference
-	{
-		get
-		{
-			return endpointReferenceField;
-		}
-		set
-		{
-			endpointReferenceField = value;
-		}
-	}
+    [XmlElement(Namespace = "http://schemas.xmlsoap.org/ws/2004/08/addressing")]
+    public EndpointReferenceType EndpointReference
+    {
+        get
+        {
+            return endpointReferenceField;
+        }
+        set
+        {
+            endpointReferenceField = value;
+        }
+    }
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IdentityModel.Selectors;
-using System.Linq;
-using System.Net.Security;
+﻿using System.IdentityModel.Selectors;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
 using System.ServiceModel.Security;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QuickNV.Onvif.Factorys
 {

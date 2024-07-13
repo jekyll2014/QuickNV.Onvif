@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -13,33 +12,33 @@ namespace QuickNV.Onvif.Discovery.Onvif;
 [XmlType(Namespace = "http://www.onvif.org/ver10/schema")]
 public class Scope
 {
-	private ScopeDefinition scopeDefField;
+    private ScopeDefinition scopeDefField;
 
-	private string scopeItemField;
+    private string scopeItemField;
 
-	[XmlElement(Order = 0)]
-	public ScopeDefinition ScopeDef
-	{
-		get
-		{
-			return scopeDefField;
-		}
-		set
-		{
-			scopeDefField = value;
-		}
-	}
+    [XmlElement(Order = 0)]
+    public ScopeDefinition ScopeDef
+    {
+        get
+        {
+            return scopeDefField;
+        }
+        set
+        {
+            scopeDefField = value;
+        }
+    }
 
-	[XmlElement(DataType = "anyURI", Order = 1)]
-	public string ScopeItem
-	{
-		get
-		{
-			return scopeItemField;
-		}
-		set
-		{
-			scopeItemField = value;
-		}
-	}
+    [XmlElement(DataType = "anyURI", Order = 1)]
+    public string ScopeItem
+    {
+        get
+        {
+            return scopeItemField;
+        }
+        set
+        {
+            scopeItemField = value;
+        }
+    }
 }

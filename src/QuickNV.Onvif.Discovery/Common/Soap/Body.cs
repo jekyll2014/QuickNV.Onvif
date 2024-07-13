@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -14,50 +13,50 @@ namespace QuickNV.Onvif.Discovery.Common.Soap;
 [XmlRoot(Namespace = "http://www.w3.org/2003/05/soap-envelope", IsNullable = false)]
 public class Body<T> where T : class
 {
-	private T element;
+    private T element;
 
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	[XmlElement(ElementName = "Element")]
-	public T Element
-	{
-		get
-		{
-			return element;
-		}
-		set
-		{
-			element = value;
-		}
-	}
+    [XmlElement(ElementName = "Element")]
+    public T Element
+    {
+        get
+        {
+            return element;
+        }
+        set
+        {
+            element = value;
+        }
+    }
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }
 [Serializable]
 [GeneratedCode("xsd", "2.0.50727.3038")]
@@ -67,33 +66,33 @@ public class Body<T> where T : class
 [XmlRoot(Namespace = "http://www.w3.org/2003/05/soap-envelope", IsNullable = false)]
 public class Body
 {
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

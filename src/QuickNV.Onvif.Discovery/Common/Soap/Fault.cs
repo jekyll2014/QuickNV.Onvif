@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -14,76 +13,76 @@ namespace QuickNV.Onvif.Discovery.Common.Soap;
 [XmlRoot(Namespace = "http://www.w3.org/2003/05/soap-envelope", IsNullable = false)]
 public class Fault
 {
-	private faultcode codeField;
+    private faultcode codeField;
 
-	private reasontext[] reasonField;
+    private reasontext[] reasonField;
 
-	private string nodeField;
+    private string nodeField;
 
-	private string roleField;
+    private string roleField;
 
-	private detail detailField;
+    private detail detailField;
 
-	public faultcode Code
-	{
-		get
-		{
-			return codeField;
-		}
-		set
-		{
-			codeField = value;
-		}
-	}
+    public faultcode Code
+    {
+        get
+        {
+            return codeField;
+        }
+        set
+        {
+            codeField = value;
+        }
+    }
 
-	[XmlArrayItem("Text", IsNullable = false)]
-	public reasontext[] Reason
-	{
-		get
-		{
-			return reasonField;
-		}
-		set
-		{
-			reasonField = value;
-		}
-	}
+    [XmlArrayItem("Text", IsNullable = false)]
+    public reasontext[] Reason
+    {
+        get
+        {
+            return reasonField;
+        }
+        set
+        {
+            reasonField = value;
+        }
+    }
 
-	[XmlElement(DataType = "anyURI")]
-	public string Node
-	{
-		get
-		{
-			return nodeField;
-		}
-		set
-		{
-			nodeField = value;
-		}
-	}
+    [XmlElement(DataType = "anyURI")]
+    public string Node
+    {
+        get
+        {
+            return nodeField;
+        }
+        set
+        {
+            nodeField = value;
+        }
+    }
 
-	[XmlElement(DataType = "anyURI")]
-	public string Role
-	{
-		get
-		{
-			return roleField;
-		}
-		set
-		{
-			roleField = value;
-		}
-	}
+    [XmlElement(DataType = "anyURI")]
+    public string Role
+    {
+        get
+        {
+            return roleField;
+        }
+        set
+        {
+            roleField = value;
+        }
+    }
 
-	public detail Detail
-	{
-		get
-		{
-			return detailField;
-		}
-		set
-		{
-			detailField = value;
-		}
-	}
+    public detail Detail
+    {
+        get
+        {
+            return detailField;
+        }
+        set
+        {
+            detailField = value;
+        }
+    }
 }

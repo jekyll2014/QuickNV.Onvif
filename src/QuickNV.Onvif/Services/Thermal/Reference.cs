@@ -9,66 +9,66 @@
 
 namespace QuickNV.Onvif.Thermal
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl", ConfigurationName="Quick.Onvif.Thermal.ThermalPort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl", ConfigurationName = "Quick.Onvif.Thermal.ThermalPort")]
     public interface ThermalPort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/thermal/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/thermal/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.Capabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/thermal/wsdl/GetConfigurationOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="ConfigurationOptions")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/thermal/wsdl/GetConfigurationOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "ConfigurationOptions")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.ConfigurationOptions> GetConfigurationOptionsAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/thermal/wsdl/GetConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Configuration")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/thermal/wsdl/GetConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Configuration")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.Configuration> GetConfigurationAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/thermal/wsdl/GetConfigurations", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/thermal/wsdl/GetConfigurations", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.GetConfigurationsResponse> GetConfigurationsAsync(QuickNV.Onvif.Thermal.GetConfigurationsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/thermal/wsdl/SetConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/thermal/wsdl/SetConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetConfigurationAsync(string VideoSourceToken, QuickNV.Onvif.Thermal.Configuration Configuration);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/thermal/wsdl/GetRadiometryConfigurationOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="ConfigurationOptions")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/thermal/wsdl/GetRadiometryConfigurationOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "ConfigurationOptions")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.RadiometryConfigurationOptions> GetRadiometryConfigurationOptionsAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/thermal/wsdl/GetRadiometryConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Configuration")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/thermal/wsdl/GetRadiometryConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Configuration")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.RadiometryConfiguration> GetRadiometryConfigurationAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/thermal/wsdl/SetRadiometryConfiguration", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/thermal/wsdl/SetRadiometryConfiguration", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetRadiometryConfigurationAsync(string VideoSourceToken, QuickNV.Onvif.Thermal.RadiometryConfiguration Configuration);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class Capabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool radiometryField;
-        
+
         private bool radiometryFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -80,7 +80,7 @@ namespace QuickNV.Onvif.Thermal
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Radiometry
@@ -94,7 +94,7 @@ namespace QuickNV.Onvif.Thermal
                 this.radiometryField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RadiometrySpecified
@@ -109,44 +109,44 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class RadiometryGlobalParameters
     {
-        
+
         private float reflectedAmbientTemperatureField;
-        
+
         private float emissivityField;
-        
+
         private float distanceToObjectField;
-        
+
         private float relativeHumidityField;
-        
+
         private bool relativeHumidityFieldSpecified;
-        
+
         private float atmosphericTemperatureField;
-        
+
         private bool atmosphericTemperatureFieldSpecified;
-        
+
         private float atmosphericTransmittanceField;
-        
+
         private bool atmosphericTransmittanceFieldSpecified;
-        
+
         private float extOpticsTemperatureField;
-        
+
         private bool extOpticsTemperatureFieldSpecified;
-        
+
         private float extOpticsTransmittanceField;
-        
+
         private bool extOpticsTransmittanceFieldSpecified;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float ReflectedAmbientTemperature
         {
             get
@@ -158,9 +158,9 @@ namespace QuickNV.Onvif.Thermal
                 this.reflectedAmbientTemperatureField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Emissivity
         {
             get
@@ -172,9 +172,9 @@ namespace QuickNV.Onvif.Thermal
                 this.emissivityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float DistanceToObject
         {
             get
@@ -186,9 +186,9 @@ namespace QuickNV.Onvif.Thermal
                 this.distanceToObjectField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float RelativeHumidity
         {
             get
@@ -200,7 +200,7 @@ namespace QuickNV.Onvif.Thermal
                 this.relativeHumidityField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RelativeHumiditySpecified
@@ -214,9 +214,9 @@ namespace QuickNV.Onvif.Thermal
                 this.relativeHumidityFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public float AtmosphericTemperature
         {
             get
@@ -228,7 +228,7 @@ namespace QuickNV.Onvif.Thermal
                 this.atmosphericTemperatureField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AtmosphericTemperatureSpecified
@@ -242,9 +242,9 @@ namespace QuickNV.Onvif.Thermal
                 this.atmosphericTemperatureFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public float AtmosphericTransmittance
         {
             get
@@ -256,7 +256,7 @@ namespace QuickNV.Onvif.Thermal
                 this.atmosphericTransmittanceField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AtmosphericTransmittanceSpecified
@@ -270,9 +270,9 @@ namespace QuickNV.Onvif.Thermal
                 this.atmosphericTransmittanceFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public float ExtOpticsTemperature
         {
             get
@@ -284,7 +284,7 @@ namespace QuickNV.Onvif.Thermal
                 this.extOpticsTemperatureField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ExtOpticsTemperatureSpecified
@@ -298,9 +298,9 @@ namespace QuickNV.Onvif.Thermal
                 this.extOpticsTemperatureFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public float ExtOpticsTransmittance
         {
             get
@@ -312,7 +312,7 @@ namespace QuickNV.Onvif.Thermal
                 this.extOpticsTransmittanceField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ExtOpticsTransmittanceSpecified
@@ -326,9 +326,9 @@ namespace QuickNV.Onvif.Thermal
                 this.extOpticsTransmittanceFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 8)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -341,20 +341,20 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class RadiometryConfiguration
     {
-        
+
         private RadiometryGlobalParameters radiometryGlobalParametersField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public RadiometryGlobalParameters RadiometryGlobalParameters
         {
             get
@@ -366,9 +366,9 @@ namespace QuickNV.Onvif.Thermal
                 this.radiometryGlobalParametersField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -381,20 +381,20 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FloatRange
     {
-        
+
         private float minField;
-        
+
         private float maxField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Min
         {
             get
@@ -406,9 +406,9 @@ namespace QuickNV.Onvif.Thermal
                 this.minField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Max
         {
             get
@@ -421,34 +421,34 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class RadiometryGlobalParameterOptions
     {
-        
+
         private FloatRange reflectedAmbientTemperatureField;
-        
+
         private FloatRange emissivityField;
-        
+
         private FloatRange distanceToObjectField;
-        
+
         private FloatRange relativeHumidityField;
-        
+
         private FloatRange atmosphericTemperatureField;
-        
+
         private FloatRange atmosphericTransmittanceField;
-        
+
         private FloatRange extOpticsTemperatureField;
-        
+
         private FloatRange extOpticsTransmittanceField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public FloatRange ReflectedAmbientTemperature
         {
             get
@@ -460,9 +460,9 @@ namespace QuickNV.Onvif.Thermal
                 this.reflectedAmbientTemperatureField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange Emissivity
         {
             get
@@ -474,9 +474,9 @@ namespace QuickNV.Onvif.Thermal
                 this.emissivityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public FloatRange DistanceToObject
         {
             get
@@ -488,9 +488,9 @@ namespace QuickNV.Onvif.Thermal
                 this.distanceToObjectField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public FloatRange RelativeHumidity
         {
             get
@@ -502,9 +502,9 @@ namespace QuickNV.Onvif.Thermal
                 this.relativeHumidityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public FloatRange AtmosphericTemperature
         {
             get
@@ -516,9 +516,9 @@ namespace QuickNV.Onvif.Thermal
                 this.atmosphericTemperatureField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public FloatRange AtmosphericTransmittance
         {
             get
@@ -530,9 +530,9 @@ namespace QuickNV.Onvif.Thermal
                 this.atmosphericTransmittanceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public FloatRange ExtOpticsTemperature
         {
             get
@@ -544,9 +544,9 @@ namespace QuickNV.Onvif.Thermal
                 this.extOpticsTemperatureField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public FloatRange ExtOpticsTransmittance
         {
             get
@@ -558,9 +558,9 @@ namespace QuickNV.Onvif.Thermal
                 this.extOpticsTransmittanceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 8)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -573,20 +573,20 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class RadiometryConfigurationOptions
     {
-        
+
         private RadiometryGlobalParameterOptions radiometryGlobalParameterOptionsField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public RadiometryGlobalParameterOptions RadiometryGlobalParameterOptions
         {
             get
@@ -598,9 +598,9 @@ namespace QuickNV.Onvif.Thermal
                 this.radiometryGlobalParameterOptionsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -613,22 +613,22 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class Configurations
     {
-        
+
         private Configuration configurationField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public Configuration Configuration
         {
             get
@@ -640,9 +640,9 @@ namespace QuickNV.Onvif.Thermal
                 this.configurationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -654,7 +654,7 @@ namespace QuickNV.Onvif.Thermal
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -669,26 +669,26 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class Configuration
     {
-        
+
         private ColorPalette colorPaletteField;
-        
+
         private Polarity polarityField;
-        
+
         private NUCTable nUCTableField;
-        
+
         private Cooler coolerField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ColorPalette ColorPalette
         {
             get
@@ -700,9 +700,9 @@ namespace QuickNV.Onvif.Thermal
                 this.colorPaletteField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Polarity Polarity
         {
             get
@@ -714,9 +714,9 @@ namespace QuickNV.Onvif.Thermal
                 this.polarityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public NUCTable NUCTable
         {
             get
@@ -728,9 +728,9 @@ namespace QuickNV.Onvif.Thermal
                 this.nUCTableField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public Cooler Cooler
         {
             get
@@ -742,9 +742,9 @@ namespace QuickNV.Onvif.Thermal
                 this.coolerField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 4)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -757,24 +757,24 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class ColorPalette
     {
-        
+
         private string nameField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string tokenField;
-        
+
         private string typeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -786,9 +786,9 @@ namespace QuickNV.Onvif.Thermal
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -800,7 +800,7 @@ namespace QuickNV.Onvif.Thermal
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -814,7 +814,7 @@ namespace QuickNV.Onvif.Thermal
                 this.tokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Type
@@ -829,43 +829,43 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public enum Polarity
     {
-        
+
         /// <remarks/>
         WhiteHot,
-        
+
         /// <remarks/>
         BlackHot,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class NUCTable
     {
-        
+
         private string nameField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string tokenField;
-        
+
         private float lowTemperatureField;
-        
+
         private bool lowTemperatureFieldSpecified;
-        
+
         private float highTemperatureField;
-        
+
         private bool highTemperatureFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -877,9 +877,9 @@ namespace QuickNV.Onvif.Thermal
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -891,7 +891,7 @@ namespace QuickNV.Onvif.Thermal
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -905,7 +905,7 @@ namespace QuickNV.Onvif.Thermal
                 this.tokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float LowTemperature
@@ -919,7 +919,7 @@ namespace QuickNV.Onvif.Thermal
                 this.lowTemperatureField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LowTemperatureSpecified
@@ -933,7 +933,7 @@ namespace QuickNV.Onvif.Thermal
                 this.lowTemperatureFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float HighTemperature
@@ -947,7 +947,7 @@ namespace QuickNV.Onvif.Thermal
                 this.highTemperatureField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool HighTemperatureSpecified
@@ -962,24 +962,24 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class Cooler
     {
-        
+
         private bool enabledField;
-        
+
         private float runTimeField;
-        
+
         private bool runTimeFieldSpecified;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -991,9 +991,9 @@ namespace QuickNV.Onvif.Thermal
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float RunTime
         {
             get
@@ -1005,7 +1005,7 @@ namespace QuickNV.Onvif.Thermal
                 this.runTimeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool RunTimeSpecified
@@ -1019,9 +1019,9 @@ namespace QuickNV.Onvif.Thermal
                 this.runTimeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1034,22 +1034,22 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class CoolerOptions
     {
-        
+
         private bool enabledField;
-        
+
         private bool enabledFieldSpecified;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Enabled
         {
             get
@@ -1061,7 +1061,7 @@ namespace QuickNV.Onvif.Thermal
                 this.enabledField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool EnabledSpecified
@@ -1075,9 +1075,9 @@ namespace QuickNV.Onvif.Thermal
                 this.enabledFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1090,24 +1090,24 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl")]
     public partial class ConfigurationOptions
     {
-        
+
         private ColorPalette[] colorPaletteField;
-        
+
         private NUCTable[] nUCTableField;
-        
+
         private CoolerOptions coolerOptionsField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ColorPalette", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("ColorPalette", Order = 0)]
         public ColorPalette[] ColorPalette
         {
             get
@@ -1119,9 +1119,9 @@ namespace QuickNV.Onvif.Thermal
                 this.colorPaletteField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NUCTable", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("NUCTable", Order = 1)]
         public NUCTable[] NUCTable
         {
             get
@@ -1133,9 +1133,9 @@ namespace QuickNV.Onvif.Thermal
                 this.nUCTableField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public CoolerOptions CoolerOptions
         {
             get
@@ -1147,9 +1147,9 @@ namespace QuickNV.Onvif.Thermal
                 this.coolerOptionsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 3)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1162,102 +1162,102 @@ namespace QuickNV.Onvif.Thermal
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetConfigurations", WrapperNamespace="http://www.onvif.org/ver10/thermal/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetConfigurations", WrapperNamespace = "http://www.onvif.org/ver10/thermal/wsdl", IsWrapped = true)]
     public partial class GetConfigurationsRequest
     {
-        
+
         public GetConfigurationsRequest()
         {
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetConfigurationsResponse", WrapperNamespace="http://www.onvif.org/ver10/thermal/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetConfigurationsResponse", WrapperNamespace = "http://www.onvif.org/ver10/thermal/wsdl", IsWrapped = true)]
     public partial class GetConfigurationsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/thermal/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/thermal/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Configurations")]
         public QuickNV.Onvif.Thermal.Configurations[] Configurations;
-        
+
         public GetConfigurationsResponse()
         {
         }
-        
+
         public GetConfigurationsResponse(QuickNV.Onvif.Thermal.Configurations[] Configurations)
         {
             this.Configurations = Configurations;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface ThermalPortChannel : QuickNV.Onvif.Thermal.ThermalPort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class ThermalPortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Thermal.ThermalPort>, QuickNV.Onvif.Thermal.ThermalPort
     {
-        
-        public ThermalPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public ThermalPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.Capabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.ConfigurationOptions> GetConfigurationOptionsAsync(string VideoSourceToken)
         {
             return base.Channel.GetConfigurationOptionsAsync(VideoSourceToken);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.Configuration> GetConfigurationAsync(string VideoSourceToken)
         {
             return base.Channel.GetConfigurationAsync(VideoSourceToken);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.GetConfigurationsResponse> QuickNV.Onvif.Thermal.ThermalPort.GetConfigurationsAsync(QuickNV.Onvif.Thermal.GetConfigurationsRequest request)
         {
             return base.Channel.GetConfigurationsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.GetConfigurationsResponse> GetConfigurationsAsync()
         {
             QuickNV.Onvif.Thermal.GetConfigurationsRequest inValue = new QuickNV.Onvif.Thermal.GetConfigurationsRequest();
             return ((QuickNV.Onvif.Thermal.ThermalPort)(this)).GetConfigurationsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task SetConfigurationAsync(string VideoSourceToken, QuickNV.Onvif.Thermal.Configuration Configuration)
         {
             return base.Channel.SetConfigurationAsync(VideoSourceToken, Configuration);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.RadiometryConfigurationOptions> GetRadiometryConfigurationOptionsAsync(string VideoSourceToken)
         {
             return base.Channel.GetRadiometryConfigurationOptionsAsync(VideoSourceToken);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Thermal.RadiometryConfiguration> GetRadiometryConfigurationAsync(string VideoSourceToken)
         {
             return base.Channel.GetRadiometryConfigurationAsync(VideoSourceToken);
         }
-        
+
         public System.Threading.Tasks.Task SetRadiometryConfigurationAsync(string VideoSourceToken, QuickNV.Onvif.Thermal.RadiometryConfiguration Configuration)
         {
             return base.Channel.SetRadiometryConfigurationAsync(VideoSourceToken, Configuration);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

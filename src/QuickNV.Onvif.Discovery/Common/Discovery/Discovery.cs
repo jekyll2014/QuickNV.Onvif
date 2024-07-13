@@ -1,21 +1,17 @@
 #define TRACE
-using System;
-using System.Collections.Generic;
+using QuickNV.Onvif.Discovery.Common.Soap;
+using QuickNV.Onvif.Discovery.Common.TestEngine;
+using QuickNV.Onvif.Discovery.WSDiscovery;
+
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Reflection;
 using System.Text;
-using System.Threading;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using QuickNV.Onvif.Discovery.WSDiscovery;
-using QuickNV.Onvif.Discovery.Common.Soap;
-using QuickNV.Onvif.Discovery.Common.TestEngine;
 
 namespace QuickNV.Onvif.Discovery.Common.Discovery;
 
@@ -80,7 +76,7 @@ public class Discovery : IDisposable
         _timeout = timeout;
 
         var executingAssembly = Assembly.GetExecutingAssembly();
-        var resourceNames =  executingAssembly.GetManifestResourceNames();
+        var resourceNames = executingAssembly.GetManifestResourceNames();
         Stream manifestResourceStream = executingAssembly.GetManifestResourceStream("QuickNV.Onvif.Discovery.Common.Discovery.Schemas.ws-discovery.xsd");
         XmlSchema item = XmlSchema.Read(manifestResourceStream, null);
         manifestResourceStream.Close();
@@ -295,7 +291,7 @@ public class Discovery : IDisposable
 
     protected bool IsExpectedMessageHeader(ICollection<XmlElement> header)
     {
-        if (_listenMessages.Count() > 0)
+        if (_listenMessages.Count > 0)
         {
             string b = DiscoveryUtils.ExtractRelatesTo(header);
             foreach (string listenMessage in _listenMessages)
@@ -370,7 +366,7 @@ public class Discovery : IDisposable
         }
         catch (UnxpectedElementException ex2)
         {
-            if (_listenMessages.Count() > 0 && IsExpectedMessageHeader(ex2.Headers))
+            if (_listenMessages.Count > 0 && IsExpectedMessageHeader(ex2.Headers))
             {
                 if (this.ReceiveError != null)
                 {

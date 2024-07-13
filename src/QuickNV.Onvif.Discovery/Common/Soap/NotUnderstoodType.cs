@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,18 +14,18 @@ namespace QuickNV.Onvif.Discovery.Common.Soap;
 [XmlRoot("NotUnderstood", Namespace = "http://www.w3.org/2003/05/soap-envelope", IsNullable = false)]
 public class NotUnderstoodType
 {
-	private XmlQualifiedName qnameField;
+    private XmlQualifiedName qnameField;
 
-	[XmlAttribute]
-	public XmlQualifiedName qname
-	{
-		get
-		{
-			return qnameField;
-		}
-		set
-		{
-			qnameField = value;
-		}
-	}
+    [XmlAttribute]
+    public XmlQualifiedName qname
+    {
+        get
+        {
+            return qnameField;
+        }
+        set
+        {
+            qnameField = value;
+        }
+    }
 }

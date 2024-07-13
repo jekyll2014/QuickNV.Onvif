@@ -1,8 +1,8 @@
 namespace QuickNV.Onvif.Discovery.Common
 {
-	public enum PortProtocolType
-	{
-		Udp,
-		Tcp
-	}
+    public enum PortProtocolType
+    {
+        Udp,
+        Tcp
+    }
 }

@@ -9,148 +9,148 @@
 
 namespace QuickNV.Onvif.Schedule
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", ConfigurationName="Quick.Onvif.Schedule.SchedulePort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", ConfigurationName = "Quick.Onvif.Schedule.SchedulePort")]
     public interface SchedulePort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.ServiceCapabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetScheduleState", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetScheduleState", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="ScheduleState")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "ScheduleState")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.ScheduleState> GetScheduleStateAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetScheduleInfo", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetScheduleInfo", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetScheduleInfoResponse> GetScheduleInfoAsync(QuickNV.Onvif.Schedule.GetScheduleInfoRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetScheduleInfoList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetScheduleInfoList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetScheduleInfoListResponse> GetScheduleInfoListAsync(QuickNV.Onvif.Schedule.GetScheduleInfoListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetSchedules", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetSchedules", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSchedulesResponse> GetSchedulesAsync(QuickNV.Onvif.Schedule.GetSchedulesRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetScheduleList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetScheduleList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetScheduleListResponse> GetScheduleListAsync(QuickNV.Onvif.Schedule.GetScheduleListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/CreateSchedule", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/CreateSchedule", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Token")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Token")]
         System.Threading.Tasks.Task<string> CreateScheduleAsync(QuickNV.Onvif.Schedule.Schedule Schedule);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/SetSchedule", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/SetSchedule", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task SetScheduleAsync(QuickNV.Onvif.Schedule.Schedule Schedule);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/ModifySchedule", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/ModifySchedule", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task ModifyScheduleAsync(QuickNV.Onvif.Schedule.Schedule Schedule);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/DeleteSchedule", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/DeleteSchedule", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task DeleteScheduleAsync(string Token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetSpecialDayGroupInfo", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetSpecialDayGroupInfo", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoResponse> GetSpecialDayGroupInfoAsync(QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetSpecialDayGroupInfoList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetSpecialDayGroupInfoList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoListResponse> GetSpecialDayGroupInfoListAsync(QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetSpecialDayGroups", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetSpecialDayGroups", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupsResponse> GetSpecialDayGroupsAsync(QuickNV.Onvif.Schedule.GetSpecialDayGroupsRequest request);
-        
+
         // CODEGEN: 正在生成消息协定，因为操作具有多个返回值。
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/GetSpecialDayGroupList", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/GetSpecialDayGroupList", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupListResponse> GetSpecialDayGroupListAsync(QuickNV.Onvif.Schedule.GetSpecialDayGroupListRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/CreateSpecialDayGroup", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/CreateSpecialDayGroup", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Token")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Token")]
         System.Threading.Tasks.Task<string> CreateSpecialDayGroupAsync(QuickNV.Onvif.Schedule.SpecialDayGroup SpecialDayGroup);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/SetSpecialDayGroup", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/SetSpecialDayGroup", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task SetSpecialDayGroupAsync(QuickNV.Onvif.Schedule.SpecialDayGroup SpecialDayGroup);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/ModifySpecialDayGroup", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/ModifySpecialDayGroup", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task ModifySpecialDayGroupAsync(QuickNV.Onvif.Schedule.SpecialDayGroup SpecialDayGroup);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver10/schedule/wsdl/DeleteSpecialDayGroup", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver10/schedule/wsdl/DeleteSpecialDayGroup", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataEntity))]
         System.Threading.Tasks.Task DeleteSpecialDayGroupAsync(string Token);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class ServiceCapabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private uint maxLimitField;
-        
+
         private uint maxSchedulesField;
-        
+
         private uint maxTimePeriodsPerDayField;
-        
+
         private uint maxSpecialDayGroupsField;
-        
+
         private uint maxDaysInSpecialDayGroupField;
-        
+
         private uint maxSpecialDaysSchedulesField;
-        
+
         private bool extendedRecurrenceSupportedField;
-        
+
         private bool specialDaysSupportedField;
-        
+
         private bool stateReportingSupportedField;
-        
+
         private bool clientSuppliedTokenSupportedField;
-        
+
         public ServiceCapabilities()
         {
             this.clientSuppliedTokenSupportedField = false;
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -162,7 +162,7 @@ namespace QuickNV.Onvif.Schedule
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public uint MaxLimit
@@ -176,7 +176,7 @@ namespace QuickNV.Onvif.Schedule
                 this.maxLimitField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public uint MaxSchedules
@@ -190,7 +190,7 @@ namespace QuickNV.Onvif.Schedule
                 this.maxSchedulesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public uint MaxTimePeriodsPerDay
@@ -204,7 +204,7 @@ namespace QuickNV.Onvif.Schedule
                 this.maxTimePeriodsPerDayField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public uint MaxSpecialDayGroups
@@ -218,7 +218,7 @@ namespace QuickNV.Onvif.Schedule
                 this.maxSpecialDayGroupsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public uint MaxDaysInSpecialDayGroup
@@ -232,7 +232,7 @@ namespace QuickNV.Onvif.Schedule
                 this.maxDaysInSpecialDayGroupField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public uint MaxSpecialDaysSchedules
@@ -246,7 +246,7 @@ namespace QuickNV.Onvif.Schedule
                 this.maxSpecialDaysSchedulesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ExtendedRecurrenceSupported
@@ -260,7 +260,7 @@ namespace QuickNV.Onvif.Schedule
                 this.extendedRecurrenceSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool SpecialDaysSupported
@@ -274,7 +274,7 @@ namespace QuickNV.Onvif.Schedule
                 this.specialDaysSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool StateReportingSupported
@@ -288,7 +288,7 @@ namespace QuickNV.Onvif.Schedule
                 this.stateReportingSupportedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -304,18 +304,18 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class SpecialDayGroupExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -328,18 +328,18 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class ScheduleExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -352,18 +352,18 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class SpecialDaysScheduleExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -376,18 +376,18 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class TimePeriodExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -400,24 +400,24 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class TimePeriod
     {
-        
+
         private System.DateTime fromField;
-        
+
         private System.DateTime untilField;
-        
+
         private bool untilFieldSpecified;
-        
+
         private TimePeriodExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="time", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "time", Order = 0)]
         public System.DateTime From
         {
             get
@@ -429,9 +429,9 @@ namespace QuickNV.Onvif.Schedule
                 this.fromField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="time", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "time", Order = 1)]
         public System.DateTime Until
         {
             get
@@ -443,7 +443,7 @@ namespace QuickNV.Onvif.Schedule
                 this.untilField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool UntilSpecified
@@ -457,9 +457,9 @@ namespace QuickNV.Onvif.Schedule
                 this.untilFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public TimePeriodExtension Extension
         {
             get
@@ -472,22 +472,22 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class SpecialDaysSchedule
     {
-        
+
         private string groupTokenField;
-        
+
         private TimePeriod[] timeRangeField;
-        
+
         private SpecialDaysScheduleExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string GroupToken
         {
             get
@@ -499,9 +499,9 @@ namespace QuickNV.Onvif.Schedule
                 this.groupTokenField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TimeRange", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("TimeRange", Order = 1)]
         public TimePeriod[] TimeRange
         {
             get
@@ -513,9 +513,9 @@ namespace QuickNV.Onvif.Schedule
                 this.timeRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public SpecialDaysScheduleExtension Extension
         {
             get
@@ -528,7 +528,7 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(SpecialDayGroupInfo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(SpecialDayGroup))]
@@ -536,12 +536,12 @@ namespace QuickNV.Onvif.Schedule
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schedule))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/pacs")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/pacs")]
     public partial class DataEntity
     {
-        
+
         private string tokenField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -556,21 +556,21 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(SpecialDayGroup))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class SpecialDayGroupInfo : DataEntity
     {
-        
+
         private string nameField;
-        
+
         private string descriptionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -582,9 +582,9 @@ namespace QuickNV.Onvif.Schedule
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Description
         {
             get
@@ -597,20 +597,20 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class SpecialDayGroup : SpecialDayGroupInfo
     {
-        
+
         private string daysField;
-        
+
         private SpecialDayGroupExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Days
         {
             get
@@ -622,9 +622,9 @@ namespace QuickNV.Onvif.Schedule
                 this.daysField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public SpecialDayGroupExtension Extension
         {
             get
@@ -637,21 +637,21 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Schedule))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class ScheduleInfo : DataEntity
     {
-        
+
         private string nameField;
-        
+
         private string descriptionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -663,9 +663,9 @@ namespace QuickNV.Onvif.Schedule
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string Description
         {
             get
@@ -678,22 +678,22 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class Schedule : ScheduleInfo
     {
-        
+
         private string standardField;
-        
+
         private SpecialDaysSchedule[] specialDaysField;
-        
+
         private ScheduleExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Standard
         {
             get
@@ -705,9 +705,9 @@ namespace QuickNV.Onvif.Schedule
                 this.standardField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SpecialDays", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("SpecialDays", Order = 1)]
         public SpecialDaysSchedule[] SpecialDays
         {
             get
@@ -719,9 +719,9 @@ namespace QuickNV.Onvif.Schedule
                 this.specialDaysField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ScheduleExtension Extension
         {
             get
@@ -734,18 +734,18 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class ScheduleStateExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -758,24 +758,24 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl")]
     public partial class ScheduleState
     {
-        
+
         private bool activeField;
-        
+
         private bool specialDayField;
-        
+
         private bool specialDayFieldSpecified;
-        
+
         private ScheduleStateExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Active
         {
             get
@@ -787,9 +787,9 @@ namespace QuickNV.Onvif.Schedule
                 this.activeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool SpecialDay
         {
             get
@@ -801,7 +801,7 @@ namespace QuickNV.Onvif.Schedule
                 this.specialDayField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SpecialDaySpecified
@@ -815,9 +815,9 @@ namespace QuickNV.Onvif.Schedule
                 this.specialDayFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ScheduleStateExtension Extension
         {
             get
@@ -830,500 +830,500 @@ namespace QuickNV.Onvif.Schedule
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScheduleInfo", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetScheduleInfo", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetScheduleInfoRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetScheduleInfoRequest()
         {
         }
-        
+
         public GetScheduleInfoRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScheduleInfoResponse", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetScheduleInfoResponse", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetScheduleInfoResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("ScheduleInfo")]
         public QuickNV.Onvif.Schedule.ScheduleInfo[] ScheduleInfo;
-        
+
         public GetScheduleInfoResponse()
         {
         }
-        
+
         public GetScheduleInfoResponse(QuickNV.Onvif.Schedule.ScheduleInfo[] ScheduleInfo)
         {
             this.ScheduleInfo = ScheduleInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScheduleInfoList", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetScheduleInfoList", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetScheduleInfoListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetScheduleInfoListRequest()
         {
         }
-        
+
         public GetScheduleInfoListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScheduleInfoListResponse", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetScheduleInfoListResponse", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetScheduleInfoListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("ScheduleInfo")]
         public QuickNV.Onvif.Schedule.ScheduleInfo[] ScheduleInfo;
-        
+
         public GetScheduleInfoListResponse()
         {
         }
-        
+
         public GetScheduleInfoListResponse(string NextStartReference, QuickNV.Onvif.Schedule.ScheduleInfo[] ScheduleInfo)
         {
             this.NextStartReference = NextStartReference;
             this.ScheduleInfo = ScheduleInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSchedules", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSchedules", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSchedulesRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetSchedulesRequest()
         {
         }
-        
+
         public GetSchedulesRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSchedulesResponse", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSchedulesResponse", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSchedulesResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Schedule")]
         public QuickNV.Onvif.Schedule.Schedule[] Schedule;
-        
+
         public GetSchedulesResponse()
         {
         }
-        
+
         public GetSchedulesResponse(QuickNV.Onvif.Schedule.Schedule[] Schedule)
         {
             this.Schedule = Schedule;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScheduleList", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetScheduleList", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetScheduleListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetScheduleListRequest()
         {
         }
-        
+
         public GetScheduleListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScheduleListResponse", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetScheduleListResponse", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetScheduleListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("Schedule")]
         public QuickNV.Onvif.Schedule.Schedule[] Schedule;
-        
+
         public GetScheduleListResponse()
         {
         }
-        
+
         public GetScheduleListResponse(string NextStartReference, QuickNV.Onvif.Schedule.Schedule[] Schedule)
         {
             this.NextStartReference = NextStartReference;
             this.Schedule = Schedule;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSpecialDayGroupInfo", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSpecialDayGroupInfo", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSpecialDayGroupInfoRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetSpecialDayGroupInfoRequest()
         {
         }
-        
+
         public GetSpecialDayGroupInfoRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSpecialDayGroupInfoResponse", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSpecialDayGroupInfoResponse", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSpecialDayGroupInfoResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("SpecialDayGroupInfo")]
         public QuickNV.Onvif.Schedule.SpecialDayGroupInfo[] SpecialDayGroupInfo;
-        
+
         public GetSpecialDayGroupInfoResponse()
         {
         }
-        
+
         public GetSpecialDayGroupInfoResponse(QuickNV.Onvif.Schedule.SpecialDayGroupInfo[] SpecialDayGroupInfo)
         {
             this.SpecialDayGroupInfo = SpecialDayGroupInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSpecialDayGroupInfoList", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSpecialDayGroupInfoList", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSpecialDayGroupInfoListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetSpecialDayGroupInfoListRequest()
         {
         }
-        
+
         public GetSpecialDayGroupInfoListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSpecialDayGroupInfoListResponse", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSpecialDayGroupInfoListResponse", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSpecialDayGroupInfoListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("SpecialDayGroupInfo")]
         public QuickNV.Onvif.Schedule.SpecialDayGroupInfo[] SpecialDayGroupInfo;
-        
+
         public GetSpecialDayGroupInfoListResponse()
         {
         }
-        
+
         public GetSpecialDayGroupInfoListResponse(string NextStartReference, QuickNV.Onvif.Schedule.SpecialDayGroupInfo[] SpecialDayGroupInfo)
         {
             this.NextStartReference = NextStartReference;
             this.SpecialDayGroupInfo = SpecialDayGroupInfo;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSpecialDayGroups", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSpecialDayGroups", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSpecialDayGroupsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Token")]
         public string[] Token;
-        
+
         public GetSpecialDayGroupsRequest()
         {
         }
-        
+
         public GetSpecialDayGroupsRequest(string[] Token)
         {
             this.Token = Token;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSpecialDayGroupsResponse", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSpecialDayGroupsResponse", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSpecialDayGroupsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("SpecialDayGroup")]
         public QuickNV.Onvif.Schedule.SpecialDayGroup[] SpecialDayGroup;
-        
+
         public GetSpecialDayGroupsResponse()
         {
         }
-        
+
         public GetSpecialDayGroupsResponse(QuickNV.Onvif.Schedule.SpecialDayGroup[] SpecialDayGroup)
         {
             this.SpecialDayGroup = SpecialDayGroup;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSpecialDayGroupList", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSpecialDayGroupList", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSpecialDayGroupListRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         public int Limit;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 1)]
         public string StartReference;
-        
+
         public GetSpecialDayGroupListRequest()
         {
         }
-        
+
         public GetSpecialDayGroupListRequest(int Limit, string StartReference)
         {
             this.Limit = Limit;
             this.StartReference = StartReference;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSpecialDayGroupListResponse", WrapperNamespace="http://www.onvif.org/ver10/schedule/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetSpecialDayGroupListResponse", WrapperNamespace = "http://www.onvif.org/ver10/schedule/wsdl", IsWrapped = true)]
     public partial class GetSpecialDayGroupListResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 0)]
         public string NextStartReference;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver10/schedule/wsdl", Order=1)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver10/schedule/wsdl", Order = 1)]
         [System.Xml.Serialization.XmlElementAttribute("SpecialDayGroup")]
         public QuickNV.Onvif.Schedule.SpecialDayGroup[] SpecialDayGroup;
-        
+
         public GetSpecialDayGroupListResponse()
         {
         }
-        
+
         public GetSpecialDayGroupListResponse(string NextStartReference, QuickNV.Onvif.Schedule.SpecialDayGroup[] SpecialDayGroup)
         {
             this.NextStartReference = NextStartReference;
             this.SpecialDayGroup = SpecialDayGroup;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface SchedulePortChannel : QuickNV.Onvif.Schedule.SchedulePort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class SchedulePortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Schedule.SchedulePort>, QuickNV.Onvif.Schedule.SchedulePort
     {
-        
-        public SchedulePortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public SchedulePortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.ServiceCapabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.ScheduleState> GetScheduleStateAsync(string Token)
         {
             return base.Channel.GetScheduleStateAsync(Token);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetScheduleInfoResponse> QuickNV.Onvif.Schedule.SchedulePort.GetScheduleInfoAsync(QuickNV.Onvif.Schedule.GetScheduleInfoRequest request)
         {
             return base.Channel.GetScheduleInfoAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetScheduleInfoResponse> GetScheduleInfoAsync(string[] Token)
         {
             QuickNV.Onvif.Schedule.GetScheduleInfoRequest inValue = new QuickNV.Onvif.Schedule.GetScheduleInfoRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.Schedule.SchedulePort)(this)).GetScheduleInfoAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetScheduleInfoListResponse> GetScheduleInfoListAsync(QuickNV.Onvif.Schedule.GetScheduleInfoListRequest request)
         {
             return base.Channel.GetScheduleInfoListAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSchedulesResponse> QuickNV.Onvif.Schedule.SchedulePort.GetSchedulesAsync(QuickNV.Onvif.Schedule.GetSchedulesRequest request)
         {
             return base.Channel.GetSchedulesAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSchedulesResponse> GetSchedulesAsync(string[] Token)
         {
             QuickNV.Onvif.Schedule.GetSchedulesRequest inValue = new QuickNV.Onvif.Schedule.GetSchedulesRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.Schedule.SchedulePort)(this)).GetSchedulesAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetScheduleListResponse> GetScheduleListAsync(QuickNV.Onvif.Schedule.GetScheduleListRequest request)
         {
             return base.Channel.GetScheduleListAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<string> CreateScheduleAsync(QuickNV.Onvif.Schedule.Schedule Schedule)
         {
             return base.Channel.CreateScheduleAsync(Schedule);
         }
-        
+
         public System.Threading.Tasks.Task SetScheduleAsync(QuickNV.Onvif.Schedule.Schedule Schedule)
         {
             return base.Channel.SetScheduleAsync(Schedule);
         }
-        
+
         public System.Threading.Tasks.Task ModifyScheduleAsync(QuickNV.Onvif.Schedule.Schedule Schedule)
         {
             return base.Channel.ModifyScheduleAsync(Schedule);
         }
-        
+
         public System.Threading.Tasks.Task DeleteScheduleAsync(string Token)
         {
             return base.Channel.DeleteScheduleAsync(Token);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoResponse> QuickNV.Onvif.Schedule.SchedulePort.GetSpecialDayGroupInfoAsync(QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoRequest request)
         {
             return base.Channel.GetSpecialDayGroupInfoAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoResponse> GetSpecialDayGroupInfoAsync(string[] Token)
         {
             QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoRequest inValue = new QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.Schedule.SchedulePort)(this)).GetSpecialDayGroupInfoAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoListResponse> GetSpecialDayGroupInfoListAsync(QuickNV.Onvif.Schedule.GetSpecialDayGroupInfoListRequest request)
         {
             return base.Channel.GetSpecialDayGroupInfoListAsync(request);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupsResponse> QuickNV.Onvif.Schedule.SchedulePort.GetSpecialDayGroupsAsync(QuickNV.Onvif.Schedule.GetSpecialDayGroupsRequest request)
         {
             return base.Channel.GetSpecialDayGroupsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupsResponse> GetSpecialDayGroupsAsync(string[] Token)
         {
             QuickNV.Onvif.Schedule.GetSpecialDayGroupsRequest inValue = new QuickNV.Onvif.Schedule.GetSpecialDayGroupsRequest();
             inValue.Token = Token;
             return ((QuickNV.Onvif.Schedule.SchedulePort)(this)).GetSpecialDayGroupsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Schedule.GetSpecialDayGroupListResponse> GetSpecialDayGroupListAsync(QuickNV.Onvif.Schedule.GetSpecialDayGroupListRequest request)
         {
             return base.Channel.GetSpecialDayGroupListAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<string> CreateSpecialDayGroupAsync(QuickNV.Onvif.Schedule.SpecialDayGroup SpecialDayGroup)
         {
             return base.Channel.CreateSpecialDayGroupAsync(SpecialDayGroup);
         }
-        
+
         public System.Threading.Tasks.Task SetSpecialDayGroupAsync(QuickNV.Onvif.Schedule.SpecialDayGroup SpecialDayGroup)
         {
             return base.Channel.SetSpecialDayGroupAsync(SpecialDayGroup);
         }
-        
+
         public System.Threading.Tasks.Task ModifySpecialDayGroupAsync(QuickNV.Onvif.Schedule.SpecialDayGroup SpecialDayGroup)
         {
             return base.Channel.ModifySpecialDayGroupAsync(SpecialDayGroup);
         }
-        
+
         public System.Threading.Tasks.Task DeleteSpecialDayGroupAsync(string Token)
         {
             return base.Channel.DeleteSpecialDayGroupAsync(Token);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

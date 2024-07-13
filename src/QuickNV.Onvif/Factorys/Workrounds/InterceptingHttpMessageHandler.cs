@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QuickNV.Onvif.Factorys.Workrounds
+﻿namespace QuickNV.Onvif.Factorys.Workrounds
 {
     internal class InterceptingHttpMessageHandler : DelegatingHandler
     {

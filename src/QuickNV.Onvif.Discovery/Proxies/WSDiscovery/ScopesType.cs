@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,48 +14,48 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlRoot("Scopes", Namespace = "http://schemas.xmlsoap.org/ws/2005/04/discovery", IsNullable = false)]
 public class ScopesType
 {
-	private string matchByField;
+    private string matchByField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	private string[] textField;
+    private string[] textField;
 
-	[XmlAttribute(DataType = "anyURI")]
-	public string MatchBy
-	{
-		get
-		{
-			return matchByField;
-		}
-		set
-		{
-			matchByField = value;
-		}
-	}
+    [XmlAttribute(DataType = "anyURI")]
+    public string MatchBy
+    {
+        get
+        {
+            return matchByField;
+        }
+        set
+        {
+            matchByField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 
-	[XmlText(DataType = "anyURI")]
-	public string[] Text
-	{
-		get
-		{
-			return textField;
-		}
-		set
-		{
-			textField = value;
-		}
-	}
+    [XmlText(DataType = "anyURI")]
+    public string[] Text
+    {
+        get
+        {
+            return textField;
+        }
+        set
+        {
+            textField = value;
+        }
+    }
 }

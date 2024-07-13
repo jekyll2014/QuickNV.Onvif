@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,61 +14,61 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlRoot("Probe", Namespace = "http://schemas.xmlsoap.org/ws/2005/04/discovery", IsNullable = false)]
 public class ProbeType
 {
-	private string typesField;
+    private string typesField;
 
-	private ScopesType scopesField;
+    private ScopesType scopesField;
 
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	public string Types
-	{
-		get
-		{
-			return typesField;
-		}
-		set
-		{
-			typesField = value;
-		}
-	}
+    public string Types
+    {
+        get
+        {
+            return typesField;
+        }
+        set
+        {
+            typesField = value;
+        }
+    }
 
-	public ScopesType Scopes
-	{
-		get
-		{
-			return scopesField;
-		}
-		set
-		{
-			scopesField = value;
-		}
-	}
+    public ScopesType Scopes
+    {
+        get
+        {
+            return scopesField;
+        }
+        set
+        {
+            scopesField = value;
+        }
+    }
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

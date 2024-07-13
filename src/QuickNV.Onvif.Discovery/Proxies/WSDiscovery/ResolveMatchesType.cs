@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -15,47 +14,47 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlRoot("ResolveMatches", Namespace = "http://schemas.xmlsoap.org/ws/2005/04/discovery", IsNullable = false)]
 public class ResolveMatchesType
 {
-	private ResolveMatchType resolveMatchField;
+    private ResolveMatchType resolveMatchField;
 
-	private XmlElement[] anyField;
+    private XmlElement[] anyField;
 
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	public ResolveMatchType ResolveMatch
-	{
-		get
-		{
-			return resolveMatchField;
-		}
-		set
-		{
-			resolveMatchField = value;
-		}
-	}
+    public ResolveMatchType ResolveMatch
+    {
+        get
+        {
+            return resolveMatchField;
+        }
+        set
+        {
+            resolveMatchField = value;
+        }
+    }
 
-	[XmlAnyElement]
-	public XmlElement[] Any
-	{
-		get
-		{
-			return anyField;
-		}
-		set
-		{
-			anyField = value;
-		}
-	}
+    [XmlAnyElement]
+    public XmlElement[] Any
+    {
+        get
+        {
+            return anyField;
+        }
+        set
+        {
+            anyField = value;
+        }
+    }
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 }

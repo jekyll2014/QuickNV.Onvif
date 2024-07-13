@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -14,33 +13,33 @@ namespace QuickNV.Onvif.Discovery.Common.Soap;
 [XmlType(Namespace = "http://www.w3.org/2003/05/soap-envelope")]
 public class reasontext
 {
-	private string langField;
+    private string langField;
 
-	private string valueField;
+    private string valueField;
 
-	[XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/XML/1998/namespace")]
-	public string lang
-	{
-		get
-		{
-			return langField;
-		}
-		set
-		{
-			langField = value;
-		}
-	}
+    [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/XML/1998/namespace")]
+    public string lang
+    {
+        get
+        {
+            return langField;
+        }
+        set
+        {
+            langField = value;
+        }
+    }
 
-	[XmlText]
-	public string Value
-	{
-		get
-		{
-			return valueField;
-		}
-		set
-		{
-			valueField = value;
-		}
-	}
+    [XmlText]
+    public string Value
+    {
+        get
+        {
+            return valueField;
+        }
+        set
+        {
+            valueField = value;
+        }
+    }
 }

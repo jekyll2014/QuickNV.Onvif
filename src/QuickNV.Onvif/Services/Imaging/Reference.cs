@@ -9,87 +9,87 @@
 
 namespace QuickNV.Onvif.Imaging
 {
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.onvif.org/ver20/imaging/wsdl", ConfigurationName="Quick.Onvif.Imaging.ImagingPort")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://www.onvif.org/ver20/imaging/wsdl", ConfigurationName = "Quick.Onvif.Imaging.ImagingPort")]
     public interface ImagingPort
     {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/GetServiceCapabilities", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Capabilities")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/GetServiceCapabilities", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Capabilities")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.Capabilities> GetServiceCapabilitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/GetImagingSettings", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="ImagingSettings")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/GetImagingSettings", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "ImagingSettings")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.ImagingSettings20> GetImagingSettingsAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/SetImagingSettings", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/SetImagingSettings", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetImagingSettingsAsync(string VideoSourceToken, QuickNV.Onvif.Imaging.ImagingSettings20 ImagingSettings, bool ForcePersistence);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/GetOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="ImagingOptions")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/GetOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "ImagingOptions")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.ImagingOptions20> GetOptionsAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/Move", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/Move", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task MoveAsync(string VideoSourceToken, QuickNV.Onvif.Imaging.FocusMove Focus);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/GetMoveOptions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="MoveOptions")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/GetMoveOptions", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "MoveOptions")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.MoveOptions20> GetMoveOptionsAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/FocusStop", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/FocusStop", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task StopAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/GetStatus", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Status")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/GetStatus", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Status")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.ImagingStatus20> GetStatusAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/GetPresets", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/GetPresets", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.GetPresetsResponse> GetPresetsAsync(QuickNV.Onvif.Imaging.GetPresetsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/GetCurrentPreset", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="Preset")]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/GetCurrentPreset", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name = "Preset")]
         System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.ImagingPreset> GetCurrentPresetAsync(string VideoSourceToken);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://www.onvif.org/ver20/imaging/wsdl/SetCurrentPreset", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://www.onvif.org/ver20/imaging/wsdl/SetCurrentPreset", ReplyAction = "*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         System.Threading.Tasks.Task SetCurrentPresetAsync(string VideoSourceToken, string PresetToken);
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver20/imaging/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver20/imaging/wsdl")]
     public partial class Capabilities
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private bool imageStabilizationField;
-        
+
         private bool imageStabilizationFieldSpecified;
-        
+
         private bool presetsField;
-        
+
         private bool presetsFieldSpecified;
-        
+
         private bool adaptablePresetField;
-        
+
         private bool adaptablePresetFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -101,7 +101,7 @@ namespace QuickNV.Onvif.Imaging
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ImageStabilization
@@ -115,7 +115,7 @@ namespace QuickNV.Onvif.Imaging
                 this.imageStabilizationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ImageStabilizationSpecified
@@ -129,7 +129,7 @@ namespace QuickNV.Onvif.Imaging
                 this.imageStabilizationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool Presets
@@ -143,7 +143,7 @@ namespace QuickNV.Onvif.Imaging
                 this.presetsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PresetsSpecified
@@ -157,7 +157,7 @@ namespace QuickNV.Onvif.Imaging
                 this.presetsFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool AdaptablePreset
@@ -171,7 +171,7 @@ namespace QuickNV.Onvif.Imaging
                 this.adaptablePresetField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool AdaptablePresetSpecified
@@ -186,22 +186,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver20/imaging/wsdl")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver20/imaging/wsdl")]
     public partial class ImagingPreset
     {
-        
+
         private string nameField;
-        
+
         private string tokenField;
-        
+
         private string typeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Name
         {
             get
@@ -213,7 +213,7 @@ namespace QuickNV.Onvif.Imaging
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string token
@@ -227,7 +227,7 @@ namespace QuickNV.Onvif.Imaging
                 this.tokenField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string type
@@ -242,18 +242,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingStatus20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -266,18 +266,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusStatus20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -290,24 +290,24 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusStatus20
     {
-        
+
         private float positionField;
-        
+
         private MoveStatus moveStatusField;
-        
+
         private string errorField;
-        
+
         private FocusStatus20Extension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Position
         {
             get
@@ -319,9 +319,9 @@ namespace QuickNV.Onvif.Imaging
                 this.positionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public MoveStatus MoveStatus
         {
             get
@@ -333,9 +333,9 @@ namespace QuickNV.Onvif.Imaging
                 this.moveStatusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public string Error
         {
             get
@@ -347,9 +347,9 @@ namespace QuickNV.Onvif.Imaging
                 this.errorField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public FocusStatus20Extension Extension
         {
             get
@@ -362,36 +362,36 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum MoveStatus
     {
-        
+
         /// <remarks/>
         IDLE,
-        
+
         /// <remarks/>
         MOVING,
-        
+
         /// <remarks/>
         UNKNOWN,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingStatus20
     {
-        
+
         private FocusStatus20 focusStatus20Field;
-        
+
         private ImagingStatus20Extension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public FocusStatus20 FocusStatus20
         {
             get
@@ -403,9 +403,9 @@ namespace QuickNV.Onvif.Imaging
                 this.focusStatus20Field = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ImagingStatus20Extension Extension
         {
             get
@@ -418,18 +418,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ContinuousFocusOptions
     {
-        
+
         private FloatRange speedField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public FloatRange Speed
         {
             get
@@ -442,20 +442,20 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FloatRange
     {
-        
+
         private float minField;
-        
+
         private float maxField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Min
         {
             get
@@ -467,9 +467,9 @@ namespace QuickNV.Onvif.Imaging
                 this.minField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Max
         {
             get
@@ -482,20 +482,20 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RelativeFocusOptions20
     {
-        
+
         private FloatRange distanceField;
-        
+
         private FloatRange speedField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public FloatRange Distance
         {
             get
@@ -507,9 +507,9 @@ namespace QuickNV.Onvif.Imaging
                 this.distanceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange Speed
         {
             get
@@ -522,20 +522,20 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AbsoluteFocusOptions
     {
-        
+
         private FloatRange positionField;
-        
+
         private FloatRange speedField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public FloatRange Position
         {
             get
@@ -547,9 +547,9 @@ namespace QuickNV.Onvif.Imaging
                 this.positionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange Speed
         {
             get
@@ -562,22 +562,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class MoveOptions20
     {
-        
+
         private AbsoluteFocusOptions absoluteField;
-        
+
         private RelativeFocusOptions20 relativeField;
-        
+
         private ContinuousFocusOptions continuousField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AbsoluteFocusOptions Absolute
         {
             get
@@ -589,9 +589,9 @@ namespace QuickNV.Onvif.Imaging
                 this.absoluteField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public RelativeFocusOptions20 Relative
         {
             get
@@ -603,9 +603,9 @@ namespace QuickNV.Onvif.Imaging
                 this.relativeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ContinuousFocusOptions Continuous
         {
             get
@@ -618,18 +618,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ContinuousFocus
     {
-        
+
         private float speedField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Speed
         {
             get
@@ -642,22 +642,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class RelativeFocus
     {
-        
+
         private float distanceField;
-        
+
         private float speedField;
-        
+
         private bool speedFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Distance
         {
             get
@@ -669,9 +669,9 @@ namespace QuickNV.Onvif.Imaging
                 this.distanceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Speed
         {
             get
@@ -683,7 +683,7 @@ namespace QuickNV.Onvif.Imaging
                 this.speedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SpeedSpecified
@@ -698,22 +698,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class AbsoluteFocus
     {
-        
+
         private float positionField;
-        
+
         private float speedField;
-        
+
         private bool speedFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Position
         {
             get
@@ -725,9 +725,9 @@ namespace QuickNV.Onvif.Imaging
                 this.positionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Speed
         {
             get
@@ -739,7 +739,7 @@ namespace QuickNV.Onvif.Imaging
                 this.speedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SpeedSpecified
@@ -754,22 +754,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusMove
     {
-        
+
         private AbsoluteFocus absoluteField;
-        
+
         private RelativeFocus relativeField;
-        
+
         private ContinuousFocus continuousField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AbsoluteFocus Absolute
         {
             get
@@ -781,9 +781,9 @@ namespace QuickNV.Onvif.Imaging
                 this.absoluteField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public RelativeFocus Relative
         {
             get
@@ -795,9 +795,9 @@ namespace QuickNV.Onvif.Imaging
                 this.relativeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ContinuousFocus Continuous
         {
             get
@@ -810,18 +810,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingOptions20Extension4
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -834,20 +834,20 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NoiseReductionOptions
     {
-        
+
         private bool levelField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public bool Level
         {
             get
@@ -859,9 +859,9 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -874,22 +874,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DefoggingOptions
     {
-        
+
         private string[] modeField;
-        
+
         private bool levelField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public string[] Mode
         {
             get
@@ -901,9 +901,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool Level
         {
             get
@@ -915,9 +915,9 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -930,22 +930,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ToneCompensationOptions
     {
-        
+
         private string[] modeField;
-        
+
         private bool levelField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public string[] Mode
         {
             get
@@ -957,9 +957,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool Level
         {
             get
@@ -971,9 +971,9 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 2)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -986,24 +986,24 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingOptions20Extension3
     {
-        
+
         private ToneCompensationOptions toneCompensationOptionsField;
-        
+
         private DefoggingOptions defoggingOptionsField;
-        
+
         private NoiseReductionOptions noiseReductionOptionsField;
-        
+
         private ImagingOptions20Extension4 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ToneCompensationOptions ToneCompensationOptions
         {
             get
@@ -1015,9 +1015,9 @@ namespace QuickNV.Onvif.Imaging
                 this.toneCompensationOptionsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public DefoggingOptions DefoggingOptions
         {
             get
@@ -1029,9 +1029,9 @@ namespace QuickNV.Onvif.Imaging
                 this.defoggingOptionsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public NoiseReductionOptions NoiseReductionOptions
         {
             get
@@ -1043,9 +1043,9 @@ namespace QuickNV.Onvif.Imaging
                 this.noiseReductionOptionsField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public ImagingOptions20Extension4 Extension
         {
             get
@@ -1058,18 +1058,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IrCutFilterAutoAdjustmentOptionsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1082,20 +1082,20 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DurationRange
     {
-        
+
         private string minField;
-        
+
         private string maxField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 0)]
         public string Min
         {
             get
@@ -1107,9 +1107,9 @@ namespace QuickNV.Onvif.Imaging
                 this.minField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 1)]
         public string Max
         {
             get
@@ -1122,26 +1122,26 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IrCutFilterAutoAdjustmentOptions
     {
-        
+
         private string[] boundaryTypeField;
-        
+
         private bool boundaryOffsetField;
-        
+
         private bool boundaryOffsetFieldSpecified;
-        
+
         private DurationRange responseTimeRangeField;
-        
+
         private IrCutFilterAutoAdjustmentOptionsExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BoundaryType", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("BoundaryType", Order = 0)]
         public string[] BoundaryType
         {
             get
@@ -1153,9 +1153,9 @@ namespace QuickNV.Onvif.Imaging
                 this.boundaryTypeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public bool BoundaryOffset
         {
             get
@@ -1167,7 +1167,7 @@ namespace QuickNV.Onvif.Imaging
                 this.boundaryOffsetField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BoundaryOffsetSpecified
@@ -1181,9 +1181,9 @@ namespace QuickNV.Onvif.Imaging
                 this.boundaryOffsetFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public DurationRange ResponseTimeRange
         {
             get
@@ -1195,9 +1195,9 @@ namespace QuickNV.Onvif.Imaging
                 this.responseTimeRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IrCutFilterAutoAdjustmentOptionsExtension Extension
         {
             get
@@ -1210,20 +1210,20 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingOptions20Extension2
     {
-        
+
         private IrCutFilterAutoAdjustmentOptions irCutFilterAutoAdjustmentField;
-        
+
         private ImagingOptions20Extension3 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public IrCutFilterAutoAdjustmentOptions IrCutFilterAutoAdjustment
         {
             get
@@ -1235,9 +1235,9 @@ namespace QuickNV.Onvif.Imaging
                 this.irCutFilterAutoAdjustmentField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ImagingOptions20Extension3 Extension
         {
             get
@@ -1250,18 +1250,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImageStabilizationOptionsExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1274,22 +1274,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImageStabilizationOptions
     {
-        
+
         private ImageStabilizationMode[] modeField;
-        
+
         private FloatRange levelField;
-        
+
         private ImageStabilizationOptionsExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public ImageStabilizationMode[] Mode
         {
             get
@@ -1301,9 +1301,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange Level
         {
             get
@@ -1315,9 +1315,9 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ImageStabilizationOptionsExtension Extension
         {
             get
@@ -1330,41 +1330,41 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ImageStabilizationMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         Extended,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingOptions20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private ImageStabilizationOptions imageStabilizationField;
-        
+
         private ImagingOptions20Extension2 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1376,9 +1376,9 @@ namespace QuickNV.Onvif.Imaging
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ImageStabilizationOptions ImageStabilization
         {
             get
@@ -1390,9 +1390,9 @@ namespace QuickNV.Onvif.Imaging
                 this.imageStabilizationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ImagingOptions20Extension2 Extension
         {
             get
@@ -1405,18 +1405,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WhiteBalanceOptions20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1429,24 +1429,24 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WhiteBalanceOptions20
     {
-        
+
         private WhiteBalanceMode[] modeField;
-        
+
         private FloatRange yrGainField;
-        
+
         private FloatRange ybGainField;
-        
+
         private WhiteBalanceOptions20Extension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public WhiteBalanceMode[] Mode
         {
             get
@@ -1458,9 +1458,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange YrGain
         {
             get
@@ -1472,9 +1472,9 @@ namespace QuickNV.Onvif.Imaging
                 this.yrGainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public FloatRange YbGain
         {
             get
@@ -1486,9 +1486,9 @@ namespace QuickNV.Onvif.Imaging
                 this.ybGainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public WhiteBalanceOptions20Extension Extension
         {
             get
@@ -1501,33 +1501,33 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum WhiteBalanceMode
     {
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         MANUAL,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WideDynamicRangeOptions20
     {
-        
+
         private WideDynamicMode[] modeField;
-        
+
         private FloatRange levelField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public WideDynamicMode[] Mode
         {
             get
@@ -1539,9 +1539,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange Level
         {
             get
@@ -1554,33 +1554,33 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum WideDynamicMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusOptions20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string aFModesField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -1592,9 +1592,9 @@ namespace QuickNV.Onvif.Imaging
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public string AFModes
         {
             get
@@ -1607,26 +1607,26 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusOptions20
     {
-        
+
         private AutoFocusMode[] autoFocusModesField;
-        
+
         private FloatRange defaultSpeedField;
-        
+
         private FloatRange nearLimitField;
-        
+
         private FloatRange farLimitField;
-        
+
         private FocusOptions20Extension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AutoFocusModes", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AutoFocusModes", Order = 0)]
         public AutoFocusMode[] AutoFocusModes
         {
             get
@@ -1638,9 +1638,9 @@ namespace QuickNV.Onvif.Imaging
                 this.autoFocusModesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange DefaultSpeed
         {
             get
@@ -1652,9 +1652,9 @@ namespace QuickNV.Onvif.Imaging
                 this.defaultSpeedField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public FloatRange NearLimit
         {
             get
@@ -1666,9 +1666,9 @@ namespace QuickNV.Onvif.Imaging
                 this.nearLimitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public FloatRange FarLimit
         {
             get
@@ -1680,9 +1680,9 @@ namespace QuickNV.Onvif.Imaging
                 this.farLimitField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public FocusOptions20Extension Extension
         {
             get
@@ -1695,51 +1695,51 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum AutoFocusMode
     {
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         MANUAL,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ExposureOptions20
     {
-        
+
         private ExposureMode[] modeField;
-        
+
         private ExposurePriority[] priorityField;
-        
+
         private FloatRange minExposureTimeField;
-        
+
         private FloatRange maxExposureTimeField;
-        
+
         private FloatRange minGainField;
-        
+
         private FloatRange maxGainField;
-        
+
         private FloatRange minIrisField;
-        
+
         private FloatRange maxIrisField;
-        
+
         private FloatRange exposureTimeField;
-        
+
         private FloatRange gainField;
-        
+
         private FloatRange irisField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public ExposureMode[] Mode
         {
             get
@@ -1751,9 +1751,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Priority", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("Priority", Order = 1)]
         public ExposurePriority[] Priority
         {
             get
@@ -1765,9 +1765,9 @@ namespace QuickNV.Onvif.Imaging
                 this.priorityField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public FloatRange MinExposureTime
         {
             get
@@ -1779,9 +1779,9 @@ namespace QuickNV.Onvif.Imaging
                 this.minExposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public FloatRange MaxExposureTime
         {
             get
@@ -1793,9 +1793,9 @@ namespace QuickNV.Onvif.Imaging
                 this.maxExposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public FloatRange MinGain
         {
             get
@@ -1807,9 +1807,9 @@ namespace QuickNV.Onvif.Imaging
                 this.minGainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public FloatRange MaxGain
         {
             get
@@ -1821,9 +1821,9 @@ namespace QuickNV.Onvif.Imaging
                 this.maxGainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public FloatRange MinIris
         {
             get
@@ -1835,9 +1835,9 @@ namespace QuickNV.Onvif.Imaging
                 this.minIrisField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public FloatRange MaxIris
         {
             get
@@ -1849,9 +1849,9 @@ namespace QuickNV.Onvif.Imaging
                 this.maxIrisField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public FloatRange ExposureTime
         {
             get
@@ -1863,9 +1863,9 @@ namespace QuickNV.Onvif.Imaging
                 this.exposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public FloatRange Gain
         {
             get
@@ -1877,9 +1877,9 @@ namespace QuickNV.Onvif.Imaging
                 this.gainField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public FloatRange Iris
         {
             get
@@ -1892,46 +1892,46 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ExposureMode
     {
-        
+
         /// <remarks/>
         AUTO,
-        
+
         /// <remarks/>
         MANUAL,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum ExposurePriority
     {
-        
+
         /// <remarks/>
         LowNoise,
-        
+
         /// <remarks/>
         FrameRate,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class BacklightCompensationOptions20
     {
-        
+
         private BacklightCompensationMode[] modeField;
-        
+
         private FloatRange levelField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Mode", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Mode", Order = 0)]
         public BacklightCompensationMode[] Mode
         {
             get
@@ -1943,9 +1943,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange Level
         {
             get
@@ -1958,51 +1958,51 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum BacklightCompensationMode
     {
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         ON,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingOptions20
     {
-        
+
         private BacklightCompensationOptions20 backlightCompensationField;
-        
+
         private FloatRange brightnessField;
-        
+
         private FloatRange colorSaturationField;
-        
+
         private FloatRange contrastField;
-        
+
         private ExposureOptions20 exposureField;
-        
+
         private FocusOptions20 focusField;
-        
+
         private IrCutFilterMode[] irCutFilterModesField;
-        
+
         private FloatRange sharpnessField;
-        
+
         private WideDynamicRangeOptions20 wideDynamicRangeField;
-        
+
         private WhiteBalanceOptions20 whiteBalanceField;
-        
+
         private ImagingOptions20Extension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public BacklightCompensationOptions20 BacklightCompensation
         {
             get
@@ -2014,9 +2014,9 @@ namespace QuickNV.Onvif.Imaging
                 this.backlightCompensationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public FloatRange Brightness
         {
             get
@@ -2028,9 +2028,9 @@ namespace QuickNV.Onvif.Imaging
                 this.brightnessField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public FloatRange ColorSaturation
         {
             get
@@ -2042,9 +2042,9 @@ namespace QuickNV.Onvif.Imaging
                 this.colorSaturationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public FloatRange Contrast
         {
             get
@@ -2056,9 +2056,9 @@ namespace QuickNV.Onvif.Imaging
                 this.contrastField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public ExposureOptions20 Exposure
         {
             get
@@ -2070,9 +2070,9 @@ namespace QuickNV.Onvif.Imaging
                 this.exposureField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public FocusOptions20 Focus
         {
             get
@@ -2084,9 +2084,9 @@ namespace QuickNV.Onvif.Imaging
                 this.focusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IrCutFilterModes", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute("IrCutFilterModes", Order = 6)]
         public IrCutFilterMode[] IrCutFilterModes
         {
             get
@@ -2098,9 +2098,9 @@ namespace QuickNV.Onvif.Imaging
                 this.irCutFilterModesField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public FloatRange Sharpness
         {
             get
@@ -2112,9 +2112,9 @@ namespace QuickNV.Onvif.Imaging
                 this.sharpnessField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public WideDynamicRangeOptions20 WideDynamicRange
         {
             get
@@ -2126,9 +2126,9 @@ namespace QuickNV.Onvif.Imaging
                 this.wideDynamicRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public WhiteBalanceOptions20 WhiteBalance
         {
             get
@@ -2140,9 +2140,9 @@ namespace QuickNV.Onvif.Imaging
                 this.whiteBalanceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public ImagingOptions20Extension Extension
         {
             get
@@ -2155,34 +2155,34 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public enum IrCutFilterMode
     {
-        
+
         /// <remarks/>
         ON,
-        
+
         /// <remarks/>
         OFF,
-        
+
         /// <remarks/>
         AUTO,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension204
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2195,20 +2195,20 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class NoiseReduction
     {
-        
+
         private float levelField;
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public float Level
         {
             get
@@ -2220,9 +2220,9 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 1)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2235,18 +2235,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class DefoggingExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2259,24 +2259,24 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Defogging
     {
-        
+
         private string modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         private DefoggingExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Mode
         {
             get
@@ -2288,9 +2288,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -2302,7 +2302,7 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -2316,9 +2316,9 @@ namespace QuickNV.Onvif.Imaging
                 this.levelFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public DefoggingExtension Extension
         {
             get
@@ -2331,18 +2331,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ToneCompensationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2355,24 +2355,24 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ToneCompensation
     {
-        
+
         private string modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         private ToneCompensationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string Mode
         {
             get
@@ -2384,9 +2384,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -2398,7 +2398,7 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -2412,9 +2412,9 @@ namespace QuickNV.Onvif.Imaging
                 this.levelFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ToneCompensationExtension Extension
         {
             get
@@ -2427,24 +2427,24 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension203
     {
-        
+
         private ToneCompensation toneCompensationField;
-        
+
         private Defogging defoggingField;
-        
+
         private NoiseReduction noiseReductionField;
-        
+
         private ImagingSettingsExtension204 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ToneCompensation ToneCompensation
         {
             get
@@ -2456,9 +2456,9 @@ namespace QuickNV.Onvif.Imaging
                 this.toneCompensationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public Defogging Defogging
         {
             get
@@ -2470,9 +2470,9 @@ namespace QuickNV.Onvif.Imaging
                 this.defoggingField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public NoiseReduction NoiseReduction
         {
             get
@@ -2484,9 +2484,9 @@ namespace QuickNV.Onvif.Imaging
                 this.noiseReductionField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public ImagingSettingsExtension204 Extension
         {
             get
@@ -2499,18 +2499,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IrCutFilterAutoAdjustmentExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace="http://www.onvif.org/ver10/schema", Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Namespace = "http://www.onvif.org/ver10/schema", Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2523,26 +2523,26 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class IrCutFilterAutoAdjustment
     {
-        
+
         private string boundaryTypeField;
-        
+
         private float boundaryOffsetField;
-        
+
         private bool boundaryOffsetFieldSpecified;
-        
+
         private string responseTimeField;
-        
+
         private IrCutFilterAutoAdjustmentExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public string BoundaryType
         {
             get
@@ -2554,9 +2554,9 @@ namespace QuickNV.Onvif.Imaging
                 this.boundaryTypeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float BoundaryOffset
         {
             get
@@ -2568,7 +2568,7 @@ namespace QuickNV.Onvif.Imaging
                 this.boundaryOffsetField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BoundaryOffsetSpecified
@@ -2582,9 +2582,9 @@ namespace QuickNV.Onvif.Imaging
                 this.boundaryOffsetFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="duration", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "duration", Order = 2)]
         public string ResponseTime
         {
             get
@@ -2596,9 +2596,9 @@ namespace QuickNV.Onvif.Imaging
                 this.responseTimeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public IrCutFilterAutoAdjustmentExtension Extension
         {
             get
@@ -2611,20 +2611,20 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension202
     {
-        
+
         private IrCutFilterAutoAdjustment[] irCutFilterAutoAdjustmentField;
-        
+
         private ImagingSettingsExtension203 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IrCutFilterAutoAdjustment", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("IrCutFilterAutoAdjustment", Order = 0)]
         public IrCutFilterAutoAdjustment[] IrCutFilterAutoAdjustment
         {
             get
@@ -2636,9 +2636,9 @@ namespace QuickNV.Onvif.Imaging
                 this.irCutFilterAutoAdjustmentField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ImagingSettingsExtension203 Extension
         {
             get
@@ -2651,18 +2651,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImageStabilizationExtension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2675,24 +2675,24 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImageStabilization
     {
-        
+
         private ImageStabilizationMode modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         private ImageStabilizationExtension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ImageStabilizationMode Mode
         {
             get
@@ -2704,9 +2704,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -2718,7 +2718,7 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -2732,9 +2732,9 @@ namespace QuickNV.Onvif.Imaging
                 this.levelFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ImageStabilizationExtension Extension
         {
             get
@@ -2747,22 +2747,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettingsExtension20
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private ImageStabilization imageStabilizationField;
-        
+
         private ImagingSettingsExtension202 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2774,9 +2774,9 @@ namespace QuickNV.Onvif.Imaging
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ImageStabilization ImageStabilization
         {
             get
@@ -2788,9 +2788,9 @@ namespace QuickNV.Onvif.Imaging
                 this.imageStabilizationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public ImagingSettingsExtension202 Extension
         {
             get
@@ -2803,18 +2803,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WhiteBalance20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -2827,28 +2827,28 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WhiteBalance20
     {
-        
+
         private WhiteBalanceMode modeField;
-        
+
         private float crGainField;
-        
+
         private bool crGainFieldSpecified;
-        
+
         private float cbGainField;
-        
+
         private bool cbGainFieldSpecified;
-        
+
         private WhiteBalance20Extension extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public WhiteBalanceMode Mode
         {
             get
@@ -2860,9 +2860,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float CrGain
         {
             get
@@ -2874,7 +2874,7 @@ namespace QuickNV.Onvif.Imaging
                 this.crGainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool CrGainSpecified
@@ -2888,9 +2888,9 @@ namespace QuickNV.Onvif.Imaging
                 this.crGainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float CbGain
         {
             get
@@ -2902,7 +2902,7 @@ namespace QuickNV.Onvif.Imaging
                 this.cbGainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool CbGainSpecified
@@ -2916,9 +2916,9 @@ namespace QuickNV.Onvif.Imaging
                 this.cbGainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public WhiteBalance20Extension Extension
         {
             get
@@ -2931,22 +2931,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class WideDynamicRange20
     {
-        
+
         private WideDynamicMode modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public WideDynamicMode Mode
         {
             get
@@ -2958,9 +2958,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -2972,7 +2972,7 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -2987,18 +2987,18 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusConfiguration20Extension
     {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order = 0)]
         public System.Xml.XmlElement[] Any
         {
             get
@@ -3011,34 +3011,34 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class FocusConfiguration20
     {
-        
+
         private AutoFocusMode autoFocusModeField;
-        
+
         private float defaultSpeedField;
-        
+
         private bool defaultSpeedFieldSpecified;
-        
+
         private float nearLimitField;
-        
+
         private bool nearLimitFieldSpecified;
-        
+
         private float farLimitField;
-        
+
         private bool farLimitFieldSpecified;
-        
+
         private FocusConfiguration20Extension extensionField;
-        
+
         private string[] aFModeField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public AutoFocusMode AutoFocusMode
         {
             get
@@ -3050,9 +3050,9 @@ namespace QuickNV.Onvif.Imaging
                 this.autoFocusModeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float DefaultSpeed
         {
             get
@@ -3064,7 +3064,7 @@ namespace QuickNV.Onvif.Imaging
                 this.defaultSpeedField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool DefaultSpeedSpecified
@@ -3078,9 +3078,9 @@ namespace QuickNV.Onvif.Imaging
                 this.defaultSpeedFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float NearLimit
         {
             get
@@ -3092,7 +3092,7 @@ namespace QuickNV.Onvif.Imaging
                 this.nearLimitField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool NearLimitSpecified
@@ -3106,9 +3106,9 @@ namespace QuickNV.Onvif.Imaging
                 this.nearLimitFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float FarLimit
         {
             get
@@ -3120,7 +3120,7 @@ namespace QuickNV.Onvif.Imaging
                 this.farLimitField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool FarLimitSpecified
@@ -3134,9 +3134,9 @@ namespace QuickNV.Onvif.Imaging
                 this.farLimitFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public FocusConfiguration20Extension Extension
         {
             get
@@ -3148,7 +3148,7 @@ namespace QuickNV.Onvif.Imaging
                 this.extensionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string[] AFMode
@@ -3163,30 +3163,30 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Rectangle
     {
-        
+
         private float bottomField;
-        
+
         private bool bottomFieldSpecified;
-        
+
         private float topField;
-        
+
         private bool topFieldSpecified;
-        
+
         private float rightField;
-        
+
         private bool rightFieldSpecified;
-        
+
         private float leftField;
-        
+
         private bool leftFieldSpecified;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float bottom
@@ -3200,7 +3200,7 @@ namespace QuickNV.Onvif.Imaging
                 this.bottomField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool bottomSpecified
@@ -3214,7 +3214,7 @@ namespace QuickNV.Onvif.Imaging
                 this.bottomFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float top
@@ -3228,7 +3228,7 @@ namespace QuickNV.Onvif.Imaging
                 this.topField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool topSpecified
@@ -3242,7 +3242,7 @@ namespace QuickNV.Onvif.Imaging
                 this.topFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float right
@@ -3256,7 +3256,7 @@ namespace QuickNV.Onvif.Imaging
                 this.rightField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool rightSpecified
@@ -3270,7 +3270,7 @@ namespace QuickNV.Onvif.Imaging
                 this.rightFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public float left
@@ -3284,7 +3284,7 @@ namespace QuickNV.Onvif.Imaging
                 this.leftField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool leftSpecified
@@ -3299,60 +3299,60 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class Exposure20
     {
-        
+
         private ExposureMode modeField;
-        
+
         private ExposurePriority priorityField;
-        
+
         private bool priorityFieldSpecified;
-        
+
         private Rectangle windowField;
-        
+
         private float minExposureTimeField;
-        
+
         private bool minExposureTimeFieldSpecified;
-        
+
         private float maxExposureTimeField;
-        
+
         private bool maxExposureTimeFieldSpecified;
-        
+
         private float minGainField;
-        
+
         private bool minGainFieldSpecified;
-        
+
         private float maxGainField;
-        
+
         private bool maxGainFieldSpecified;
-        
+
         private float minIrisField;
-        
+
         private bool minIrisFieldSpecified;
-        
+
         private float maxIrisField;
-        
+
         private bool maxIrisFieldSpecified;
-        
+
         private float exposureTimeField;
-        
+
         private bool exposureTimeFieldSpecified;
-        
+
         private float gainField;
-        
+
         private bool gainFieldSpecified;
-        
+
         private float irisField;
-        
+
         private bool irisFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public ExposureMode Mode
         {
             get
@@ -3364,9 +3364,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public ExposurePriority Priority
         {
             get
@@ -3378,7 +3378,7 @@ namespace QuickNV.Onvif.Imaging
                 this.priorityField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool PrioritySpecified
@@ -3392,9 +3392,9 @@ namespace QuickNV.Onvif.Imaging
                 this.priorityFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public Rectangle Window
         {
             get
@@ -3406,9 +3406,9 @@ namespace QuickNV.Onvif.Imaging
                 this.windowField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float MinExposureTime
         {
             get
@@ -3420,7 +3420,7 @@ namespace QuickNV.Onvif.Imaging
                 this.minExposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MinExposureTimeSpecified
@@ -3434,9 +3434,9 @@ namespace QuickNV.Onvif.Imaging
                 this.minExposureTimeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public float MaxExposureTime
         {
             get
@@ -3448,7 +3448,7 @@ namespace QuickNV.Onvif.Imaging
                 this.maxExposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxExposureTimeSpecified
@@ -3462,9 +3462,9 @@ namespace QuickNV.Onvif.Imaging
                 this.maxExposureTimeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public float MinGain
         {
             get
@@ -3476,7 +3476,7 @@ namespace QuickNV.Onvif.Imaging
                 this.minGainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MinGainSpecified
@@ -3490,9 +3490,9 @@ namespace QuickNV.Onvif.Imaging
                 this.minGainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public float MaxGain
         {
             get
@@ -3504,7 +3504,7 @@ namespace QuickNV.Onvif.Imaging
                 this.maxGainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxGainSpecified
@@ -3518,9 +3518,9 @@ namespace QuickNV.Onvif.Imaging
                 this.maxGainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public float MinIris
         {
             get
@@ -3532,7 +3532,7 @@ namespace QuickNV.Onvif.Imaging
                 this.minIrisField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MinIrisSpecified
@@ -3546,9 +3546,9 @@ namespace QuickNV.Onvif.Imaging
                 this.minIrisFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public float MaxIris
         {
             get
@@ -3560,7 +3560,7 @@ namespace QuickNV.Onvif.Imaging
                 this.maxIrisField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool MaxIrisSpecified
@@ -3574,9 +3574,9 @@ namespace QuickNV.Onvif.Imaging
                 this.maxIrisFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public float ExposureTime
         {
             get
@@ -3588,7 +3588,7 @@ namespace QuickNV.Onvif.Imaging
                 this.exposureTimeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ExposureTimeSpecified
@@ -3602,9 +3602,9 @@ namespace QuickNV.Onvif.Imaging
                 this.exposureTimeFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public float Gain
         {
             get
@@ -3616,7 +3616,7 @@ namespace QuickNV.Onvif.Imaging
                 this.gainField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool GainSpecified
@@ -3630,9 +3630,9 @@ namespace QuickNV.Onvif.Imaging
                 this.gainFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 11)]
         public float Iris
         {
             get
@@ -3644,7 +3644,7 @@ namespace QuickNV.Onvif.Imaging
                 this.irisField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IrisSpecified
@@ -3659,22 +3659,22 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class BacklightCompensation20
     {
-        
+
         private BacklightCompensationMode modeField;
-        
+
         private float levelField;
-        
+
         private bool levelFieldSpecified;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public BacklightCompensationMode Mode
         {
             get
@@ -3686,9 +3686,9 @@ namespace QuickNV.Onvif.Imaging
                 this.modeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Level
         {
             get
@@ -3700,7 +3700,7 @@ namespace QuickNV.Onvif.Imaging
                 this.levelField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool LevelSpecified
@@ -3715,48 +3715,48 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.onvif.org/ver10/schema")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.onvif.org/ver10/schema")]
     public partial class ImagingSettings20
     {
-        
+
         private BacklightCompensation20 backlightCompensationField;
-        
+
         private float brightnessField;
-        
+
         private bool brightnessFieldSpecified;
-        
+
         private float colorSaturationField;
-        
+
         private bool colorSaturationFieldSpecified;
-        
+
         private float contrastField;
-        
+
         private bool contrastFieldSpecified;
-        
+
         private Exposure20 exposureField;
-        
+
         private FocusConfiguration20 focusField;
-        
+
         private IrCutFilterMode irCutFilterField;
-        
+
         private bool irCutFilterFieldSpecified;
-        
+
         private float sharpnessField;
-        
+
         private bool sharpnessFieldSpecified;
-        
+
         private WideDynamicRange20 wideDynamicRangeField;
-        
+
         private WhiteBalance20 whiteBalanceField;
-        
+
         private ImagingSettingsExtension20 extensionField;
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
         public BacklightCompensation20 BacklightCompensation
         {
             get
@@ -3768,9 +3768,9 @@ namespace QuickNV.Onvif.Imaging
                 this.backlightCompensationField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
         public float Brightness
         {
             get
@@ -3782,7 +3782,7 @@ namespace QuickNV.Onvif.Imaging
                 this.brightnessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool BrightnessSpecified
@@ -3796,9 +3796,9 @@ namespace QuickNV.Onvif.Imaging
                 this.brightnessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
         public float ColorSaturation
         {
             get
@@ -3810,7 +3810,7 @@ namespace QuickNV.Onvif.Imaging
                 this.colorSaturationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ColorSaturationSpecified
@@ -3824,9 +3824,9 @@ namespace QuickNV.Onvif.Imaging
                 this.colorSaturationFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
         public float Contrast
         {
             get
@@ -3838,7 +3838,7 @@ namespace QuickNV.Onvif.Imaging
                 this.contrastField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool ContrastSpecified
@@ -3852,9 +3852,9 @@ namespace QuickNV.Onvif.Imaging
                 this.contrastFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
         public Exposure20 Exposure
         {
             get
@@ -3866,9 +3866,9 @@ namespace QuickNV.Onvif.Imaging
                 this.exposureField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
         public FocusConfiguration20 Focus
         {
             get
@@ -3880,9 +3880,9 @@ namespace QuickNV.Onvif.Imaging
                 this.focusField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
         public IrCutFilterMode IrCutFilter
         {
             get
@@ -3894,7 +3894,7 @@ namespace QuickNV.Onvif.Imaging
                 this.irCutFilterField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool IrCutFilterSpecified
@@ -3908,9 +3908,9 @@ namespace QuickNV.Onvif.Imaging
                 this.irCutFilterFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
         public float Sharpness
         {
             get
@@ -3922,7 +3922,7 @@ namespace QuickNV.Onvif.Imaging
                 this.sharpnessField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool SharpnessSpecified
@@ -3936,9 +3936,9 @@ namespace QuickNV.Onvif.Imaging
                 this.sharpnessFieldSpecified = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
         public WideDynamicRange20 WideDynamicRange
         {
             get
@@ -3950,9 +3950,9 @@ namespace QuickNV.Onvif.Imaging
                 this.wideDynamicRangeField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
         public WhiteBalance20 WhiteBalance
         {
             get
@@ -3964,9 +3964,9 @@ namespace QuickNV.Onvif.Imaging
                 this.whiteBalanceField = value;
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order = 10)]
         public ImagingSettingsExtension20 Extension
         {
             get
@@ -3979,126 +3979,126 @@ namespace QuickNV.Onvif.Imaging
             }
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPresets", WrapperNamespace="http://www.onvif.org/ver20/imaging/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPresets", WrapperNamespace = "http://www.onvif.org/ver20/imaging/wsdl", IsWrapped = true)]
     public partial class GetPresetsRequest
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver20/imaging/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver20/imaging/wsdl", Order = 0)]
         public string VideoSourceToken;
-        
+
         public GetPresetsRequest()
         {
         }
-        
+
         public GetPresetsRequest(string VideoSourceToken)
         {
             this.VideoSourceToken = VideoSourceToken;
         }
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPresetsResponse", WrapperNamespace="http://www.onvif.org/ver20/imaging/wsdl", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPresetsResponse", WrapperNamespace = "http://www.onvif.org/ver20/imaging/wsdl", IsWrapped = true)]
     public partial class GetPresetsResponse
     {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.onvif.org/ver20/imaging/wsdl", Order=0)]
+
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://www.onvif.org/ver20/imaging/wsdl", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute("Preset")]
         public QuickNV.Onvif.Imaging.ImagingPreset[] Preset;
-        
+
         public GetPresetsResponse()
         {
         }
-        
+
         public GetPresetsResponse(QuickNV.Onvif.Imaging.ImagingPreset[] Preset)
         {
             this.Preset = Preset;
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface ImagingPortChannel : QuickNV.Onvif.Imaging.ImagingPort, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public partial class ImagingPortClient : System.ServiceModel.ClientBase<QuickNV.Onvif.Imaging.ImagingPort>, QuickNV.Onvif.Imaging.ImagingPort
     {
-        
-        public ImagingPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public ImagingPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.Capabilities> GetServiceCapabilitiesAsync()
         {
             return base.Channel.GetServiceCapabilitiesAsync();
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.ImagingSettings20> GetImagingSettingsAsync(string VideoSourceToken)
         {
             return base.Channel.GetImagingSettingsAsync(VideoSourceToken);
         }
-        
+
         public System.Threading.Tasks.Task SetImagingSettingsAsync(string VideoSourceToken, QuickNV.Onvif.Imaging.ImagingSettings20 ImagingSettings, bool ForcePersistence)
         {
             return base.Channel.SetImagingSettingsAsync(VideoSourceToken, ImagingSettings, ForcePersistence);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.ImagingOptions20> GetOptionsAsync(string VideoSourceToken)
         {
             return base.Channel.GetOptionsAsync(VideoSourceToken);
         }
-        
+
         public System.Threading.Tasks.Task MoveAsync(string VideoSourceToken, QuickNV.Onvif.Imaging.FocusMove Focus)
         {
             return base.Channel.MoveAsync(VideoSourceToken, Focus);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.MoveOptions20> GetMoveOptionsAsync(string VideoSourceToken)
         {
             return base.Channel.GetMoveOptionsAsync(VideoSourceToken);
         }
-        
+
         public System.Threading.Tasks.Task StopAsync(string VideoSourceToken)
         {
             return base.Channel.StopAsync(VideoSourceToken);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.ImagingStatus20> GetStatusAsync(string VideoSourceToken)
         {
             return base.Channel.GetStatusAsync(VideoSourceToken);
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.GetPresetsResponse> QuickNV.Onvif.Imaging.ImagingPort.GetPresetsAsync(QuickNV.Onvif.Imaging.GetPresetsRequest request)
         {
             return base.Channel.GetPresetsAsync(request);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.GetPresetsResponse> GetPresetsAsync(string VideoSourceToken)
         {
             QuickNV.Onvif.Imaging.GetPresetsRequest inValue = new QuickNV.Onvif.Imaging.GetPresetsRequest();
             inValue.VideoSourceToken = VideoSourceToken;
             return ((QuickNV.Onvif.Imaging.ImagingPort)(this)).GetPresetsAsync(inValue);
         }
-        
+
         public System.Threading.Tasks.Task<QuickNV.Onvif.Imaging.ImagingPreset> GetCurrentPresetAsync(string VideoSourceToken)
         {
             return base.Channel.GetCurrentPresetAsync(VideoSourceToken);
         }
-        
+
         public System.Threading.Tasks.Task SetCurrentPresetAsync(string VideoSourceToken, string PresetToken)
         {
             return base.Channel.SetCurrentPresetAsync(VideoSourceToken, PresetToken);
         }
-        
+
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));

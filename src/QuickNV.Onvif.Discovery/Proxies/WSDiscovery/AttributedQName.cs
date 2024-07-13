@@ -1,4 +1,3 @@
-using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -14,33 +13,33 @@ namespace QuickNV.Onvif.Discovery.WSDiscovery;
 [XmlType(Namespace = "http://schemas.xmlsoap.org/ws/2004/08/addressing")]
 public class AttributedQName
 {
-	private XmlAttribute[] anyAttrField;
+    private XmlAttribute[] anyAttrField;
 
-	private XmlQualifiedName valueField;
+    private XmlQualifiedName valueField;
 
-	[XmlAnyAttribute]
-	public XmlAttribute[] AnyAttr
-	{
-		get
-		{
-			return anyAttrField;
-		}
-		set
-		{
-			anyAttrField = value;
-		}
-	}
+    [XmlAnyAttribute]
+    public XmlAttribute[] AnyAttr
+    {
+        get
+        {
+            return anyAttrField;
+        }
+        set
+        {
+            anyAttrField = value;
+        }
+    }
 
-	[XmlText]
-	public XmlQualifiedName Value
-	{
-		get
-		{
-			return valueField;
-		}
-		set
-		{
-			valueField = value;
-		}
-	}
+    [XmlText]
+    public XmlQualifiedName Value
+    {
+        get
+        {
+            return valueField;
+        }
+        set
+        {
+            valueField = value;
+        }
+    }
 }

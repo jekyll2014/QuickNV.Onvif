@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace QuickNV.Onvif.Discovery;
 
 public class DeviceDiscoveryData
